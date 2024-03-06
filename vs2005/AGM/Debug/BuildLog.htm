@@ -1,0 +1,71 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: AGM, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\dev\alleg\contrib\vs2005\Agm\Debug\RSP000003.rsp" with contents
+[
+/Od /I "C:\Documents and Settings\JFG\Bureau\Allegiance\3D\ms3dsdk14\FreeImage" /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "FREEIMAGE_LIB" /D "_MBCS" /Gm /EHsc /RTC1 /MTd /Yu"stdafx.h" /Fp"Debug/AGM.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /ZI /TP
+\dev\alleg\contrib\vs2005\Ice\IGCCore.cpp
+.\SvrUI.cpp
+.\ServerCtrl.cpp
+.\AGMEventsHandler.cpp
+.\AGMDlg.cpp
+.\AGM.cpp
+]
+Creating command line "cl.exe @c:\dev\alleg\contrib\vs2005\Agm\Debug\RSP000003.rsp /nologo"
+Creating temporary file "c:\dev\alleg\contrib\vs2005\Agm\Debug\RSP000004.rsp" with contents
+[
+/Od /I "C:\Documents and Settings\JFG\Bureau\Allegiance\3D\ms3dsdk14\FreeImage" /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "FREEIMAGE_LIB" /D "_MBCS" /Gm /EHsc /RTC1 /MTd /Yc"stdafx.h" /Fp"Debug/AGM.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /ZI /TP
+.\stdafx.cpp
+]
+Creating command line "cl.exe @c:\dev\alleg\contrib\vs2005\Agm\Debug\RSP000004.rsp /nologo"
+Creating command line "rc.exe /d "_DEBUG" /l 0x409 /I "Debug" /fo"Debug/AGM.res" .\AGM.rc"
+Creating temporary file "c:\dev\alleg\contrib\vs2005\Agm\Debug\RSP000005.rsp" with contents
+[
+/OUT:"Debug/AGM.exe" /INCREMENTAL /NOLOGO /DELAYLOAD:"OleAcc.dll" /DEBUG /PDB:"Debug/AGM.pdb" /SUBSYSTEM:WINDOWS /MACHINE:X86 Version.lib  DelayImp.lib DelayImp.lib
+.\Debug\AGM.obj
+.\Debug\AGM.res
+.\Debug\AGMDlg.obj
+.\Debug\AGMEventsHandler.obj
+.\Debug\ServerCtrl.obj
+.\Debug\stdafx.obj
+.\Debug\SvrUI.obj
+.\Debug\IGCCore.obj
+]
+Creating command line "link.exe @c:\dev\alleg\contrib\vs2005\Agm\Debug\RSP000005.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+stdafx.cpp
+c:\dev\alleg\contrib\vs2005\AGM\stdafx.h(48) : warning C4278: 'GetObject': identifier in type library 'C:\\dev\\alleg\\contrib\\vs2005\\bin\\agc.dll' is already a macro; use the 'rename' qualifier
+Compiling...
+IGCCore.cpp
+c:\dev\alleg\contrib\vs2005\ICE\IGCCore.cpp(736) : warning C4244: '=' : conversion from 'ULONGLONG' to 'int', possible loss of data
+SvrUI.cpp
+ServerCtrl.cpp
+AGMEventsHandler.cpp
+AGMDlg.cpp
+c:\dev\alleg\contrib\vs2005\AGM\AGMDlg.cpp(362) : warning C4244: 'argument' : conversion from 'ULONGLONG' to 'UINT', possible loss of data
+c:\dev\alleg\contrib\vs2005\AGM\AGMDlg.cpp(473) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+c:\dev\alleg\contrib\vs2005\AGM\AGMDlg.cpp(607) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\dev\alleg\contrib\vs2005\AGM\AGMDlg.cpp(1150) : warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+c:\dev\alleg\contrib\vs2005\AGM\AGMDlg.cpp(1220) : warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+AGM.cpp
+Generating Code...
+Compiling resources...
+Linking...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\dev\alleg\contrib\vs2005\Agm\Debug\BuildLog.htm"
+AGM - 0 error(s), 7 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

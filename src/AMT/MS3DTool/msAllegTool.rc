@@ -1,0 +1,226 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,9,4,0
+ PRODUCTVERSION 0,9,4,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "beta beta"
+            VALUE "CompanyName", "Kirth Gersen"
+            VALUE "FileDescription", "AMT Tool"
+            VALUE "FileVersion", "0.94"
+            VALUE "InternalName", "msAllegTool.dll"
+            VALUE "LegalCopyright", "KGJV/Kirth Gersen"
+            VALUE "OriginalFilename", "msAllegTool.dll"
+            VALUE "ProductName", "AMT"
+            VALUE "ProductVersion", "0.94"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\msAllegTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AMTDLG DIALOGEX 0, 0, 384, 301
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AMT Tools"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LGROUPS,143,19,91,125,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_LCVH,266,19,91,126,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LMDL,20,19,91,125,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">",IDC_BTMDLTOOBJ,119,35,18,14
+    PUSHBUTTON      "<",IDC_BTOBJTOMDL,120,111,18,14
+    PUSHBUTTON      "<",IDC_BTCVHTOOBJ,241,111,18,14
+    PUSHBUTTON      ">",IDC_BTOBJTOCVH,241,35,18,14
+    LTEXT           "CVH groups",IDC_STATIC,287,9,39,8
+    LTEXT           "MDL groups",IDC_STATIC,46,9,40,8
+    LTEXT           "Unassigned groups",IDC_STATIC,160,9,62,8
+    LISTBOX         IDC_LJOINTS,143,167,91,125,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LPOS,266,167,91,126,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LLIGHTS,20,167,91,125,LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "CVH positions",IDC_STATIC,297,158,45,8
+    LTEXT           "Unassigned joints",IDC_STATIC,164,158,56,8
+    CONTROL         "",IDC_TABFL,"SysTabControl32",0x0,20,154,86,10
+    LISTBOX         IDC_LFRAMES,20,167,91,125,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<",IDC_BTPOSTOJ,242,265,18,14,WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTJTOPOS,241,183,18,14,WS_DISABLED
+    GROUPBOX        "",IDC_STATIC,13,3,105,293
+    GROUPBOX        "",IDC_STATIC,137,3,105,293
+    GROUPBOX        "",IDC_STATIC,259,3,105,293
+    PUSHBUTTON      "<",IDC_BTJTOLF,119,265,18,14
+    PUSHBUTTON      ">",IDC_BTLFTOJ,119,184,18,14,WS_DISABLED
+    PUSHBUTTON      "H",IDC_BTHIDEMDL,20,9,12,9,WS_DISABLED
+    PUSHBUTTON      "H",IDC_BTHIDEGROUP,144,9,12,9,WS_DISABLED
+    PUSHBUTTON      "H",IDC_BTHIDECVH,267,9,12,9,WS_DISABLED
+    PUSHBUTTON      "+",IDC_BTADDPOS,266,157,12,9,WS_DISABLED
+    PUSHBUTTON      "S",IDC_BTSHOWMDL,99,9,12,9,WS_DISABLED
+    PUSHBUTTON      "S",IDC_BTSHOWGROUP,223,9,12,9,WS_DISABLED
+    PUSHBUTTON      "S",IDC_BTSHOWCVH,345,10,12,9,WS_DISABLED
+END
+
+IDD_DLGLIGHT DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Light properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,72,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,129,72,50,16
+    CONTROL         "Color",IDC_BTCOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    33,19,138,14
+    CONTROL         "",IDC_SLSPEED,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,47,46,124,15
+    LTEXT           "Color",IDC_STATIC,10,22,17,8
+    LTEXT           "Blink speed",IDC_STATIC,9,54,38,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_AMTDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 380
+    END
+
+    IDD_DLGLIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\msAllegTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

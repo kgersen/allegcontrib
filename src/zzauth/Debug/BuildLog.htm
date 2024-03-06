@@ -1,0 +1,52 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: zzauth, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "s:\alleg\src\zzauth\Debug\RSP00004E.rsp" with contents
+[
+/Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_USRDLL" /D "_WINDLL" /D "_ATL_STATIC_REGISTRY" /D "_MBCS" /Gm /EHsc /RTC1 /MTd /Zc:wchar_t /Yu"stdafx.h" /Fp"Debug/zzauth.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+.\comauth.cpp
+]
+Creating command line "cl.exe @s:\alleg\src\zzauth\Debug\RSP00004E.rsp /nologo"
+Creating temporary file "s:\alleg\src\zzauth\Debug\RSP00004F.rsp" with contents
+[
+/OUT:"Debug/zzauth.dll" /INCREMENTAL /NOLOGO /DLL /DELAYLOAD:"OleAcc.dll" /DEBUG /PDB:"Debug/zzauth.pdb" /SUBSYSTEM:WINDOWS /IMPLIB:"Debug/zzauth.lib" /MACHINE:X86  DelayImp.lib DelayImp.lib
+.\Debug\comauth.obj
+.\Debug\stdafx.obj
+.\Debug\zzauth.obj
+.\Debug\zzauth.res
+]
+Creating command line "link.exe @s:\alleg\src\zzauth\Debug\RSP00004F.rsp"
+Creating temporary file "s:\alleg\src\zzauth\Debug\BAT000050.bat" with contents
+[
+@echo off
+regsvr32 /s /c "s:\alleg\src\zzauth\Debug\zzauth.dll"
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing registration"
+exit 1
+:VCEnd
+]
+Creating command line "s:\alleg\src\zzauth\Debug\BAT000050.bat"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+comauth.cpp
+Linking...
+Performing registration
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://s:\alleg\src\zzauth\Debug\BuildLog.htm"
+zzauth - 0 error(s), 0 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

@@ -1,0 +1,4213 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (81b26241).
+//
+// s:\alleg\src\ame\release\agc.tlh
+//
+// C++ source equivalent of Win32 type library C:\\Program Files\\Microsoft Games\\Allegiance\\Server\\agc.dll
+// compiler-generated file created 05/20/03 at 19:31:53 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("ab33e136-0a3e-11d3-8b58-00c04f681633"))
+/* LIBID */ __AGCLib;
+enum AGCObjectType;
+enum AGCHullAbility;
+enum AGCAxis;
+enum AGCEquipmentType;
+enum AGCTreasureType;
+enum AGCChatTarget;
+enum AGCEventID;
+enum FileAttributes;
+struct /* coclass */ AGCInterfaces;
+struct __declspec(uuid("efc30b36-13b1-11d3-8b5e-00c04f681633"))
+/* dual interface */ IAGCVector;
+struct __declspec(uuid("c6d92776-3998-11d3-a51d-00c04f68deb0"))
+/* dual interface */ IAGCOrientation;
+struct __declspec(uuid("d2efe888-1480-11d3-8b5f-00c04f681633"))
+/* dual interface */ IAGCEvent;
+struct __declspec(uuid("9d43aca9-98a3-45ba-bfaa-340d451fcd98"))
+/* dual interface */ IAGCEventCreate;
+struct __declspec(uuid("e71ea5b9-eba4-11d2-8b4b-00c04f681633"))
+/* dual interface */ IAGCGameParameters;
+typedef long AGCMoney;
+struct __declspec(uuid("7cdc82f6-fe9d-11d2-a50f-00c04f68deb0"))
+/* dual interface */ IAGCCommand;
+struct __declspec(uuid("160da17d-c8d5-4352-9654-6e658a5a0887"))
+/* dual interface */ IAGCVersionInfo;
+struct __declspec(uuid("80e3b37a-936e-4dcc-a8ad-dd9658f20613"))
+/* dual interface */ IAGCDBParams;
+struct __declspec(uuid("28755aa1-6391-4d37-a995-5ae387d0b610"))
+/* dual interface */ IAGCEventLogger;
+struct __declspec(uuid("481b5d73-c1c4-4936-93c6-c4754f10d497"))
+/* dual interface */ IAGCEventIDRanges;
+struct __declspec(uuid("0aa7a82f-fca5-4671-869f-0033a7573d30"))
+/* dual interface */ IAGCEventIDRange;
+struct __declspec(uuid("b1935981-d27b-11d2-9646-00c04f68deb0"))
+/* dual interface */ ITCCollection;
+struct __declspec(uuid("c04322e0-cb3b-11d2-9646-00c04f68deb0"))
+/* dual interface */ ITCStrings;
+struct __declspec(uuid("8962e242-cd81-11d2-9646-00c04f68deb0"))
+/* dual interface */ ITCPropBagOnRegKey;
+struct __declspec(uuid("34e485e2-c7b7-11d2-85c9-00c04f68deb0"))
+/* dual interface */ ITCSessionInfo;
+struct __declspec(uuid("45038c6e-c7b7-11d2-85c9-00c04f68deb0"))
+/* dual interface */ ITCSessionInfos;
+struct __declspec(uuid("8962e24a-cd81-11d2-9646-00c04f68deb0"))
+/* dual interface */ ITCCollectionPersistHelper;
+struct __declspec(uuid("add577e2-ed3a-11d2-a50b-00c04f68deb0"))
+/* dual interface */ ITCUtility;
+struct __declspec(uuid("143c0682-8688-421b-a269-9fd40f2aa19a"))
+/* dual interface */ IAdminSessionHelper;
+struct __declspec(uuid("6eb476ce-17bc-11d3-8b61-00c04f681633"))
+/* dual interface */ IAGCCommon;
+struct __declspec(uuid("b8db7d42-1e9c-11d3-8b63-00c04f681633"))
+/* dual interface */ IAGCCollection;
+struct __declspec(uuid("6967ea73-0a42-11d3-8b58-00c04f681633"))
+/* dual interface */ IAGCBase;
+typedef short AGCObjectID;
+struct __declspec(uuid("e6d48fb7-0a41-11d3-8b58-00c04f681633"))
+/* dual interface */ IAGCGame;
+struct __declspec(uuid("338da8ff-eba5-11d2-8b4b-00c04f681633"))
+/* dual interface */ IAGCSectors;
+struct __declspec(uuid("1fc0e193-eba5-11d2-8b4b-00c04f681633"))
+/* dual interface */ IAGCSector;
+struct __declspec(uuid("6ea96980-0272-11d3-8b55-00c04f681633"))
+/* dual interface */ IAGCStations;
+struct __declspec(uuid("c9438c34-026a-11d3-8b55-00c04f681633"))
+/* dual interface */ IAGCStation;
+struct __declspec(uuid("e9004e70-0a42-11d3-8b58-00c04f681633"))
+/* dual interface */ IAGCScanner;
+struct __declspec(uuid("df2f4b4e-0a42-11d3-8b58-00c04f681633"))
+/* dual interface */ IAGCDamage;
+struct __declspec(uuid("d64cb547-0a42-11d3-8b58-00c04f681633"))
+/* dual interface */ IAGCModel;
+struct __declspec(uuid("4214fd6f-eba5-11d2-8b4b-00c04f681633"))
+/* dual interface */ IAGCTeam;
+struct __declspec(uuid("edb8c96c-1ebe-11d3-8b63-00c04f681633"))
+/* dual interface */ IAGCShips;
+struct __declspec(uuid("4f860d30-0a42-11d3-8b58-00c04f681633"))
+/* dual interface */ IAGCShip;
+typedef short AGCSoundID;
+struct __declspec(uuid("3c579426-2ed8-11d3-a51c-00c04f68deb0"))
+/* dual interface */ IAGCHullType;
+struct __declspec(uuid("5d48f7cc-1fa8-11d3-af03-0000f810c3f4"))
+/* dual interface */ IAGCBuyable;
+typedef short AGCHitPoints;
+typedef char AGCMount;
+typedef unsigned char AGCPartMask;
+typedef short AGCHullAbilityBitMask;
+struct __declspec(uuid("88400bb3-026b-11d3-8b55-00c04f681633"))
+/* dual interface */ IAGCAlephs;
+struct __declspec(uuid("0afec67e-0325-11d3-8b57-00c04f681633"))
+/* dual interface */ IAGCAleph;
+struct __declspec(uuid("a61112c6-38b7-11d3-a51d-00c04f68deb0"))
+/* dual interface */ IAGCAsteroids;
+struct __declspec(uuid("8b4100a0-38b7-11d3-a51d-00c04f68deb0"))
+/* dual interface */ IAGCAsteroid;
+typedef short AGCAsteroidAbilityBitMask;
+struct __declspec(uuid("9f04169b-fb9f-48c2-891b-dfc9b29e0493"))
+/* dual interface */ IAGCModels;
+struct __declspec(uuid("8a003dbd-93e8-4922-ac4b-7af44291a89d"))
+/* dual interface */ IAGCProbes;
+struct __declspec(uuid("2a91fb76-71ba-4f1a-b1e8-a457a592854d"))
+/* dual interface */ IAGCProbe;
+struct __declspec(uuid("65e8f3e4-eba5-11d2-8b4b-00c04f681633"))
+/* dual interface */ IAGCTeams;
+typedef long AGCUniqueID;
+typedef long AGCGameID;
+enum AGCGameStage;
+struct /* coclass */ AGCGlobal;
+struct __declspec(uuid("f4385bc0-1fcc-11d3-af03-0000f810c3f4"))
+/* interface */ IAGCGlobal;
+struct __declspec(uuid("4cfc5fec-243a-11d3-af03-0000f810c3f4"))
+/* interface */ IAGCEventSink;
+struct __declspec(uuid("9a153413-cc15-4ea1-a9bb-e0854726caed"))
+/* interface */ IAGCDebugHook;
+struct /* coclass */ AGCVector;
+struct /* coclass */ AGCOrientation;
+struct /* coclass */ AGCEvent;
+struct /* coclass */ AGCGameParameters;
+struct /* coclass */ AGCCommand;
+struct /* coclass */ AGCVersionInfo;
+struct /* coclass */ AGCDBParams;
+struct /* coclass */ AGCEventLogger;
+struct /* coclass */ AGCEventIDRange;
+struct /* coclass */ AGCEventIDRanges;
+struct /* coclass */ TCMarshalByValue;
+struct /* coclass */ TCStrings;
+struct /* coclass */ TCNullStream;
+struct /* coclass */ TCPropBagOnRegKey;
+struct /* coclass */ TCUtility;
+struct /* coclass */ AdminSessionHelper;
+struct /* coclass */ AGCBase;
+struct /* coclass */ AGCModel;
+struct /* coclass */ AGCModels;
+struct /* coclass */ AGCHullType;
+struct /* coclass */ AGCDamage;
+struct /* coclass */ AGCScanner;
+struct /* coclass */ AGCProbe;
+struct /* coclass */ AGCProbes;
+struct /* coclass */ AGCGame;
+struct /* coclass */ AGCShip;
+struct /* coclass */ AGCShips;
+struct /* coclass */ AGCStation;
+struct /* coclass */ AGCStations;
+struct /* coclass */ AGCAleph;
+struct /* coclass */ AGCAlephs;
+struct /* coclass */ AGCSector;
+struct /* coclass */ AGCSectors;
+struct /* coclass */ AGCTeam;
+struct /* coclass */ AGCTeams;
+struct /* coclass */ AGCAsteroid;
+struct /* coclass */ AGCAsteroids;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IAGCVector, __uuidof(IAGCVector));
+_COM_SMARTPTR_TYPEDEF(IAGCOrientation, __uuidof(IAGCOrientation));
+_COM_SMARTPTR_TYPEDEF(IAGCEvent, __uuidof(IAGCEvent));
+_COM_SMARTPTR_TYPEDEF(IAGCEventCreate, __uuidof(IAGCEventCreate));
+_COM_SMARTPTR_TYPEDEF(IAGCGameParameters, __uuidof(IAGCGameParameters));
+_COM_SMARTPTR_TYPEDEF(IAGCCommand, __uuidof(IAGCCommand));
+_COM_SMARTPTR_TYPEDEF(IAGCVersionInfo, __uuidof(IAGCVersionInfo));
+_COM_SMARTPTR_TYPEDEF(IAGCDBParams, __uuidof(IAGCDBParams));
+_COM_SMARTPTR_TYPEDEF(IAGCEventIDRange, __uuidof(IAGCEventIDRange));
+_COM_SMARTPTR_TYPEDEF(IAGCEventIDRanges, __uuidof(IAGCEventIDRanges));
+_COM_SMARTPTR_TYPEDEF(IAGCEventLogger, __uuidof(IAGCEventLogger));
+_COM_SMARTPTR_TYPEDEF(ITCCollection, __uuidof(ITCCollection));
+_COM_SMARTPTR_TYPEDEF(ITCStrings, __uuidof(ITCStrings));
+_COM_SMARTPTR_TYPEDEF(ITCPropBagOnRegKey, __uuidof(ITCPropBagOnRegKey));
+_COM_SMARTPTR_TYPEDEF(ITCSessionInfo, __uuidof(ITCSessionInfo));
+_COM_SMARTPTR_TYPEDEF(ITCSessionInfos, __uuidof(ITCSessionInfos));
+_COM_SMARTPTR_TYPEDEF(ITCCollectionPersistHelper, __uuidof(ITCCollectionPersistHelper));
+_COM_SMARTPTR_TYPEDEF(ITCUtility, __uuidof(ITCUtility));
+_COM_SMARTPTR_TYPEDEF(IAdminSessionHelper, __uuidof(IAdminSessionHelper));
+_COM_SMARTPTR_TYPEDEF(IAGCCommon, __uuidof(IAGCCommon));
+_COM_SMARTPTR_TYPEDEF(IAGCCollection, __uuidof(IAGCCollection));
+_COM_SMARTPTR_TYPEDEF(IAGCEventSink, __uuidof(IAGCEventSink));
+_COM_SMARTPTR_TYPEDEF(IAGCDebugHook, __uuidof(IAGCDebugHook));
+_COM_SMARTPTR_TYPEDEF(IAGCGlobal, __uuidof(IAGCGlobal));
+_COM_SMARTPTR_TYPEDEF(IAGCBase, __uuidof(IAGCBase));
+_COM_SMARTPTR_TYPEDEF(IAGCBuyable, __uuidof(IAGCBuyable));
+_COM_SMARTPTR_TYPEDEF(IAGCHullType, __uuidof(IAGCHullType));
+_COM_SMARTPTR_TYPEDEF(IAGCGame, __uuidof(IAGCGame));
+_COM_SMARTPTR_TYPEDEF(IAGCSectors, __uuidof(IAGCSectors));
+_COM_SMARTPTR_TYPEDEF(IAGCSector, __uuidof(IAGCSector));
+_COM_SMARTPTR_TYPEDEF(IAGCStations, __uuidof(IAGCStations));
+_COM_SMARTPTR_TYPEDEF(IAGCModel, __uuidof(IAGCModel));
+_COM_SMARTPTR_TYPEDEF(IAGCDamage, __uuidof(IAGCDamage));
+_COM_SMARTPTR_TYPEDEF(IAGCScanner, __uuidof(IAGCScanner));
+_COM_SMARTPTR_TYPEDEF(IAGCStation, __uuidof(IAGCStation));
+_COM_SMARTPTR_TYPEDEF(IAGCShip, __uuidof(IAGCShip));
+_COM_SMARTPTR_TYPEDEF(IAGCShips, __uuidof(IAGCShips));
+_COM_SMARTPTR_TYPEDEF(IAGCTeam, __uuidof(IAGCTeam));
+_COM_SMARTPTR_TYPEDEF(IAGCAleph, __uuidof(IAGCAleph));
+_COM_SMARTPTR_TYPEDEF(IAGCAlephs, __uuidof(IAGCAlephs));
+_COM_SMARTPTR_TYPEDEF(IAGCAsteroid, __uuidof(IAGCAsteroid));
+_COM_SMARTPTR_TYPEDEF(IAGCAsteroids, __uuidof(IAGCAsteroids));
+_COM_SMARTPTR_TYPEDEF(IAGCModels, __uuidof(IAGCModels));
+_COM_SMARTPTR_TYPEDEF(IAGCProbe, __uuidof(IAGCProbe));
+_COM_SMARTPTR_TYPEDEF(IAGCProbes, __uuidof(IAGCProbes));
+_COM_SMARTPTR_TYPEDEF(IAGCTeams, __uuidof(IAGCTeams));
+
+//
+// Type library items
+//
+
+enum AGCObjectType
+{
+    AGCObjectType_Invalid = -1,
+    AGC_ModelBegin = 0,
+    AGC_Ship = 0,
+    AGC_Station = 1,
+    AGC_Missile = 2,
+    AGC_Mine = 3,
+    AGC_Probe = 4,
+    AGC_Asteroid = 5,
+    AGC_Projectile = 6,
+    AGC_Warp = 7,
+    AGC_Treasure = 8,
+    AGC_Buoy = 9,
+    AGC_Chaff = 10,
+    AGC_BuildingEffect = 11,
+    AGC_ModelEnd = 11,
+    AGC_Side = 12,
+    AGC_Cluster = 13,
+    AGC_Bucket = 14,
+    AGC_PartBegin = 15,
+    AGC_Weapon = 15,
+    AGC_Shield = 16,
+    AGC_Cloak = 17,
+    AGC_Pack = 18,
+    AGC_Afterburner = 19,
+    AGC_LauncherBegin = 20,
+    AGC_Magazine = 20,
+    AGC_Dispenser = 21,
+    AGC_LauncherEnd = 21,
+    AGC_PartEnd = 21,
+    AGC_StaticBegin = 22,
+    AGC_ProjectileType = 22,
+    AGC_MissileType = 23,
+    AGC_MineType = 24,
+    AGC_ProbeType = 25,
+    AGC_ChaffType = 36,
+    AGC_Civilization = 27,
+    AGC_TreasureSet = 28,
+    AGC_BucketStart = 29,
+    AGC_HullType = 29,
+    AGC_PartType = 30,
+    AGC_StationType = 31,
+    AGC_Development = 32,
+    AGC_DroneType = 33,
+    AGC_BucketEnd = 33,
+    AGC_StaticEnd = 33,
+    AGC_Constants = 34,
+    AGC_AdminUser = 35,
+    AGCObjectType_Max = 36,
+    AGC_Any_Objects = 36
+};
+
+enum AGCHullAbility
+{
+    AGCHullAbility_Board = 1,
+    AGCHullAbility_Rescue = 2,
+    AGCHullAbility_Lifepod = 4,
+    AGCHullAbility_NoPickup = 8,
+    AGCHullAbility_NoEjection = 16,
+    AGCHullAbility_NoRipcord = 32,
+    AGCHullAbility_CheatToDock = 64,
+    AGCHullAbility_Fighter = 128,
+    AGCHullAbility_Captital = 256
+};
+
+enum AGCAxis
+{
+    AGCAxis_Yaw = 0,
+    AGCAxis_Pitch = 1,
+    AGCAxis_Roll = 2,
+    AGCAxis_Throttle = 3,
+    AGCAxis_Max = 4
+};
+
+enum AGCEquipmentType
+{
+    AGCEquipmentType_ChaffLauncher = 0,
+    AGCEquipmentType_Weapon = 1,
+    AGCEquipmentType_Magazine = 2,
+    AGCEquipmentType_Dispenser = 3,
+    AGCEquipmentType_Shield = 4,
+    AGCEquipmentType_Cloak = 5,
+    AGCEquipmentType_Pack = 6,
+    AGCEquipmentType_Afterburner = 7,
+    AGCEquipmentType_MAX = 8
+};
+
+enum AGCTreasureType
+{
+    AGCTreasureType_Part = 0,
+    AGCTreasureType_Development = 1
+};
+
+enum AGCChatTarget
+{
+    AGCChat_Everyone = 0,
+    AGCChat_Leaders = 1,
+    AGCChat_Admin = 2,
+    AGCChat_Ship = 3,
+    AGCChat_Team = 4,
+    AGCChat_Individual = 5,
+    AGCChat_Individual_NoFilter = 6,
+    AGCChat_Wing = 7,
+    AGCChat_Echo = 8,
+    AGCChat_AllSector = 9,
+    AGCChat_FriendlySector = 10,
+    AGCChat_Group = 11,
+    AGCChat_GroupNoEcho = 12,
+    AGCChat_NoSelection = 13,
+    AGCChat_Max = 14
+};
+
+enum AGCEventID
+{
+    EventID_Unknown = 0,
+    EventID_AGC_LowerBound = 1,
+    EventID_EventLogging_LowerBound = 100,
+    EventID_DBEventLogStarted = 101,
+    EventID_DBEventLogStopped = 102,
+    EventID_NTEventLogStarted = 103,
+    EventID_NTEventLogStopped = 104,
+    EventID_AGCNotInitialized = 105,
+    EventID_AGCAssert = 106,
+    EventID_EventLogging_UpperBound = 199,
+    EventID_Station_LowerBound = 200,
+    EventID_StationCreated = 201,
+    EventID_StationDeleted = 202,
+    EventID_StationChangesSides = 203,
+    EventID_Station_UpperBound = 299,
+    EventID_Ship_LowerBound = 300,
+    EventID_ShipChangesSectors = 301,
+    EventID_ShipKilled = 302,
+    EventID_ShipUsesRipcord = 303,
+    EventID_Ship_UpperBound = 399,
+    EventID_AGC_UpperBound = 1999,
+    AllsrvEventID_Allsrv_LowerBound = 2000,
+    AllsrvEventID_Initialize = 2001,
+    AllsrvEventID_Terminate = 2002,
+    AllsrvEventID_BadFtpPath = 2003,
+    AllsrvEventID_PlayerDropped = 2004,
+    AllsrvEventID_SessionLost = 2005,
+    AllsrvEventID_MsgFromUnknownPlayer = 2006,
+    AllsrvEventID_IncreaseTokensMax = 2007,
+    AllsrvEventID_InvalidZoneTicket = 2008,
+    AllsrvEventID_DecryptTicketFailed = 2009,
+    AllsrvEventID_NoTicket = 2010,
+    AllsrvEventID_LoginFailed = 2011,
+    AllsrvEventID_CreateCharFailed = 2012,
+    AllsrvEventID_BadClientVersion = 2013,
+    AllsrvEventID_MessageBox = 2014,
+    AllsrvEventID_MoneyError = 2015,
+    AllsrvEventID_Connecting = 2016,
+    AllsrvEventID_ConnectError = 2017,
+    AllsrvEventID_NoLobby = 2018,
+    AllsrvEventID_HostSession = 2019,
+    AllsrvEventID_CantHostSession = 2020,
+    AllsrvEventID_CantWatchArt = 2021,
+    AllsrvEventID_StartingService = 2022,
+    AllsrvEventID_ZoneAuthServer = 2023,
+    AllsrvEventID_Assert = 2024,
+    AllsrvEventID_ArtChangedInInit = 2025,
+    AllsrvEventID_SystemError = 2027,
+    AllsrvEventID_LostLobby = 2028,
+    AllsrvEventID_GameStarted = 2029,
+    AllsrvEventID_GameEnded = 2030,
+    AllsrvEventID_GameOver = 2031,
+    AllsrvEventID_LatencyExceeded = 2032,
+    AllsrvEventID_ConnectedLobby = 2033,
+    AllsrvEventID_DisconnectingLobby = 2034,
+    AllsrvEventID_DisconnectedLobby = 2035,
+    AllsrvEventID_DatabaseErrorSQL = 2036,
+    AllsrvEventID_Pause = 2037,
+    AllsrvEventID_Continue = 2038,
+    AllsrvEventID_DatabaseErrorOLEDB = 2039,
+    AllsrvEventID_Allsrv_UpperBound = 3999,
+    EventID_Admin_LowerBound = 4000,
+    EventID_ServerShutdown = 4001,
+    EventID_NewSession = 4010,
+    EventID_LoginServer = 4020,
+    EventID_LogoutServer = 4021,
+    EventID_ChatMessage = 4030,
+    EventID_AdminPage = 4031,
+    EventID_AdminChat = 4032,
+    EventID_GameCreated = 4040,
+    EventID_GameDestroyed = 4041,
+    EventID_GameStateChange = 4042,
+    EventID_LoginGame = 4050,
+    EventID_LogoutGame = 4051,
+    EventID_JoinTeam = 4060,
+    EventID_LeaveTeam = 4061,
+    EventID_TeamInfoChange = 4062,
+    EventID_HackLog = 4070,
+    EventID_HackBoot = 4071,
+    EventID_HackBootNoPlayer = 4072,
+    EventID_Admin_UpperBound = 5999,
+    PigEventID_Pigs_LowerBound = 6000,
+    PigEventID_PigObject_LowerBound = 6020,
+    PigEventID_ConnectFailed = 6021,
+    PigEventID_LogonDenied = 6022,
+    PigEventID_ZoneAuthFailed = 6023,
+    PigEventID_Performance_LowerBound = 6060,
+    PigEventID_ShipAngleThreshold = 6061,
+    PigEventID_ShipDistanceThreshold = 6062,
+    PigEventID_ShipsUpdateLatencyThreshold = 6063,
+    PigEventID_Performance_UpperBound = 6079,
+    PigEventID_AutoUpdate_LowerBound = 6080,
+    PigEventID_AutoUpdateSucceeded = 6081,
+    PigEventID_AutoUpdateRestart = 6082,
+    PigEventID_AutoUpdateError = 6083,
+    PigEventID_AutoUpdate_UpperBound = 6099,
+    PigEventID_StateChange_LowerBound = 6100,
+    PigEventID_StateChange_NonExistant = 6101,
+    PigEventID_StateChange_LoggingOn = 6102,
+    PigEventID_StateChange_LoggingOff = 6103,
+    PigEventID_StateChange_MissionList = 6104,
+    PigEventID_StateChange_CreatingMission = 6105,
+    PigEventID_StateChange_JoiningMission = 6106,
+    PigEventID_StateChange_QuittingMission = 6107,
+    PigEventID_StateChange_TeamList = 6108,
+    PigEventID_StateChange_JoiningTeam = 6109,
+    PigEventID_StateChange_WaitingForMission = 6110,
+    PigEventID_StateChange_Docked = 6111,
+    PigEventID_StateChange_Launching = 6112,
+    PigEventID_StateChange_Flying = 6113,
+    PigEventID_StateChange_Terminated = 6114,
+    PigEventID_StateChange_UpperBound = 6129,
+    PigEventID_PigObject_UpperBound = 6199,
+    PigEventID_PigScript_LowerBound = 6200,
+    PigEventID_ScriptError = 6201,
+    PigEventID_Trace = 6202,
+    PigEventID_ScriptsLoaded = 6203,
+    PigEventID_ScriptBaseRecursive = 6204,
+    PigEventID_ScriptBaseError = 6205,
+    PigEventID_ScriptBaseNonExistant = 6206,
+    PigEventID_PigScript_UpperBound = 6399,
+    PigEventID_Pigs_UpperBound = 7999
+};
+
+enum FileAttributes
+{
+    FileAttribute_None = 0,
+    FileAttribute_ReadOnly = 1,
+    FileAttribute_Hidden = 2,
+    FileAttribute_System = 4,
+    FileAttribute_Directory = 16,
+    FileAttribute_Archive = 32,
+    FileAttribute_Encrypted = 64,
+    FileAttribute_Normal = 128,
+    FileAttribute_Temporary = 256,
+    FileAttribute_SparseFile = 512,
+    FileAttribute_ReparsePoint = 1024,
+    FileAttribute_Compressed = 2048,
+    FileAttribute_Offline = 4096,
+    FileAttribute_NotContentIndexed = 8192
+};
+
+struct __declspec(uuid("1e700618-e334-4b54-9a54-040f65d2b9ff"))
+AGCInterfaces;
+    // [ default ] interface IAGCVector
+    // interface IAGCOrientation
+    // interface IAGCEvent
+    // interface IAGCEventCreate
+    // interface IAGCGameParameters
+    // interface IAGCCommand
+    // interface IAGCVersionInfo
+    // interface IAGCDBParams
+    // interface IAGCEventLogger
+    // interface IAGCEventIDRange
+    // interface IAGCEventIDRanges
+    // interface ITCCollection
+    // interface ITCStrings
+    // interface ITCPropBagOnRegKey
+    // interface ITCSessionInfo
+    // interface ITCSessionInfos
+    // interface ITCCollectionPersistHelper
+    // interface ITCUtility
+    // interface IAdminSessionHelper
+    // interface IAGCCommon
+    // interface IAGCCollection
+    // interface IAGCBase
+    // interface IAGCModel
+    // interface IAGCModels
+    // interface IAGCBuyable
+    // interface IAGCHullType
+    // interface IAGCDamage
+    // interface IAGCScanner
+    // interface IAGCProbe
+    // interface IAGCProbes
+    // interface IAGCGame
+    // interface IAGCShip
+    // interface IAGCShips
+    // interface IAGCStation
+    // interface IAGCStations
+    // interface IAGCAleph
+    // interface IAGCAlephs
+    // interface IAGCSector
+    // interface IAGCSectors
+    // interface IAGCTeam
+    // interface IAGCTeams
+    // interface IAGCAsteroid
+    // interface IAGCAsteroids
+
+struct __declspec(uuid("efc30b36-13b1-11d3-8b5e-00c04f681633"))
+IAGCVector : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetDisplayString,put=PutDisplayString))
+    _bstr_t DisplayString;
+    __declspec(property(get=GetX,put=PutX))
+    float X;
+    __declspec(property(get=GetY,put=PutY))
+    float Y;
+    __declspec(property(get=GetZ,put=PutZ))
+    float Z;
+    __declspec(property(get=GetIsZero))
+    VARIANT_BOOL IsZero;
+    __declspec(property(get=GetIsEqual))
+    VARIANT_BOOL IsEqual[];
+    __declspec(property(get=GetLength))
+    float Length;
+    __declspec(property(get=GetLengthSquared))
+    float LengthSquared;
+    __declspec(property(get=GetOrthogonalVector))
+    IAGCVectorPtr OrthogonalVector;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutX (
+        float pxArg );
+    float GetX ( );
+    void PutY (
+        float pyArg );
+    float GetY ( );
+    void PutZ (
+        float pzArg );
+    float GetZ ( );
+    void PutDisplayString (
+        _bstr_t pbstrDisplayString );
+    _bstr_t GetDisplayString ( );
+    HRESULT InitXYZ (
+        float xArg,
+        float yArg,
+        float zArg );
+    HRESULT InitCopy (
+        struct IAGCVector * pVector );
+    HRESULT InitRandomDirection ( );
+    HRESULT InitRandomPosition (
+        float fRadius );
+    VARIANT_BOOL GetIsZero ( );
+    VARIANT_BOOL GetIsEqual (
+        struct IAGCVector * pVector );
+    float GetLength ( );
+    float GetLengthSquared ( );
+    IAGCVectorPtr GetOrthogonalVector ( );
+    IAGCVectorPtr Add (
+        struct IAGCVector * pVector );
+    IAGCVectorPtr Subtract (
+        struct IAGCVector * pVector );
+    IAGCVectorPtr Multiply (
+        float f );
+    IAGCVectorPtr Divide (
+        float f );
+    IAGCVectorPtr Normalize ( );
+    IAGCVectorPtr CrossProduct (
+        struct IAGCVector * pVector );
+    IAGCVectorPtr Interpolate (
+        struct IAGCVector * pVector,
+        float fValue );
+    HRESULT AddInPlace (
+        struct IAGCVector * pVector );
+    HRESULT SubtractInPlace (
+        struct IAGCVector * pVector );
+    HRESULT MultiplyInPlace (
+        float f );
+    HRESULT DivideInPlace (
+        float f );
+    HRESULT NormalizeInPlace ( );
+    HRESULT CrossProductInPlace (
+        struct IAGCVector * pVector );
+    HRESULT InterpolateInPlace (
+        struct IAGCVector * pVector,
+        float fValue );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_X (
+        /*[in]*/ float pxArg ) = 0;
+      virtual HRESULT __stdcall get_X (
+        /*[out,retval]*/ float * pxArg ) = 0;
+      virtual HRESULT __stdcall put_Y (
+        /*[in]*/ float pyArg ) = 0;
+      virtual HRESULT __stdcall get_Y (
+        /*[out,retval]*/ float * pyArg ) = 0;
+      virtual HRESULT __stdcall put_Z (
+        /*[in]*/ float pzArg ) = 0;
+      virtual HRESULT __stdcall get_Z (
+        /*[out,retval]*/ float * pzArg ) = 0;
+      virtual HRESULT __stdcall put_DisplayString (
+        /*[in]*/ BSTR pbstrDisplayString ) = 0;
+      virtual HRESULT __stdcall get_DisplayString (
+        /*[out,retval]*/ BSTR * pbstrDisplayString ) = 0;
+      virtual HRESULT __stdcall raw_InitXYZ (
+        /*[in]*/ float xArg,
+        /*[in]*/ float yArg,
+        /*[in]*/ float zArg ) = 0;
+      virtual HRESULT __stdcall raw_InitCopy (
+        /*[in]*/ struct IAGCVector * pVector ) = 0;
+      virtual HRESULT __stdcall raw_InitRandomDirection ( ) = 0;
+      virtual HRESULT __stdcall raw_InitRandomPosition (
+        /*[in]*/ float fRadius ) = 0;
+      virtual HRESULT __stdcall get_IsZero (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsZero ) = 0;
+      virtual HRESULT __stdcall get_IsEqual (
+        /*[in]*/ struct IAGCVector * pVector,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsEqual ) = 0;
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ float * pfLength ) = 0;
+      virtual HRESULT __stdcall get_LengthSquared (
+        /*[out,retval]*/ float * pfLengthSquared ) = 0;
+      virtual HRESULT __stdcall get_OrthogonalVector (
+        /*[out,retval]*/ struct IAGCVector * * ppResult ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ struct IAGCVector * pVector,
+        /*[out,retval]*/ struct IAGCVector * * ppResult ) = 0;
+      virtual HRESULT __stdcall raw_Subtract (
+        /*[in]*/ struct IAGCVector * pVector,
+        /*[out,retval]*/ struct IAGCVector * * ppResult ) = 0;
+      virtual HRESULT __stdcall raw_Multiply (
+        /*[in]*/ float f,
+        /*[out,retval]*/ struct IAGCVector * * ppResult ) = 0;
+      virtual HRESULT __stdcall raw_Divide (
+        /*[in]*/ float f,
+        /*[out,retval]*/ struct IAGCVector * * ppResult ) = 0;
+      virtual HRESULT __stdcall raw_Normalize (
+        /*[out,retval]*/ struct IAGCVector * * ppResult ) = 0;
+      virtual HRESULT __stdcall raw_CrossProduct (
+        /*[in]*/ struct IAGCVector * pVector,
+        /*[out,retval]*/ struct IAGCVector * * ppResult ) = 0;
+      virtual HRESULT __stdcall raw_Interpolate (
+        /*[in]*/ struct IAGCVector * pVector,
+        /*[in]*/ float fValue,
+        /*[out,retval]*/ struct IAGCVector * * ppResult ) = 0;
+      virtual HRESULT __stdcall raw_AddInPlace (
+        /*[in]*/ struct IAGCVector * pVector ) = 0;
+      virtual HRESULT __stdcall raw_SubtractInPlace (
+        /*[in]*/ struct IAGCVector * pVector ) = 0;
+      virtual HRESULT __stdcall raw_MultiplyInPlace (
+        /*[in]*/ float f ) = 0;
+      virtual HRESULT __stdcall raw_DivideInPlace (
+        /*[in]*/ float f ) = 0;
+      virtual HRESULT __stdcall raw_NormalizeInPlace ( ) = 0;
+      virtual HRESULT __stdcall raw_CrossProductInPlace (
+        /*[in]*/ struct IAGCVector * pVector ) = 0;
+      virtual HRESULT __stdcall raw_InterpolateInPlace (
+        /*[in]*/ struct IAGCVector * pVector,
+        /*[in]*/ float fValue ) = 0;
+};
+
+struct __declspec(uuid("c6d92776-3998-11d3-a51d-00c04f68deb0"))
+IAGCOrientation : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetForward))
+    IAGCVectorPtr Forward;
+    __declspec(property(get=GetBackward))
+    IAGCVectorPtr Backward;
+    __declspec(property(get=GetUp))
+    IAGCVectorPtr Up;
+    __declspec(property(get=GetRight))
+    IAGCVectorPtr Right;
+    __declspec(property(get=GetIsEqual))
+    VARIANT_BOOL IsEqual[];
+    __declspec(property(get=GetIsRoughlyEqual))
+    VARIANT_BOOL IsRoughlyEqual[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT InitCopy (
+        struct IAGCOrientation * pOrientation );
+    IAGCVectorPtr GetForward ( );
+    IAGCVectorPtr GetBackward ( );
+    IAGCVectorPtr GetUp ( );
+    IAGCVectorPtr GetRight ( );
+    VARIANT_BOOL GetIsEqual (
+        struct IAGCOrientation * pOrientation );
+    VARIANT_BOOL GetIsRoughlyEqual (
+        struct IAGCOrientation * pOrientation );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_InitCopy (
+        struct IAGCOrientation * pOrientation ) = 0;
+      virtual HRESULT __stdcall get_Forward (
+        /*[out,retval]*/ struct IAGCVector * * ppVector ) = 0;
+      virtual HRESULT __stdcall get_Backward (
+        /*[out,retval]*/ struct IAGCVector * * ppVector ) = 0;
+      virtual HRESULT __stdcall get_Up (
+        /*[out,retval]*/ struct IAGCVector * * ppVector ) = 0;
+      virtual HRESULT __stdcall get_Right (
+        /*[out,retval]*/ struct IAGCVector * * ppVector ) = 0;
+      virtual HRESULT __stdcall get_IsEqual (
+        /*[in]*/ struct IAGCOrientation * pOrientation,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsEqual ) = 0;
+      virtual HRESULT __stdcall get_IsRoughlyEqual (
+        /*[in]*/ struct IAGCOrientation * pOrientation,
+        /*[out,retval]*/ VARIANT_BOOL * pbIsEqual ) = 0;
+};
+
+struct __declspec(uuid("d2efe888-1480-11d3-8b5f-00c04f681633"))
+IAGCEvent : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetID))
+    enum AGCEventID ID;
+    __declspec(property(get=GetTime))
+    DATE Time;
+    __declspec(property(get=GetDescription))
+    _bstr_t Description;
+    __declspec(property(get=GetPropertyCount))
+    long PropertyCount;
+    __declspec(property(get=GetPropertyExists))
+    VARIANT_BOOL PropertyExists[];
+    __declspec(property(get=GetProperty))
+    _variant_t Property[];
+    __declspec(property(get=GetComputerName))
+    _bstr_t ComputerName;
+    __declspec(property(get=GetSubjectID))
+    long SubjectID;
+    __declspec(property(get=GetSubjectName))
+    _bstr_t SubjectName;
+    __declspec(property(get=GetContext))
+    _bstr_t Context;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    enum AGCEventID GetID ( );
+    DATE GetTime ( );
+    _bstr_t GetDescription ( );
+    long GetPropertyCount ( );
+    VARIANT_BOOL GetPropertyExists (
+        _bstr_t bstrKey );
+    _variant_t GetProperty (
+        VARIANT * pvKey );
+    _bstr_t GetComputerName ( );
+    long GetSubjectID ( );
+    _bstr_t GetSubjectName ( );
+    _bstr_t SaveToString ( );
+    HRESULT LoadFromString (
+        _bstr_t bstr );
+    _bstr_t GetContext ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ID (
+        /*[out,retval]*/ enum AGCEventID * pVal ) = 0;
+      virtual HRESULT __stdcall get_Time (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * bstr ) = 0;
+      virtual HRESULT __stdcall get_PropertyCount (
+        /*[out,retval]*/ long * pnCount ) = 0;
+      virtual HRESULT __stdcall get_PropertyExists (
+        /*[in]*/ BSTR bstrKey,
+        /*[out,retval]*/ VARIANT_BOOL * pbExists ) = 0;
+      virtual HRESULT __stdcall get_Property (
+        /*[in]*/ VARIANT * pvKey,
+        /*[out,retval]*/ VARIANT * pvValue ) = 0;
+      virtual HRESULT __stdcall get_ComputerName (
+        /*[out,retval]*/ BSTR * pbstrComputerName ) = 0;
+      virtual HRESULT __stdcall get_SubjectID (
+        /*[out,retval]*/ long * pidSubject ) = 0;
+      virtual HRESULT __stdcall get_SubjectName (
+        /*[out,retval]*/ BSTR * pbstrSubject ) = 0;
+      virtual HRESULT __stdcall raw_SaveToString (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+      virtual HRESULT __stdcall raw_LoadFromString (
+        /*[in]*/ BSTR bstr ) = 0;
+      virtual HRESULT __stdcall get_Context (
+        /*[out,retval]*/ BSTR * pbstrContext ) = 0;
+};
+
+struct __declspec(uuid("9d43aca9-98a3-45ba-bfaa-340d451fcd98"))
+IAGCEventCreate : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(put=PutID))
+    enum AGCEventID ID;
+    __declspec(property(put=PutTime))
+    DATE Time;
+    __declspec(property(put=PutSubjectID))
+    long SubjectID;
+    __declspec(property(put=PutSubjectName))
+    _bstr_t SubjectName;
+    __declspec(property(put=PutContext))
+    _bstr_t Context;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Init ( );
+    void PutID (
+        enum AGCEventID _arg1 );
+    void PutTime (
+        DATE _arg1 );
+    HRESULT SetTimeNow ( );
+    HRESULT AddProperty (
+        _bstr_t pbstrKey,
+        VARIANT * pvValue );
+    HRESULT RemoveProperty (
+        _bstr_t pbstrKey,
+        VARIANT * pvValue );
+    void PutSubjectID (
+        long _arg1 );
+    void PutSubjectName (
+        _bstr_t _arg1 );
+    void PutContext (
+        _bstr_t _arg1 );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Init ( ) = 0;
+      virtual HRESULT __stdcall put_ID (
+        /*[in]*/ enum AGCEventID _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Time (
+        /*[in]*/ DATE _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_SetTimeNow ( ) = 0;
+      virtual HRESULT __stdcall raw_AddProperty (
+        /*[in]*/ BSTR pbstrKey,
+        /*[in]*/ VARIANT * pvValue ) = 0;
+      virtual HRESULT __stdcall raw_RemoveProperty (
+        /*[in]*/ BSTR pbstrKey,
+        /*[in]*/ VARIANT * pvValue ) = 0;
+      virtual HRESULT __stdcall put_SubjectID (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_SubjectName (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Context (
+        /*[in]*/ BSTR _arg1 ) = 0;
+};
+
+struct __declspec(uuid("e71ea5b9-eba4-11d2-8b4b-00c04f681633"))
+IAGCGameParameters : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetGameName,put=PutGameName))
+    _bstr_t GameName;
+    __declspec(property(get=GetMinPlayers,put=PutMinPlayers))
+    unsigned char MinPlayers;
+    __declspec(property(get=GetLockGameOpen,put=PutLockGameOpen))
+    VARIANT_BOOL LockGameOpen;
+    __declspec(property(get=GetMaxPlayers,put=PutMaxPlayers))
+    unsigned char MaxPlayers;
+    __declspec(property(get=GetTeamName,put=PutTeamName))
+    _bstr_t TeamName[];
+    __declspec(property(get=GetIsTechBitOverridden))
+    VARIANT_BOOL IsTechBitOverridden[][];
+    __declspec(property(get=GetOverriddenTechBit,put=PutOverriddenTechBit))
+    VARIANT_BOOL OverriddenTechBit[][];
+    __declspec(property(get=GetEjectPods,put=PutEjectPods))
+    VARIANT_BOOL EjectPods;
+    __declspec(property(put=PutSetOverriddenTechBitRange))
+    VARIANT_BOOL SetOverriddenTechBitRange[][][];
+    __declspec(property(get=GetAllowPrivateTeams,put=PutAllowPrivateTeams))
+    VARIANT_BOOL AllowPrivateTeams;
+    __declspec(property(get=GetIsGoalFlags,put=PutIsGoalFlags))
+    VARIANT_BOOL IsGoalFlags;
+    __declspec(property(get=GetPowerUps,put=PutPowerUps))
+    VARIANT_BOOL PowerUps;
+    __declspec(property(get=GetGoalFlagsCount,put=PutGoalFlagsCount))
+    short GoalFlagsCount;
+    __declspec(property(get=GetAllowJoiners,put=PutAllowJoiners))
+    VARIANT_BOOL AllowJoiners;
+    __declspec(property(get=GetStoryText,put=PutStoryText))
+    _bstr_t StoryText;
+    __declspec(property(get=GetStations,put=PutStations))
+    VARIANT_BOOL Stations;
+    __declspec(property(get=GetAllowEmptyTeams,put=PutAllowEmptyTeams))
+    VARIANT_BOOL AllowEmptyTeams;
+    __declspec(property(get=GetScoresCount,put=PutScoresCount))
+    VARIANT_BOOL ScoresCount;
+    __declspec(property(get=GetAutoStart,put=PutAutoStart))
+    VARIANT_BOOL AutoStart;
+    __declspec(property(get=GetDrones,put=PutDrones))
+    VARIANT_BOOL Drones;
+    __declspec(property(get=GetAllowRestart,put=PutAllowRestart))
+    VARIANT_BOOL AllowRestart;
+    __declspec(property(get=GetIsGoalConquest,put=PutIsGoalConquest))
+    VARIANT_BOOL IsGoalConquest;
+    __declspec(property(get=GetAllowShipyardPath,put=PutAllowShipyardPath))
+    VARIANT_BOOL AllowShipyardPath;
+    __declspec(property(get=GetIsGoalArtifacts,put=PutIsGoalArtifacts))
+    VARIANT_BOOL IsGoalArtifacts;
+    __declspec(property(get=GetAllowSupremacyPath,put=PutAllowSupremacyPath))
+    VARIANT_BOOL AllowSupremacyPath;
+    __declspec(property(get=GetIsGoalTeamMoney,put=PutIsGoalTeamMoney))
+    VARIANT_BOOL IsGoalTeamMoney;
+    __declspec(property(get=GetAllowTacticalPath,put=PutAllowTacticalPath))
+    VARIANT_BOOL AllowTacticalPath;
+    __declspec(property(get=GetIsGoalTeamKills,put=PutIsGoalTeamKills))
+    VARIANT_BOOL IsGoalTeamKills;
+    __declspec(property(get=GetAllowExpansionPath,put=PutAllowExpansionPath))
+    VARIANT_BOOL AllowExpansionPath;
+    __declspec(property(get=GetResources,put=PutResources))
+    VARIANT_BOOL Resources;
+    __declspec(property(get=GetMaxImbalance,put=PutMaxImbalance))
+    short MaxImbalance;
+    __declspec(property(get=GetResourceAmountsVisible,put=PutResourceAmountsVisible))
+    VARIANT_BOOL ResourceAmountsVisible;
+    __declspec(property(get=GetRandomWormholes,put=PutRandomWormholes))
+    VARIANT_BOOL RandomWormholes;
+    __declspec(property(get=GetNoTeams,put=PutNoTeams))
+    VARIANT_BOOL NoTeams;
+    __declspec(property(get=GetShowHomeSector,put=PutShowHomeSector))
+    VARIANT_BOOL ShowHomeSector;
+    __declspec(property(get=GetGoalTeamMoney,put=PutGoalTeamMoney))
+    AGCMoney GoalTeamMoney;
+    __declspec(property(get=GetTsiPlayerStart,put=PutTsiPlayerStart))
+    short TsiPlayerStart;
+    __declspec(property(get=GetTsiNeutralStart,put=PutTsiNeutralStart))
+    short TsiNeutralStart;
+    __declspec(property(get=GetTsiPlayerRegenerate,put=PutTsiPlayerRegenerate))
+    short TsiPlayerRegenerate;
+    __declspec(property(get=GetTsiNeutralRegenerate,put=PutTsiNeutralRegenerate))
+    short TsiNeutralRegenerate;
+    __declspec(property(get=GetStartingMoney,put=PutStartingMoney))
+    float StartingMoney;
+    __declspec(property(get=GetLives,put=PutLives))
+    short Lives;
+    __declspec(property(get=GetGoalTeamKills,put=PutGoalTeamKills))
+    short GoalTeamKills;
+    __declspec(property(get=GetMapType,put=PutMapType))
+    short MapType;
+    __declspec(property(get=GetMapSize,put=PutMapSize))
+    short MapSize;
+    __declspec(property(get=GetRandomEncounters,put=PutRandomEncounters))
+    short RandomEncounters;
+    __declspec(property(get=GetNeutralSectors,put=PutNeutralSectors))
+    VARIANT_BOOL NeutralSectors;
+    __declspec(property(get=GetAlephPositioning,put=PutAlephPositioning))
+    short AlephPositioning;
+    __declspec(property(get=GetAlephsPerSector,put=PutAlephsPerSector))
+    short AlephsPerSector;
+    __declspec(property(get=GetTeams,put=PutTeams))
+    short Teams;
+    __declspec(property(get=GetMinRank,put=PutMinRank))
+    short MinRank;
+    __declspec(property(get=GetMaxRank,put=PutMaxRank))
+    short MaxRank;
+    __declspec(property(get=GetPlayerSectorAsteroids,put=PutPlayerSectorAsteroids))
+    short PlayerSectorAsteroids;
+    __declspec(property(get=GetNeutralSectorAsteroids,put=PutNeutralSectorAsteroids))
+    short NeutralSectorAsteroids;
+    __declspec(property(get=GetPlayerSectorTreasures,put=PutPlayerSectorTreasures))
+    short PlayerSectorTreasures;
+    __declspec(property(get=GetNeutralSectorTreasures,put=PutNeutralSectorTreasures))
+    short NeutralSectorTreasures;
+    __declspec(property(get=GetPlayerSectorTreasureRate,put=PutPlayerSectorTreasureRate))
+    float PlayerSectorTreasureRate;
+    __declspec(property(get=GetNeutralSectorTreasureRate,put=PutNeutralSectorTreasureRate))
+    float NeutralSectorTreasureRate;
+    __declspec(property(get=GetPlayerSectorMineableAsteroids,put=PutPlayerSectorMineableAsteroids))
+    short PlayerSectorMineableAsteroids;
+    __declspec(property(get=GetNeutralSectorMineableAsteroids,put=PutNeutralSectorMineableAsteroids))
+    short NeutralSectorMineableAsteroids;
+    __declspec(property(get=GetPlayerSectorSpecialAsteroids,put=PutPlayerSectorSpecialAsteroids))
+    short PlayerSectorSpecialAsteroids;
+    __declspec(property(get=GetNeutralSectorSpecialAsteroids,put=PutNeutralSectorSpecialAsteroids))
+    short NeutralSectorSpecialAsteroids;
+    __declspec(property(get=GetIGCStaticFile,put=PutIGCStaticFile))
+    _bstr_t IGCStaticFile;
+    __declspec(property(get=GetGamePassword,put=PutGamePassword))
+    _bstr_t GamePassword;
+    __declspec(property(get=GetInvulnerableStations,put=PutInvulnerableStations))
+    VARIANT_BOOL InvulnerableStations;
+    __declspec(property(get=GetShowMap,put=PutShowMap))
+    VARIANT_BOOL ShowMap;
+    __declspec(property(get=GetAllowDevelopments,put=PutAllowDevelopments))
+    VARIANT_BOOL AllowDevelopments;
+    __declspec(property(get=GetAllowDefections,put=PutAllowDefections))
+    VARIANT_BOOL AllowDefections;
+    __declspec(property(get=GetSquadGame,put=PutSquadGame))
+    VARIANT_BOOL SquadGame;
+    __declspec(property(get=GetAllowFriendlyFire,put=PutAllowFriendlyFire))
+    VARIANT_BOOL AllowFriendlyFire;
+    __declspec(property(get=GetIGCcoreVersion))
+    long IGCcoreVersion;
+    __declspec(property(get=GetGameLength,put=PutGameLength))
+    float GameLength;
+    __declspec(property(get=GetHe3Density,put=PutHe3Density))
+    float He3Density;
+    __declspec(property(get=GetKillPenalty,put=PutKillPenalty))
+    AGCMoney KillPenalty;
+    __declspec(property(get=GetKillReward,put=PutKillReward))
+    AGCMoney KillReward;
+    __declspec(property(get=GetEjectPenalty,put=PutEjectPenalty))
+    AGCMoney EjectPenalty;
+    __declspec(property(get=GetEjectReward,put=PutEjectReward))
+    AGCMoney EjectReward;
+    __declspec(property(get=GetTimeStart))
+    double TimeStart;
+    __declspec(property(get=GetTimeStartClock))
+    long TimeStartClock;
+    __declspec(property(get=GetGoalArtifactsCount,put=PutGoalArtifactsCount))
+    short GoalArtifactsCount;
+    __declspec(property(get=GetAutoRestart,put=PutAutoRestart))
+    VARIANT_BOOL AutoRestart;
+    __declspec(property(get=GetDefaultCountdown,put=PutDefaultCountdown))
+    float DefaultCountdown;
+    __declspec(property(get=GetInitialMinersPerTeam,put=PutInitialMinersPerTeam))
+    unsigned char InitialMinersPerTeam;
+    __declspec(property(get=GetMaxMinersPerTeam,put=PutMaxMinersPerTeam))
+    unsigned char MaxMinersPerTeam;
+    __declspec(property(get=GetCustomMap,put=PutCustomMap))
+    _bstr_t CustomMap;
+    __declspec(property(get=GetRestartCountdown,put=PutRestartCountdown))
+    float RestartCountdown;
+    __declspec(property(get=GetTotalMaxPlayers,put=PutTotalMaxPlayers))
+    short TotalMaxPlayers;
+    __declspec(property(get=GetLockTeamSettings,put=PutLockTeamSettings))
+    VARIANT_BOOL LockTeamSettings;
+    __declspec(property(get=GetInvitationListID,put=PutInvitationListID))
+    int InvitationListID;
+    __declspec(property(get=GetIsSquadGame,put=PutIsSquadGame))
+    VARIANT_BOOL IsSquadGame;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Validate ( );
+    void PutMinPlayers (
+        unsigned char pVal );
+    unsigned char GetMinPlayers ( );
+    void PutMaxPlayers (
+        unsigned char pVal );
+    unsigned char GetMaxPlayers ( );
+    _bstr_t GetGameName ( );
+    void PutGameName (
+        _bstr_t pVal );
+    VARIANT_BOOL GetEjectPods ( );
+    void PutEjectPods (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAllowPrivateTeams ( );
+    void PutAllowPrivateTeams (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetPowerUps ( );
+    void PutPowerUps (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAllowJoiners ( );
+    void PutAllowJoiners (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetStations ( );
+    void PutStations (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetScoresCount ( );
+    void PutScoresCount (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetDrones ( );
+    void PutDrones (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetIsGoalConquest ( );
+    void PutIsGoalConquest (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetIsGoalArtifacts ( );
+    void PutIsGoalArtifacts (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetIsGoalTeamMoney ( );
+    void PutIsGoalTeamMoney (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetIsGoalTeamKills ( );
+    void PutIsGoalTeamKills (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetResources ( );
+    void PutResources (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetResourceAmountsVisible ( );
+    void PutResourceAmountsVisible (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetRandomWormholes ( );
+    void PutRandomWormholes (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetNoTeams ( );
+    void PutNoTeams (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetShowHomeSector ( );
+    void PutShowHomeSector (
+        VARIANT_BOOL pVal );
+    short GetCivIDs (
+        short element );
+    void PutCivIDs (
+        short element,
+        short pVal );
+    AGCMoney GetGoalTeamMoney ( );
+    void PutGoalTeamMoney (
+        AGCMoney pVal );
+    short GetTsiPlayerStart ( );
+    void PutTsiPlayerStart (
+        short pVal );
+    short GetTsiNeutralStart ( );
+    void PutTsiNeutralStart (
+        short pVal );
+    short GetTsiPlayerRegenerate ( );
+    void PutTsiPlayerRegenerate (
+        short pVal );
+    short GetTsiNeutralRegenerate ( );
+    void PutTsiNeutralRegenerate (
+        short pVal );
+    float GetStartingMoney ( );
+    void PutStartingMoney (
+        float pVal );
+    short GetLives ( );
+    void PutLives (
+        short pVal );
+    short GetGoalTeamKills ( );
+    void PutGoalTeamKills (
+        short pVal );
+    short GetMapType ( );
+    void PutMapType (
+        short pVal );
+    short GetMapSize ( );
+    void PutMapSize (
+        short pVal );
+    short GetRandomEncounters ( );
+    void PutRandomEncounters (
+        short pVal );
+    VARIANT_BOOL GetNeutralSectors ( );
+    void PutNeutralSectors (
+        VARIANT_BOOL pVal );
+    short GetAlephPositioning ( );
+    void PutAlephPositioning (
+        short pVal );
+    short GetAlephsPerSector ( );
+    void PutAlephsPerSector (
+        short pVal );
+    short GetTeams ( );
+    void PutTeams (
+        short pVal );
+    short GetMinRank ( );
+    void PutMinRank (
+        short pVal );
+    short GetMaxRank ( );
+    void PutMaxRank (
+        short pVal );
+    short GetPlayerSectorAsteroids ( );
+    void PutPlayerSectorAsteroids (
+        short pVal );
+    short GetNeutralSectorAsteroids ( );
+    void PutNeutralSectorAsteroids (
+        short pVal );
+    short GetPlayerSectorTreasures ( );
+    void PutPlayerSectorTreasures (
+        short pVal );
+    short GetNeutralSectorTreasures ( );
+    void PutNeutralSectorTreasures (
+        short pVal );
+    float GetPlayerSectorTreasureRate ( );
+    void PutPlayerSectorTreasureRate (
+        float pVal );
+    float GetNeutralSectorTreasureRate ( );
+    void PutNeutralSectorTreasureRate (
+        float pVal );
+    short GetPlayerSectorMineableAsteroids ( );
+    void PutPlayerSectorMineableAsteroids (
+        short pVal );
+    short GetNeutralSectorMineableAsteroids ( );
+    void PutNeutralSectorMineableAsteroids (
+        short pVal );
+    short GetPlayerSectorSpecialAsteroids ( );
+    void PutPlayerSectorSpecialAsteroids (
+        short pVal );
+    short GetNeutralSectorSpecialAsteroids ( );
+    void PutNeutralSectorSpecialAsteroids (
+        short pVal );
+    _bstr_t GetIGCStaticFile ( );
+    void PutIGCStaticFile (
+        _bstr_t pVal );
+    _bstr_t GetGamePassword ( );
+    void PutGamePassword (
+        _bstr_t pVal );
+    VARIANT_BOOL GetInvulnerableStations ( );
+    void PutInvulnerableStations (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetShowMap ( );
+    void PutShowMap (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAllowDevelopments ( );
+    void PutAllowDevelopments (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAllowDefections ( );
+    void PutAllowDefections (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetSquadGame ( );
+    void PutSquadGame (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAllowFriendlyFire ( );
+    void PutAllowFriendlyFire (
+        VARIANT_BOOL pVal );
+    long GetIGCcoreVersion ( );
+    float GetGameLength ( );
+    void PutGameLength (
+        float pVal );
+    float GetHe3Density ( );
+    void PutHe3Density (
+        float pVal );
+    AGCMoney GetKillPenalty ( );
+    void PutKillPenalty (
+        AGCMoney pVal );
+    AGCMoney GetKillReward ( );
+    void PutKillReward (
+        AGCMoney pVal );
+    AGCMoney GetEjectPenalty ( );
+    void PutEjectPenalty (
+        AGCMoney pVal );
+    AGCMoney GetEjectReward ( );
+    void PutEjectReward (
+        AGCMoney pVal );
+    double GetTimeStart ( );
+    long GetTimeStartClock ( );
+    short GetGoalArtifactsCount ( );
+    void PutGoalArtifactsCount (
+        short pVal );
+    VARIANT_BOOL GetAutoRestart ( );
+    void PutAutoRestart (
+        VARIANT_BOOL pVal );
+    float GetDefaultCountdown ( );
+    void PutDefaultCountdown (
+        float pVal );
+    unsigned char GetInitialMinersPerTeam ( );
+    void PutInitialMinersPerTeam (
+        unsigned char pVal );
+    unsigned char GetMaxMinersPerTeam ( );
+    void PutMaxMinersPerTeam (
+        unsigned char pVal );
+    _bstr_t GetCustomMap ( );
+    void PutCustomMap (
+        _bstr_t pVal );
+    float GetRestartCountdown ( );
+    void PutRestartCountdown (
+        float pVal );
+    short GetTotalMaxPlayers ( );
+    void PutTotalMaxPlayers (
+        short pVal );
+    VARIANT_BOOL GetLockTeamSettings ( );
+    void PutLockTeamSettings (
+        VARIANT_BOOL pVal );
+    int GetInvitationListID ( );
+    void PutInvitationListID (
+        int pVal );
+    VARIANT_BOOL GetIsSquadGame ( );
+    void PutIsSquadGame (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetLockGameOpen ( );
+    void PutLockGameOpen (
+        VARIANT_BOOL pVal );
+    _bstr_t GetTeamName (
+        short iTeam );
+    void PutTeamName (
+        short iTeam,
+        _bstr_t pVal );
+    VARIANT_BOOL GetIsTechBitOverridden (
+        short iTeam,
+        short iBitID );
+    VARIANT_BOOL GetOverriddenTechBit (
+        short iTeam,
+        short iBitID );
+    void PutOverriddenTechBit (
+        short iTeam,
+        short iBitID,
+        VARIANT_BOOL pVal );
+    void PutSetOverriddenTechBitRange (
+        short iTeam,
+        short iBitID_First,
+        short iBitID_Last,
+        VARIANT_BOOL _arg4 );
+    VARIANT_BOOL GetIsGoalFlags ( );
+    void PutIsGoalFlags (
+        VARIANT_BOOL pVal );
+    short GetGoalFlagsCount ( );
+    void PutGoalFlagsCount (
+        short pVal );
+    _bstr_t GetStoryText ( );
+    void PutStoryText (
+        _bstr_t pbstrStory );
+    VARIANT_BOOL GetAllowEmptyTeams ( );
+    void PutAllowEmptyTeams (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAutoStart ( );
+    void PutAutoStart (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAllowRestart ( );
+    void PutAllowRestart (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAllowShipyardPath ( );
+    void PutAllowShipyardPath (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAllowSupremacyPath ( );
+    void PutAllowSupremacyPath (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAllowTacticalPath ( );
+    void PutAllowTacticalPath (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAllowExpansionPath ( );
+    void PutAllowExpansionPath (
+        VARIANT_BOOL pVal );
+    short GetMaxImbalance ( );
+    void PutMaxImbalance (
+        short pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Validate ( ) = 0;
+      virtual HRESULT __stdcall put_MinPlayers (
+        /*[in]*/ unsigned char pVal ) = 0;
+      virtual HRESULT __stdcall get_MinPlayers (
+        /*[out,retval]*/ unsigned char * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxPlayers (
+        /*[in]*/ unsigned char pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxPlayers (
+        /*[out,retval]*/ unsigned char * pVal ) = 0;
+      virtual HRESULT __stdcall get_GameName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_GameName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_EjectPods (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_EjectPods (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowPrivateTeams (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowPrivateTeams (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_PowerUps (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_PowerUps (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowJoiners (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowJoiners (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Stations (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_Stations (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ScoresCount (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ScoresCount (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Drones (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_Drones (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_IsGoalConquest (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsGoalConquest (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_IsGoalArtifacts (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsGoalArtifacts (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_IsGoalTeamMoney (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsGoalTeamMoney (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_IsGoalTeamKills (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsGoalTeamKills (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Resources (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_Resources (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ResourceAmountsVisible (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ResourceAmountsVisible (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_RandomWormholes (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_RandomWormholes (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_NoTeams (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_NoTeams (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ShowHomeSector (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ShowHomeSector (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_CivIDs (
+        short element,
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_CivIDs (
+        short element,
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_GoalTeamMoney (
+        /*[out,retval]*/ AGCMoney * pVal ) = 0;
+      virtual HRESULT __stdcall put_GoalTeamMoney (
+        /*[in]*/ AGCMoney pVal ) = 0;
+      virtual HRESULT __stdcall get_TsiPlayerStart (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_TsiPlayerStart (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_TsiNeutralStart (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_TsiNeutralStart (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_TsiPlayerRegenerate (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_TsiPlayerRegenerate (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_TsiNeutralRegenerate (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_TsiNeutralRegenerate (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_StartingMoney (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_StartingMoney (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_Lives (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_Lives (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_GoalTeamKills (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_GoalTeamKills (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_MapType (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_MapType (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_MapSize (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_MapSize (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_RandomEncounters (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_RandomEncounters (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_NeutralSectors (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_NeutralSectors (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AlephPositioning (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_AlephPositioning (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_AlephsPerSector (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_AlephsPerSector (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_Teams (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_Teams (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_MinRank (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_MinRank (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxRank (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxRank (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_PlayerSectorAsteroids (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_PlayerSectorAsteroids (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_NeutralSectorAsteroids (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_NeutralSectorAsteroids (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_PlayerSectorTreasures (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_PlayerSectorTreasures (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_NeutralSectorTreasures (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_NeutralSectorTreasures (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_PlayerSectorTreasureRate (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_PlayerSectorTreasureRate (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_NeutralSectorTreasureRate (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_NeutralSectorTreasureRate (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_PlayerSectorMineableAsteroids (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_PlayerSectorMineableAsteroids (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_NeutralSectorMineableAsteroids (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_NeutralSectorMineableAsteroids (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_PlayerSectorSpecialAsteroids (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_PlayerSectorSpecialAsteroids (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_NeutralSectorSpecialAsteroids (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_NeutralSectorSpecialAsteroids (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_IGCStaticFile (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_IGCStaticFile (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_GamePassword (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_GamePassword (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_InvulnerableStations (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_InvulnerableStations (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ShowMap (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ShowMap (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowDevelopments (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowDevelopments (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowDefections (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowDefections (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_SquadGame (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_SquadGame (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowFriendlyFire (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowFriendlyFire (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_IGCcoreVersion (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_GameLength (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_GameLength (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_He3Density (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_He3Density (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_KillPenalty (
+        /*[out,retval]*/ AGCMoney * pVal ) = 0;
+      virtual HRESULT __stdcall put_KillPenalty (
+        /*[in]*/ AGCMoney pVal ) = 0;
+      virtual HRESULT __stdcall get_KillReward (
+        /*[out,retval]*/ AGCMoney * pVal ) = 0;
+      virtual HRESULT __stdcall put_KillReward (
+        /*[in]*/ AGCMoney pVal ) = 0;
+      virtual HRESULT __stdcall get_EjectPenalty (
+        /*[out,retval]*/ AGCMoney * pVal ) = 0;
+      virtual HRESULT __stdcall put_EjectPenalty (
+        /*[in]*/ AGCMoney pVal ) = 0;
+      virtual HRESULT __stdcall get_EjectReward (
+        /*[out,retval]*/ AGCMoney * pVal ) = 0;
+      virtual HRESULT __stdcall put_EjectReward (
+        /*[in]*/ AGCMoney pVal ) = 0;
+      virtual HRESULT __stdcall get_TimeStart (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_TimeStartClock (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_GoalArtifactsCount (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_GoalArtifactsCount (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_AutoRestart (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoRestart (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_DefaultCountdown (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefaultCountdown (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_InitialMinersPerTeam (
+        /*[out,retval]*/ unsigned char * pVal ) = 0;
+      virtual HRESULT __stdcall put_InitialMinersPerTeam (
+        /*[in]*/ unsigned char pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxMinersPerTeam (
+        /*[out,retval]*/ unsigned char * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxMinersPerTeam (
+        /*[in]*/ unsigned char pVal ) = 0;
+      virtual HRESULT __stdcall get_CustomMap (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CustomMap (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RestartCountdown (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_RestartCountdown (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_TotalMaxPlayers (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_TotalMaxPlayers (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_LockTeamSettings (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_LockTeamSettings (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_InvitationListID (
+        /*[out,retval]*/ int * pVal ) = 0;
+      virtual HRESULT __stdcall put_InvitationListID (
+        /*[in]*/ int pVal ) = 0;
+      virtual HRESULT __stdcall get_IsSquadGame (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsSquadGame (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_LockGameOpen (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_LockGameOpen (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_TeamName (
+        /*[in]*/ short iTeam,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_TeamName (
+        /*[in]*/ short iTeam,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_IsTechBitOverridden (
+        /*[in]*/ short iTeam,
+        /*[in]*/ short iBitID,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_OverriddenTechBit (
+        /*[in]*/ short iTeam,
+        /*[in]*/ short iBitID,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_OverriddenTechBit (
+        /*[in]*/ short iTeam,
+        /*[in]*/ short iBitID,
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall put_SetOverriddenTechBitRange (
+        /*[in]*/ short iTeam,
+        /*[in]*/ short iBitID_First,
+        /*[in]*/ short iBitID_Last,
+        /*[in]*/ VARIANT_BOOL _arg4 ) = 0;
+      virtual HRESULT __stdcall get_IsGoalFlags (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsGoalFlags (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_GoalFlagsCount (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_GoalFlagsCount (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_StoryText (
+        /*[out,retval]*/ BSTR * pbstrStory ) = 0;
+      virtual HRESULT __stdcall put_StoryText (
+        /*[in]*/ BSTR pbstrStory ) = 0;
+      virtual HRESULT __stdcall get_AllowEmptyTeams (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowEmptyTeams (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AutoStart (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoStart (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowRestart (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowRestart (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowShipyardPath (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowShipyardPath (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowSupremacyPath (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowSupremacyPath (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowTacticalPath (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowTacticalPath (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowExpansionPath (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowExpansionPath (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxImbalance (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxImbalance (
+        /*[in]*/ short pVal ) = 0;
+};
+
+struct __declspec(uuid("7cdc82f6-fe9d-11d2-a50f-00c04f68deb0"))
+IAGCCommand : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetText))
+    _bstr_t Text;
+    __declspec(property(get=GetTarget))
+    _bstr_t Target;
+    __declspec(property(get=GetVerb))
+    _bstr_t Verb;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetTarget ( );
+    _bstr_t GetVerb ( );
+    _bstr_t GetText ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Target (
+        /*[out,retval]*/ BSTR * pbstrTarget ) = 0;
+      virtual HRESULT __stdcall get_Verb (
+        /*[out,retval]*/ BSTR * pbstrVerb ) = 0;
+      virtual HRESULT __stdcall get_Text (
+        /*[out,retval]*/ BSTR * pbstrText ) = 0;
+};
+
+struct __declspec(uuid("160da17d-c8d5-4352-9654-6e658a5a0887"))
+IAGCVersionInfo : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetFileName,put=PutFileName))
+    _bstr_t FileName;
+    __declspec(property(get=GetValue))
+    _bstr_t Value[];
+    __declspec(property(get=GetFileVersionString))
+    _bstr_t FileVersionString;
+    __declspec(property(get=GetFileVersionMSHigh))
+    unsigned short FileVersionMSHigh;
+    __declspec(property(get=GetFileVersionMSLow))
+    unsigned short FileVersionMSLow;
+    __declspec(property(get=GetFileVersionLSHigh))
+    unsigned short FileVersionLSHigh;
+    __declspec(property(get=GetFileVersionLSLow))
+    unsigned short FileVersionLSLow;
+    __declspec(property(get=GetFileBuildNumber))
+    unsigned short FileBuildNumber;
+    __declspec(property(get=GetProductVersionString))
+    _bstr_t ProductVersionString;
+    __declspec(property(get=GetProductVersionMSHigh))
+    unsigned short ProductVersionMSHigh;
+    __declspec(property(get=GetProductVersionMSLow))
+    unsigned short ProductVersionMSLow;
+    __declspec(property(get=GetProductVersionLSHigh))
+    unsigned short ProductVersionLSHigh;
+    __declspec(property(get=GetProductVersionLSLow))
+    unsigned short ProductVersionLSLow;
+    __declspec(property(get=GetProductBuildNumber))
+    unsigned short ProductBuildNumber;
+    __declspec(property(get=GetIsDebug))
+    VARIANT_BOOL IsDebug;
+    __declspec(property(get=GetIsInfoInferred))
+    VARIANT_BOOL IsInfoInferred;
+    __declspec(property(get=GetIsPatched))
+    VARIANT_BOOL IsPatched;
+    __declspec(property(get=GetIsPreRelease))
+    VARIANT_BOOL IsPreRelease;
+    __declspec(property(get=GetIsPrivateBuild))
+    VARIANT_BOOL IsPrivateBuild;
+    __declspec(property(get=GetIsSpecialBuild))
+    VARIANT_BOOL IsSpecialBuild;
+    __declspec(property(get=GetIsTargetUnknown))
+    VARIANT_BOOL IsTargetUnknown;
+    __declspec(property(get=GetIsTargetDOS))
+    VARIANT_BOOL IsTargetDOS;
+    __declspec(property(get=GetIsTargetOS216))
+    VARIANT_BOOL IsTargetOS216;
+    __declspec(property(get=GetIsTargetOS232))
+    VARIANT_BOOL IsTargetOS232;
+    __declspec(property(get=GetIsTargetNT))
+    VARIANT_BOOL IsTargetNT;
+    __declspec(property(get=GetIsTargetBase))
+    VARIANT_BOOL IsTargetBase;
+    __declspec(property(get=GetIsTargetWin16))
+    VARIANT_BOOL IsTargetWin16;
+    __declspec(property(get=GetIsTargetPM16))
+    VARIANT_BOOL IsTargetPM16;
+    __declspec(property(get=GetIsTargetPM32))
+    VARIANT_BOOL IsTargetPM32;
+    __declspec(property(get=GetIsTargetWin32))
+    VARIANT_BOOL IsTargetWin32;
+    __declspec(property(get=GetIsTargetDOSWin16))
+    VARIANT_BOOL IsTargetDOSWin16;
+    __declspec(property(get=GetIsTargetDOSWin32))
+    VARIANT_BOOL IsTargetDOSWin32;
+    __declspec(property(get=GetIsTargetOS216PM16))
+    VARIANT_BOOL IsTargetOS216PM16;
+    __declspec(property(get=GetIsTargetOS232PM32))
+    VARIANT_BOOL IsTargetOS232PM32;
+    __declspec(property(get=GetIsTargetNTWin32))
+    VARIANT_BOOL IsTargetNTWin32;
+    __declspec(property(get=GetIsApp))
+    VARIANT_BOOL IsApp;
+    __declspec(property(get=GetIsDll))
+    VARIANT_BOOL IsDll;
+    __declspec(property(get=GetIsDriver))
+    VARIANT_BOOL IsDriver;
+    __declspec(property(get=GetIsFont))
+    VARIANT_BOOL IsFont;
+    __declspec(property(get=GetIsVxd))
+    VARIANT_BOOL IsVxd;
+    __declspec(property(get=GetIsStaticLib))
+    VARIANT_BOOL IsStaticLib;
+    __declspec(property(get=GetIsDriverUnknown))
+    VARIANT_BOOL IsDriverUnknown;
+    __declspec(property(get=GetIsDriverPrinter))
+    VARIANT_BOOL IsDriverPrinter;
+    __declspec(property(get=GetIsDriverKeyboard))
+    VARIANT_BOOL IsDriverKeyboard;
+    __declspec(property(get=GetIsDriverLanguage))
+    VARIANT_BOOL IsDriverLanguage;
+    __declspec(property(get=GetIsDriverDisplay))
+    VARIANT_BOOL IsDriverDisplay;
+    __declspec(property(get=GetIsDriverMouse))
+    VARIANT_BOOL IsDriverMouse;
+    __declspec(property(get=GetIsDriverNetwork))
+    VARIANT_BOOL IsDriverNetwork;
+    __declspec(property(get=GetIsDriverSystem))
+    VARIANT_BOOL IsDriverSystem;
+    __declspec(property(get=GetIsDriverInstallable))
+    VARIANT_BOOL IsDriverInstallable;
+    __declspec(property(get=GetIsDriverSound))
+    VARIANT_BOOL IsDriverSound;
+    __declspec(property(get=GetIsDriverComm))
+    VARIANT_BOOL IsDriverComm;
+    __declspec(property(get=GetIsDriverInputMethod))
+    VARIANT_BOOL IsDriverInputMethod;
+    __declspec(property(get=GetIsFontRaster))
+    VARIANT_BOOL IsFontRaster;
+    __declspec(property(get=GetIsFontVector))
+    VARIANT_BOOL IsFontVector;
+    __declspec(property(get=GetIsFontTrueType))
+    VARIANT_BOOL IsFontTrueType;
+    __declspec(property(get=GetLanguageID,put=PutLanguageID))
+    unsigned short LanguageID;
+    __declspec(property(get=GetCodePage,put=PutCodePage))
+    unsigned short CodePage;
+    __declspec(property(get=GetExists))
+    VARIANT_BOOL Exists[];
+    __declspec(property(get=GetCompanyName))
+    _bstr_t CompanyName;
+    __declspec(property(get=GetFileDescription))
+    _bstr_t FileDescription;
+    __declspec(property(get=GetFileVersion))
+    _bstr_t FileVersion;
+    __declspec(property(get=GetInternalName))
+    _bstr_t InternalName;
+    __declspec(property(get=GetLegalCopyright))
+    _bstr_t LegalCopyright;
+    __declspec(property(get=GetOriginalFilename))
+    _bstr_t OriginalFilename;
+    __declspec(property(get=GetProductName))
+    _bstr_t ProductName;
+    __declspec(property(get=GetProductVersion))
+    _bstr_t ProductVersion;
+    __declspec(property(get=GetSpecialBuild))
+    _bstr_t SpecialBuild;
+    __declspec(property(get=GetOLESelfRegister))
+    _bstr_t OLESelfRegister;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutFileName (
+        _bstr_t pbstrFileName );
+    _bstr_t GetFileName ( );
+    _bstr_t GetFileVersionString ( );
+    unsigned short GetFileVersionMSHigh ( );
+    unsigned short GetFileVersionMSLow ( );
+    unsigned short GetFileVersionLSHigh ( );
+    unsigned short GetFileVersionLSLow ( );
+    unsigned short GetFileBuildNumber ( );
+    _bstr_t GetProductVersionString ( );
+    unsigned short GetProductVersionMSHigh ( );
+    unsigned short GetProductVersionMSLow ( );
+    unsigned short GetProductVersionLSHigh ( );
+    unsigned short GetProductVersionLSLow ( );
+    unsigned short GetProductBuildNumber ( );
+    VARIANT_BOOL GetIsDebug ( );
+    VARIANT_BOOL GetIsInfoInferred ( );
+    VARIANT_BOOL GetIsPatched ( );
+    VARIANT_BOOL GetIsPreRelease ( );
+    VARIANT_BOOL GetIsPrivateBuild ( );
+    VARIANT_BOOL GetIsSpecialBuild ( );
+    VARIANT_BOOL GetIsTargetUnknown ( );
+    VARIANT_BOOL GetIsTargetDOS ( );
+    VARIANT_BOOL GetIsTargetOS216 ( );
+    VARIANT_BOOL GetIsTargetOS232 ( );
+    VARIANT_BOOL GetIsTargetNT ( );
+    VARIANT_BOOL GetIsTargetBase ( );
+    VARIANT_BOOL GetIsTargetWin16 ( );
+    VARIANT_BOOL GetIsTargetPM16 ( );
+    VARIANT_BOOL GetIsTargetPM32 ( );
+    VARIANT_BOOL GetIsTargetWin32 ( );
+    VARIANT_BOOL GetIsTargetDOSWin16 ( );
+    VARIANT_BOOL GetIsTargetDOSWin32 ( );
+    VARIANT_BOOL GetIsTargetOS216PM16 ( );
+    VARIANT_BOOL GetIsTargetOS232PM32 ( );
+    VARIANT_BOOL GetIsTargetNTWin32 ( );
+    VARIANT_BOOL GetIsApp ( );
+    VARIANT_BOOL GetIsDll ( );
+    VARIANT_BOOL GetIsDriver ( );
+    VARIANT_BOOL GetIsFont ( );
+    VARIANT_BOOL GetIsVxd ( );
+    VARIANT_BOOL GetIsStaticLib ( );
+    VARIANT_BOOL GetIsDriverUnknown ( );
+    VARIANT_BOOL GetIsDriverPrinter ( );
+    VARIANT_BOOL GetIsDriverKeyboard ( );
+    VARIANT_BOOL GetIsDriverLanguage ( );
+    VARIANT_BOOL GetIsDriverDisplay ( );
+    VARIANT_BOOL GetIsDriverMouse ( );
+    VARIANT_BOOL GetIsDriverNetwork ( );
+    VARIANT_BOOL GetIsDriverSystem ( );
+    VARIANT_BOOL GetIsDriverInstallable ( );
+    VARIANT_BOOL GetIsDriverSound ( );
+    VARIANT_BOOL GetIsDriverComm ( );
+    VARIANT_BOOL GetIsDriverInputMethod ( );
+    VARIANT_BOOL GetIsFontRaster ( );
+    VARIANT_BOOL GetIsFontVector ( );
+    VARIANT_BOOL GetIsFontTrueType ( );
+    void PutLanguageID (
+        unsigned short pwLangID );
+    unsigned short GetLanguageID ( );
+    void PutCodePage (
+        unsigned short pwCodePage );
+    unsigned short GetCodePage ( );
+    VARIANT_BOOL GetExists (
+        _bstr_t bstrKey );
+    _bstr_t GetValue (
+        _bstr_t bstrKey );
+    _bstr_t GetCompanyName ( );
+    _bstr_t GetFileDescription ( );
+    _bstr_t GetFileVersion ( );
+    _bstr_t GetInternalName ( );
+    _bstr_t GetLegalCopyright ( );
+    _bstr_t GetOriginalFilename ( );
+    _bstr_t GetProductName ( );
+    _bstr_t GetProductVersion ( );
+    _bstr_t GetSpecialBuild ( );
+    _bstr_t GetOLESelfRegister ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_FileName (
+        /*[in]*/ BSTR pbstrFileName ) = 0;
+      virtual HRESULT __stdcall get_FileName (
+        /*[out,retval]*/ BSTR * pbstrFileName ) = 0;
+      virtual HRESULT __stdcall get_FileVersionString (
+        /*[out,retval]*/ BSTR * pbstrString ) = 0;
+      virtual HRESULT __stdcall get_FileVersionMSHigh (
+        /*[out,retval]*/ unsigned short * pwMSHigh ) = 0;
+      virtual HRESULT __stdcall get_FileVersionMSLow (
+        /*[out,retval]*/ unsigned short * pwMSLow ) = 0;
+      virtual HRESULT __stdcall get_FileVersionLSHigh (
+        /*[out,retval]*/ unsigned short * pwLSHigh ) = 0;
+      virtual HRESULT __stdcall get_FileVersionLSLow (
+        /*[out,retval]*/ unsigned short * pwLSLow ) = 0;
+      virtual HRESULT __stdcall get_FileBuildNumber (
+        /*[out,retval]*/ unsigned short * pwBuildNumber ) = 0;
+      virtual HRESULT __stdcall get_ProductVersionString (
+        /*[out,retval]*/ BSTR * pbstrString ) = 0;
+      virtual HRESULT __stdcall get_ProductVersionMSHigh (
+        /*[out,retval]*/ unsigned short * pwMSHigh ) = 0;
+      virtual HRESULT __stdcall get_ProductVersionMSLow (
+        /*[out,retval]*/ unsigned short * pwMSLow ) = 0;
+      virtual HRESULT __stdcall get_ProductVersionLSHigh (
+        /*[out,retval]*/ unsigned short * pwLSHigh ) = 0;
+      virtual HRESULT __stdcall get_ProductVersionLSLow (
+        /*[out,retval]*/ unsigned short * pwLSLow ) = 0;
+      virtual HRESULT __stdcall get_ProductBuildNumber (
+        /*[out,retval]*/ unsigned short * pwBuildNumber ) = 0;
+      virtual HRESULT __stdcall get_IsDebug (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsInfoInferred (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsPatched (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsPreRelease (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsPrivateBuild (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsSpecialBuild (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetUnknown (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetDOS (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetOS216 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetOS232 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetNT (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetBase (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetWin16 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetPM16 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetPM32 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetWin32 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetDOSWin16 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetDOSWin32 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetOS216PM16 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetOS232PM32 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsTargetNTWin32 (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsApp (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDll (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriver (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsFont (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsVxd (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsStaticLib (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverUnknown (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverPrinter (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverKeyboard (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverLanguage (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverDisplay (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverMouse (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverNetwork (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverSystem (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverInstallable (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverSound (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverComm (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsDriverInputMethod (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsFontRaster (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsFontVector (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall get_IsFontTrueType (
+        /*[out,retval]*/ VARIANT_BOOL * pFlag ) = 0;
+      virtual HRESULT __stdcall put_LanguageID (
+        /*[in]*/ unsigned short pwLangID ) = 0;
+      virtual HRESULT __stdcall get_LanguageID (
+        /*[out,retval]*/ unsigned short * pwLangID ) = 0;
+      virtual HRESULT __stdcall put_CodePage (
+        /*[in]*/ unsigned short pwCodePage ) = 0;
+      virtual HRESULT __stdcall get_CodePage (
+        /*[out,retval]*/ unsigned short * pwCodePage ) = 0;
+      virtual HRESULT __stdcall get_Exists (
+        /*[in]*/ BSTR bstrKey,
+        /*[out,retval]*/ VARIANT_BOOL * pbExists ) = 0;
+      virtual HRESULT __stdcall get_Value (
+        /*[in]*/ BSTR bstrKey,
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+      virtual HRESULT __stdcall get_CompanyName (
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+      virtual HRESULT __stdcall get_FileDescription (
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+      virtual HRESULT __stdcall get_FileVersion (
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+      virtual HRESULT __stdcall get_InternalName (
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+      virtual HRESULT __stdcall get_LegalCopyright (
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+      virtual HRESULT __stdcall get_OriginalFilename (
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+      virtual HRESULT __stdcall get_ProductName (
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+      virtual HRESULT __stdcall get_ProductVersion (
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+      virtual HRESULT __stdcall get_SpecialBuild (
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+      virtual HRESULT __stdcall get_OLESelfRegister (
+        /*[out,retval]*/ BSTR * pbstrValue ) = 0;
+};
+
+struct __declspec(uuid("80e3b37a-936e-4dcc-a8ad-dd9658f20613"))
+IAGCDBParams : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetConnectionString,put=PutConnectionString))
+    _bstr_t ConnectionString;
+    __declspec(property(get=GetTableName,put=PutTableName))
+    _bstr_t TableName;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutConnectionString (
+        _bstr_t pbstr );
+    _bstr_t GetConnectionString ( );
+    void PutTableName (
+        _bstr_t pbstr );
+    _bstr_t GetTableName ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ConnectionString (
+        /*[in]*/ BSTR pbstr ) = 0;
+      virtual HRESULT __stdcall get_ConnectionString (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+      virtual HRESULT __stdcall put_TableName (
+        /*[in]*/ BSTR pbstr ) = 0;
+      virtual HRESULT __stdcall get_TableName (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+};
+
+struct __declspec(uuid("0aa7a82f-fca5-4671-869f-0033a7573d30"))
+IAGCEventIDRange : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetDisplayString,put=PutDisplayString))
+    _bstr_t DisplayString;
+    __declspec(property(get=Getlower))
+    enum AGCEventID lower;
+    __declspec(property(get=Getupper))
+    enum AGCEventID upper;
+    __declspec(property(get=GetIsEmpty))
+    VARIANT_BOOL IsEmpty;
+    __declspec(property(get=GetIntersectsWithValue))
+    VARIANT_BOOL IntersectsWithValue[];
+    __declspec(property(get=GetIntersectsWithRangeValues))
+    VARIANT_BOOL IntersectsWithRangeValues[][];
+    __declspec(property(get=GetIntersectsWithRange))
+    VARIANT_BOOL IntersectsWithRange[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutDisplayString (
+        _bstr_t pbstr );
+    _bstr_t GetDisplayString ( );
+    HRESULT Init (
+        enum AGCEventID lower,
+        enum AGCEventID upper );
+    enum AGCEventID Getlower ( );
+    enum AGCEventID Getupper ( );
+    VARIANT_BOOL GetIsEmpty ( );
+    VARIANT_BOOL GetIntersectsWithValue (
+        enum AGCEventID Value );
+    VARIANT_BOOL GetIntersectsWithRangeValues (
+        enum AGCEventID value1,
+        enum AGCEventID value2 );
+    VARIANT_BOOL GetIntersectsWithRange (
+        struct IAGCEventIDRange * pRange );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_DisplayString (
+        /*[in]*/ BSTR pbstr ) = 0;
+      virtual HRESULT __stdcall get_DisplayString (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+      virtual HRESULT __stdcall raw_Init (
+        /*[in]*/ enum AGCEventID lower,
+        /*[in]*/ enum AGCEventID upper ) = 0;
+      virtual HRESULT __stdcall get_lower (
+        /*[out,retval]*/ enum AGCEventID * pValue ) = 0;
+      virtual HRESULT __stdcall get_upper (
+        /*[out,retval]*/ enum AGCEventID * pValue ) = 0;
+      virtual HRESULT __stdcall get_IsEmpty (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsEmpty ) = 0;
+      virtual HRESULT __stdcall get_IntersectsWithValue (
+        /*[in]*/ enum AGCEventID Value,
+        /*[out,retval]*/ VARIANT_BOOL * pbIntersects ) = 0;
+      virtual HRESULT __stdcall get_IntersectsWithRangeValues (
+        /*[in]*/ enum AGCEventID value1,
+        /*[in]*/ enum AGCEventID value2,
+        /*[out,retval]*/ VARIANT_BOOL * pbIntersects ) = 0;
+      virtual HRESULT __stdcall get_IntersectsWithRange (
+        /*[in]*/ struct IAGCEventIDRange * pRange,
+        /*[out,retval]*/ VARIANT_BOOL * pbIntersects ) = 0;
+};
+
+struct __declspec(uuid("481b5d73-c1c4-4936-93c6-c4754f10d497"))
+IAGCEventIDRanges : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetItem))
+    IAGCEventIDRangePtr Item[];
+    __declspec(property(get=GetDisplayString,put=PutDisplayString))
+    _bstr_t DisplayString;
+    __declspec(property(get=GetIntersectsWithValue))
+    VARIANT_BOOL IntersectsWithValue[];
+    __declspec(property(get=GetIntersectsWithRangeValues))
+    VARIANT_BOOL IntersectsWithRangeValues[][];
+    __declspec(property(get=GetIntersectsWithRange))
+    VARIANT_BOOL IntersectsWithRange[];
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    IUnknownPtr Get_NewEnum ( );
+    IAGCEventIDRangePtr GetItem (
+        VARIANT * pvIndex );
+    void PutDisplayString (
+        _bstr_t pbstr );
+    _bstr_t GetDisplayString ( );
+    HRESULT AddByValues (
+        enum AGCEventID value1,
+        enum AGCEventID value2 );
+    HRESULT Add (
+        struct IAGCEventIDRange * pRange );
+    HRESULT RemoveByValues (
+        enum AGCEventID value1,
+        enum AGCEventID value2 );
+    HRESULT Remove (
+        struct IAGCEventIDRange * pRange );
+    HRESULT RemoveAll ( );
+    VARIANT_BOOL GetIntersectsWithValue (
+        enum AGCEventID Value );
+    VARIANT_BOOL GetIntersectsWithRangeValues (
+        enum AGCEventID value1,
+        enum AGCEventID value2 );
+    VARIANT_BOOL GetIntersectsWithRange (
+        struct IAGCEventIDRange * pRange );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pnCount ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * ppunkEnum ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ struct IAGCEventIDRange * * ppRange ) = 0;
+      virtual HRESULT __stdcall put_DisplayString (
+        /*[in]*/ BSTR pbstr ) = 0;
+      virtual HRESULT __stdcall get_DisplayString (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+      virtual HRESULT __stdcall raw_AddByValues (
+        /*[in]*/ enum AGCEventID value1,
+        /*[in]*/ enum AGCEventID value2 ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ struct IAGCEventIDRange * pRange ) = 0;
+      virtual HRESULT __stdcall raw_RemoveByValues (
+        /*[in]*/ enum AGCEventID value1,
+        /*[in]*/ enum AGCEventID value2 ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ struct IAGCEventIDRange * pRange ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall get_IntersectsWithValue (
+        /*[in]*/ enum AGCEventID Value,
+        /*[out,retval]*/ VARIANT_BOOL * pbIntersects ) = 0;
+      virtual HRESULT __stdcall get_IntersectsWithRangeValues (
+        /*[in]*/ enum AGCEventID value1,
+        /*[in]*/ enum AGCEventID value2,
+        /*[out,retval]*/ VARIANT_BOOL * pbIntersects ) = 0;
+      virtual HRESULT __stdcall get_IntersectsWithRange (
+        /*[in]*/ struct IAGCEventIDRange * pRange,
+        /*[out,retval]*/ VARIANT_BOOL * pbIntersects ) = 0;
+};
+
+struct __declspec(uuid("28755aa1-6391-4d37-a995-5ae387d0b610"))
+IAGCEventLogger : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetEventList))
+    _bstr_t EventList;
+    __declspec(property(get=GetNTEventLog,put=PutNTEventLog))
+    _bstr_t NTEventLog;
+    __declspec(property(get=GetDBEventLog,put=PutDBEventLog))
+    IAGCDBParamsPtr DBEventLog;
+    __declspec(property(get=GetEnabledNTEvents,put=PutEnabledNTEvents))
+    IAGCEventIDRangesPtr EnabledNTEvents;
+    __declspec(property(get=GetEnabledDBEvents,put=PutEnabledDBEvents))
+    IAGCEventIDRangesPtr EnabledDBEvents;
+    __declspec(property(get=GetDefaultEnabledNTEvents))
+    IAGCEventIDRangesPtr DefaultEnabledNTEvents;
+    __declspec(property(get=GetDefaultEnabledDBEvents))
+    IAGCEventIDRangesPtr DefaultEnabledDBEvents;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetEventList ( );
+    void PutNTEventLog (
+        _bstr_t pbstrComputer );
+    _bstr_t GetNTEventLog ( );
+    void PutDBEventLog (
+        struct IAGCDBParams * ppDBParams );
+    IAGCDBParamsPtr GetDBEventLog ( );
+    void PutEnabledNTEvents (
+        struct IAGCEventIDRanges * ppEvents );
+    IAGCEventIDRangesPtr GetEnabledNTEvents ( );
+    void PutEnabledDBEvents (
+        struct IAGCEventIDRanges * ppEvents );
+    IAGCEventIDRangesPtr GetEnabledDBEvents ( );
+    IAGCEventIDRangesPtr GetDefaultEnabledNTEvents ( );
+    IAGCEventIDRangesPtr GetDefaultEnabledDBEvents ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_EventList (
+        /*[out,retval]*/ BSTR * pbstrEventListXML ) = 0;
+      virtual HRESULT __stdcall put_NTEventLog (
+        /*[in]*/ BSTR pbstrComputer ) = 0;
+      virtual HRESULT __stdcall get_NTEventLog (
+        /*[out,retval]*/ BSTR * pbstrComputer ) = 0;
+      virtual HRESULT __stdcall put_DBEventLog (
+        /*[in]*/ struct IAGCDBParams * ppDBParams ) = 0;
+      virtual HRESULT __stdcall get_DBEventLog (
+        /*[out,retval]*/ struct IAGCDBParams * * ppDBParams ) = 0;
+      virtual HRESULT __stdcall put_EnabledNTEvents (
+        /*[in]*/ struct IAGCEventIDRanges * ppEvents ) = 0;
+      virtual HRESULT __stdcall get_EnabledNTEvents (
+        /*[out,retval]*/ struct IAGCEventIDRanges * * ppEvents ) = 0;
+      virtual HRESULT __stdcall put_EnabledDBEvents (
+        /*[in]*/ struct IAGCEventIDRanges * ppEvents ) = 0;
+      virtual HRESULT __stdcall get_EnabledDBEvents (
+        /*[out,retval]*/ struct IAGCEventIDRanges * * ppEvents ) = 0;
+      virtual HRESULT __stdcall get_DefaultEnabledNTEvents (
+        /*[out,retval]*/ struct IAGCEventIDRanges * * ppEvents ) = 0;
+      virtual HRESULT __stdcall get_DefaultEnabledDBEvents (
+        /*[out,retval]*/ struct IAGCEventIDRanges * * ppEvents ) = 0;
+};
+
+struct __declspec(uuid("b1935981-d27b-11d2-9646-00c04f68deb0"))
+ITCCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    IUnknownPtr Get_NewEnum ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pnCount ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * ppunkEnum ) = 0;
+};
+
+struct __declspec(uuid("c04322e0-cb3b-11d2-9646-00c04f68deb0"))
+ITCStrings : ITCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _bstr_t Item[];
+    __declspec(property(get=GetDelimitedItems))
+    _bstr_t DelimitedItems[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetItem (
+        VARIANT * pvIndex );
+    HRESULT Add (
+        _bstr_t bstr );
+    HRESULT Remove (
+        VARIANT * pvIndex );
+    HRESULT RemoveAll ( );
+    HRESULT AddDelimited (
+        _bstr_t bstrDelimiter,
+        _bstr_t bstrStrings );
+    _bstr_t GetDelimitedItems (
+        _bstr_t bstrDelimiter );
+    HRESULT AddStrings (
+        struct ITCStrings * pStrings );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ BSTR bstr ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ VARIANT * pvIndex ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall raw_AddDelimited (
+        /*[in]*/ BSTR bstrDelimiter,
+        /*[in]*/ BSTR bstrStrings ) = 0;
+      virtual HRESULT __stdcall get_DelimitedItems (
+        /*[in]*/ BSTR bstrDelimiter,
+        /*[out,retval]*/ BSTR * pbstrStrings ) = 0;
+      virtual HRESULT __stdcall raw_AddStrings (
+        /*[in]*/ struct ITCStrings * pStrings ) = 0;
+};
+
+struct __declspec(uuid("8962e242-cd81-11d2-9646-00c04f68deb0"))
+ITCPropBagOnRegKey : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetServer,put=PutServer))
+    _bstr_t Server;
+    __declspec(property(get=GetObjectCLSID))
+    _bstr_t ObjectCLSID;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CreateKey (
+        _bstr_t bstrRegKey,
+        VARIANT_BOOL bReadOnly );
+    HRESULT OpenKey (
+        _bstr_t bstrRegKey,
+        VARIANT_BOOL bReadOnly );
+    IUnknownPtr CreateObject ( );
+    IUnknownPtr CreateLocalObject ( );
+    IUnknownPtr CreateRemoteObject (
+        _bstr_t bstrServer );
+    HRESULT LoadObject (
+        IUnknown * punkObj );
+    HRESULT SaveObject (
+        IUnknown * punkObj,
+        VARIANT_BOOL bClearDirty,
+        VARIANT_BOOL bSaveAllProperties,
+        VARIANT_BOOL bSaveCreationInfo );
+    void PutServer (
+        _bstr_t pbstrServer );
+    _bstr_t GetServer ( );
+    _bstr_t GetObjectCLSID ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_CreateKey (
+        /*[in]*/ BSTR bstrRegKey,
+        /*[in]*/ VARIANT_BOOL bReadOnly ) = 0;
+      virtual HRESULT __stdcall raw_OpenKey (
+        /*[in]*/ BSTR bstrRegKey,
+        /*[in]*/ VARIANT_BOOL bReadOnly ) = 0;
+      virtual HRESULT __stdcall raw_CreateObject (
+        /*[out,retval]*/ IUnknown * * ppunkObj ) = 0;
+      virtual HRESULT __stdcall raw_CreateLocalObject (
+        /*[out,retval]*/ IUnknown * * ppunkObj ) = 0;
+      virtual HRESULT __stdcall raw_CreateRemoteObject (
+        /*[in]*/ BSTR bstrServer,
+        /*[out,retval]*/ IUnknown * * ppunkObj ) = 0;
+      virtual HRESULT __stdcall raw_LoadObject (
+        /*[in]*/ IUnknown * punkObj ) = 0;
+      virtual HRESULT __stdcall raw_SaveObject (
+        /*[in]*/ IUnknown * punkObj,
+        /*[in]*/ VARIANT_BOOL bClearDirty,
+        /*[in]*/ VARIANT_BOOL bSaveAllProperties,
+        /*[in]*/ VARIANT_BOOL bSaveCreationInfo ) = 0;
+      virtual HRESULT __stdcall put_Server (
+        /*[in]*/ BSTR pbstrServer ) = 0;
+      virtual HRESULT __stdcall get_Server (
+        /*[out,retval]*/ BSTR * pbstrServer ) = 0;
+      virtual HRESULT __stdcall get_ObjectCLSID (
+        /*[out,retval]*/ BSTR * pbstrCLSID ) = 0;
+};
+
+struct __declspec(uuid("34e485e2-c7b7-11d2-85c9-00c04f68deb0"))
+ITCSessionInfo : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetComputerName))
+    _bstr_t ComputerName;
+    __declspec(property(get=GetApplicationName,put=PutApplicationName))
+    _bstr_t ApplicationName;
+    __declspec(property(get=GetTimeCreated))
+    DATE TimeCreated;
+    __declspec(property(get=GetDuration))
+    DATE Duration;
+    __declspec(property(get=GetCookie))
+    long Cookie;
+    __declspec(property(get=GetUserName))
+    _bstr_t UserName;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetUserName ( );
+    _bstr_t GetComputerName ( );
+    void PutApplicationName (
+        _bstr_t pbstrAppName );
+    _bstr_t GetApplicationName ( );
+    DATE GetTimeCreated ( );
+    DATE GetDuration ( );
+    long GetCookie ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_UserName (
+        /*[out,retval]*/ BSTR * pbstrUserName ) = 0;
+      virtual HRESULT __stdcall get_ComputerName (
+        /*[out,retval]*/ BSTR * pbstrComputerName ) = 0;
+      virtual HRESULT __stdcall put_ApplicationName (
+        /*[in]*/ BSTR pbstrAppName ) = 0;
+      virtual HRESULT __stdcall get_ApplicationName (
+        /*[out,retval]*/ BSTR * pbstrAppName ) = 0;
+      virtual HRESULT __stdcall get_TimeCreated (
+        /*[out,retval]*/ DATE * pdate ) = 0;
+      virtual HRESULT __stdcall get_Duration (
+        /*[out,retval]*/ DATE * pdate ) = 0;
+      virtual HRESULT __stdcall get_Cookie (
+        /*[out,retval]*/ long * pCookie ) = 0;
+};
+
+struct __declspec(uuid("45038c6e-c7b7-11d2-85c9-00c04f68deb0"))
+ITCSessionInfos : ITCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ITCSessionInfoPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ITCSessionInfoPtr GetItem (
+        const _variant_t & index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct ITCSessionInfo * * ppSessionInfo ) = 0;
+};
+
+struct __declspec(uuid("8962e24a-cd81-11d2-9646-00c04f68deb0"))
+ITCCollectionPersistHelper : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutCollection1 (
+        VARIANT * pvarSafeArray );
+    _variant_t GetCollection1 ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Collection1 (
+        /*[in]*/ VARIANT * pvarSafeArray ) = 0;
+      virtual HRESULT __stdcall get_Collection1 (
+        /*[out,retval]*/ VARIANT * pvarSafeArray ) = 0;
+};
+
+struct __declspec(uuid("add577e2-ed3a-11d2-a50b-00c04f68deb0"))
+ITCUtility : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr CreateObject (
+        _bstr_t bstrProgID,
+        _bstr_t bstrComputer );
+    _bstr_t ObjectReference (
+        IUnknown * pUnk );
+    HRESULT Sleep (
+        long nDurationMS );
+    IUnknownPtr GetObject (
+        _bstr_t bstrMoniker,
+        VARIANT_BOOL bAllowUI,
+        long nTimeoutMS );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_CreateObject (
+        /*[in]*/ BSTR bstrProgID,
+        /*[in]*/ BSTR bstrComputer,
+        /*[out,retval]*/ IUnknown * * ppUnk ) = 0;
+      virtual HRESULT __stdcall raw_ObjectReference (
+        /*[in]*/ IUnknown * pUnk,
+        /*[out,retval]*/ BSTR * pbstrObjectReference ) = 0;
+      virtual HRESULT __stdcall raw_Sleep (
+        /*[in]*/ long nDurationMS ) = 0;
+      virtual HRESULT __stdcall raw_GetObject (
+        /*[in]*/ BSTR bstrMoniker,
+        /*[in]*/ VARIANT_BOOL bAllowUI,
+        /*[in]*/ long nTimeoutMS,
+        /*[out,retval]*/ IUnknown * * ppUnk ) = 0;
+};
+
+struct __declspec(uuid("143c0682-8688-421b-a269-9fd40f2aa19a"))
+IAdminSessionHelper : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetIsAllSrvRunning))
+    VARIANT_BOOL IsAllSrvRunning;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL GetIsAllSrvRunning ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsAllSrvRunning (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsRunning ) = 0;
+};
+
+struct __declspec(uuid("6eb476ce-17bc-11d3-8b61-00c04f681633"))
+IAGCCommon : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetType))
+    _bstr_t Type;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetType ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ BSTR * pbstrType ) = 0;
+};
+
+struct __declspec(uuid("b8db7d42-1e9c-11d3-8b63-00c04f681633"))
+IAGCCollection : IAGCCommon
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    IUnknownPtr Get_NewEnum ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pnCount ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * ppunkEnum ) = 0;
+};
+
+enum __declspec(uuid("98c30026-8936-492d-9cad-bec2d046b9ed"))
+AGCGameStage
+{
+    AGCGameStage_NotStarted = 0,
+    AGCGameStage_Starting = 1,
+    AGCGameStage_Started = 2,
+    AGCGameStage_Over = 3,
+    AGCGameStage_Terminate = 4
+};
+
+struct __declspec(uuid("08118086-1fe1-11d3-af03-0000f810c3f4"))
+AGCGlobal;
+    // [ default ] interface IAGCGlobal
+
+struct __declspec(uuid("4cfc5fec-243a-11d3-af03-0000f810c3f4"))
+IAGCEventSink : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT OnEventTriggered (
+        struct IAGCEvent * pEvent );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_OnEventTriggered (
+        /*[in]*/ struct IAGCEvent * pEvent ) = 0;
+};
+
+struct __declspec(uuid("9a153413-cc15-4ea1-a9bb-e0854726caed"))
+IAGCDebugHook : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual void __stdcall DebugOutput (
+        /*[in]*/ LPSTR psz ) = 0;
+      virtual char __stdcall OnAssert (
+        /*[in]*/ LPSTR psz,
+        /*[in]*/ LPSTR pszFile,
+        /*[in]*/ int line,
+        /*[in]*/ LPSTR pszModule ) = 0;
+      virtual void __stdcall OnAssertBreak ( ) = 0;
+};
+
+struct __declspec(uuid("f4385bc0-1fcc-11d3-af03-0000f810c3f4"))
+IAGCGlobal : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT __MIDL_0014 (
+        void * __MIDL_0011,
+        GUID * __MIDL_0012,
+        void * * __MIDL_0013 );
+    HRESULT GetAGCObject (
+        void * pvIgc,
+        GUID * riid,
+        void * * ppUnk );
+    IAGCEventPtr MakeAGCEvent (
+        enum AGCEventID idEvent,
+        LPSTR pszContext,
+        LPWSTR pszSubject,
+        AGCUniqueID idSubject,
+        long cArgTriplets,
+        void * pvArgs );
+    IAGCVectorPtr MakeAGCVector (
+        void * pVectorRaw );
+    IAGCOrientationPtr MakeAGCOrientation (
+        void * pOrientationRaw );
+    IAGCEventIDRangePtr MakeAGCEventIDRange (
+        enum AGCEventID lower,
+        enum AGCEventID upper );
+    HRESULT RegisterInterfaceInGlobal (
+        IUnknown * pUnk,
+        GUID * riid,
+        unsigned long * pdwCookie );
+    HRESULT RevokeInterfaceFromGlobal (
+        unsigned long dwCookie );
+    HRESULT GetInterfaceFromGlobal (
+        unsigned long dwCookie,
+        GUID * riid,
+        void * * ppv );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw___MIDL_0014 (
+        void * __MIDL_0011,
+        GUID * __MIDL_0012,
+        void * * __MIDL_0013 ) = 0;
+      virtual void __stdcall RegisterObjectCreator (
+        /*[in]*/ GUID * riid,
+        /*[in]*/ struct IAGCGlobal * pfnCreator ) = 0;
+      virtual void __stdcall RevokeObjectCreator (
+        /*[in]*/ GUID * riid ) = 0;
+      virtual HRESULT __stdcall raw_GetAGCObject (
+        /*[in]*/ void * pvIgc,
+        /*[in]*/ GUID * riid,
+        /*[out]*/ void * * ppUnk ) = 0;
+      virtual void __stdcall AddAGCObject (
+        /*[in]*/ void * pvIgc,
+        /*[in]*/ IUnknown * pUnkAGC ) = 0;
+      virtual void __stdcall RemoveAGCObject (
+        /*[in]*/ void * pvIgc,
+        /*[in]*/ char bForceDestruct ) = 0;
+      virtual void __stdcall SetEventSinksAreGITCookies (
+        /*[in]*/ char bEventSinksAreGITCookies ) = 0;
+      virtual char __stdcall GetEventSinksAreGITCookies ( ) = 0;
+      virtual void __stdcall RegisterEvent (
+        /*[in]*/ enum AGCEventID eventID,
+        /*[in]*/ AGCUniqueID UniqueID,
+        /*[in]*/ struct IAGCEventSink * pEventSink ) = 0;
+      virtual char __stdcall RevokeEvent (
+        /*[in]*/ enum AGCEventID eventID,
+        /*[in]*/ AGCUniqueID UniqueID,
+        /*[in]*/ struct IAGCEventSink * pEventSink ) = 0;
+      virtual void __stdcall RegisterEventRanges (
+        /*[in]*/ struct IAGCEventIDRanges * pRanges,
+        /*[in]*/ AGCUniqueID UniqueID,
+        /*[in]*/ struct IAGCEventSink * pEventSink ) = 0;
+      virtual void __stdcall RevokeEventRanges (
+        /*[in]*/ struct IAGCEventIDRanges * pRanges,
+        /*[in]*/ AGCUniqueID UniqueID,
+        /*[in]*/ struct IAGCEventSink * pEventSink ) = 0;
+      virtual int __stdcall RevokeAllEvents (
+        /*[in]*/ struct IAGCEventSink * pEventSink ) = 0;
+      virtual int __stdcall RegisterAllEvents (
+        /*[in]*/ struct IAGCEventSink * pEventSink ) = 0;
+      virtual void * __stdcall EventListeners (
+        /*[in]*/ enum AGCEventID idEvent,
+        /*[in]*/ AGCUniqueID idSubject,
+        /*[in]*/ AGCUniqueID idObject1,
+        /*[in]*/ AGCUniqueID idObject2 ) = 0;
+      virtual void __stdcall TriggerEvent (
+        /*[in]*/ void * hListeners,
+        /*[in]*/ enum AGCEventID idEvent,
+        /*[in]*/ LPSTR pszContext,
+        /*[in]*/ LPWSTR pszSubject,
+        /*[in]*/ AGCUniqueID idSubject,
+        /*[in]*/ AGCUniqueID idObject1,
+        /*[in]*/ AGCUniqueID idObject2,
+        /*[in]*/ long cArgTriplets,
+        /*[in]*/ void * pvArgs ) = 0;
+      virtual void __stdcall TriggerEventSynchronous (
+        /*[in]*/ void * hListeners,
+        /*[in]*/ enum AGCEventID idEvent,
+        /*[in]*/ LPSTR pszContext,
+        /*[in]*/ LPWSTR pszSubject,
+        /*[in]*/ AGCUniqueID idSubject,
+        /*[in]*/ AGCUniqueID idObject1,
+        /*[in]*/ AGCUniqueID idObject2,
+        /*[in]*/ long cArgTriplets,
+        /*[in]*/ void * pvArgs ) = 0;
+      virtual void __stdcall FreeListeners (
+        /*[in]*/ void * hListeners ) = 0;
+      virtual char __stdcall IsRegistered (
+        /*[in]*/ enum AGCEventID eventID,
+        /*[in]*/ AGCUniqueID UniqueID,
+        /*[in]*/ struct IAGCEventSink * pEventSink ) = 0;
+      virtual HRESULT __stdcall raw_MakeAGCEvent (
+        /*[in]*/ enum AGCEventID idEvent,
+        /*[in]*/ LPSTR pszContext,
+        /*[in]*/ LPWSTR pszSubject,
+        /*[in]*/ AGCUniqueID idSubject,
+        /*[in]*/ long cArgTriplets,
+        /*[in]*/ void * pvArgs,
+        /*[out,retval]*/ struct IAGCEvent * * ppEvent ) = 0;
+      virtual void __stdcall SetAvailableEventIDRanges (
+        /*[in]*/ struct IAGCEventIDRanges * pRanges ) = 0;
+      virtual void __stdcall GetAvailableEventIDRanges (
+        /*[out,retval]*/ struct IAGCEventIDRanges * * ppRanges ) = 0;
+      virtual unsigned short __stdcall GetEventSeverity (
+        /*[in]*/ enum AGCEventID idEvent ) = 0;
+      virtual void * __stdcall GetResourceInstance ( ) = 0;
+      virtual HRESULT __stdcall raw_MakeAGCVector (
+        /*[in]*/ void * pVectorRaw,
+        /*[out,retval]*/ struct IAGCVector * * ppVector ) = 0;
+      virtual HRESULT __stdcall raw_MakeAGCOrientation (
+        /*[in]*/ void * pOrientationRaw,
+        /*[out,retval]*/ struct IAGCOrientation * * ppOrientation ) = 0;
+      virtual HRESULT __stdcall raw_MakeAGCEventIDRange (
+        /*[in]*/ enum AGCEventID lower,
+        /*[in]*/ enum AGCEventID upper,
+        /*[out,retval]*/ struct IAGCEventIDRange * * ppRange ) = 0;
+      virtual HRESULT __stdcall raw_RegisterInterfaceInGlobal (
+        /*[in]*/ IUnknown * pUnk,
+        /*[in]*/ GUID * riid,
+        /*[out]*/ unsigned long * pdwCookie ) = 0;
+      virtual HRESULT __stdcall raw_RevokeInterfaceFromGlobal (
+        /*[in]*/ unsigned long dwCookie ) = 0;
+      virtual HRESULT __stdcall raw_GetInterfaceFromGlobal (
+        /*[in]*/ unsigned long dwCookie,
+        /*[in]*/ GUID * riid,
+        /*[out]*/ void * * ppv ) = 0;
+      virtual void __stdcall Initialize ( ) = 0;
+      virtual void __stdcall Terminate ( ) = 0;
+      virtual void __stdcall SetDebugHook (
+        /*[in]*/ struct IAGCDebugHook * pdh ) = 0;
+};
+
+struct __declspec(uuid("12249214-13b5-11d3-8b5e-00c04f681633"))
+AGCVector;
+    // [ default ] interface IAGCVector
+
+struct __declspec(uuid("c8204960-3999-11d3-a51d-00c04f68deb0"))
+AGCOrientation;
+    // [ default ] interface IAGCOrientation
+
+struct __declspec(uuid("aa18a676-14a7-11d3-8b5f-00c04f681633"))
+AGCEvent;
+    // [ default ] interface IAGCEvent
+
+struct __declspec(uuid("f9e52a78-eba4-11d2-8b4b-00c04f681633"))
+AGCGameParameters;
+    // [ default ] interface IAGCGameParameters
+
+struct __declspec(uuid("4272ad82-ff3f-11d2-a50f-00c04f68deb0"))
+AGCCommand;
+    // [ default ] interface IAGCCommand
+
+struct __declspec(uuid("9942f23d-b460-4bf0-8b2c-7b003a43f37c"))
+AGCVersionInfo;
+    // [ default ] interface IAGCVersionInfo
+
+struct __declspec(uuid("85a50536-6442-41bc-b011-2bfd93cfb5a3"))
+AGCDBParams;
+    // [ default ] interface IAGCDBParams
+
+struct __declspec(uuid("9ebfaa09-2793-4a50-8f57-1d7b26a307f3"))
+AGCEventLogger;
+    // [ default ] interface IAGCEventLogger
+
+struct __declspec(uuid("1537a87b-910e-4258-9c77-79554aa3c839"))
+AGCEventIDRange;
+    // [ default ] interface IAGCEventIDRange
+
+struct __declspec(uuid("c63efd2a-8763-44f4-a1cf-befb992482da"))
+AGCEventIDRanges;
+    // [ default ] interface IAGCEventIDRanges
+
+struct __declspec(uuid("8962e244-cd81-11d2-9646-00c04f68deb0"))
+TCMarshalByValue;
+    // [ default ] interface IUnknown
+
+struct __declspec(uuid("8962e245-cd81-11d2-9646-00c04f68deb0"))
+TCStrings;
+    // [ default ] interface ITCStrings
+
+struct __declspec(uuid("8962e248-cd81-11d2-9646-00c04f68deb0"))
+TCNullStream;
+    // [ default ] interface IUnknown
+
+struct __declspec(uuid("8962e246-cd81-11d2-9646-00c04f68deb0"))
+TCPropBagOnRegKey;
+    // [ default ] interface ITCPropBagOnRegKey
+
+struct __declspec(uuid("e9ee9e82-ed3a-11d2-a50b-00c04f68deb0"))
+TCUtility;
+    // [ default ] interface ITCUtility
+
+struct __declspec(uuid("859e6e3a-875d-4b0d-8775-e7c533e9ebef"))
+AdminSessionHelper;
+    // [ default ] interface IAdminSessionHelper
+
+struct __declspec(uuid("cfa3f5f2-0a42-11d3-8b58-00c04f681633"))
+AGCBase;
+    // [ default ] interface IAGCBase
+
+struct __declspec(uuid("df2f4b4d-0a42-11d3-8b58-00c04f681633"))
+AGCModel;
+    // [ default ] interface IAGCModel
+
+struct __declspec(uuid("ff8126cc-1ed2-43c5-b07e-d7b2e8487ee5"))
+AGCModels;
+    // [ default ] interface IAGCModels
+
+struct __declspec(uuid("6e5b27c8-2ed9-11d3-a51c-00c04f68deb0"))
+AGCHullType;
+    // [ default ] interface IAGCHullType
+
+struct __declspec(uuid("e9004e6f-0a42-11d3-8b58-00c04f681633"))
+AGCDamage;
+    // [ default ] interface IAGCDamage
+
+struct __declspec(uuid("f56824bb-0a42-11d3-8b58-00c04f681633"))
+AGCScanner;
+    // [ default ] interface IAGCScanner
+
+struct __declspec(uuid("a23c1044-ed2d-4f80-813b-fbb5de7b8cfb"))
+AGCProbe;
+    // [ default ] interface IAGCProbe
+
+struct __declspec(uuid("bb92ce8c-cc20-497a-b7cc-26f29e1d8877"))
+AGCProbes;
+    // [ default ] interface IAGCProbes
+
+struct __declspec(uuid("4f860d2e-0a42-11d3-8b58-00c04f681633"))
+AGCGame;
+    // [ default ] interface IAGCGame
+
+struct __declspec(uuid("5c271c62-0a42-11d3-8b58-00c04f681633"))
+AGCShip;
+    // [ default ] interface IAGCShip
+
+struct __declspec(uuid("5bea791c-1ebf-11d3-8b63-00c04f681633"))
+AGCShips;
+    // [ default ] interface IAGCShips
+
+struct __declspec(uuid("88400bb2-026b-11d3-8b55-00c04f681633"))
+AGCStation;
+    // [ default ] interface IAGCStation
+
+struct __declspec(uuid("7a0159b4-0272-11d3-8b55-00c04f681633"))
+AGCStations;
+    // [ default ] interface IAGCStations
+
+struct __declspec(uuid("46af05a8-0325-11d3-8b57-00c04f681633"))
+AGCAleph;
+    // [ default ] interface IAGCAleph
+
+struct __declspec(uuid("991b6c06-026b-11d3-8b55-00c04f681633"))
+AGCAlephs;
+    // [ default ] interface IAGCAlephs
+
+struct __declspec(uuid("338da8fe-eba5-11d2-8b4b-00c04f681633"))
+AGCSector;
+    // [ default ] interface IAGCSector
+
+struct __declspec(uuid("4214fd6e-eba5-11d2-8b4b-00c04f681633"))
+AGCSectors;
+    // [ default ] interface IAGCSectors
+
+struct __declspec(uuid("5c2b1828-eba5-11d2-8b4b-00c04f681633"))
+AGCTeam;
+    // [ default ] interface IAGCTeam
+
+struct __declspec(uuid("7151948e-eba5-11d2-8b4b-00c04f681633"))
+AGCTeams;
+    // [ default ] interface IAGCTeams
+
+struct __declspec(uuid("12430bfc-38b5-11d3-a51d-00c04f68deb0"))
+AGCAsteroid;
+    // [ default ] interface IAGCAsteroid
+
+struct __declspec(uuid("12430bfd-38b5-11d3-a51d-00c04f68deb0"))
+AGCAsteroids;
+    // [ default ] interface IAGCAsteroids
+
+struct __declspec(uuid("6967ea73-0a42-11d3-8b58-00c04f681633"))
+IAGCBase : IAGCCommon
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetObjectType))
+    enum AGCObjectType ObjectType;
+    __declspec(property(get=GetObjectID))
+    AGCObjectID ObjectID;
+    __declspec(property(get=GetGame))
+    IAGCGamePtr Game;
+    __declspec(property(get=GetUniqueID))
+    AGCUniqueID UniqueID;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    enum AGCObjectType GetObjectType ( );
+    AGCObjectID GetObjectID ( );
+    IAGCGamePtr GetGame ( );
+    AGCUniqueID GetUniqueID ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ObjectType (
+        /*[out,retval]*/ enum AGCObjectType * pObjectType ) = 0;
+      virtual HRESULT __stdcall get_ObjectID (
+        /*[out,retval]*/ AGCObjectID * pObjectID ) = 0;
+      virtual HRESULT __stdcall get_Game (
+        /*[out,retval]*/ struct IAGCGame * * ppGame ) = 0;
+      virtual HRESULT __stdcall get_UniqueID (
+        /*[out,retval]*/ AGCUniqueID * pUniqueID ) = 0;
+};
+
+struct __declspec(uuid("5d48f7cc-1fa8-11d3-af03-0000f810c3f4"))
+IAGCBuyable : IAGCBase
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetDescription))
+    _bstr_t Description;
+    __declspec(property(get=GetPrice))
+    AGCMoney Price;
+    __declspec(property(get=GetTimeToBuild))
+    long TimeToBuild;
+    __declspec(property(get=GetModelName))
+    _bstr_t ModelName;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    _bstr_t GetDescription ( );
+    _bstr_t GetModelName ( );
+    AGCMoney GetPrice ( );
+    long GetTimeToBuild ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pbstrName ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pbstrDescription ) = 0;
+      virtual HRESULT __stdcall get_ModelName (
+        /*[out,retval]*/ BSTR * pbstrModelName ) = 0;
+      virtual HRESULT __stdcall get_Price (
+        /*[out,retval]*/ AGCMoney * pmoneyPrice ) = 0;
+      virtual HRESULT __stdcall get_TimeToBuild (
+        /*[out,retval]*/ long * pnTimeToBuild ) = 0;
+};
+
+struct __declspec(uuid("3c579426-2ed8-11d3-a51c-00c04f68deb0"))
+IAGCHullType : IAGCBuyable
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLength))
+    float Length;
+    __declspec(property(get=GetMaxSpeed))
+    float MaxSpeed;
+    __declspec(property(get=GetMaxTurnRate))
+    float MaxTurnRate[];
+    __declspec(property(get=GetTurnTorque))
+    float TurnTorque[];
+    __declspec(property(get=GetThrust))
+    float Thrust;
+    __declspec(property(get=GetSideMultiplier))
+    float SideMultiplier;
+    __declspec(property(get=GetBackMultiplier))
+    float BackMultiplier;
+    __declspec(property(get=GetScannerRange))
+    float ScannerRange;
+    __declspec(property(get=GetMaxEnergy))
+    float MaxEnergy;
+    __declspec(property(get=GetRechargeRate))
+    float RechargeRate;
+    __declspec(property(get=GetHitPoints))
+    AGCHitPoints HitPoints;
+    __declspec(property(get=GetPartMask))
+    AGCPartMask PartMask[][];
+    __declspec(property(get=GetMaxWeapons))
+    AGCMount MaxWeapons;
+    __declspec(property(get=GetMaxFixedWeapons))
+    AGCMount MaxFixedWeapons;
+    __declspec(property(get=GetMass))
+    float Mass;
+    __declspec(property(get=GetSignature))
+    float Signature;
+    __declspec(property(get=GetCapabilities))
+    AGCHullAbilityBitMask Capabilities;
+    __declspec(property(get=GetHasCapability))
+    VARIANT_BOOL HasCapability[];
+    __declspec(property(get=GetMaxAmmo))
+    short MaxAmmo;
+    __declspec(property(get=GetMaxFuel))
+    float MaxFuel;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    float GetLength ( );
+    float GetMaxSpeed ( );
+    float GetMaxTurnRate (
+        enum AGCAxis eAxis );
+    float GetTurnTorque (
+        enum AGCAxis eAxis );
+    float GetThrust ( );
+    float GetSideMultiplier ( );
+    float GetBackMultiplier ( );
+    float GetScannerRange ( );
+    float GetMaxEnergy ( );
+    float GetRechargeRate ( );
+    AGCHitPoints GetHitPoints ( );
+    AGCPartMask GetPartMask (
+        enum AGCEquipmentType et,
+        AGCMount mountID );
+    AGCMount GetMaxWeapons ( );
+    AGCMount GetMaxFixedWeapons ( );
+    float GetMass ( );
+    float GetSignature ( );
+    AGCHullAbilityBitMask GetCapabilities ( );
+    VARIANT_BOOL GetHasCapability (
+        AGCHullAbilityBitMask habm );
+    short GetMaxAmmo ( );
+    float GetMaxFuel ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ float * pfLength ) = 0;
+      virtual HRESULT __stdcall get_MaxSpeed (
+        /*[out,retval]*/ float * pfMaxSpeed ) = 0;
+      virtual HRESULT __stdcall get_MaxTurnRate (
+        /*[in]*/ enum AGCAxis eAxis,
+        /*[out,retval]*/ float * pfMaxTurnRate ) = 0;
+      virtual HRESULT __stdcall get_TurnTorque (
+        /*[in]*/ enum AGCAxis eAxis,
+        /*[out,retval]*/ float * pfTurnTorque ) = 0;
+      virtual HRESULT __stdcall get_Thrust (
+        /*[out,retval]*/ float * pfThrust ) = 0;
+      virtual HRESULT __stdcall get_SideMultiplier (
+        /*[out,retval]*/ float * pfSideMultiplier ) = 0;
+      virtual HRESULT __stdcall get_BackMultiplier (
+        /*[out,retval]*/ float * pfBackMultiplier ) = 0;
+      virtual HRESULT __stdcall get_ScannerRange (
+        /*[out,retval]*/ float * pfScannerRange ) = 0;
+      virtual HRESULT __stdcall get_MaxEnergy (
+        /*[out,retval]*/ float * pfMaxEnergy ) = 0;
+      virtual HRESULT __stdcall get_RechargeRate (
+        /*[out,retval]*/ float * pfRechargeRate ) = 0;
+      virtual HRESULT __stdcall get_HitPoints (
+        /*[out,retval]*/ AGCHitPoints * pHitPoints ) = 0;
+      virtual HRESULT __stdcall get_PartMask (
+        /*[in]*/ enum AGCEquipmentType et,
+        /*[in]*/ AGCMount mountID,
+        /*[out,retval]*/ AGCPartMask * pPartMask ) = 0;
+      virtual HRESULT __stdcall get_MaxWeapons (
+        /*[out,retval]*/ AGCMount * pMaxWeapons ) = 0;
+      virtual HRESULT __stdcall get_MaxFixedWeapons (
+        /*[out,retval]*/ AGCMount * pMaxFixedWeapons ) = 0;
+      virtual HRESULT __stdcall get_Mass (
+        /*[out,retval]*/ float * pfMass ) = 0;
+      virtual HRESULT __stdcall get_Signature (
+        /*[out,retval]*/ float * pfSignature ) = 0;
+      virtual HRESULT __stdcall get_Capabilities (
+        /*[out,retval]*/ AGCHullAbilityBitMask * phabmCapabilities ) = 0;
+      virtual HRESULT __stdcall get_HasCapability (
+        /*[in]*/ AGCHullAbilityBitMask habm,
+        /*[out,retval]*/ VARIANT_BOOL * pbHasCapability ) = 0;
+      virtual HRESULT __stdcall get_MaxAmmo (
+        /*[out,retval]*/ short * pnMaxAmmo ) = 0;
+      virtual HRESULT __stdcall get_MaxFuel (
+        /*[out,retval]*/ float * pfMaxFuel ) = 0;
+};
+
+struct __declspec(uuid("e6d48fb7-0a41-11d3-8b58-00c04f681633"))
+IAGCGame : IAGCCommon
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetSectors))
+    IAGCSectorsPtr Sectors;
+    __declspec(property(get=GetTeams))
+    IAGCTeamsPtr Teams;
+    __declspec(property(get=GetLookupShip))
+    IAGCShipPtr LookupShip[];
+    __declspec(property(get=GetGameParameters))
+    IAGCGameParametersPtr GameParameters;
+    __declspec(property(get=GetGameID))
+    AGCGameID GameID;
+    __declspec(property(get=GetLookupTeam))
+    IAGCTeamPtr LookupTeam[];
+    __declspec(property(get=GetGameStage))
+    enum AGCGameStage GameStage;
+    __declspec(property(get=GetBuoys))
+    IAGCModelsPtr Buoys;
+    __declspec(property(get=GetTreasures))
+    IAGCModelsPtr Treasures;
+    __declspec(property(get=GetMines))
+    IAGCModelsPtr Mines;
+    __declspec(property(get=GetReplayCount))
+    short ReplayCount;
+    __declspec(property(get=GetContextName))
+    _bstr_t ContextName;
+    __declspec(property(get=GetShips))
+    IAGCShipsPtr Ships;
+    __declspec(property(get=GetAlephs))
+    IAGCAlephsPtr Alephs;
+    __declspec(property(get=GetAsteroids))
+    IAGCAsteroidsPtr Asteroids;
+    __declspec(property(get=GetProbes))
+    IAGCProbesPtr Probes;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    IAGCSectorsPtr GetSectors ( );
+    IAGCTeamsPtr GetTeams ( );
+    IAGCShipPtr GetLookupShip (
+        AGCUniqueID idAGC );
+    IAGCShipsPtr GetShips ( );
+    IAGCAlephsPtr GetAlephs ( );
+    IAGCAsteroidsPtr GetAsteroids ( );
+    IAGCGameParametersPtr GetGameParameters ( );
+    AGCGameID GetGameID ( );
+    IAGCTeamPtr GetLookupTeam (
+        AGCObjectID idAGC );
+    HRESULT SendChat (
+        _bstr_t bstrText,
+        AGCSoundID idSound );
+    HRESULT SendCommand (
+        _bstr_t bstrCommand,
+        struct IAGCModel * pModelTarget,
+        AGCSoundID idSound );
+    enum AGCGameStage GetGameStage ( );
+    IAGCProbesPtr GetProbes ( );
+    IAGCModelsPtr GetBuoys ( );
+    IAGCModelsPtr GetTreasures ( );
+    IAGCModelsPtr GetMines ( );
+    short GetReplayCount ( );
+    _bstr_t GetContextName ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+      virtual HRESULT __stdcall get_Sectors (
+        /*[out,retval]*/ struct IAGCSectors * * ppAGCSectors ) = 0;
+      virtual HRESULT __stdcall get_Teams (
+        /*[out,retval]*/ struct IAGCTeams * * ppAGCTeams ) = 0;
+      virtual HRESULT __stdcall get_LookupShip (
+        /*[in]*/ AGCUniqueID idAGC,
+        /*[out,retval]*/ struct IAGCShip * * ppAGCObject ) = 0;
+      virtual HRESULT __stdcall get_Ships (
+        /*[out,retval]*/ struct IAGCShips * * ppShips ) = 0;
+      virtual HRESULT __stdcall get_Alephs (
+        /*[out,retval]*/ struct IAGCAlephs * * ppAlephs ) = 0;
+      virtual HRESULT __stdcall get_Asteroids (
+        /*[out,retval]*/ struct IAGCAsteroids * * ppAsteroids ) = 0;
+      virtual HRESULT __stdcall get_GameParameters (
+        /*[out,retval]*/ struct IAGCGameParameters * * ppParams ) = 0;
+      virtual HRESULT __stdcall get_GameID (
+        /*[out,retval]*/ AGCGameID * pMissionId ) = 0;
+      virtual HRESULT __stdcall get_LookupTeam (
+        /*[in]*/ AGCObjectID idAGC,
+        /*[out,retval]*/ struct IAGCTeam * * ppAGCObject ) = 0;
+      virtual HRESULT __stdcall raw_SendChat (
+        /*[in]*/ BSTR bstrText,
+        /*[in]*/ AGCSoundID idSound ) = 0;
+      virtual HRESULT __stdcall raw_SendCommand (
+        /*[in]*/ BSTR bstrCommand,
+        /*[in]*/ struct IAGCModel * pModelTarget,
+        /*[in]*/ AGCSoundID idSound ) = 0;
+      virtual HRESULT __stdcall get_GameStage (
+        /*[out,retval]*/ enum AGCGameStage * pStage ) = 0;
+      virtual HRESULT __stdcall get_Probes (
+        /*[out,retval]*/ struct IAGCProbes * * ppProbes ) = 0;
+      virtual HRESULT __stdcall get_Buoys (
+        /*[out,retval]*/ struct IAGCModels * * ppBuoys ) = 0;
+      virtual HRESULT __stdcall get_Treasures (
+        /*[out,retval]*/ struct IAGCModels * * ppTreasures ) = 0;
+      virtual HRESULT __stdcall get_Mines (
+        /*[out,retval]*/ struct IAGCModels * * ppMines ) = 0;
+      virtual HRESULT __stdcall get_ReplayCount (
+        /*[out,retval]*/ short * pnReplays ) = 0;
+      virtual HRESULT __stdcall get_ContextName (
+        /*[out,retval]*/ BSTR * pbstrContextName ) = 0;
+};
+
+struct __declspec(uuid("338da8ff-eba5-11d2-8b4b-00c04f681633"))
+IAGCSectors : IAGCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAGCSectorPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAGCSectorPtr GetItem (
+        VARIANT * pvIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ struct IAGCSector * * ppItemInterface ) = 0;
+};
+
+struct __declspec(uuid("1fc0e193-eba5-11d2-8b4b-00c04f681633"))
+IAGCSector : IAGCBase
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetModels))
+    IAGCModelsPtr Models;
+    __declspec(property(get=GetSelectableModels))
+    IAGCModelsPtr SelectableModels;
+    __declspec(property(get=GetTreasures))
+    IAGCModelsPtr Treasures;
+    __declspec(property(get=GetMines))
+    IAGCModelsPtr Mines;
+    __declspec(property(get=GetMissiles))
+    IAGCModelsPtr Missiles;
+    __declspec(property(get=GetStations))
+    IAGCStationsPtr Stations;
+    __declspec(property(get=GetShips))
+    IAGCShipsPtr Ships;
+    __declspec(property(get=GetAlephs))
+    IAGCAlephsPtr Alephs;
+    __declspec(property(get=GetAsteroids))
+    IAGCAsteroidsPtr Asteroids;
+    __declspec(property(get=GetScreenX))
+    float ScreenX;
+    __declspec(property(get=GetScreenY))
+    float ScreenY;
+    __declspec(property(get=GetProbes))
+    IAGCProbesPtr Probes;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    IAGCStationsPtr GetStations ( );
+    IAGCShipsPtr GetShips ( );
+    IAGCAlephsPtr GetAlephs ( );
+    IAGCAsteroidsPtr GetAsteroids ( );
+    HRESULT SendChat (
+        _bstr_t bstrText,
+        VARIANT_BOOL bIncludeEnemies,
+        AGCSoundID idSound );
+    HRESULT SendCommand (
+        _bstr_t bstrCommand,
+        struct IAGCModel * pModelTarget,
+        VARIANT_BOOL bIncludeEnemies,
+        AGCSoundID idSound );
+    float GetScreenX ( );
+    float GetScreenY ( );
+    IAGCModelsPtr GetMines ( );
+    IAGCModelsPtr GetMissiles ( );
+    IAGCProbesPtr GetProbes ( );
+    IAGCModelsPtr GetModels ( );
+    IAGCModelsPtr GetSelectableModels ( );
+    IAGCModelsPtr GetTreasures ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+      virtual HRESULT __stdcall get_Stations (
+        /*[out,retval]*/ struct IAGCStations * * ppStations ) = 0;
+      virtual HRESULT __stdcall get_Ships (
+        /*[out,retval]*/ struct IAGCShips * * ppShips ) = 0;
+      virtual HRESULT __stdcall get_Alephs (
+        /*[out,retval]*/ struct IAGCAlephs * * ppAlephs ) = 0;
+      virtual HRESULT __stdcall get_Asteroids (
+        /*[out,retval]*/ struct IAGCAsteroids * * ppAsteroids ) = 0;
+      virtual HRESULT __stdcall raw_SendChat (
+        /*[in]*/ BSTR bstrText,
+        /*[in]*/ VARIANT_BOOL bIncludeEnemies,
+        /*[in]*/ AGCSoundID idSound ) = 0;
+      virtual HRESULT __stdcall raw_SendCommand (
+        /*[in]*/ BSTR bstrCommand,
+        /*[in]*/ struct IAGCModel * pModelTarget,
+        /*[in]*/ VARIANT_BOOL bIncludeEnemies,
+        /*[in]*/ AGCSoundID idSound ) = 0;
+      virtual HRESULT __stdcall get_ScreenX (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall get_ScreenY (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall get_Mines (
+        /*[out,retval]*/ struct IAGCModels * * ppMines ) = 0;
+      virtual HRESULT __stdcall get_Missiles (
+        /*[out,retval]*/ struct IAGCModels * * ppMissiles ) = 0;
+      virtual HRESULT __stdcall get_Probes (
+        /*[out,retval]*/ struct IAGCProbes * * ppProbes ) = 0;
+      virtual HRESULT __stdcall get_Models (
+        /*[out,retval]*/ struct IAGCModels * * ppModels ) = 0;
+      virtual HRESULT __stdcall get_SelectableModels (
+        /*[out,retval]*/ struct IAGCModels * * ppModels ) = 0;
+      virtual HRESULT __stdcall get_Treasures (
+        /*[out,retval]*/ struct IAGCModels * * ppTreasures ) = 0;
+};
+
+struct __declspec(uuid("6ea96980-0272-11d3-8b55-00c04f681633"))
+IAGCStations : IAGCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAGCStationPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAGCStationPtr GetItem (
+        VARIANT * pvIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ struct IAGCStation * * ppItemInterface ) = 0;
+};
+
+struct __declspec(uuid("d64cb547-0a42-11d3-8b58-00c04f681633"))
+IAGCModel : IAGCBase
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetVelocity))
+    IAGCVectorPtr Velocity;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetOrientation))
+    IAGCOrientationPtr Orientation;
+    __declspec(property(get=GetRadius))
+    float Radius;
+    __declspec(property(get=GetTeam))
+    IAGCTeamPtr Team;
+    __declspec(property(get=GetMass))
+    float Mass;
+    __declspec(property(get=GetSector))
+    IAGCSectorPtr Sector;
+    __declspec(property(get=GetSignature))
+    float Signature;
+    __declspec(property(get=GetIsVisible))
+    VARIANT_BOOL IsVisible;
+    __declspec(property(get=GetIsSeenBySide))
+    VARIANT_BOOL IsSeenBySide[];
+    __declspec(property(get=GetPosition))
+    IAGCVectorPtr Position;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL GetIsVisible ( );
+    VARIANT_BOOL GetIsSeenBySide (
+        struct IAGCTeam * pTeam );
+    IAGCVectorPtr GetPosition ( );
+    IAGCVectorPtr GetVelocity ( );
+    IAGCOrientationPtr GetOrientation ( );
+    float GetRadius ( );
+    IAGCTeamPtr GetTeam ( );
+    float GetMass ( );
+    IAGCSectorPtr GetSector ( );
+    float GetSignature ( );
+    _bstr_t GetName ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsVisible (
+        /*[out,retval]*/ VARIANT_BOOL * pbVisible ) = 0;
+      virtual HRESULT __stdcall get_IsSeenBySide (
+        /*[in]*/ struct IAGCTeam * pTeam,
+        /*[out,retval]*/ VARIANT_BOOL * pbSeen ) = 0;
+      virtual HRESULT __stdcall get_Position (
+        /*[out,retval]*/ struct IAGCVector * * ppVector ) = 0;
+      virtual HRESULT __stdcall get_Velocity (
+        /*[out,retval]*/ struct IAGCVector * * ppVector ) = 0;
+      virtual HRESULT __stdcall get_Orientation (
+        /*[out,retval]*/ struct IAGCOrientation * * ppOrientation ) = 0;
+      virtual HRESULT __stdcall get_Radius (
+        /*[out,retval]*/ float * pfRadius ) = 0;
+      virtual HRESULT __stdcall get_Team (
+        /*[out,retval]*/ struct IAGCTeam * * ppTeam ) = 0;
+      virtual HRESULT __stdcall get_Mass (
+        /*[out,retval]*/ float * pfMass ) = 0;
+      virtual HRESULT __stdcall get_Sector (
+        /*[out,retval]*/ struct IAGCSector * * ppSector ) = 0;
+      virtual HRESULT __stdcall get_Signature (
+        /*[out,retval]*/ float * pfSignature ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+};
+
+struct __declspec(uuid("df2f4b4e-0a42-11d3-8b58-00c04f681633"))
+IAGCDamage : IAGCModel
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetFraction))
+    float Fraction;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    float GetFraction ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Fraction (
+        /*[out,retval]*/ float * pfFraction ) = 0;
+};
+
+struct __declspec(uuid("e9004e70-0a42-11d3-8b58-00c04f681633"))
+IAGCScanner : IAGCDamage
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetInScannerRange))
+    VARIANT_BOOL InScannerRange[];
+    __declspec(property(get=GetCanSee))
+    VARIANT_BOOL CanSee[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL GetInScannerRange (
+        struct IAGCModel * pModel );
+    VARIANT_BOOL GetCanSee (
+        struct IAGCModel * pModel );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_InScannerRange (
+        /*[in]*/ struct IAGCModel * pModel,
+        /*[out,retval]*/ VARIANT_BOOL * pbInScannerRange ) = 0;
+      virtual HRESULT __stdcall get_CanSee (
+        /*[in]*/ struct IAGCModel * pModel,
+        /*[out,retval]*/ VARIANT_BOOL * pbCanSee ) = 0;
+};
+
+struct __declspec(uuid("c9438c34-026a-11d3-8b55-00c04f681633"))
+IAGCStation : IAGCScanner
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetShieldFraction,put=PutShieldFraction))
+    float ShieldFraction;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutShieldFraction (
+        float pVal );
+    float GetShieldFraction ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ShieldFraction (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_ShieldFraction (
+        /*[out,retval]*/ float * pVal ) = 0;
+};
+
+struct __declspec(uuid("4f860d30-0a42-11d3-8b58-00c04f681633"))
+IAGCShip : IAGCScanner
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAmmo,put=PutAmmo))
+    short Ammo;
+    __declspec(property(get=GetFuel,put=PutFuel))
+    float Fuel;
+    __declspec(property(get=GetEnergy,put=PutEnergy))
+    float Energy;
+    __declspec(property(get=GetWingID,put=PutWingID))
+    short WingID;
+    __declspec(property(get=GetHullType))
+    IAGCHullTypePtr HullType;
+    __declspec(property(get=GetBaseHullType))
+    IAGCHullTypePtr BaseHullType;
+    __declspec(property(get=GetAutoDonate,put=PutAutoDonate))
+    IAGCShipPtr AutoDonate;
+    __declspec(property(get=GetShieldFraction,put=PutShieldFraction))
+    float ShieldFraction;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutAmmo (
+        short pVal );
+    short GetAmmo ( );
+    void PutFuel (
+        float pVal );
+    float GetFuel ( );
+    void PutEnergy (
+        float pVal );
+    float GetEnergy ( );
+    void PutWingID (
+        short pVal );
+    short GetWingID ( );
+    HRESULT SendChat (
+        _bstr_t bstrText,
+        AGCSoundID idSound );
+    HRESULT SendCommand (
+        _bstr_t bstrCommand,
+        struct IAGCModel * pModelTarget,
+        AGCSoundID idSound );
+    void PutAutoDonate (
+        struct IAGCShip * ppShip );
+    IAGCShipPtr GetAutoDonate ( );
+    void PutShieldFraction (
+        float pVal );
+    float GetShieldFraction ( );
+    IAGCHullTypePtr GetHullType ( );
+    IAGCHullTypePtr GetBaseHullType ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_Ammo (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_Ammo (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_Fuel (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_Fuel (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_Energy (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_Energy (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_WingID (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_WingID (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SendChat (
+        /*[in]*/ BSTR bstrText,
+        /*[in]*/ AGCSoundID idSound ) = 0;
+      virtual HRESULT __stdcall raw_SendCommand (
+        /*[in]*/ BSTR bstrCommand,
+        /*[in]*/ struct IAGCModel * pModelTarget,
+        /*[in]*/ AGCSoundID idSound ) = 0;
+      virtual HRESULT __stdcall put_AutoDonate (
+        /*[in]*/ struct IAGCShip * ppShip ) = 0;
+      virtual HRESULT __stdcall get_AutoDonate (
+        /*[out,retval]*/ struct IAGCShip * * ppShip ) = 0;
+      virtual HRESULT __stdcall put_ShieldFraction (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_ShieldFraction (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall get_HullType (
+        /*[out,retval]*/ struct IAGCHullType * * ppHullType ) = 0;
+      virtual HRESULT __stdcall get_BaseHullType (
+        /*[out,retval]*/ struct IAGCHullType * * ppHullType ) = 0;
+};
+
+struct __declspec(uuid("edb8c96c-1ebe-11d3-8b63-00c04f681633"))
+IAGCShips : IAGCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAGCShipPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAGCShipPtr GetItem (
+        VARIANT * pvIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ struct IAGCShip * * ppItemInterface ) = 0;
+};
+
+struct __declspec(uuid("4214fd6f-eba5-11d2-8b4b-00c04f681633"))
+IAGCTeam : IAGCBase
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetCiv))
+    _bstr_t Civ;
+    __declspec(property(get=GetStations))
+    IAGCStationsPtr Stations;
+    __declspec(property(get=GetShips))
+    IAGCShipsPtr Ships;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    IAGCStationsPtr GetStations ( );
+    IAGCShipsPtr GetShips ( );
+    _bstr_t GetCiv ( );
+    HRESULT SendChat (
+        _bstr_t bstrText,
+        short idWing,
+        AGCSoundID idSound );
+    HRESULT SendCommand (
+        _bstr_t bstrCommand,
+        struct IAGCModel * pModelTarget,
+        short idWing,
+        AGCSoundID idSound );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+      virtual HRESULT __stdcall get_Stations (
+        /*[out,retval]*/ struct IAGCStations * * ppStations ) = 0;
+      virtual HRESULT __stdcall get_Ships (
+        /*[out,retval]*/ struct IAGCShips * * ppShips ) = 0;
+      virtual HRESULT __stdcall get_Civ (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+      virtual HRESULT __stdcall raw_SendChat (
+        /*[in]*/ BSTR bstrText,
+        /*[in]*/ short idWing,
+        /*[in]*/ AGCSoundID idSound ) = 0;
+      virtual HRESULT __stdcall raw_SendCommand (
+        /*[in]*/ BSTR bstrCommand,
+        /*[in]*/ struct IAGCModel * pModelTarget,
+        /*[in]*/ short idWing,
+        /*[in]*/ AGCSoundID idSound ) = 0;
+};
+
+struct __declspec(uuid("0afec67e-0325-11d3-8b57-00c04f681633"))
+IAGCAleph : IAGCModel
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetDestination))
+    IAGCAlephPtr Destination;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAGCAlephPtr GetDestination ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Destination (
+        /*[out,retval]*/ struct IAGCAleph * * ppDestination ) = 0;
+};
+
+struct __declspec(uuid("88400bb3-026b-11d3-8b55-00c04f681633"))
+IAGCAlephs : IAGCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAGCAlephPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAGCAlephPtr GetItem (
+        VARIANT * pvIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ struct IAGCAleph * * ppAGCAleph ) = 0;
+};
+
+struct __declspec(uuid("8b4100a0-38b7-11d3-a51d-00c04f68deb0"))
+IAGCAsteroid : IAGCDamage
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetOre))
+    float Ore;
+    __declspec(property(get=GetCapabilities))
+    AGCAsteroidAbilityBitMask Capabilities;
+    __declspec(property(get=GetHasCapability))
+    VARIANT_BOOL HasCapability[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    float GetOre ( );
+    AGCAsteroidAbilityBitMask GetCapabilities ( );
+    VARIANT_BOOL GetHasCapability (
+        AGCAsteroidAbilityBitMask aabm );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Ore (
+        /*[out,retval]*/ float * pfOre ) = 0;
+      virtual HRESULT __stdcall get_Capabilities (
+        /*[out,retval]*/ AGCAsteroidAbilityBitMask * paabmCapabilities ) = 0;
+      virtual HRESULT __stdcall get_HasCapability (
+        /*[in]*/ AGCAsteroidAbilityBitMask aabm,
+        /*[out,retval]*/ VARIANT_BOOL * pbHasCapability ) = 0;
+};
+
+struct __declspec(uuid("a61112c6-38b7-11d3-a51d-00c04f68deb0"))
+IAGCAsteroids : IAGCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAGCAsteroidPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAGCAsteroidPtr GetItem (
+        VARIANT * pvIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ struct IAGCAsteroid * * ppItem ) = 0;
+};
+
+struct __declspec(uuid("9f04169b-fb9f-48c2-891b-dfc9b29e0493"))
+IAGCModels : IAGCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAGCModelPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAGCModelPtr GetItem (
+        VARIANT * pvIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ struct IAGCModel * * ppItemInterface ) = 0;
+};
+
+struct __declspec(uuid("2a91fb76-71ba-4f1a-b1e8-a457a592854d"))
+IAGCProbe : IAGCScanner
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetEmissionPoint))
+    IAGCVectorPtr EmissionPoint;
+    __declspec(property(get=GetLifespan))
+    float Lifespan;
+    __declspec(property(get=GetDtBurst))
+    float DtBurst;
+    __declspec(property(get=GetAccuracy))
+    float Accuracy;
+    __declspec(property(get=GetIsRipcord))
+    VARIANT_BOOL IsRipcord;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAGCVectorPtr GetEmissionPoint ( );
+    float GetLifespan ( );
+    float GetDtBurst ( );
+    float GetAccuracy ( );
+    VARIANT_BOOL GetIsRipcord ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_EmissionPoint (
+        /*[out,retval]*/ struct IAGCVector * * ppEmissionPoint ) = 0;
+      virtual HRESULT __stdcall get_Lifespan (
+        /*[out,retval]*/ float * pfLifespan ) = 0;
+      virtual HRESULT __stdcall get_DtBurst (
+        /*[out,retval]*/ float * pfDtBurst ) = 0;
+      virtual HRESULT __stdcall get_Accuracy (
+        /*[out,retval]*/ float * pfAccuracy ) = 0;
+      virtual HRESULT __stdcall get_IsRipcord (
+        /*[out,retval]*/ VARIANT_BOOL * pbIsRipcord ) = 0;
+};
+
+struct __declspec(uuid("8a003dbd-93e8-4922-ac4b-7af44291a89d"))
+IAGCProbes : IAGCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAGCProbePtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAGCProbePtr GetItem (
+        VARIANT * pvIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ struct IAGCProbe * * ppItemInterface ) = 0;
+};
+
+struct __declspec(uuid("65e8f3e4-eba5-11d2-8b4b-00c04f681633"))
+IAGCTeams : IAGCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAGCTeamPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAGCTeamPtr GetItem (
+        VARIANT * pvIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ struct IAGCTeam * * ppItemInterface ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "s:\alleg\src\ame\release\agc.tli"
+
+#pragma pack(pop)

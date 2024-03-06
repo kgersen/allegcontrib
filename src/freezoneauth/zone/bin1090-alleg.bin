@@ -1,0 +1,18 @@
+//
+// Allegiance configuration
+//
+
+[core/Launcher]
+// allegiance launcher
+clsid = SZ, {3D717C57-2AD9-11d3-8B8E-00C04F8EF2FF}
+dll = SZ, Allegiance.dll
+
+
+//
+// window manager objects
+//
+[Lobby/TableViewCtl]
+// the default PremiumView ctl
+clsid = SZ, {E07A67F7-13C4-11d3-9B43-00C04F8EF466}
+dll = SZ, ZoneClient.dll
+

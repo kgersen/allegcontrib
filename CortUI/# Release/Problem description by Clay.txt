@@ -1,0 +1,5 @@
+• CortUI-refresh-issue (I noticed that the bug tends to manifest in a busy sector with ships from both teams. It doesn't seem to manifest in sectors with only 1 type of ship, or I just never notice because I'm not using the map as much when enemies aren't around.
+
+The symptoms of the bug are simple - the map stops updating until I mouse over the sector. Ship composition changes (people get podded, etc) and the map still shows an old readout. This especially happens when bombers are involved. The freeze includes both the sector I'm in, and sectors that have warnings posted (combat or bomber).
+
+Sectors with warnings posted are interesting, because the map will stop blinking (with the blink locked in either off or on mode). I really notice the lack of blinking in the hanger screen, but am unsure if that is related to the overall problem of ship readouts not showing.)

@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="feddts" targetNamespace="http://www.tempuri.org/feddts.xsd" xmlns:mstns="http://www.tempuri.org/feddts.xsd"
+	xmlns="http://www.tempuri.org/feddts.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="feddts" msdata:IsDataSet="true" msdata:Locale="fr-FR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Afterburners">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PartID" type="xs:short" />
+							<xs:element name="BurnRate" type="xs:float" />
+							<xs:element name="MaxThrust" type="xs:float" />
+							<xs:element name="HullThrustMultiplier" type="xs:float" />
+							<xs:element name="rateOn" type="xs:float" />
+							<xs:element name="rateOff" type="xs:float" />
+							<xs:element name="InteriorSound" type="xs:short" />
+							<xs:element name="ExteriorSound" type="xs:short" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Ammo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PartID" type="xs:short" />
+							<xs:element name="Qty" type="xs:short" />
+							<xs:element name="AmmoType" type="xs:unsignedByte" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AttachPoints">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ShipTypeID" type="xs:short" />
+							<xs:element name="AttachPointID" type="xs:short" />
+							<xs:element name="FrameName" type="xs:string" />
+							<xs:element name="PartTypeID" type="xs:unsignedByte" />
+							<xs:element name="FieldOfFire" type="xs:short" />
+							<xs:element name="PartMask" type="xs:short" />
+							<xs:element name="GunnerHUD" type="xs:string" />
+							<xs:element name="InteriorSound" type="xs:short" />
+							<xs:element name="TurnSound" type="xs:short" />
+							<xs:element name="LocationAbreviation" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Chaff">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ExpendableID" type="xs:short" />
+							<xs:element name="Strength" type="xs:float" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Civs">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CivID" type="xs:short" />
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="EscapePodShipTypeID" type="xs:short" />
+							<xs:element name="TechBitsCiv" type="xs:string" />
+							<xs:element name="StartingGlobalAttributeID" type="xs:short" minOccurs="0" />
+							<xs:element name="InitialStationTypeID" type="xs:short" />
+							<xs:element name="IconName" type="xs:string" />
+							<xs:element name="StationHUD" type="xs:string" />
+							<xs:element name="PreferredPartID15" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID14" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID13" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID12" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID11" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID10" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID9" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID8" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID7" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID6" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID5" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID4" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID3" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID2" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID1" type="xs:short" minOccurs="0" />
+							<xs:element name="TechBitsCivNoDev" type="xs:string" />
+							<xs:element name="BonusMoney" type="xs:float" />
+							<xs:element name="IncomeMoney" type="xs:float" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Cloaks">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PartID" type="xs:short" />
+							<xs:element name="EnergyConsumption" type="xs:float" />
+							<xs:element name="MaxCloaking" type="xs:float" />
+							<xs:element name="OnRate" type="xs:float" />
+							<xs:element name="OffRate" type="xs:float" />
+							<xs:element name="EngageSound" type="xs:short" />
+							<xs:element name="DisengageSound" type="xs:short" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Constants">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PointsWin" type="xs:double" />
+							<xs:element name="PointsWarpsSpotted" type="xs:double" />
+							<xs:element name="PointsAsteroidsSpotted" type="xs:double" />
+							<xs:element name="PointsMinerKills" type="xs:double" />
+							<xs:element name="PointsBuilderKills" type="xs:double" />
+							<xs:element name="PointsLayerKills" type="xs:double" />
+							<xs:element name="PointsBaseKills" type="xs:double" />
+							<xs:element name="PointsBaseCaptures" type="xs:double" />
+							<xs:element name="PointsTechsRecovered" type="xs:double" />
+							<xs:element name="PointsPlayerKills" type="xs:double" />
+							<xs:element name="PointsDeaths" type="xs:double" />
+							<xs:element name="PointsPilotBaseKills" type="xs:double" />
+							<xs:element name="PointsPilotBaseCaptures" type="xs:double" />
+							<xs:element name="PointsFlagCapture" type="xs:double" />
+							<xs:element name="PointsArtifactCapture" type="xs:double" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Developments">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Price" type="xs:int" />
+							<xs:element name="LoadoutBitmap" type="xs:string" />
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="TechBitsRequired" type="xs:string" />
+							<xs:element name="TechBitsEffect" type="xs:string" />
+							<xs:element name="DevelopmentID" type="xs:short" />
+							<xs:element name="SecondsToBuild" type="xs:short" />
+							<xs:element name="GlobalAttributeID" type="xs:short" minOccurs="0" />
+							<xs:element name="PRIcon" type="xs:string" minOccurs="0" />
+							<xs:element name="GroupID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="SortOrder" type="xs:int" minOccurs="0" />
+							<xs:element name="CompletedSound" type="xs:short" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Drones">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DroneID" type="xs:short" />
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="Price" type="xs:int" />
+							<xs:element name="ShipTypeID" type="xs:short" />
+							<xs:element name="TechBitsRequired" type="xs:string" />
+							<xs:element name="TechBitsEffect" type="xs:string" />
+							<xs:element name="SecondsToBuild" type="xs:short" />
+							<xs:element name="DroneType" type="xs:int" />
+							<xs:element name="GroupID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="SortOrder" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpendableID" type="xs:short" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Effects">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EffectID" type="xs:short" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="FileSound" type="xs:string" />
+							<xs:element name="IsLooping" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Expendables">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ExpendableID" type="xs:short" />
+							<xs:element name="Price" type="xs:int" />
+							<xs:element name="FileModel" type="xs:string" />
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="TechBitsRequired" type="xs:string" />
+							<xs:element name="TechBitsEffect" type="xs:string" />
+							<xs:element name="SignatureShip" type="xs:float" />
+							<xs:element name="Mass" type="xs:float" />
+							<xs:element name="LoadTime" type="xs:float" />
+							<xs:element name="LifeSpan" type="xs:float" />
+							<xs:element name="SignatureInstance" type="xs:float" />
+							<xs:element name="HitPoints" type="xs:short" />
+							<xs:element name="FileModelInstance" type="xs:string" />
+							<xs:element name="FileTextureInstance" type="xs:string" />
+							<xs:element name="Radius" type="xs:float" />
+							<xs:element name="RateRotation" type="xs:float" />
+							<xs:element name="percentRed" type="xs:unsignedByte" />
+							<xs:element name="percentGreen" type="xs:unsignedByte" />
+							<xs:element name="percentBlue" type="xs:unsignedByte" />
+							<xs:element name="percentAlpha" type="xs:unsignedByte" />
+							<xs:element name="PRIcon" type="xs:string" minOccurs="0" />
+							<xs:element name="PRIconInstance" type="xs:string" minOccurs="0" />
+							<xs:element name="PartMask" type="xs:short" />
+							<xs:element name="DefenseType" type="xs:unsignedByte" />
+							<xs:element name="SecondsToBuild" type="xs:short" />
+							<xs:element name="GroupID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="ExpendableSize" type="xs:short" />
+							<xs:element name="Capabilities" type="xs:short" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="GlobalAttributes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="GlobalAttributeID" type="xs:short" />
+							<xs:element name="MaxSpeed" type="xs:short" />
+							<xs:element name="Thrust" type="xs:short" />
+							<xs:element name="TurnRate" type="xs:short" />
+							<xs:element name="TurnTorque" type="xs:short" />
+							<xs:element name="MaxArmorStation" type="xs:short" />
+							<xs:element name="ArmorRegenerationStation" type="xs:short" />
+							<xs:element name="MaxShieldStation" type="xs:short" />
+							<xs:element name="ShieldRegenerationStation" type="xs:short" />
+							<xs:element name="MaxArmorShip" type="xs:short" />
+							<xs:element name="MaxShieldShip" type="xs:short" />
+							<xs:element name="ShieldRegenerationShip" type="xs:short" />
+							<xs:element name="ScanRange" type="xs:short" />
+							<xs:element name="Signature" type="xs:short" />
+							<xs:element name="MaxEnergy" type="xs:short" />
+							<xs:element name="SpeedAmmo" type="xs:short" />
+							<xs:element name="LifespanEnergy" type="xs:short" />
+							<xs:element name="TurnRateMissile" type="xs:short" />
+							<xs:element name="MiningRate" type="xs:short" />
+							<xs:element name="MiningYield" type="xs:short" />
+							<xs:element name="RipcordTime" type="xs:short" />
+							<xs:element name="DamageGuns" type="xs:short" />
+							<xs:element name="DamageMissiles" type="xs:short" />
+							<xs:element name="DevelopmentCost" type="xs:short" />
+							<xs:element name="DevelopmentTime" type="xs:short" />
+							<xs:element name="MiningCapacity" type="xs:short" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Magazines">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PartID" type="xs:short" />
+							<xs:element name="Amount" type="xs:short" />
+							<xs:element name="ExpendableID" type="xs:short" />
+							<xs:element name="SuccessorPartID" type="xs:short" minOccurs="0" />
+							<xs:element name="LaunchCount" type="xs:short" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Mines">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ExpendableID" type="xs:short" />
+							<xs:element name="PlacementRadius" type="xs:float" />
+							<xs:element name="MunitionCount" type="xs:unsignedByte" />
+							<xs:element name="Power" type="xs:float" />
+							<xs:element name="DamageType" type="xs:unsignedByte" />
+							<xs:element name="FileTextureMunition" type="xs:string" />
+							<xs:element name="percentRedMunition" type="xs:unsignedByte" />
+							<xs:element name="percentGreenMunition" type="xs:unsignedByte" />
+							<xs:element name="percentBlueMunition" type="xs:unsignedByte" />
+							<xs:element name="percentAlphaMunition" type="xs:unsignedByte" />
+							<xs:element name="PRIconMunition" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Missiles">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ExpendableID" type="xs:short" />
+							<xs:element name="Acceleration" type="xs:float" />
+							<xs:element name="TurnRate" type="xs:float" />
+							<xs:element name="InitialSpeed" type="xs:float" />
+							<xs:element name="ArmTime" type="xs:float" />
+							<xs:element name="LockTime" type="xs:float" />
+							<xs:element name="ReadyTime" type="xs:float" />
+							<xs:element name="Dispersion" type="xs:float" />
+							<xs:element name="LockAngle" type="xs:float" />
+							<xs:element name="Power" type="xs:float" />
+							<xs:element name="DamageType" type="xs:unsignedByte" />
+							<xs:element name="BlastPower" type="xs:float" />
+							<xs:element name="BlastRadius" type="xs:float" />
+							<xs:element name="IsDirectional" type="xs:boolean" />
+							<xs:element name="WidthOverHeight" type="xs:float" />
+							<xs:element name="MaxLock" type="xs:float" />
+							<xs:element name="ChaffResistance" type="xs:float" />
+							<xs:element name="LaunchSound" type="xs:short" />
+							<xs:element name="FlightSound" type="xs:short" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Parts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PartID" type="xs:short" />
+							<xs:element name="Price" type="xs:int" />
+							<xs:element name="FileModel" type="xs:string" />
+							<xs:element name="FileTexture" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="PartTypeID" type="xs:unsignedByte" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Mass" type="xs:short" />
+							<xs:element name="dSignatureMounted" type="xs:short" />
+							<xs:element name="dSignatureActive" type="xs:short" />
+							<xs:element name="TechBitsRequired" type="xs:string" />
+							<xs:element name="TechBitsEffect" type="xs:string" />
+							<xs:element name="ChanceTreasure" type="xs:unsignedByte" />
+							<xs:element name="PRIcon" type="xs:string" minOccurs="0" />
+							<xs:element name="PartMask" type="xs:short" />
+							<xs:element name="SuccessorPartID" type="xs:short" minOccurs="0" />
+							<xs:element name="InventoryLineMDL" type="xs:string" />
+							<xs:element name="SortOrder" type="xs:int" minOccurs="0" />
+							<xs:element name="SecondsToBuild" type="xs:short" />
+							<xs:element name="GroupID" type="xs:unsignedByte" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="PartTypes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PartTypeID" type="xs:unsignedByte" />
+							<xs:element name="PartTypeName" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Probes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ExpendableID" type="xs:short" />
+							<xs:element name="ScanRange" type="xs:float" />
+							<xs:element name="ProjectileID" type="xs:short" minOccurs="0" />
+							<xs:element name="dtimeBurst" type="xs:short" />
+							<xs:element name="accuracy" type="xs:unsignedByte" />
+							<xs:element name="dispersion" type="xs:double" />
+							<xs:element name="AmbientSound" type="xs:short" />
+							<xs:element name="Ammo" type="xs:short" />
+							<xs:element name="dtRipcord" type="xs:unsignedByte" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Projectiles">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ProjectileID" type="xs:short" />
+							<xs:element name="TimeDuration" type="xs:short" />
+							<xs:element name="HitPointsInflict" type="xs:float" />
+							<xs:element name="DamageType" type="xs:unsignedByte" />
+							<xs:element name="FileModel" type="xs:string" />
+							<xs:element name="FileTexture" type="xs:string" />
+							<xs:element name="SpeedMax" type="xs:short" />
+							<xs:element name="Acceleration" type="xs:short" />
+							<xs:element name="Size_cm" type="xs:short" />
+							<xs:element name="RadiusBlast_m" type="xs:unsignedByte" />
+							<xs:element name="percentPenetration" type="xs:unsignedByte" />
+							<xs:element name="RateRotation" type="xs:float" />
+							<xs:element name="IsAbsoluteSpeed" type="xs:boolean" />
+							<xs:element name="IsDirectional" type="xs:boolean" />
+							<xs:element name="IsExplodeOnExpire" type="xs:boolean" />
+							<xs:element name="IsProximityFuse" type="xs:boolean" />
+							<xs:element name="percentRed" type="xs:unsignedByte" />
+							<xs:element name="percentGreen" type="xs:unsignedByte" />
+							<xs:element name="percentBlue" type="xs:unsignedByte" />
+							<xs:element name="percentAlpha" type="xs:unsignedByte" />
+							<xs:element name="BlastPower" type="xs:float" />
+							<xs:element name="BlastRadius" type="xs:float" />
+							<xs:element name="WidthOverHeight" type="xs:float" />
+							<xs:element name="PRIcon" type="xs:string" minOccurs="0" />
+							<xs:element name="AmbientSound" type="xs:short" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Shields">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PartID" type="xs:short" />
+							<xs:element name="RegenRate" type="xs:float" />
+							<xs:element name="HitPoints" type="xs:short" />
+							<xs:element name="ActivateSound" type="xs:short" />
+							<xs:element name="DeactivateSound" type="xs:short" />
+							<xs:element name="DefenseType" type="xs:unsignedByte" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ShipClasses">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ShipClassID" type="xs:short" />
+							<xs:element name="ShipClassName" type="xs:string" />
+							<xs:element name="ShipClassDescription" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ShipTypes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="ShipTypeID" type="xs:short" />
+							<xs:element name="Model" type="xs:string" />
+							<xs:element name="Length" type="xs:float" />
+							<xs:element name="Weight" type="xs:float" />
+							<xs:element name="Price" type="xs:int" />
+							<xs:element name="BaseMaxSpeed" type="xs:int" />
+							<xs:element name="BaseHitPoints" type="xs:short" />
+							<xs:element name="BaseScannerRange" type="xs:int" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="MaxRollRate" type="xs:float" />
+							<xs:element name="MaxPitchRate" type="xs:float" />
+							<xs:element name="MaxYawRate" type="xs:float" />
+							<xs:element name="DriftRoll" type="xs:float" />
+							<xs:element name="DriftPitch" type="xs:float" />
+							<xs:element name="DriftYaw" type="xs:float" />
+							<xs:element name="Acceleration" type="xs:float" />
+							<xs:element name="AccelSideMultiplier" type="xs:float" />
+							<xs:element name="AccelBackMultiplier" type="xs:float" />
+							<xs:element name="BaseSignature" type="xs:short" />
+							<xs:element name="EnergyMax" type="xs:float" />
+							<xs:element name="RateRechargeEnergy" type="xs:float" />
+							<xs:element name="TechBitsRequired" type="xs:string" />
+							<xs:element name="TechBitsEffect" type="xs:string" />
+							<xs:element name="Capabilities" type="xs:short" />
+							<xs:element name="MaxAmmo" type="xs:short" />
+							<xs:element name="MaxFuel" type="xs:short" />
+							<xs:element name="PRIcon" type="xs:string" />
+							<xs:element name="ShieldPartMask" type="xs:short" />
+							<xs:element name="AfterburnerPartMask" type="xs:short" />
+							<xs:element name="CloakPartMask" type="xs:short" />
+							<xs:element name="MagazinePartMask" type="xs:short" />
+							<xs:element name="DispenserPartMask" type="xs:short" />
+							<xs:element name="ChaffPartMask" type="xs:short" />
+							<xs:element name="MagazineCapacity" type="xs:short" />
+							<xs:element name="DispenserCapacity" type="xs:short" />
+							<xs:element name="ChaffCapacity" type="xs:short" />
+							<xs:element name="SuccessorHullID" type="xs:short" minOccurs="0" />
+							<xs:element name="PilotHUD" type="xs:string" />
+							<xs:element name="ObserverHUD" type="xs:string" />
+							<xs:element name="InteriorSound" type="xs:short" />
+							<xs:element name="ExteriorSound" type="xs:short" />
+							<xs:element name="ThrustInteriorSound" type="xs:short" />
+							<xs:element name="ThrustExteriorSound" type="xs:short" />
+							<xs:element name="TurnInteriorSound" type="xs:short" />
+							<xs:element name="TurnExteriorSound" type="xs:short" />
+							<xs:element name="SortOrder" type="xs:int" minOccurs="0" />
+							<xs:element name="PreferredPartID14" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID13" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID12" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID11" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID10" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID9" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID8" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID7" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID6" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID5" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID4" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID3" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID2" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID1" type="xs:short" minOccurs="0" />
+							<xs:element name="DefenseType" type="xs:unsignedByte" />
+							<xs:element name="SecondsToBuild" type="xs:short" />
+							<xs:element name="GroupID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="RipcordSpeed" type="xs:float" />
+							<xs:element name="ECM" type="xs:float" />
+							<xs:element name="RipcordCost" type="xs:float" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StationClasses">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="StationClassID" type="xs:short" />
+							<xs:element name="StationClassName" type="xs:string" />
+							<xs:element name="StationClassDescription" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StationTypes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="StationTypeID" type="xs:short" />
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="Model" type="xs:string" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="Radius" type="xs:float" />
+							<xs:element name="HitPointsArmor" type="xs:short" />
+							<xs:element name="HitPointsShield" type="xs:short" />
+							<xs:element name="RateRegenShield" type="xs:float" />
+							<xs:element name="RateRegenArmor" type="xs:float" />
+							<xs:element name="Price" type="xs:int" />
+							<xs:element name="Signature" type="xs:short" />
+							<xs:element name="SecondsToBuild" type="xs:short" />
+							<xs:element name="TechBitsLocal" type="xs:string" />
+							<xs:element name="TechBitsRequired" type="xs:string" />
+							<xs:element name="TechBitsEffect" type="xs:string" />
+							<xs:element name="UpgradeStationTypeID" type="xs:short" minOccurs="0" />
+							<xs:element name="Capabilities" type="xs:short" />
+							<xs:element name="ScanRange" type="xs:float" />
+							<xs:element name="AsteroidDiscountMask" type="xs:short" />
+							<xs:element name="Income" type="xs:int" />
+							<xs:element name="PRIcon" type="xs:string" minOccurs="0" />
+							<xs:element name="BuildLocationSound" type="xs:short" />
+							<xs:element name="ConstructorAttackedSound" type="xs:short" />
+							<xs:element name="ConstructorDestroyedSound" type="xs:short" />
+							<xs:element name="CompletedSound" type="xs:short" />
+							<xs:element name="ExteriorSound" type="xs:short" />
+							<xs:element name="InteriorSound" type="xs:short" />
+							<xs:element name="InteriorAlertSound" type="xs:short" />
+							<xs:element name="UnderAttackSound" type="xs:short" />
+							<xs:element name="CriticalSound" type="xs:short" />
+							<xs:element name="DestroyedSound" type="xs:short" />
+							<xs:element name="CapturedSound" type="xs:short" />
+							<xs:element name="EnemyDestroyedSound" type="xs:short" />
+							<xs:element name="EnemyCapturedSound" type="xs:short" />
+							<xs:element name="GroupID" type="xs:unsignedByte" />
+							<xs:element name="ClassID" type="xs:unsignedByte" />
+							<xs:element name="SecondsToBuy" type="xs:short" />
+							<xs:element name="DefenseTypeArmor" type="xs:unsignedByte" />
+							<xs:element name="DefenseTypeShield" type="xs:unsignedByte" />
+							<xs:element name="BuilderName" type="xs:string" minOccurs="0" />
+							<xs:element name="ConstructionDroneTypeID" type="xs:short" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TechBits">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="BitID" type="xs:int" />
+							<xs:element name="BitShortName" type="xs:string" />
+							<xs:element name="BitLongName" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TreasureChances">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ObjectID" type="xs:short" />
+							<xs:element name="Chance" type="xs:unsignedByte" />
+							<xs:element name="TreasureSetID" type="xs:short" />
+							<xs:element name="TreasureCode" type="xs:unsignedByte" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TreasureSets">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TreasureSetName" type="xs:string" />
+							<xs:element name="TreasureSetID" type="xs:short" />
+							<xs:element name="IsZoneOnly" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Weapons">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PartID" type="xs:short" />
+							<xs:element name="dTimeBurstShots" type="xs:short" />
+							<xs:element name="dTimeReady" type="xs:short" />
+							<xs:element name="EnergyPerShot" type="xs:float" />
+							<xs:element name="ProjectileID1" type="xs:short" />
+							<xs:element name="cBulletsPerShot" type="xs:short" />
+							<xs:element name="ActivateSound" type="xs:short" />
+							<xs:element name="SingleShotSound" type="xs:short" />
+							<xs:element name="BurstShotSound" type="xs:short" />
+							<xs:element name="Dispersion" type="xs:float" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Afterburners" />
+			<xs:field xpath="mstns:PartID" />
+		</xs:unique>
+		<xs:unique name="Ammo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Ammo" />
+			<xs:field xpath="mstns:PartID" />
+		</xs:unique>
+		<xs:unique name="AttachPoints_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AttachPoints" />
+			<xs:field xpath="mstns:ShipTypeID" />
+			<xs:field xpath="mstns:AttachPointID" />
+		</xs:unique>
+		<xs:unique name="Chaff_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Chaff" />
+			<xs:field xpath="mstns:ExpendableID" />
+		</xs:unique>
+		<xs:unique name="Civs_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Civs" />
+			<xs:field xpath="mstns:CivID" />
+		</xs:unique>
+		<xs:unique name="Cloaks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Cloaks" />
+			<xs:field xpath="mstns:PartID" />
+		</xs:unique>
+		<xs:unique name="Developments_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Developments" />
+			<xs:field xpath="mstns:DevelopmentID" />
+		</xs:unique>
+		<xs:unique name="Drones_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Drones" />
+			<xs:field xpath="mstns:DroneID" />
+		</xs:unique>
+		<xs:unique name="Effects_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Effects" />
+			<xs:field xpath="mstns:EffectID" />
+		</xs:unique>
+		<xs:unique name="Expendables_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Expendables" />
+			<xs:field xpath="mstns:ExpendableID" />
+		</xs:unique>
+		<xs:unique name="GlobalAttributes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:GlobalAttributes" />
+			<xs:field xpath="mstns:GlobalAttributeID" />
+		</xs:unique>
+		<xs:unique name="Magazines_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Magazines" />
+			<xs:field xpath="mstns:PartID" />
+		</xs:unique>
+		<xs:unique name="Mines_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Mines" />
+			<xs:field xpath="mstns:ExpendableID" />
+		</xs:unique>
+		<xs:unique name="Missiles_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Missiles" />
+			<xs:field xpath="mstns:ExpendableID" />
+		</xs:unique>
+		<xs:unique name="Parts_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Parts" />
+			<xs:field xpath="mstns:PartID" />
+		</xs:unique>
+		<xs:unique name="PartTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:PartTypes" />
+			<xs:field xpath="mstns:PartTypeID" />
+		</xs:unique>
+		<xs:unique name="Probes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Probes" />
+			<xs:field xpath="mstns:ExpendableID" />
+		</xs:unique>
+		<xs:unique name="Projectiles_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Projectiles" />
+			<xs:field xpath="mstns:ProjectileID" />
+		</xs:unique>
+		<xs:unique name="Shields_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Shields" />
+			<xs:field xpath="mstns:PartID" />
+		</xs:unique>
+		<xs:unique name="ShipClasses_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ShipClasses" />
+			<xs:field xpath="mstns:ShipClassID" />
+		</xs:unique>
+		<xs:unique name="ShipTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ShipTypes" />
+			<xs:field xpath="mstns:ShipTypeID" />
+		</xs:unique>
+		<xs:unique name="StationClasses_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:StationClasses" />
+			<xs:field xpath="mstns:StationClassID" />
+		</xs:unique>
+		<xs:unique name="StationTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:StationTypes" />
+			<xs:field xpath="mstns:StationTypeID" />
+		</xs:unique>
+		<xs:unique name="TechBits_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:TechBits" />
+			<xs:field xpath="mstns:BitShortName" />
+		</xs:unique>
+		<xs:unique name="TreasureChances_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:TreasureChances" />
+			<xs:field xpath="mstns:ObjectID" />
+			<xs:field xpath="mstns:TreasureSetID" />
+		</xs:unique>
+		<xs:unique name="TreasureSets_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:TreasureSets" />
+			<xs:field xpath="mstns:TreasureSetID" />
+		</xs:unique>
+		<xs:unique name="Weapons_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Weapons" />
+			<xs:field xpath="mstns:PartID" />
+		</xs:unique>
+		<xs:keyref name="ProjInWeapon" refer="mstns:Projectiles_Constraint1" msdata:ConstraintOnly="true">
+			<xs:selector xpath=".//mstns:Weapons" />
+			<xs:field xpath="mstns:ProjectileID1" />
+		</xs:keyref>
+		<xs:keyref name="GlobalInDevel" refer="mstns:GlobalAttributes_Constraint1" msdata:ConstraintOnly="true">
+			<xs:selector xpath=".//mstns:Developments" />
+			<xs:field xpath="mstns:GlobalAttributeID" />
+		</xs:keyref>
+		<xs:keyref name="PartsAfterburners" refer="mstns:Parts_Constraint1" msdata:ConstraintOnly="true">
+			<xs:selector xpath=".//mstns:Afterburners" />
+			<xs:field xpath="mstns:PartID" />
+		</xs:keyref>
+		<xs:keyref name="PartsAmmo" refer="mstns:Parts_Constraint1" msdata:ConstraintOnly="true">
+			<xs:selector xpath=".//mstns:Ammo" />
+			<xs:field xpath="mstns:PartID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

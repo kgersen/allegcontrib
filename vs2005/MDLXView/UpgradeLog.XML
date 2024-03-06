@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MDLView">
+</Property><Property Name="Solution File" Value="C:\dev\alleg\contrib\vs2005\MDLXView\MDLView.sln">
+</Property><Property Name="User Options File" Value="C:\dev\alleg\contrib\vs2005\MDLXView\MDLView.suo">
+</Property><Property Name="Date" Value="dimanche 25 mai 2008">
+</Property><Property Name="Time" Value="04:34">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MDLView.sln" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\MDLView.sln">
+</Event><Event ErrorLevel="0" Project="" Source="MDLView.suo" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\MDLView.suo">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="MDLView.csproj" Description="Project file successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\MDLView.csproj">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="MDLView.csproj.user" Description="Project user file successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\MDLView.csproj.user">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="D3DApp.cs" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\D3DApp.cs">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="D3DEnumeration.cs" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\D3DEnumeration.cs">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="D3DFont.cs" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\D3DFont.cs">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="D3DSettingsForm.cs" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\D3DSettingsForm.cs">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="D3DUtil.cs" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\D3DUtil.cs">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="DXUtil.cs" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\DXUtil.cs">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="MDLFile.cs" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\MDLFile.cs">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="MDLView.cs" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\MDLView.cs">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="directx.ico" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\directx.ico">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="D3DApp.resx" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\D3DApp.resx">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="D3DSettingsForm.resx" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\D3DSettingsForm.resx">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="MDLView.resx" Description="File successfully backed up as C:\dev\alleg\contrib\vs2005\MDLXView\Backup\MDLView.resx">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="MDLView.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MDLView" Source="MDLView.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MDLView.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MDLView.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MDLView" Source="MDLView.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

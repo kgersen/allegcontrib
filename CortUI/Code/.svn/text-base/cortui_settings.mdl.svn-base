@@ -1,0 +1,30 @@
+// Version information
+cortUIVersionString = "CortUI v1.75";
+
+// Parameter: Number of chat lines in the lobby. Keep between 1 and 10.
+NumChatLinesLobby = ?;
+
+// Parameter: Number of chat lines. Keep between 1 and 10.
+NumChatLinesGlobal = ?;
+
+// Parameter: Number of chat lines. Keep between 1 and 10. Six is optimum.
+NumChatLinesLoadout = ?;
+
+// Parameter: 1 if the loadout window should always be shown in cockpit (non-removable), 0 if it should be toggled (off by default)
+AlwaysShowLoadoutWindow = ?;
+
+// Parameter: 1 if the minimap should always be shown at the loadout screen (non-removable), 0 if it should be never shown
+ShowMinimapAtLoadoutScreen = ?;
+
+// Parameter: 1 if the last accepted and last queued order should be shown, 0 if not
+ShowLastOrders = ?;
+
+// Parameter: 1 if the in-game chat display shall have a scrollbar, 0 if not
+ShowScrollbarOnCockpitChat = ?;
+
+// Parameter: 0 if classic CortUI normal HUD is used, 1 for lessHUD by FlingPu, 2 for JelloShot by FlingPu 
+NormalHUDMode = ?;
+
+// Parameter: 0 if the default software HUD is used, 1 for the software HUD with targeting view,
+// 2 for the modified software HUD 'Raveen-style', 3 for the modified software HUD 'Parci-style'
+SoftwareHUDMode = ?;

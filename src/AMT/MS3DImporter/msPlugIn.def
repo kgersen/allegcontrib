@@ -1,0 +1,7 @@
+DESCRIPTION 'MilkShape 3D Allegiance Importer'
+
+VERSION     1.0
+
+LIBRARY      "msAllegImporter"
+EXPORTS
+    CreatePlugIn

@@ -1,0 +1,9 @@
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Debug\MDLView.exe
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Debug\MDLView.pdb
+C:\dev\alleg\contrib\vs2005\MDLView\bin\Debug\MDLView.exe
+C:\dev\alleg\contrib\vs2005\MDLView\bin\Debug\MDLView.pdb
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Debug\SampleException.resources
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Debug\D3DSettings.resources
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Debug\MDLView.MyGraphicsSample.resources
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Debug\MDLView.csproj.GenerateResource.Cache

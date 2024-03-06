@@ -1,0 +1,9 @@
+obj\Debug\MDLView.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SampleException.resources
+obj\Debug\D3DSettings.resources
+obj\Debug\MDLView.MyGraphicsSample.resources
+obj\Debug\MDLView.csproj.GenerateResource.Cache
+bin\Debug\MDLView.exe
+bin\Debug\MDLView.pdb
+obj\Debug\MDLView.exe

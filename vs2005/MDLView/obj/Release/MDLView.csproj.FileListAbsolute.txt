@@ -1,0 +1,7 @@
+C:\dev\alleg\contrib\vs2005\MDLView\bin\Release\MDLView.exe
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Release\ResolveAssemblyReference.cache
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Release\GraphicsSample.resources
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Release\D3DSettingsForm.resources
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Release\MDLView.MyGraphicsSample.resources
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Release\MDLView.csproj.GenerateResource.Cache
+C:\dev\alleg\contrib\vs2005\MDLView\obj\Release\MDLView.exe

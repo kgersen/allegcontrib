@@ -1,0 +1,12 @@
+Lights = 4
+,FrameData = 12
+LOD[4](
+	Group[2](
+			MESH: 510,1287 - Texture = fig05bmp,
+			MESH: 16,72,
+	)
+,
+	[64.000000]MESH: 388,1095 - Texture = fig05bmp,
+	[32.000000]MESH: 265,624,
+	[8.000000]MESH: 45,57 - Texture = fig05bmp,
+)

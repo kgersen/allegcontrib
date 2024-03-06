@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AME", "AGM.vcproj", "{EAAB783C-9D94-4B92-89DC-543AF4435E0D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AMR", "..\AMR\AMR.vcproj", "{7EF25E11-8A32-4BF5-9693-0254C9946634}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		AGM2 = AGM2
+		AGM2 release = AGM2 release
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.AGM2.ActiveCfg = AGM2|Win32
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.AGM2.Build.0 = AGM2|Win32
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.AGM2 release.ActiveCfg = AGM2 release|Win32
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.AGM2 release.Build.0 = AGM2 release|Win32
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.Debug.ActiveCfg = Debug|Win32
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.Debug.Build.0 = Debug|Win32
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.Release.ActiveCfg = Release|Win32
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.Release.Build.0 = Release|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.AGM2.ActiveCfg = AGM2|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.AGM2.Build.0 = AGM2|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.AGM2 release.ActiveCfg = AGM2 release|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.AGM2 release.Build.0 = AGM2 release|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.Debug.ActiveCfg = Debug|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.Debug.Build.0 = Debug|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.Release.ActiveCfg = Release|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

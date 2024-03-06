@@ -1,0 +1,59 @@
+// freezoneauth.idl : IDL source for freezoneauth
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (freezoneauth.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(77F8674B-7881-4B9C-8D0F-D5674D737E6C),
+	dual,
+	nonextensible,
+	helpstring("IFZAuth Interface"),
+	pointer_default(unique)
+]
+interface IFZAuth : IUnknown {
+	[id(1), helpstring("method Meth1")] HRESULT Meth1([in] CHAR *p1, [in] ULONG p2, [in] BYTE *p3, [in] ULONG p4, [in] CHAR *p5, [in] CHAR *p6);
+	[id(2), helpstring("method Meth2")] HRESULT Meth2([in] BSTR p1, [in] BSTR p2);
+	[id(3), helpstring("method Meth3")] HRESULT Meth3([in] CHAR *p1, [in] CHAR *p2, [in] CLSID *p3, [in] ULONG *p4, [in] ULONG *p5);
+};
+[
+	object,
+	uuid(BE3509B5-7071-450E-B46D-BADE91F805DE),
+	oleautomation,
+	nonextensible,
+	helpstring("ICFZATicket Interface"),
+	pointer_default(unique)
+]
+interface ICFZATicket : IUnknown{
+	[id(1), helpstring("method Meth1")] HRESULT Meth1([in] CHAR* p1, [in] BYTE* p2);
+};
+[
+	uuid(C3CE6652-FCE4-4E76-9E24-B22485EF0E30),
+	version(1.0),
+	helpstring("freezoneauth 1.0 Type Library")
+]
+library freezoneauthLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	[
+		uuid(616CEC65-3F9A-4BEB-A782-0C5EB55DFBED),
+		helpstring("FZAuth Class")
+	]
+	coclass FZAuth
+	{
+		[default] interface IFZAuth;
+	};
+	[
+		uuid(D80A91FA-14FF-49D0-AD88-223DF3D92841),
+		helpstring("CFZATicket Class")
+	]
+	coclass CFZATicket
+	{
+		[default] interface ICFZATicket;
+	};
+};

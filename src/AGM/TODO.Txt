@@ -1,0 +1,32 @@
+planning for beta 1:
+
+AGM: (game manager)
+- cleanup
+AME: (map editor)
+x finish map validity
+x custom render rocks (bases,ships,missiles and counter so far)
+- change server core.
+* bug fix: Z coords now shown when been set (ctrl+LBM on object)
+- more control on loading map
+* Paste  = shift + LMB click
+* Copy   = shift + RMB click
+* Delete = ctrl  + RMB click
+* added: DM option
+* added: "N/A" imbalance choice
+* added: allow eject pods toggle, Friendly fire and Lives
+- multi select
+* A lay-down rocks option with the following parameters:
+   Center (CX,CY,CZ), Radius ,Z Variance (ZVar) ,  Number of rocks (nbrocks)
+   Generate nbrocks (using rock templates for size,hp and sig) on a given disc
+   (Center and radius).
+   The rocks are randomly placed within the disc boundaries. 
+   If ZVar is 0, all rocks are on the same Z plan (CZ), otherwise
+   they're randomly set above and under the Z plan (CZ) (ie between CZ+ZVaz and CZ-Zvar).
+   
+   may 2002
+   
+   display distance to center (mad's request).
+   
+   extract ame from agm :)
+     
+http://groups.google.com/groups?q=c%23+class+implementing+a+com+interface&hl=en&lr=&ie=UTF-8&oe=UTF-8&selm=OQP4g%23%24BCHA.1360%40tkmsftngp05&rnum=7

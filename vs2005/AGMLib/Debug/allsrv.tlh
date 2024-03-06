@@ -1,0 +1,596 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.50727.762 (0a903b95).
+//
+// c:\dev\alleg\contrib\vs2005\agmlib\debug\allsrv.tlh
+//
+// C++ source equivalent of Win32 type library C:\\dev\\alleg\\R4\\objs\\FZDebug\\FedSrv\\AllSrv.exe
+// compiler-generated file created 07/23/07 at 20:33:24 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("bb5fc41c-dda4-11d2-8b46-00c04f681633"))
+/* LIBID */ __ALLEGIANCESERVERLib;
+struct /* coclass */ AdminInterfaces;
+struct __declspec(uuid("8d9be088-dda4-11d2-8b46-00c04f681633"))
+/* dual interface */ IAdminSession;
+struct __declspec(uuid("20721450-e7c0-11d2-8b4b-00c04f681633"))
+/* dual interface */ IAdminServer;
+struct __declspec(uuid("3ace4410-e6d3-11d2-8b4b-00c04f681633"))
+/* dual interface */ IAdminGames;
+struct __declspec(uuid("8fc514f8-e6ce-11d2-8b4b-00c04f681633"))
+/* dual interface */ IAdminGame;
+struct __declspec(uuid("f9e52a79-eba4-11d2-8b4b-00c04f681633"))
+/* dual interface */ IAdminUsers;
+struct __declspec(uuid("d5c9ad80-eba4-11d2-8b4b-00c04f681633"))
+/* dual interface */ IAdminUser;
+struct __declspec(uuid("986e689a-2db4-11d3-8b66-00c04f681633"))
+/* dual interface */ IAdminShip;
+struct __declspec(uuid("de3ed156-76a0-4a8e-8cfe-9ed26c3b0a5e"))
+/* interface */ IAdminSessionEvents;
+struct __declspec(uuid("6a9e632e-1889-11d3-8b61-00c04f681633"))
+/* dispinterface */ _IAdminSessionEvents;
+struct __declspec(uuid("b3339c1b-d267-420b-b3d7-59f127cdd9cf"))
+/* interface */ IAdminSessionClass;
+struct __declspec(uuid("cd7d4875-3d61-4cc4-83c1-48f698ed45f5"))
+/* interface */ IAdminSessionHost;
+struct /* coclass */ AdminSession;
+struct /* coclass */ AdminShip;
+struct /* coclass */ AdminGame;
+struct /* coclass */ AdminGames;
+struct /* coclass */ AdminServer;
+struct /* coclass */ AdminUser;
+struct /* coclass */ AdminUsers;
+typedef short AdminUserID;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IAdminSessionEvents, __uuidof(IAdminSessionEvents));
+_COM_SMARTPTR_TYPEDEF(_IAdminSessionEvents, __uuidof(_IAdminSessionEvents));
+_COM_SMARTPTR_TYPEDEF(IAdminSessionHost, __uuidof(IAdminSessionHost));
+_COM_SMARTPTR_TYPEDEF(IAdminSession, __uuidof(IAdminSession));
+_COM_SMARTPTR_TYPEDEF(IAdminSessionClass, __uuidof(IAdminSessionClass));
+_COM_SMARTPTR_TYPEDEF(IAdminServer, __uuidof(IAdminServer));
+_COM_SMARTPTR_TYPEDEF(IAdminGames, __uuidof(IAdminGames));
+_COM_SMARTPTR_TYPEDEF(IAdminGame, __uuidof(IAdminGame));
+_COM_SMARTPTR_TYPEDEF(IAdminUsers, __uuidof(IAdminUsers));
+_COM_SMARTPTR_TYPEDEF(IAdminUser, __uuidof(IAdminUser));
+_COM_SMARTPTR_TYPEDEF(IAdminShip, __uuidof(IAdminShip));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("8a1e3f7f-7a21-4fbf-9b39-d02cdb0d5402"))
+AdminInterfaces;
+    // [ default ] interface IAdminSession
+    // interface IAdminSessionEvents
+    // dispinterface _IAdminSessionEvents
+    // interface IAdminSessionClass
+    // interface IAdminServer
+    // interface IAdminShip
+    // interface IAdminGame
+    // interface IAdminGames
+    // interface IAdminServer
+    // interface IAdminUser
+    // interface IAdminUsers
+
+struct __declspec(uuid("de3ed156-76a0-4a8e-8cfe-9ed26c3b0a5e"))
+IAdminSessionEvents : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT OnEvent (
+        struct IAGCEvent * pEvent );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_OnEvent (
+        /*[in]*/ struct IAGCEvent * pEvent ) = 0;
+};
+
+struct __declspec(uuid("6a9e632e-1889-11d3-8b61-00c04f681633"))
+_IAdminSessionEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnEvent (
+        struct IAGCEvent * pEvent );
+};
+
+struct __declspec(uuid("cd7d4875-3d61-4cc4-83c1-48f698ed45f5"))
+IAdminSessionHost : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr GetIdentity (
+        long nCookie );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetIdentity (
+        /*[in]*/ long nCookie,
+        /*[out,retval]*/ IUnknown * * ppIdentity ) = 0;
+};
+
+struct __declspec(uuid("aaa8270f-dda4-11d2-8b46-00c04f681633"))
+AdminSession;
+    // [ default ] interface IAdminSession
+    // [ default, source ] dispinterface _IAdminSessionEvents
+    // [ source ] interface IAdminSessionEvents
+
+struct __declspec(uuid("3e389806-2db4-11d3-8b66-00c04f681633"))
+AdminShip;
+    // [ default ] interface IAdminShip
+
+struct __declspec(uuid("9f17114a-e6ce-11d2-8b4b-00c04f681633"))
+AdminGame;
+    // [ default ] interface IAdminGame
+
+struct __declspec(uuid("67757064-e6fc-11d2-8b4b-00c04f681633"))
+AdminGames;
+    // [ default ] interface IAdminGames
+
+struct __declspec(uuid("5b5ed2a6-e7c0-11d2-8b4b-00c04f681633"))
+AdminServer;
+    // [ default ] interface IAdminServer
+
+struct __declspec(uuid("e71ea5b8-eba4-11d2-8b4b-00c04f681633"))
+AdminUser;
+    // [ default ] interface IAdminUser
+
+struct __declspec(uuid("0bd51b94-eba5-11d2-8b4b-00c04f681633"))
+AdminUsers;
+    // [ default ] interface IAdminUsers
+
+struct __declspec(uuid("8d9be088-dda4-11d2-8b46-00c04f681633"))
+IAdminSession : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetPerfCounters))
+    IAGCEventPtr PerfCounters;
+    __declspec(property(get=GetSessionInfo,put=PutSessionInfo))
+    ITCSessionInfoPtr SessionInfo;
+    __declspec(property(get=GetSessionInfos))
+    ITCSessionInfosPtr SessionInfos;
+    __declspec(property(get=GetServer))
+    IAdminServerPtr Server;
+    __declspec(property(get=GetIsEventActivated))
+    long IsEventActivated[][];
+    __declspec(property(get=GetWhoStartedServer))
+    IAdminSessionPtr WhoStartedServer;
+    __declspec(property(get=GetVersion))
+    IAGCVersionInfoPtr Version;
+    __declspec(property(get=GetProcessID))
+    long ProcessID;
+    __declspec(property(get=GetEventLog))
+    IAGCEventLoggerPtr EventLog;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutSessionInfo (
+        struct ITCSessionInfo * ppSessionInfo );
+    ITCSessionInfoPtr GetSessionInfo ( );
+    ITCSessionInfosPtr GetSessionInfos ( );
+    IAdminServerPtr GetServer ( );
+    HRESULT ActivateEvents (
+        enum AGCEventID AGCEvent,
+        AGCUniqueID UniqueID );
+    HRESULT DeactivateEvents (
+        enum AGCEventID AGCEvent,
+        AGCUniqueID uniqueObjectID );
+    long GetIsEventActivated (
+        enum AGCEventID AGCEvent,
+        AGCUniqueID UniqueID );
+    HRESULT ActivateAllEvents ( );
+    HRESULT DeactivateAllEvents ( );
+    long GetProcessID ( );
+    IAGCVersionInfoPtr GetVersion ( );
+    HRESULT Stop ( );
+    HRESULT Pause ( );
+    IAdminSessionPtr GetWhoStartedServer ( );
+    IAGCEventLoggerPtr GetEventLog ( );
+    IAGCEventPtr GetPerfCounters ( );
+    HRESULT SendAdminChat (
+        _bstr_t bstrText,
+        long nUserID,
+        DATE dateOriginal );
+    HRESULT Continue ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_SessionInfo (
+        /*[in]*/ struct ITCSessionInfo * ppSessionInfo ) = 0;
+      virtual HRESULT __stdcall get_SessionInfo (
+        /*[out,retval]*/ struct ITCSessionInfo * * ppSessionInfo ) = 0;
+      virtual HRESULT __stdcall get_SessionInfos (
+        /*[out,retval]*/ struct ITCSessionInfos * * ppSessionInfos ) = 0;
+      virtual HRESULT __stdcall get_Server (
+        /*[out,retval]*/ struct IAdminServer * * ppServer ) = 0;
+      virtual HRESULT __stdcall raw_ActivateEvents (
+        enum AGCEventID AGCEvent,
+        /*[in]*/ AGCUniqueID UniqueID ) = 0;
+      virtual HRESULT __stdcall raw_DeactivateEvents (
+        enum AGCEventID AGCEvent,
+        /*[in]*/ AGCUniqueID uniqueObjectID ) = 0;
+      virtual HRESULT __stdcall get_IsEventActivated (
+        /*[in]*/ enum AGCEventID AGCEvent,
+        /*[in]*/ AGCUniqueID UniqueID,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_ActivateAllEvents ( ) = 0;
+      virtual HRESULT __stdcall raw_DeactivateAllEvents ( ) = 0;
+      virtual HRESULT __stdcall get_ProcessID (
+        /*[out,retval]*/ long * pdwProcessID ) = 0;
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ struct IAGCVersionInfo * * ppVersion ) = 0;
+      virtual HRESULT __stdcall raw_Stop ( ) = 0;
+      virtual HRESULT __stdcall raw_Pause ( ) = 0;
+      virtual HRESULT __stdcall get_WhoStartedServer (
+        /*[out,retval]*/ struct IAdminSession * * pIAdminSession ) = 0;
+      virtual HRESULT __stdcall get_EventLog (
+        /*[out,retval]*/ struct IAGCEventLogger * * ppEventLogger ) = 0;
+      virtual HRESULT __stdcall get_PerfCounters (
+        /*[out,retval]*/ struct IAGCEvent * * ppPerfCounters ) = 0;
+      virtual HRESULT __stdcall raw_SendAdminChat (
+        /*[in]*/ BSTR bstrText,
+        /*[in]*/ long nUserID,
+        /*[in]*/ DATE dateOriginal ) = 0;
+      virtual HRESULT __stdcall raw_Continue ( ) = 0;
+};
+
+struct __declspec(uuid("b3339c1b-d267-420b-b3d7-59f127cdd9cf"))
+IAdminSessionClass : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAdminSessionPtr CreateSession (
+        struct IAdminSessionHost * pHost );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_CreateSession (
+        /*[in]*/ struct IAdminSessionHost * pHost,
+        /*[out,retval]*/ struct IAdminSession * * ppSession ) = 0;
+};
+
+struct __declspec(uuid("20721450-e7c0-11d2-8b4b-00c04f681633"))
+IAdminServer : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLobbyServer,put=PutLobbyServer))
+    _bstr_t LobbyServer;
+    __declspec(property(get=GetPublicLobby,put=PutPublicLobby))
+    VARIANT_BOOL PublicLobby;
+    __declspec(property(get=GetGames))
+    IAdminGamesPtr Games;
+    __declspec(property(get=GetPlayerCount))
+    long PlayerCount;
+    __declspec(property(get=GetMissionCount))
+    long MissionCount;
+    __declspec(property(get=GetUsers))
+    IAdminUsersPtr Users;
+    __declspec(property(get=GetLookupUser))
+    IAdminUserPtr LookupUser[];
+    __declspec(property(get=GetFindUser))
+    IAdminUserPtr FindUser[];
+    __declspec(property(get=GetMachineName))
+    _bstr_t MachineName;
+    __declspec(property(get=GetPacketsIn))
+    long PacketsIn;
+    __declspec(property(get=GetPlayersOnline))
+    long PlayersOnline;
+    __declspec(property(get=GetTimeInnerLoop))
+    long TimeInnerLoop;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAdminGamesPtr GetGames ( );
+    long GetPlayerCount ( );
+    long GetMissionCount ( );
+    HRESULT SendMsg (
+        _bstr_t bstrMessage );
+    IAdminUsersPtr GetUsers ( );
+    IAdminUserPtr GetLookupUser (
+        AGCUniqueID id );
+    IAdminUserPtr GetFindUser (
+        _bstr_t bstrName );
+    _bstr_t GetMachineName ( );
+    long GetPacketsIn ( );
+    long GetPlayersOnline ( );
+    long GetTimeInnerLoop ( );
+    void PutLobbyServer (
+        _bstr_t pbstrLobbyServer );
+    _bstr_t GetLobbyServer ( );
+    void PutPublicLobby (
+        VARIANT_BOOL pbPublic );
+    VARIANT_BOOL GetPublicLobby ( );
+    HRESULT CreateDefaultGames ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Games (
+        /*[out,retval]*/ struct IAdminGames * * ppGames ) = 0;
+      virtual HRESULT __stdcall get_PlayerCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MissionCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SendMsg (
+        BSTR bstrMessage ) = 0;
+      virtual HRESULT __stdcall get_Users (
+        /*[out,retval]*/ struct IAdminUsers * * ppUsers ) = 0;
+      virtual HRESULT __stdcall get_LookupUser (
+        /*[in]*/ AGCUniqueID id,
+        /*[out,retval]*/ struct IAdminUser * * ppUser ) = 0;
+      virtual HRESULT __stdcall get_FindUser (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ struct IAdminUser * * ppUser ) = 0;
+      virtual HRESULT __stdcall get_MachineName (
+        /*[out,retval]*/ BSTR * pbstrMachineName ) = 0;
+      virtual HRESULT __stdcall get_PacketsIn (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_PlayersOnline (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_TimeInnerLoop (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LobbyServer (
+        /*[in]*/ BSTR pbstrLobbyServer ) = 0;
+      virtual HRESULT __stdcall get_LobbyServer (
+        /*[out,retval]*/ BSTR * pbstrLobbyServer ) = 0;
+      virtual HRESULT __stdcall put_PublicLobby (
+        /*[in]*/ VARIANT_BOOL pbPublic ) = 0;
+      virtual HRESULT __stdcall get_PublicLobby (
+        /*[out,retval]*/ VARIANT_BOOL * pbPublic ) = 0;
+      virtual HRESULT __stdcall raw_CreateDefaultGames ( ) = 0;
+};
+
+struct __declspec(uuid("3ace4410-e6d3-11d2-8b4b-00c04f681633"))
+IAdminGames : IAGCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAdminGamePtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAdminGamePtr GetItem (
+        VARIANT * pvIndex );
+    HRESULT Add (
+        struct IAGCGameParameters * pGameParameters );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT * pvIndex,
+        /*[out,retval]*/ struct IAdminGame * * ppGame ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        struct IAGCGameParameters * pGameParameters ) = 0;
+};
+
+struct __declspec(uuid("8fc514f8-e6ce-11d2-8b4b-00c04f681633"))
+IAdminGame : IAGCGame
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetUsers))
+    IAdminUsersPtr Users;
+    __declspec(property(get=GetGameOwnerUser))
+    IAdminUserPtr GameOwnerUser;
+    __declspec(property(get=GetDescription))
+    _bstr_t Description;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT SendMsg (
+        _bstr_t bstrMessage );
+    HRESULT Kill ( );
+    IAdminUsersPtr GetUsers ( );
+    IAdminUserPtr GetGameOwnerUser ( );
+    HRESULT StartGame ( );
+    _bstr_t GetDescription ( );
+    HRESULT StartCountdown ( );
+    HRESULT SetTeamName (
+        int iSideID,
+        _bstr_t bstrName );
+    HRESULT OverrideTechBit (
+        int iSideID,
+        int nTechBitID,
+        long bNewSetting );
+    HRESULT SetDetailsFiles (
+        _bstr_t bstrName );
+    HRESULT RandomizeTeams ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_SendMsg (
+        BSTR bstrMessage ) = 0;
+      virtual HRESULT __stdcall raw_Kill ( ) = 0;
+      virtual HRESULT __stdcall get_Users (
+        /*[out,retval]*/ struct IAdminUsers * * ppUsers ) = 0;
+      virtual HRESULT __stdcall get_GameOwnerUser (
+        /*[out,retval]*/ struct IAdminUser * * ppUser ) = 0;
+      virtual HRESULT __stdcall raw_StartGame ( ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pbstrDescription ) = 0;
+      virtual HRESULT __stdcall raw_StartCountdown ( ) = 0;
+      virtual HRESULT __stdcall raw_SetTeamName (
+        /*[in]*/ int iSideID,
+        /*[in]*/ BSTR bstrName ) = 0;
+      virtual HRESULT __stdcall raw_OverrideTechBit (
+        /*[in]*/ int iSideID,
+        /*[in]*/ int nTechBitID,
+        /*[in]*/ long bNewSetting ) = 0;
+      virtual HRESULT __stdcall raw_SetDetailsFiles (
+        /*[in]*/ BSTR bstrName ) = 0;
+      virtual HRESULT __stdcall raw_RandomizeTeams ( ) = 0;
+};
+
+struct __declspec(uuid("f9e52a79-eba4-11d2-8b4b-00c04f681633"))
+IAdminUsers : ITCCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAdminUserPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAdminUserPtr GetItem (
+        const _variant_t & index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct IAdminUser * * ppUser ) = 0;
+};
+
+struct __declspec(uuid("d5c9ad80-eba4-11d2-8b4b-00c04f681633"))
+IAdminUser : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetisReady,put=PutisReady))
+    VARIANT_BOOL isReady;
+    __declspec(property(get=GetShip))
+    IAdminShipPtr Ship;
+    __declspec(property(get=GetUserID))
+    AdminUserID UserID;
+    __declspec(property(get=GetUniqueID))
+    AGCUniqueID UniqueID;
+    __declspec(property(get=GetPlayerStats))
+    IAGCEventPtr PlayerStats;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    HRESULT SendMsg (
+        _bstr_t bstrMessage );
+    VARIANT_BOOL GetisReady ( );
+    void PutisReady (
+        VARIANT_BOOL pVal );
+    IAdminShipPtr GetShip ( );
+    HRESULT Boot ( );
+    AdminUserID GetUserID ( );
+    AGCUniqueID GetUniqueID ( );
+    IAGCEventPtr GetPlayerStats ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pbstr ) = 0;
+      virtual HRESULT __stdcall raw_SendMsg (
+        BSTR bstrMessage ) = 0;
+      virtual HRESULT __stdcall get_isReady (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_isReady (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Ship (
+        /*[out,retval]*/ struct IAdminShip * * ppAdminShip ) = 0;
+      virtual HRESULT __stdcall raw_Boot ( ) = 0;
+      virtual HRESULT __stdcall get_UserID (
+        /*[out,retval]*/ AdminUserID * UserID ) = 0;
+      virtual HRESULT __stdcall get_UniqueID (
+        /*[out,retval]*/ AGCUniqueID * UniqueID ) = 0;
+      virtual HRESULT __stdcall get_PlayerStats (
+        /*[out,retval]*/ struct IAGCEvent * * ppStats ) = 0;
+};
+
+struct __declspec(uuid("986e689a-2db4-11d3-8b66-00c04f681633"))
+IAdminShip : IAGCShip
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetUser))
+    IAdminUserPtr User;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAdminUserPtr GetUser ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_User (
+        /*[out,retval]*/ struct IAdminUser * * ppUser ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\dev\alleg\contrib\vs2005\agmlib\debug\allsrv.tli"
+
+#pragma pack(pop)

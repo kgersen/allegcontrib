@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ICE3">
+</Property><Property Name="Solution File" Value="C:\dev\alleg\contrib\src\ICE3\ICE3.sln">
+</Property><Property Name="Date" Value="mercredi 8 août 2007">
+</Property><Property Name="Time" Value="14:03">
+</Property></Properties><Event ErrorLevel="0" Project="ICE3" Source="ICE3.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ICE3" Source="ICE3.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ICE3.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ICE3.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ICE3" Source="ICE3.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

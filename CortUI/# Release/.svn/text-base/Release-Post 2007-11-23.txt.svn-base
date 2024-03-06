@@ -1,0 +1,35 @@
+This is the release of CortUI 1.75.
+
+As usual I'm asking you to read the Release Notes, knowing that nobody will. :) But you should... (I guess I should hide some hints to easter eggs there. ;))
+
+It's probably a good idea to run the installer of an older release before installing this one. If not, you might end up with files left over from previous versions. You probably should not select Slipstream GUI during uninstallation. If you're not planning to keep Slipstream GUI, but still have it from pre-R4 times, it might be a good idea to back up your artwork directory and reinstall Allegiance before installing CortUI 1.75. (If you insist to keep Slipstream GUI *and* want to use CortUI, I'm not supporting that configuration.)
+
+The big changes are these:[list][*]Supports all R4 features. (And 'fixes' some that I thought could have been done better, for example there are no more overlapping text lines now.)
+[*]Includes lessHUD and JelloShot (i.e. CortUI 1.71 RC1, as released by FlingPu).
+[*]Slipstream GUI is no longer supported and no longer included in the installer. (Read up on the reasons [url=http://www.freeallegiance.org/forums/index.php?showtopic=37014]here[/url].)
+[*]JelloShot has issues with transparency. I'll look into it.
+[*]Improved displays of who your pilot is when in a turret.[/list]
+
+The rest you can find in the Release Notes. What I'm most proud of is that CortUI 1.75 comes without any BMP.MDLs. It's all PNG now, and they aren't littering your artwork directory, but are stored in mods/CortUI/media/, so it's using all the cool new features.
+
+I'll be gone over the weekend, so I really hope there are no major issues. I tested (with help) as much as I could, but there's always a configuration/situation you don't think about. As usual, I recommend doing a backup of your artwork directory – just in case.
+
+
+[u]Download[/u]
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI-1.75.exe]Download: CortUI 1.75 installer[/url] [[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI-1.75-ReleaseNotes.txt]Release Notes[/url]]
+(Access to the source code repository on request.)
+    
+I'm planning to set up a site for CortUI that also includes screenshots and stuff, but you know how it works around here... Two Weeks(tm).
+
+
+[u]Acknowledgments[/u]
+
+This release is dedicated to Denga. Get well soon, brother! :)
+
+Special thanks for this revision go to Grzegt, Wyld, badp, Wurf, Andon, Baker, Squire and Bard for helping me test in various ways. It's always a big help, and if it's just holding a server open so I can run many tests in a short time.
+
+I know I've been saying it about every release, but I just can't emphasise on this enough: There's no way CortUI would have been possible without Ksero's docs. I'm still using them as much as I did in the beginning. There's no single CortUI development session I don't open them at one point.
+
+
+-- Cort

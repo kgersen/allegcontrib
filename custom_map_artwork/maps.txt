@@ -1,0 +1,26 @@
+25
+2,Aces Squared,m2xacesq
+2,Beach Ball,m2xbeachb
+2,Blender,m2xblender
+2,BowTie,m2xbowtie
+2,Connectivity,m2xConnect
+2,Dune,m2xdune
+2,Emerald,m2xemer
+2,Flag Zone,m2xflagz
+2,Hilo4For2,m2xhilo42
+2,Iron Cross,m2xironc
+2,Iron Diamond,m2xirond
+2,Limited Diamond,m2xlimd
+2,Polished Diamond,m2xpold
+2,Rough Diamond,m2xroughd
+2,Spider Web,m2xspiderw
+2,Split Mix,m2xsplitm
+2,Star Cross,m2xstarc
+2,War & Peace,m2xwarpeace
+2,Weave,m2xweave
+2,WestEast,m2xWE
+2,Wheel,m2xwheel
+2,Wheel Inside,m2xwheeli
+4,Dune (4x),m4xdune
+4,Star Cross(4x),m4xstarc
+4,Rough Diamond(4x),m4xroughd

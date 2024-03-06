@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AGM", "AGM.vcproj", "{EAAB783C-9D94-4B92-89DC-543AF4435E0D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AGMLib", "..\AGMLib\AGMLib.vcproj", "{26F62BBD-63BF-484F-B699-2762DB3A2779}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGMTest", "..\AGMTest\AGMTest.csproj", "{BDF06266-CDDF-41F9-8488-F7499028D51D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.Debug.ActiveCfg = Debug|Win32
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.Debug.Build.0 = Debug|Win32
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.Release.ActiveCfg = Release|Win32
+		{EAAB783C-9D94-4B92-89DC-543AF4435E0D}.Release.Build.0 = Release|Win32
+		{26F62BBD-63BF-484F-B699-2762DB3A2779}.Debug.ActiveCfg = Debug|Win32
+		{26F62BBD-63BF-484F-B699-2762DB3A2779}.Debug.Build.0 = Debug|Win32
+		{26F62BBD-63BF-484F-B699-2762DB3A2779}.Release.ActiveCfg = Release|Win32
+		{26F62BBD-63BF-484F-B699-2762DB3A2779}.Release.Build.0 = Release|Win32
+		{BDF06266-CDDF-41F9-8488-F7499028D51D}.Debug.ActiveCfg = Debug|.NET
+		{BDF06266-CDDF-41F9-8488-F7499028D51D}.Debug.Build.0 = Debug|.NET
+		{BDF06266-CDDF-41F9-8488-F7499028D51D}.Release.ActiveCfg = Release|.NET
+		{BDF06266-CDDF-41F9-8488-F7499028D51D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

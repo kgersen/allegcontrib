@@ -1,0 +1,26 @@
+HKCR
+{
+	freezoneauth.CFZATicket.1 = s 'CFZATicket Class'
+	{
+		CLSID = s '{D80A91FA-14FF-49D0-AD88-223DF3D92841}'
+	}
+	freezoneauth.CFZATicket = s 'CFZATicket Class'
+	{
+		CLSID = s '{D80A91FA-14FF-49D0-AD88-223DF3D92841}'
+		CurVer = s 'freezoneauth.CFZATicket.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D80A91FA-14FF-49D0-AD88-223DF3D92841} = s 'CFZATicket Class'
+		{
+			ProgID = s 'freezoneauth.CFZATicket.1'
+			VersionIndependentProgID = s 'freezoneauth.CFZATicket'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{C3CE6652-FCE4-4E76-9E24-B22485EF0E30}'
+		}
+	}
+}

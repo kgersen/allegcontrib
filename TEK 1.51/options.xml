@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!--This file contains settings for TE's Kneeboard.-->
+<!--It is not recommended to edit this file manually.-->
+<!--You can change these settings from within Tek.-->
+<TekSettings SettingsVersion="1,5">
+  <Startup>0</Startup>
+  <SpecifiedCore />
+  <LastCore>C:\Program Files\Microsoft Games\Allegiance\Artwork\dn_000460.igc</LastCore>
+  <DefaultCoreLocation />
+  <NumTeams>2</NumTeams>
+  <RememberRecentCores>False</RememberRecentCores>
+  <RecentCores>
+    <Core>C:\Program Files\Microsoft Games\Allegiance\Artwork\dn_000460.igc</Core>
+  </RecentCores>
+  <ShowToolTips>True</ShowToolTips>
+  <ShowBalloonHelp>True</ShowBalloonHelp>
+  <ShowOverridden>False</ShowOverridden>
+</TekSettings>

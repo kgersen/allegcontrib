@@ -1,0 +1,60 @@
+header of acs08.mdl:
+tags=0004 l2=000A l3=0004 l4=0000
+tags(0)=model
+tags(1)=effect
+tags(2)=acs08bmp
+tags(3)=ss27insidebmp
+L2(0)=[0]ModifiableNumber
+L2(1)=[1]LightsGeo
+L2(2)=[0]time
+L2(3)=[1]FrameData
+L2(4)=[0]LODGeo
+L2(5)=[0]GroupGeo
+L2(6)=[0]TextureGeo
+L2(7)=[2]acs08bmp
+L2(8)=[0]MeshGeo
+L2(9)=[3]ss27insidebmp
+L3(0)=frame
+L3(1)=lights
+L3(2)=frames
+L3(3)=object
+end of header for file acs08.mdl -
+0 -> L3(0) = frame
+1 1.000000
+9 0 -> L2(1) = ModifiableNumber
+6 0 
+1 -> L3(1) = lights
+9 1 -> L2(1) = LightsGeo  7 16 -> 16 lights * 12 <16*12 floats>
+0 // end of L3
+2 -> L3(2) = frames
+9 3 -> L2(3) = FrameData 7 7 -> 7 * NamedPoint <7 named points>
+0 // end of L3
+3 -> L3(3) = object
+5 1
+	5 2
+		9 7 -> L2(7) = acs08bmp
+		9 8 -> L2(8) = MeshGeo = 7 596 -> 596 vertices 1380 -> 460 faces <596*8 float><1380 short>
+		9 6 -> L2(6)=[0]TextureGeo 6
+		0
+		9 9 -> L2(9) = ss27insidebmp 
+		9 8 -> L2(8) = MeshGeo = 7 16 -> 16 vertices 24 -> 8 faces <16*8 float> <24 short>
+		9 6 -> L2(6)=[0]TextureGeo 6
+		0
+		9 5 -> L2(5)=[0]GroupGeo 6
+		1 64.000000 10
+		0 
+	5 3
+		9 8 -> L2(8) = MeshGeo = 7 24 -> 24 vertices 72 -> 72/3 faces <24 *8 float> <72 shorts>
+	0
+		9 7 -> L2(7)=[2]acs08bmp 
+		9 8 -> L2(8) = MeshGeo = 7 600 vertices 1389/3 faces <600*8 float> <1389 float>
+		9 6 -> L2(6)=[0]TextureGeo 6
+	0
+		9 9 -> L2(9) = ss27insidebmp
+		9 8 -> L2(8) = MeshGeo = 7 XXXXXXXXXXXXXX
+		9 6 -> L2(6)=[0]TextureGeo 6
+	0
+	9 5 -> L2(5)=[0]GroupGeo 6 
+	
+	9 4 -> L2(4)=[0]LODGeo 6
+0

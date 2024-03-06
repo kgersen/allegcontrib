@@ -1,0 +1,126 @@
+[size=14]This is a modification of the in-game user interface. It is based on and inspired by [url=http://www.freeallegiance.org/modules.php?name=Forums&file=viewtopic&t=11664]Ksero's modification[/url].[/size]
+
+
+[color=yellow][size=14][u]Edits:[/u][/size]
+This post has been updated to v1.65 on August 18th, 2005.
+
+Main changes 1.2 to 1.4:
+- compatible with Slipstream GUI
+- command-bar in map-mode has been shrunk
+- number of chat lines is configurable
+
+Main changes 1.4 to 1.5:
+- the number of chat lines at the loadout screen is now configurable, independent of the number of chat lines at other screens (but I don't see a reason to change it, six is really the optimum)
+- ten lines of chat are now shown in the lobby as well
+- the in-game chat now has scrollbars (you can't interact with them with the mouse, they only show the current scrolling position) (this does also fix the old bug where some pixels are missing at the right side of very long lines)
+- some HUD-controls are shown during launch animation (chat, minimap, inventory, etc.) (this has the nice side effect that you can interact with the minimap, for instance start to ripcord)
+- inventory and minimap have been moved to the side for map-mode, thereby making more room for the actual map
+- the Z-order of the windows has been rearranged (e.g. critical info over investments, investments over inventory)
+- the positioning of the windows in hangar and map when in base have been moved, so that ten lines of chat are displayed at all times
+- the display of the last orders in the co-ckpit view has been removed (easy to get back, but does anybody need it?)
+- the back-button at the map has been removed (use F3 instead)
+- the back-button in the hangar has been removed (use ESC-q instead)
+- the 'ship type' at the map now shows whether you're the pilot of a ship or in a turret
+- the version number of the modification is shown in the lower right corner of the map
+- the 'dialogs='-part of dialog.mdl has been extensively commented and refactored (no effect on gameplay)
+
+Main changes 1.5 to 1.6:
+- added installer/uninstaller with configuration screen
+- updated Slipstream GUI to v0.2
+- reintroduced last orders indicator [optional]
+- improved software HUD support
+- reintroduced station status bar for loadout screen and repositioned it in hangar
+- energy, ammo, and fuel gauges are now replaced with endurance gauge when podded
+- Bugfix: the cloak indicator is now shown at the map again
+
+Main changes 1.6 to 1.65:
+- scrollbar for main chat display can now optionally be turned off
+- removed speed display for non-moving targets
+- added killbonus display for players
+- base status is now shown on map in base as well
+- orders are now shown in the hangar and on map in base[/color]
+
+
+[size=14][u]Changes in CortUI (compared to default UI):[/u][/size]
+[list][*]CortUI comes with an installer that lets you install or uninstall CortUI and/or Slipstream GUI and allows you to customize certain settings.
+[*]Chat has up to ten lines instead of five. [configurable] And a scrollbar. [optionally]
+[*]Chat at the loadout screen has an independent number of chat lines from the at other screens. [configurable]
+[*]Ten lines of chat are shown in the lobby. [optionally, configurable]
+[*]Autopilot and vector-lock status in flight-mode have been moved and the graphics have been made smaller to not overlap with the chat.
+[*]Map-mode shows all necessary ship status info in upper left area of the screen. (Autopilot and vector-lock status, name of current target, killbonus of current target, distance to current target, its speed, your ship type (and whether you are in the turret of this ship, shield status, hull status, energy status, ammo status, fuel status, O2 level, current thrust, current speed, current signature, kill bonus.)
+[*]Inventory and minimap have been moved to the side for map-mode, thereby making more room for the actual map.
+[*]F3 command-pane has been shrunk so that it won't overlap the inventory screen. (This is now probably obsolete, but I haven't removed it yet anyway.)
+[*]Ripcord time is now displayed in map-mode as well, not only in flight-mode.
+[*]Some HUD-controls are shown during launch animation (chat, minimap, inventory, etc.).
+[*]The positioning of the windows in hangar and map when in base have been moved, so that ten lines of chat are displayed at all times.
+[*]Base status display in hangar-mode has been modified, to not overlap with the chat. It is now also shown when on the map.
+[*]The last orders are displayed in the hangar and on the map when in base. [optionally]
+[*]Parts of the hangar graphics have been removed to not overlap with the chat. [optionally]
+[*]The Z-order of the windows has been rearranged (e.g. critical info over investments, investments over inventory).
+[*]Help button in hangar-mode has been removed because it overlapped with the chat and isn't helpful anyway.
+[*]The back-button at the map has been removed (use F3 instead).
+[*]The back-button in the hangar has been removed (use ESC-q instead).
+[*]The version number of the modification is shown in the lower right corner of the map.
+[*]The 'dialogs='-part of dialog.mdl has been extensively commented and refactored (no effect on gameplay)[/list]
+
+
+[size=14][u]Screenshots (click to enlarge):[/u][/size]
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_01.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_01.png[/img][/url]
+The chat display in the lobby has ten lines.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_02.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_02.png[/img][/url]
+The chat in the game shows up to ten lines. Optionally, all in-game chat displays have scrollbars. I removed parts of the hangar image and moved the base status display to the lower right of the screen. All other windows have been moved as well so that all ten lines can be seen at any time. The last orders are displayed in the hangar.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_03.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_03.png[/img][/url]
+The chat at the loadout screen is independent of the normal chat display. By default, it is set to six lines.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_04.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_04.png[/img][/url] 
+The autopilot indicator is smaller and has been moved to make room for the chat.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_05.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_05.png[/img][/url]
+This applies for the vector-lock indicator as well.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_06.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_06.png[/img][/url]
+The map-mode has additional information at the top left of the screen. It shows the autopilot indicator, the current target, the killbonus of the current target, the distance to the current target, the target's speed, your ship type (and whether you are in a turret of this ship), the shield status, the hull status, the energy status, the ammo status, the fuel status, the current thrust, the current speed, the current signature, and the current kill bonus.
+The command bar has been shrunk so that it doesn't overlap with the inventory. The minimap and the inventory have been moved to the side to make more room for the actual map.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_07.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_07.png[/img][/url]
+When activated, the vector-lock indicator replaces the autopilot indicator.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_08.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_08.png[/img][/url]
+The remaining time to ripcord is not only displayed in in-flight mode, but in the map-mode as well.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_09.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_09.png[/img][/url]
+Various windows are now shown during the launch animation as well.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_10.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_10.png[/img][/url]
+Can also be used with the software HUD.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_11.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_11.png[/img][/url]
+Can also be used at 1024x768.
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_12.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_12.png[/img][/url]
+Can also be used with the [url=http://www.freeallegiance.org/modules.php?name=Forums&file=viewtopic&t=14027]Slipstream GUI[/url] (included in the installer).
+
+[url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_screenshot_13.png][img]http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI_thumbnail_13.png[/img][/url]
+Comes with an installer that allows easy installation/uninstallation and configuration of some basic values.
+
+
+[size=14][u]Download:[/u][/size]
+Please read the remarks and the known problems in the [url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI-1.65-ReleaseNotes.txt]Release Notes[/url] before installing. Or don't complain about issues mentioned there afterwards. ;)
+==> [url=http://henrik.heimbuerger.de/files/alleg/CortUI/CortUI-1.65.exe]Download CortUI v1.65 installer (including Slipstream v0.2)[/url]
+
+
+[size=14][u]Notes:[/u][/size]
+Constructive criticism and feature requests are appreciated.
+
+[b]This modification would not have been possible without Ksero's modification, his excellent documentation of the .mdl-files, and his support -- 'yt![/b]
+
+
+[size=14][u]Advertisements:[/u][/size]
+CortUI has been created in testing sessions using Azaron's modified targetting brackets. (Download [url=http://henrik.heimbuerger.de/files/alleg/CortUI/AzaronsAlternativeTargettingBrackets1.zip]1[/url] or [url=http://henrik.heimbuerger.de/files/alleg/CortUI/AzaronsAlternativeTargettingBrackets2.zip]2[/url])
+Additionally TheBored's [url=http://www.freeallegiance.org/modules.php?name=Forums&file=viewtopic&p=204542#204542]"TheBored Special" aiming reticule[/url] has been used.
+
+
+-- Cortex

@@ -1,0 +1,95 @@
+	long nVert = msMesh_GetVertexCount (pMainMesh);
+	MDLfile.Write(&nVert,4);
+	long nFace = msMesh_GetTriangleCount (pMainMesh)*3;
+	MDLfile.Write(&nFace,4);
+
+    for (j = 0; j < msMesh_GetVertexCount (pMainMesh); j++)
+    {
+        msVertex *pVertex = msMesh_GetVertexAt (pMainMesh, j);
+        msVec3 Vertex;
+        msVec2 uv;
+        msVec3 Normal;
+
+        msVertex_GetVertex (pVertex, Vertex);
+        msVertex_GetTexCoords (pVertex, uv);
+		AMT_GetInterpolatedVertexNormalAt(pMainMesh,j,Normal);
+
+        MDLfile.Write(&(Vertex[0]),4);
+        MDLfile.Write(&(Vertex[1]),4);
+        MDLfile.Write(&(Vertex[2]),4);
+        MDLfile.Write(&(Normal[0]),4);
+        MDLfile.Write(&(Normal[1]),4);
+        MDLfile.Write(&(Normal[2]),4);
+        MDLfile.Write(&(uv[0]),4);
+        MDLfile.Write(&(uv[1]),4);
+		fprintf (file, "vertex: %f %f %f | %f %f %f | %f %f \n",
+				Vertex[0],Vertex[1],Vertex[2],
+				Normal[0],Normal[1],Normal[2],
+				uv[0],uv[1]
+                );
+    }
+
+
+    for (j = 0; j < msMesh_GetTriangleCount (pMainMesh); j++)
+    {
+        msTriangle *pTriangle = msMesh_GetTriangleAt (pMainMesh, j);
+        
+        word nIndices[3];
+        msTriangle_GetVertexIndices (pTriangle, nIndices); 
+        MDLfile.Write(&(nIndices[0]),2);
+        MDLfile.Write(&(nIndices[1]),2);
+        MDLfile.Write(&(nIndices[2]),2);
+    }
+//////////////////////////////////////////////////////////////////////////////////////////////
+	long nVert = msMesh_GetTriangleCount(pMainMesh)*3;
+	MDLfile.Write(&nVert,4);
+	long nFace = msMesh_GetTriangleCount (pMainMesh)*3*2;
+	MDLfile.Write(&nFace,4);
+
+    for (j = 0; j < msMesh_GetTriangleCount (pMainMesh); j++)
+    {
+		msTriangle *pTriangle = msMesh_GetTriangleAt (pMainMesh, j);
+        word nIndices[3];
+        msTriangle_GetVertexIndices (pTriangle, nIndices); 
+		for (i = 0; i< 3; i++)
+		{
+			msVertex *pVertex = msMesh_GetVertexAt (pMainMesh, nIndices[i]);
+			msVec3 Vertex;
+			msVec2 uv;
+
+	        msVertex_GetVertex (pVertex, Vertex);
+		    msVertex_GetTexCoords (pVertex, uv);
+		    msVec3 Normal;
+		    msMesh_GetVertexNormalAt (pMainMesh, pTriangle->nNormalIndices[i], Normal);
+
+			MDLfile.Write(&(Vertex[0]),4);
+			MDLfile.Write(&(Vertex[1]),4);
+			MDLfile.Write(&(Vertex[2]),4);
+			MDLfile.Write(&(Normal[0]),4);
+			MDLfile.Write(&(Normal[1]),4);
+			MDLfile.Write(&(Normal[2]),4);
+			MDLfile.Write(&(uv[0]),4);
+			MDLfile.Write(&(uv[1]),4);
+			fprintf (file, "vertex: %f %f %f | %f %f %f | %f %f \n",
+				Vertex[0],Vertex[1],Vertex[2],
+				Normal[0],Normal[1],Normal[2],
+				uv[0],uv[1]
+             );
+		}
+	}
+
+
+	word index = 0;
+    for (j = 0; j < msMesh_GetTriangleCount (pMainMesh); j++)
+    {
+		word idx1 = index;
+		word idx2 = index+1;
+		word idx3 = index+2;
+        MDLfile.Write(&idx1,2); 
+        MDLfile.Write(&idx2,2); 
+        MDLfile.Write(&idx3,2);
+        MDLfile.Write(&idx1,2);
+        MDLfile.Write(&idx3,2);
+        MDLfile.Write(&idx2,2);
+		index += 3;
+    }

@@ -1,0 +1,244 @@
+0003 0006 0003 0000 - model - effect - acs01bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)acs01bmp - (1835102822)MeshGeo - - acs01.mdl
+0003 0007 0003 0000 - model - effect - acs02bmp - (1)ModifiableNumber - (0)FrameData - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)acs02bmp - - acs02.mdl
+0003 0005 0003 0000 - model - effect - acs04bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)acs04bmp - (1835102822)MeshGeo - - acs04.mdl
+0003 0009 0004 0000 - model - effect - acs05bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (2)TextureGeo - (0)acs05bmp - (0)MeshGeo - (1835102822)GroupGeo - - acs05.mdl
+0004 000A 0004 0000 - model - effect - acs08bmp - ss27insidebmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)acs08bmp - (3)MeshGeo - (1835102822)ss27insidebmp - - acs08.mdl
+0003 0005 0003 0000 - model - effect - acs14bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)acs14bmp - (1835102822)MeshGeo - - acs14.mdl
+0002 0005 0002 0000 - model - acs19bmp - (0)ModifiableNumber - (0)LODGeo - (0)MeshGeo - (1)TextureGeo - (1835102822)acs19bmp - - acs19.mdl
+0003 0006 0003 0000 - model - effect - acs29bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)acs29bmp - (1835102822)MeshGeo - - acs29.mdl
+0003 0006 0003 0000 - model - effect - acs30bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)acs30bmp - (1835102822)MeshGeo - - acs30.mdl
+0002 0004 0002 0000 - model - acs34bmp - (0)ModifiableNumber - (1)TextureGeo - (0)acs34bmp - (1835102822)MeshGeo - - acs34.mdl
+0002 0004 0002 0000 - model - acs36bmp - (0)ModifiableNumber - (1)TextureGeo - (0)acs36bmp - (1835102822)MeshGeo - - acs36.mdl
+0002 0005 0002 0000 - model - acs38bmp - (0)ModifiableNumber - (0)GroupGeo - (0)MeshGeo - (1)TextureGeo - (1835102822)acs38bmp - - acs38.mdl
+0002 0004 0002 0000 - model - acs39bmp - (0)ModifiableNumber - (1)TextureGeo - (0)acs39bmp - (1835102822)MeshGeo - - acs39.mdl
+0002 0004 0002 0000 - model - acs40bmp - (0)ModifiableNumber - (1)TextureGeo - (0)acs40bmp - (1835102822)MeshGeo - - acs40.mdl
+0002 0004 0002 0000 - model - acs41bmp - (0)ModifiableNumber - (1)TextureGeo - (0)acs41bmp - (1835102822)MeshGeo - - acs41.mdl
+0003 0005 0003 0000 - model - effect - acs42bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)acs42bbmp - (1835102822)MeshGeo - - acs42.mdl
+0002 0004 0002 0000 - model - acs46bmp - (0)ModifiableNumber - (1)TextureGeo - (0)acs46bmp - (1835102822)MeshGeo - - acs46.mdl
+0002 0004 0002 0000 - model - acs48bmp - (0)ModifiableNumber - (1)TextureGeo - (0)acs48bmp - (1835102822)MeshGeo - - acs48.mdl
+0003 0006 0003 0000 - model - effect - acs56bbmp - (1)ModifiableNumber - (0)FrameData - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)acs56bbmp - - acs56.mdl
+0003 0006 0003 0000 - model - effect - acs57bbmp - (1)ModifiableNumber - (0)FrameData - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)acs57bbmp - - acs57.mdl
+0002 0004 0002 0000 - model - acs63bmp - (0)ModifiableNumber - (1)TextureGeo - (0)acs63bmp - (1835102822)MeshGeo - - acs63.mdl
+0003 0005 0003 0000 - model - effect - acs64bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)acs64bmp - (1835102822)MeshGeo - - acs64.mdl
+0001 0003 0002 0000 - model - (0)ModifiableNumber - (0)FrameImage - (1835102822)ImportImage - - animinvest.mdl
+0001 0003 0002 0000 - model - (0)ModifiableNumber - (0)FrameImage - (1835102822)ImportImage - - animlaunch.mdl
+0001 0003 0002 0000 - model - (0)ModifiableNumber - (0)FrameImage - (1835102822)ImportImage - - animloadout.mdl
+0001 0003 0002 0000 - model - (0)ModifiableNumber - (0)FrameImage - (1835102822)ImportImage - - animradar.mdl
+0001 0003 0002 0000 - model - (0)ModifiableNumber - (0)FrameImage - (1835102822)ImportImage - - animsector.mdl
+0001 0003 0002 0000 - model - (0)ModifiableNumber - (0)FrameImage - (1835102822)ImportImage - - animteam.mdl
+0002 0004 0002 0000 - model - artifactbmp - (0)ModifiableNumber - (1)TextureGeo - (0)artifactbmp - (1835102822)MeshGeo - - artifact.mdl
+0003 0006 0003 0000 - model - effect - ss307bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)ss307bmp - (1835102822)MeshGeo - - belters_flagplat.mdl
+0003 0009 0004 0000 - model - effect - bom03bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)bom03bmp - (1835102822)GroupGeo - - bom03.mdl
+0002 0005 0002 0000 - model - bgrnd03bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)bgrnd03bmp - (1835102822)MeshGeo - - bgrnd03.mdl
+0002 0005 0002 0000 - model - bgrnd05bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)bgrnd05bmp - (1835102822)MeshGeo - - bgrnd05.mdl
+0002 0005 0002 0000 - model - bgrnd50bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)bgrnd50bmp - (1835102822)MeshGeo - - bgrnd50.mdl
+0002 0005 0002 0000 - model - bgrnd51bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)bgrnd51bmp - (1835102822)MeshGeo - - bgrnd51.mdl
+0002 0005 0002 0000 - model - bgrnd52bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)bgrnd52bmp - (1835102822)MeshGeo - - bgrnd52.mdl
+0002 0005 0002 0000 - model - bgrnd53bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)bgrnd53bmp - (1835102822)MeshGeo - - bgrnd53.mdl
+0002 0005 0002 0000 - model - bgrnd54bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)bgrnd54bmp - (1835102822)MeshGeo - - bgrnd54.mdl
+0002 0005 0002 0000 - model - bgrnd55bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)bgrnd55bmp - (1835102822)MeshGeo - - bgrnd55.mdl
+0002 0005 0002 0000 - model - bgrnd56bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)bgrnd56bmp - (1835102822)MeshGeo - - bgrnd56.mdl
+0002 0005 0002 0000 - model - bgrnd57bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)bgrnd57bmp - (1835102822)MeshGeo - - bgrnd57.mdl
+0003 0006 0003 0000 - model - effect - ss107bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)ss107bmp - (1835102822)MeshGeo - - biosplat.mdl
+0003 0009 0004 0000 - model - effect - bom01abmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)bom01abmp - (1835102822)GroupGeo - - bom01a.mdl
+0003 0009 0004 0000 - model - effect - bom01abmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)bom01abmp - - bom01b.mdl
+0002 0003 0001 0000 - model - environment10bmp - (1)TextureGeo - (0)environment10bmp - (1701470831)MeshGeo - - globe10.mdl
+0003 0009 0004 0000 - model - effect - bom04bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)bom04bmp - (1835102822)GroupGeo - - bom04.mdl
+0003 0008 0004 0000 - model - effect - bom05bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)bom05bmp - - bom05.mdl
+0003 0009 0004 0000 - model - effect - bom05bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)bom05bmp - - bom05b.mdl
+0003 0009 0004 0000 - model - effect - bom07bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)bom07bmp - - bom07.mdl
+0003 0009 0004 0000 - model - effect - bom07bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)bom07bmp - - bom07b.mdl
+0003 0008 0004 0000 - model - effect - bom20bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)bom20bmp - - bom20.mdl
+0003 0009 0004 0000 - model - effect - bom30bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)bom30bmp - (1835102822)GroupGeo - - bom30.mdl
+0002 0003 0001 0000 - model - build1bmp - (1)TextureGeo - (0)build1bmp - (1701470831)MeshGeo - - build.mdl
+0003 0009 0004 0000 - model - effect - cap01bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)cap01bmp - - cap01.mdl
+0003 0009 0004 0000 - model - effect - cap02bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap02bmp - (1835102822)GroupGeo - - cap02a.mdl
+0003 0009 0004 0000 - model - effect - cap03bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap03bmp - (1835102822)GroupGeo - - cap03.mdl
+0003 0009 0004 0000 - model - effect - cap04bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap04bmp - (1835102822)GroupGeo - - cap04.mdl
+0004 000A 0004 0000 - model - effect - cap05bmp - rixbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)cap05bmp - (3)MeshGeo - (1835102822)rixbaybmp - - cap05.mdl
+0003 0009 0004 0000 - model - effect - cap06abmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap06abmp - (1835102822)GroupGeo - - cap06a.mdl
+0003 0009 0004 0000 - model - effect - cap07bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap07bmp - (1835102822)GroupGeo - - cap07.mdl
+0003 0009 0004 0000 - model - effect - cap08bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap08bmp - (1835102822)GroupGeo - - cap08.mdl
+0003 0009 0004 0000 - model - effect - cap09bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap09bmp - (1835102822)GroupGeo - - cap09.mdl
+0003 0008 0004 0000 - model - effect - cap100bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)cap100bmp - - cap100.mdl
+0003 0008 0004 0000 - model - effect - cap101bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)cap101bmp - - cap101.mdl
+0003 0008 0004 0000 - model - effect - cap102bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)cap102bmp - - cap102.mdl
+0003 0008 0004 0000 - model - effect - cap103bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)cap103bmp - - cap103.mdl
+0003 0008 0004 0000 - model - effect - cap20bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)cap20bmp - - cap20.mdl
+0003 0008 0004 0000 - model - effect - cap21bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)cap21bmp - - cap21.mdl
+0003 0009 0004 0000 - model - effect - cap300bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap300bmp - (1835102822)GroupGeo - - cap300.mdl
+0003 0009 0004 0000 - model - effect - cap301bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap301bmp - (1835102822)GroupGeo - - cap301.mdl
+0003 0009 0004 0000 - model - effect - cap302bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap302bmp - (1835102822)GroupGeo - - cap302.mdl
+0003 0009 0004 0000 - model - effect - cap303bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)cap303bmp - (1835102822)GroupGeo - - cap303.mdl
+0003 0005 0003 0000 - model - effect - mis01bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis01bmp - (1835102822)MeshGeo - - mis01.mdl
+0001 0001 0001 0000 - model - (1701470831)MeshGeo - - circle.mdl
+0002 0003 0001 0000 - model - environment9bmp - (1)TextureGeo - (0)environment9bmp - (1701470831)MeshGeo - - globe9.mdl
+0004 000A 0004 0000 - model - effect - cap500bmp - ss27insidebmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)cap500bmp - (3)MeshGeo - (1835102822)ss27insidebmp - - cap500.mdl
+0002 0003 0002 0000 - effect - model - (1)LightsGeo - (1)time - (1751607660)MeshGeo - - cube.mdl
+0002 0004 0002 0000 - model - utl10bmp - (0)ModifiableNumber - (1)TextureGeo - (0)utl10bmp - (1835102822)MeshGeo - - debris.mdl
+0003 0009 0004 0000 - model - effect - fig01bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)fig01bmp - - fig01.mdl
+0003 0009 0004 0000 - model - effect - fig02ops1bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)fig02ops1bmp - - fig02ops1.mdl
+0003 0008 0004 0000 - model - effect - fig03bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (2)TextureGeo - (0)fig03bmp - (1835102822)MeshGeo - - fig03.mdl
+0003 0009 0004 0000 - model - effect - fig05bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (2)TextureGeo - (0)fig05bmp - (0)MeshGeo - (1835102822)GroupGeo - - fig05.mdl
+0003 0009 0004 0000 - model - effect - fig05ops1bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)fig05ops1bmp - - fig05ops1.mdl
+0003 0009 0004 0000 - model - effect - fig07bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)fig07bmp - - fig07.mdl
+0003 0009 0004 0000 - model - effect - fig07ops1bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)fig07ops1bmp - - fig07ops1.mdl
+0003 0009 0004 0000 - model - effect - fig08bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)fig08bmp - (1835102822)GroupGeo - - fig08.mdl
+0003 0008 0004 0000 - model - effect - fig09bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)fig09bmp - - fig09.mdl
+0003 0009 0004 0000 - model - effect - fig11bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)fig11bmp - (1835102822)GroupGeo - - fig11.mdl
+0003 0009 0004 0000 - model - effect - fig11ops1bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)fig11ops1bmp - - fig11ops1.mdl
+0003 0009 0004 0000 - model - effect - fig12bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (2)TextureGeo - (0)fig12bmp - (0)MeshGeo - (1835102822)GroupGeo - - fig12.mdl
+0003 0009 0004 0000 - model - effect - fig13bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)fig13bmp - (1835102822)GroupGeo - - fig13.mdl
+0003 0009 0004 0000 - model - effect - fig15bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)fig15bmp - (1835102822)GroupGeo - - fig15.mdl
+0003 0008 0004 0000 - model - effect - fig17bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)fig17bmp - - fig17.mdl
+0003 0008 0004 0000 - model - effect - fig20bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)fig20bmp - - fig20.mdl
+0003 0008 0004 0000 - model - effect - fig21bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)fig21bmp - - fig21.mdl
+0003 0008 0004 0000 - model - effect - fig22bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)fig22bmp - - fig22.mdl
+0003 0008 0004 0000 - model - effect - fig23bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)fig23bmp - - fig23.mdl
+0003 0008 0004 0000 - model - effect - fig24bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)fig24bmp - - fig24.mdl
+0003 0009 0004 0000 - model - effect - fig25bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)fig25bmp - - fig25.mdl
+0003 0009 0004 0000 - model - effect - fig30bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)fig30bmp - (1835102822)GroupGeo - - fig30.mdl
+0003 0009 0004 0000 - model - effect - fig31bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)fig31bmp - (1835102822)GroupGeo - - fig31.mdl
+0003 0009 0004 0000 - model - effect - fig32bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)fig32bmp - (1835102822)GroupGeo - - fig32.mdl
+0003 0009 0004 0000 - model - effect - fig33bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)fig33bmp - (1835102822)GroupGeo - - fig33.mdl
+0003 0008 0004 0000 - model - effect - fig34bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)fig34bmp - - fig34.mdl
+0004 000A 0004 0000 - model - effect - cap501bmp - beltersbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)cap501bmp - (3)MeshGeo - (1835102822)beltersbaybmp - - cap501.mdl
+0002 0004 0002 0000 - model - rixflagbmp - (0)ModifiableNumber - (1)TextureGeo - (0)rixflagbmp - (1835102822)MeshGeo - - flag.mdl
+0001 0001 000E 0000 - model - (1818324339)ImportFont - - font.mdl
+0003 0006 0003 0000 - model - effect - giga_flagplatbmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)giga_flagplatbmp - (1835102822)MeshGeo - - giga_flagplat.mdl
+0002 0003 0001 0000 - model - environtestbmp - (1)TextureGeo - (0)environtestbmp - (1701470831)MeshGeo - - globe.mdl
+0002 0003 0001 0000 - model - environment1bmp - (1)TextureGeo - (0)environment1bmp - (1701470831)MeshGeo - - globe1.mdl
+0002 0003 0001 0000 - model - environment2bmp - (1)TextureGeo - (0)environment2bmp - (1701470831)MeshGeo - - globe2.mdl
+0002 0003 0001 0000 - model - environment3bmp - (1)TextureGeo - (0)environment3bmp - (1701470831)MeshGeo - - globe3.mdl
+0002 0003 0001 0000 - model - environment4bmp - (1)TextureGeo - (0)environment4bmp - (1701470831)MeshGeo - - globe4.mdl
+0002 0003 0001 0000 - model - environment5bmp - (1)TextureGeo - (0)environment5bmp - (1701470831)MeshGeo - - globe5.mdl
+0002 0003 0001 0000 - model - environment6bmp - (1)TextureGeo - (0)environment6bmp - (1701470831)MeshGeo - - globe6.mdl
+0002 0003 0001 0000 - model - environment7bmp - (1)TextureGeo - (0)environment7bmp - (1701470831)MeshGeo - - globe7.mdl
+0002 0003 0001 0000 - model - environment7bmp - (1)TextureGeo - (0)environment7bmp - (1701470831)MeshGeo - - globe8.mdl
+0003 0005 0003 0000 - model - effect - mis02bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis02bmp - (1835102822)MeshGeo - - mis02.mdl
+0003 0005 0003 0000 - model - effect - mis03bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis03bmp - (1835102822)MeshGeo - - mis03.mdl
+0003 0005 0003 0000 - model - effect - mis05bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis05bmp - (1835102822)MeshGeo - - mis05.mdl
+0003 0005 0003 0000 - model - effect - mis06bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis06bmp - (1835102822)MeshGeo - - mis06.mdl
+0003 0006 0003 0000 - model - effect - utl74bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)utl74bmp - (1835102822)MeshGeo - - utl74.mdl
+0003 0006 0003 0000 - model - effect - ic_flagplatbmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)ic_flagplatbmp - (1835102822)MeshGeo - - ic_flagplat.mdl
+0003 0009 0004 0000 - model - effect - utl92bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)utl92bmp - (1835102822)GroupGeo - - utl92a.mdl
+0001 0002 0003 0000 - model - (0)GroupGeo - (1936614764)MeshGeo - - lens.mdl
+0002 0004 0002 0000 - model - flashbmp - (0)ModifiableNumber - (1)TextureGeo - (0)flashbmp - (1835102822)MeshGeo - - muzzle.mdl
+0002 0005 0002 0000 - model - ss94bmp - (0)ModifiableNumber - (0)GroupGeo - (0)MeshGeo - (1)TextureGeo - (1835102822)ss94bmp - - rix_flagplat.mdl
+0003 0006 0003 0000 - model - effect - ss2bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)ss2bmp - (1835102822)MeshGeo - - ss02.mdl
+0004 0008 0003 0000 - model - effect - ssbmp - ss4bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (3)ssbmp - (1835102822)ss4bmp - - ss04.mdl
+0005 0009 0003 0000 - model - effect - ss4bmp - ssbmp - ss5bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (3)ss4bmp - (4)ssbmp - (1835102822)ss5bmp - - ss05.mdl
+0003 0008 0003 0000 - model - effect - ss06bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)ss06bmp - - ss06.mdl
+0003 0007 0003 0000 - model - effect - ss08bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)ss08bmp - - ss08.mdl
+0004 000A 0004 0000 - model - effect - ss100bmp - biosbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss100bmp - (3)MeshGeo - (1835102822)biosbaybmp - - ss100.mdl
+0004 000A 0004 0000 - model - effect - ss101bmp - biosbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss101bmp - (3)MeshGeo - (1835102822)biosbaybmp - - ss101.mdl
+0004 000A 0004 0000 - model - effect - ss102bmp - biosbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss102bmp - (3)MeshGeo - (1835102822)biosbaybmp - - ss102.mdl
+0004 000A 0004 0000 - model - effect - ss103bmp - biosbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss103bmp - (3)MeshGeo - (1835102822)biosbaybmp - - ss103.mdl
+0004 000A 0004 0000 - model - effect - ss105bmp - biosbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss105bmp - (3)MeshGeo - (1835102822)biosbaybmp - - ss105.mdl
+0003 0007 0003 0000 - model - effect - ss106bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)ss106bmp - (0)LODGeo - (1835102822)MeshGeo - - ss106.mdl
+0003 0008 0003 0000 - model - effect - ss107bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)ss107bmp - - ss107.mdl
+0005 000B 0004 0000 - model - effect - ss18abmp - cwbaybmp - ss18bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss18abmp - (3)MeshGeo - (4)cwbaybmp - (1835102822)ss18bmp - - ss18.mdl
+0003 0008 0003 0000 - model - effect - ss19bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)ss19bmp - - ss19a.mdl
+0003 0006 0003 0000 - model - effect - ss20bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)ss20bmp - (1835102822)MeshGeo - - ss20.mdl
+0003 0009 0004 0000 - model - effect - ss21abmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (2)TextureGeo - (0)ss21abmp - (0)MeshGeo - (1835102822)GroupGeo - - ss21a.mdl
+0003 0008 0003 0000 - model - effect - ss22bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)ss22bmp - - ss22.mdl
+0005 000B 0004 0000 - model - effect - ss23bmp - cwbaybmp - bgrnd57bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (3)ss23bmp - (4)cwbaybmp - (1835102822)bgrnd57bmp - - ss23.mdl
+0005 000B 0004 0000 - model - effect - bgrnd03bmp - cwbaybmp - ss24abmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)bgrnd03bmp - (3)MeshGeo - (4)cwbaybmp - (1835102822)ss24abmp - - ss24a.mdl
+0004 000A 0004 0000 - model - effect - ss28bmp - ss27insidebmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss28bmp - (3)MeshGeo - (1835102822)ss27insidebmp - - ss28.mdl
+0005 000B 0004 0000 - model - effect - bgrnd03bmp - ss300bmp - beltersbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)bgrnd03bmp - (3)MeshGeo - (4)ss300bmp - (1835102822)beltersbaybmp - - ss300.mdl
+0006 000C 0004 0000 - model - effect - ss18abmp - ss302bmp - bgrnd03bmp - beltersbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (3)ss18abmp - (4)ss302bmp - (5)bgrnd03bmp - (1835102822)beltersbaybmp - - ss302.mdl
+0005 000B 0004 0000 - model - effect - ss93abmp - ss303bmp - beltersbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss93abmp - (3)MeshGeo - (4)ss303bmp - (1835102822)beltersbaybmp - - ss303.mdl
+0005 000B 0004 0000 - model - effect - utl20abmp - ss304bmp - beltersbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)utl20abmp - (3)MeshGeo - (4)ss304bmp - (1835102822)beltersbaybmp - - ss304.mdl
+0005 000B 0004 0000 - model - effect - bgrnd53bmp - ss305bmp - beltersbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)bgrnd53bmp - (3)MeshGeo - (4)ss305bmp - (1835102822)beltersbaybmp - - ss305.mdl
+0004 0009 0003 0000 - model - effect - bgrnd03bmp - ss306bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)bgrnd03bmp - (3)MeshGeo - (1835102822)ss306bmp - - ss306.mdl
+0004 0009 0003 0000 - model - effect - bgrnd03bmp - ss307bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (3)bgrnd03bmp - (1835102822)ss307bmp - - ss307.mdl
+0004 000A 0004 0000 - model - effect - ss90bmp - ss27insidebmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss90bmp - (3)MeshGeo - (1835102822)ss27insidebmp - - ss90.mdl
+0004 0008 0003 0000 - model - effect - ss92bmp - ss92abmp - (1)ModifiableNumber - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss92bmp - (3)MeshGeo - (1835102822)ss92abmp - - ss92.mdl
+0005 000B 0004 0000 - model - effect - ss93bmp - ss93abmp - cwbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss93bmp - (3)MeshGeo - (4)ss93abmp - (1835102822)cwbaybmp - - ss93.mdl
+0002 0006 0002 0000 - model - ss94bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)ss94bmp - (0)MeshGeo - (1835102822)GroupGeo - - ss94.mdl
+0002 0006 0002 0000 - model - ss95bmp - (0)ModifiableNumber - (0)LODGeo - (1)TextureGeo - (0)ss95bmp - (0)MeshGeo - (1835102822)GroupGeo - - ss95.mdl
+0005 0009 0003 0000 - model - effect - ss97bmp - rixbaybmp - bgrnd51bmp - (1)ModifiableNumber - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss97bmp - (3)MeshGeo - (4)rixbaybmp - (1835102822)bgrnd51bmp - - ss97.mdl
+0004 0008 0003 0000 - model - effect - ss99bmp - rixbaybmp - (1)ModifiableNumber - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss99bmp - (3)MeshGeo - (1835102822)rixbaybmp - - ss99.mdl
+0003 0008 0004 0000 - model - effect - utl01bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)utl01bmp - - utl01.mdl
+0003 0007 0003 0000 - model - effect - utl01bbmp - (1)ModifiableNumber - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)utl01bbmp - (1835102822)GroupGeo - - utl01b.mdl
+0003 0008 0004 0000 - model - effect - utl02bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)utl02bmp - - utl02.mdl
+0003 0008 0003 0000 - model - effect - utl04bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)utl04bmp - - utl04.mdl
+0003 0006 0003 0000 - model - effect - utl05bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)utl05bmp - (1835102822)MeshGeo - - utl05.mdl
+0003 0008 0003 0000 - model - effect - utl6bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)utl6bmp - (1835102822)GroupGeo - - utl06.mdl
+0003 0008 0003 0000 - model - effect - utl07bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)utl07bmp - - utl07.mdl
+0002 0004 0002 0000 - model - utl10bmp - (0)ModifiableNumber - (1)TextureGeo - (0)utl10bmp - (1835102822)MeshGeo - - utl10.mdl
+0003 0007 0004 0000 - model - effect - utl100bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (2)TextureGeo - (0)utl100bmp - (1835102822)MeshGeo - - utl100.mdl
+0003 0007 0004 0000 - model - effect - utl101bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (2)TextureGeo - (0)utl101bmp - (1835102822)MeshGeo - - utl101.mdl
+0003 0007 0004 0000 - model - effect - utl102bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (2)TextureGeo - (0)utl102bmp - (1835102822)MeshGeo - - utl102.mdl
+0003 0009 0004 0000 - model - effect - utl103bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)utl103bmp - - utl103.mdl
+0003 0008 0004 0000 - model - effect - utl104bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)utl104bmp - - utl104.mdl
+0003 0008 0004 0000 - model - effect - utl105bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)utl105bmp - - utl105.mdl
+0003 0007 0004 0000 - model - effect - utl11bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (2)TextureGeo - (0)utl11bmp - (1835102822)MeshGeo - - utl11.mdl
+0003 0007 0004 0000 - model - effect - utl14abmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (2)TextureGeo - (0)utl14abmp - (1835102822)MeshGeo - - utl14a.mdl
+0003 0009 0004 0000 - model - effect - utl17bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)utl17bmp - - utl17a.mdl
+0003 0009 0004 0000 - model - effect - utl18bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)utl18bmp - (1835102822)GroupGeo - - utl18a.mdl
+0003 0009 0004 0000 - model - effect - utl19bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)utl19bmp - - utl19.mdl
+0005 000B 0004 0000 - model - effect - utl20bmp - utl20abmp - cwbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (3)utl20bmp - (4)utl20abmp - (1835102822)cwbaybmp - - utl20.mdl
+0003 0009 0004 0000 - model - effect - utl200bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)utl200bmp - (1835102822)GroupGeo - - utl200.mdl
+0003 0009 0004 0000 - model - effect - utl201bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)utl201bmp - (1835102822)GroupGeo - - utl201.mdl
+0003 0009 0004 0000 - model - effect - utl202bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)utl202bmp - (1835102822)GroupGeo - - utl202.mdl
+0003 0009 0004 0000 - model - effect - utl203bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)utl203bmp - (1835102822)GroupGeo - - utl203.mdl
+0003 0008 0004 0000 - model - effect - utl204bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)utl204bmp - - utl204.mdl
+0003 0008 0004 0000 - model - effect - utl205bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)utl205bmp - - utl205.mdl
+0003 0007 0004 0000 - model - effect - ilpodbmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (2)TextureGeo - (0)ilpodbmp - (1835102822)MeshGeo - - utl22.mdl
+0003 0006 0003 0000 - model - effect - utl01bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)utl01bmp - (1835102822)MeshGeo - - utl23.mdl
+0003 0006 0003 0000 - model - effect - utl01bmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (2)TextureGeo - (0)utl01bmp - (1835102822)MeshGeo - - utl23f.mdl
+0003 0007 0004 0000 - model - effect - utl01bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (2)TextureGeo - (0)utl01bmp - (1835102822)MeshGeo - - utl24.mdl
+0003 0007 0004 0000 - model - effect - utl01bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (2)TextureGeo - (0)utl01bmp - (1835102822)MeshGeo - - utl25.mdl
+0003 0009 0004 0000 - model - effect - utl27bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)utl27bmp - - utl27a.mdl
+0003 0009 0004 0000 - model - effect - utl27bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (1835102822)utl27bmp - - utl27b.mdl
+0004 0009 0003 0000 - model - effect - utl14bbmp - utl14abmp - (1)ModifiableNumber - (0)LightsGeo - (0)time - (0)LODGeo - (0)MeshGeo - (0)GroupGeo - (2)TextureGeo - (3)utl14bbmp - (1835102822)utl14abmp - - utl28a.mdl
+0002 0004 0002 0000 - model - utl11bmp - (0)ModifiableNumber - (1)TextureGeo - (0)utl11bmp - (1835102822)MeshGeo - - utl666.mdl
+0003 0006 0003 0000 - model - effect - utl90bmp - (1)ModifiableNumber - (0)FrameData - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)utl90bmp - - utl90.mdl
+0003 0008 0004 0000 - model - effect - utl91bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)utl91bmp - - utl91.mdl
+0003 0007 0004 0000 - model - effect - utl93bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (2)TextureGeo - (0)utl93bmp - (1835102822)MeshGeo - - utl93b.mdl
+0002 0005 0002 0000 - model - utl94bmp - (0)ModifiableNumber - (0)LODGeo - (0)MeshGeo - (1)TextureGeo - (1835102822)utl94bmp - - utl94.mdl
+0003 0007 0003 0000 - model - effect - utl95bmp - (1)ModifiableNumber - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (0)utl95bmp - (1835102822)GroupGeo - - utl95.mdl
+0002 0004 0002 0000 - model - utl14abmp - (0)ModifiableNumber - (1)TextureGeo - (0)utl14abmp - (1835102822)MeshGeo - - utl99.mdl
+0003 0006 0003 0000 - model - effect - wep01bbmp - (1)ModifiableNumber - (0)FrameData - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)wep01bbmp - - wep01.mdl
+0003 0005 0003 0000 - model - effect - wep02bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep02bbmp - (1835102822)MeshGeo - - wep02.mdl
+0003 0005 0003 0000 - model - effect - wep03bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep03bbmp - (1835102822)MeshGeo - - wep03.mdl
+0003 0005 0003 0000 - model - effect - wep04bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep04bbmp - (1835102822)MeshGeo - - wep04.mdl
+0003 0005 0003 0000 - model - effect - wep05bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep05bbmp - (1835102822)MeshGeo - - wep05.mdl
+0003 0005 0003 0000 - model - effect - wep06bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep06bbmp - (1835102822)MeshGeo - - wep06.mdl
+0003 0005 0003 0000 - model - effect - wep07bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep07bbmp - (1835102822)MeshGeo - - wep07.mdl
+0003 0005 0003 0000 - model - effect - wep08bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep08bbmp - (1835102822)MeshGeo - - wep08.mdl
+0003 0006 0003 0000 - model - effect - wep09bbmp - (1)ModifiableNumber - (0)FrameData - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)wep09bbmp - - wep09.mdl
+0003 0006 0003 0000 - model - effect - wep10bbmp - (1)ModifiableNumber - (0)FrameData - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)wep10bbmp - - wep10.mdl
+0003 0005 0003 0000 - model - effect - wep11bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep11bbmp - (1835102822)MeshGeo - - wep11.mdl
+0003 0005 0003 0000 - model - effect - wep12bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep12bmp - (1835102822)MeshGeo - - wep12.mdl
+0003 0005 0003 0000 - model - effect - wep13bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep13bbmp - (1835102822)MeshGeo - - wep13.mdl
+0003 0006 0003 0000 - model - effect - wep16bbmp - (1)ModifiableNumber - (0)FrameData - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)wep16bbmp - - wep16.mdl
+0003 0005 0003 0000 - model - effect - wep17bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep17bbmp - (1835102822)MeshGeo - - wep17.mdl
+0003 0005 0003 0000 - model - effect - wep18bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep18bbmp - (1835102822)MeshGeo - - wep18.mdl
+0003 0005 0003 0000 - model - effect - wep19bbmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)wep19bbmp - (1835102822)MeshGeo - - wep19.mdl
+0002 0004 0002 0000 - model - wep90bmp - (0)ModifiableNumber - (1)TextureGeo - (0)wep90bmp - (1835102822)MeshGeo - - wep90.mdl
+0003 0009 0004 0000 - model - effect - fig02bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (2)TextureGeo - (0)fig02bmp - (0)MeshGeo - (1835102822)GroupGeo - - fig02.mdl
+0001 0002 0002 0000 - model - (0)ModifiableNumber - (1835102822)MeshGeo - - aleph_sphere.mdl
+0003 0009 0004 0000 - model - effect - fig04bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (2)TextureGeo - (0)fig04bmp - (0)MeshGeo - (1835102822)GroupGeo - - fig04.mdl
+0003 0008 0004 0000 - model - effect - fig16bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)fig16bmp - - fig16.mdl
+0004 000A 0004 0000 - model - effect - cap502bmp - cwbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)cap502bmp - (3)MeshGeo - (1835102822)cwbaybmp - - cap502.mdl
+0003 0008 0004 0000 - model - effect - cap503bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (2)TextureGeo - (0)cap503bmp - (0)LODGeo - (1835102822)MeshGeo - - cap503.mdl
+0003 0005 0003 0000 - model - effect - mis07bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis07bmp - (1835102822)MeshGeo - - mis07.mdl
+0004 000A 0004 0000 - model - effect - rixbaybmp - cap504bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)rixbaybmp - (3)MeshGeo - (1835102822)cap504bmp - - cap504.mdl
+0003 0005 0003 0000 - model - effect - mis08bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis08bmp - (1835102822)MeshGeo - - mis08.mdl
+0003 0005 0003 0000 - model - effect - mis09bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis09bmp - (1835102822)MeshGeo - - mis09.mdl
+0003 0005 0003 0000 - model - effect - mis10bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis10bmp - (1835102822)MeshGeo - - mis10.mdl
+0003 0005 0003 0000 - model - effect - mis11bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis11bmp - (1835102822)MeshGeo - - mis11.mdl
+0003 0006 0003 0000 - model - effect - mis12bmp - (1)ModifiableNumber - (0)FrameData - (0)LODGeo - (0)MeshGeo - (2)TextureGeo - (1835102822)mis12bmp - - mis12.mdl
+0003 0005 0003 0000 - model - effect - mis13bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis13bmp - (1835102822)MeshGeo - - mis13.mdl
+0003 0005 0003 0000 - model - effect - mis14bmp - (1)ModifiableNumber - (0)FrameData - (2)TextureGeo - (0)mis14bmp - (1835102822)MeshGeo - - mis14.mdl
+0004 000A 0004 0000 - model - effect - rixbaybmp - ss01bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)rixbaybmp - (3)MeshGeo - (1835102822)ss01bmp - - ss01.mdl
+0004 000A 0004 0000 - model - effect - ss104bmp - biosbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss104bmp - (3)MeshGeo - (1835102822)biosbaybmp - - ss104.mdl
+0004 000A 0004 0000 - model - effect - ss27insidebmp - ss27bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (0)MeshGeo - (2)TextureGeo - (3)ss27insidebmp - (1835102822)ss27bmp - - ss27.mdl
+0005 000B 0004 0000 - model - effect - ss301bmp - bgrnd03bmp - beltersbaybmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss301bmp - (3)MeshGeo - (4)bgrnd03bmp - (1835102822)beltersbaybmp - - ss301.mdl
+0004 000A 0004 0000 - model - effect - rixbaybmp - ss96bmp - (1)ModifiableNumber - (0)LightsGeo - (1)time - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)rixbaybmp - (3)MeshGeo - (1835102822)ss96bmp - - ss96.mdl
+0004 0008 0003 0000 - model - effect - ss98bmp - rixbaybmp - (1)ModifiableNumber - (0)FrameData - (0)LODGeo - (0)GroupGeo - (2)TextureGeo - (0)ss98bmp - (3)MeshGeo - (1835102822)rixbaybmp - - ss98.mdl
+0002 0004 0002 0000 - model - wep91bmp - (0)ModifiableNumber - (1)TextureGeo - (0)wep91bmp - (1835102822)MeshGeo - - wep91.mdl
+0002 0004 0002 0000 - model - wep92bmp - (0)ModifiableNumber - (1)TextureGeo - (0)wep92bmp - (1835102822)MeshGeo - - wep92.mdl
+0001 0001 0001 0000 - model - (1701470831)MeshGeo - - pointer.mdl

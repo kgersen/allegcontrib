@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by AGM.rc
+//
+#define HIDC_CHANGECORE                 0x809004ce    // IDD_SVRUI [Neutral]

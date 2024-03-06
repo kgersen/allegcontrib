@@ -1,0 +1,10 @@
+obj\Debug\ICE3.exe
+obj\Debug\ICE3.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.AGCLib.dll
+obj\Debug\ICE3.csproj.ResolveComReference.cache
+obj\Debug\ICE3.Form1.resources
+obj\Debug\ICE3.csproj.GenerateResource.Cache
+bin\Debug\ICE3.exe
+bin\Debug\ICE3.pdb
+bin\Debug\Interop.AGCLib.dll

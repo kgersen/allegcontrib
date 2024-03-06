@@ -1,0 +1,103 @@
+	for (int i=0;i<cvhfile.NamedPoints.GetCount();i++)
+	{
+		PtrNamedPoint pn = cvhfile.NamedPoints.GetAt(i);
+        int nMesh = msModel_AddMesh (pModel);
+        msMesh *pMesh = msModel_GetMeshAt (pModel, nMesh);
+
+		CString szName;
+		szName.Format("pos_%s",pn->name);
+        msMesh_SetName (pMesh, szName);
+        msMesh_SetFlags (pMesh, 1);
+        msMesh_SetMaterialIndex (pMesh, -1);
+
+        int nVertex = msMesh_AddVertex (pMesh);
+        msVertex *pVertex;
+		msVec3 Vertex;
+
+		pVertex = msMesh_GetVertexAt (pMesh, nVertex);
+		Vertex[0] = pn->x1;
+		Vertex[1] = pn->y1;
+		Vertex[2] = pn->z1;
+        msVertex_SetVertex (pVertex, Vertex);
+		msVertex_SetBoneIndex (pVertex, -1);
+
+		pVertex = msMesh_GetVertexAt (pMesh, nVertex);
+		Vertex[0] = pn->x1+pn->x2;
+		Vertex[1] = pn->y1+pn->y2;
+		Vertex[2] = pn->z1+pn->z2;
+        msVertex_SetVertex (pVertex, Vertex);
+		msVertex_SetBoneIndex (pVertex, -1);
+
+		pVertex = msMesh_GetVertexAt (pMesh, nVertex);
+		Vertex[0] = pn->x1-pn->x2;
+		Vertex[1] = pn->y1-pn->y2;
+		Vertex[2] = pn->z1-pn->z2;
+        msVertex_SetVertex (pVertex, Vertex);
+		msVertex_SetBoneIndex (pVertex, -1);
+
+		msVec3 Normal;
+		Normal[0] = pn->x2;
+		Normal[1] = pn->y2;
+		Normal[2] = pn->z2;
+		int nNormal = msMesh_AddVertexNormal (pMesh);
+        msMesh_SetVertexNormalAt (pMesh, nNormal, Normal);
+		word nIndices[3];
+		word nNormalIndices[3];
+		nIndices[0] =0;
+		nIndices[1] =1;
+		nIndices[2] =2;
+		nNormalIndices[0] = 0;
+		nNormalIndices[1] = 0;
+		nNormalIndices[2] = 0;
+		int nTriangle = msMesh_AddTriangle (pMesh);
+		msTriangle *pTriangle = msMesh_GetTriangleAt (pMesh, nTriangle);
+		msTriangle_SetFlags (pTriangle, 1);
+		msTriangle_SetVertexIndices (pTriangle, nIndices);
+		msTriangle_SetNormalIndices (pTriangle, nNormalIndices);
+	}
+/////////////////////////////////////////////:
+I just finished an article for Game Developer on different kinds of texture
+mapping projections like spherical, cylindrical, planar, and such.  It won't
+be out until September 15th or so but here are some quick pointers.
+
+To calculate a UV coordinate for a vertex on a model, you want to have the
+model centered on it's local origin so all vertices are centered at 0,0,0.
+The mapping functions take the X,Y,Z coordinate and return mapping
+coordinates (UV).  So the form is (u,v) = F(x,y,z).
+
+I use Y up coordinates.
+
+Spherical mapping:
+You want to convert the xyz coordinate to spherical coordinate then change
+the angle interval so that it is from 0-1.
+
+u = atan2(x, z) / PI_TIMES_TWO + 0.5    // Handles the Azimuth scaled and
+offset to 0-1
+// For elevation, there are many ways but I convert the vertex position to a
+vector and normalize it
+vector.make(x,y,z);
+vector.normalize();
+v = asin(vector.y) / M_PI + 0.5;    // the use the sin relation for angle.
+sin(theta) = b/c,  c =1.
+
+Cylindrical Mapping:
+The U coordinate is the same and the V is just a scaled value of Y.
+
+u = atan2(x, z) / PI_TIMES_TWO + 0.5    // Handles the Azimuth scaled and
+offset to 0-1
+v = y * scale + offset;
+
+Planar Mapping:
+Just scale two coordinates (XY, XZ, YZ) to become UV.  For example for XY
+planar projection.
+
+u = x * scaleU + offsetU;
+v = y * scaleV + offsetV;
+
+Other mappings are more complicated but are similar.  You can also apply a
+matrix to the coordinates first to make a projection that is not along the
+coordinate axes.
+
+That should get you going.
+-Jeff
+//////////////////////////////////////////////////////////////

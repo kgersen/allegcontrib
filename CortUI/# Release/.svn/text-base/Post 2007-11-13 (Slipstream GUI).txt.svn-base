@@ -1,0 +1,29 @@
+So yeah, I know people are waiting for a CortUI upgrade. (Although I never received a single bug report. As far as I am concerned, CortUI 1.70 might actually work with R4.)
+
+[b]CortUI[/b] 1.75 actually has been done for a while, I made the last finishing touches today. It includes all R4 features, the 1.70 SE, what FlingPu has released as "v1.71 RC1" and even some (admittedly very minor) changes to R4 I didn't like the way they were done.
+
+That's not the problem. The problem (as it has been for a long time), is Slipstream GUI support. Let me give you a little background on that.
+
+Slipstream GUI was a good mod. Even though I personally never used it, because I don't care about skins, I think Newtype did a great job. Well done graphics, very complete, it looked professional. Already back then, it was a bit of a hassle to combine both, because they did overlap in some ways. That's why it also made sense to integrate it into the installer, you couldn't just install them seperately.
+And it was very popular, so it was hard for me to say: "You can have *either* CortUI *or* Slipstream GUI, but not really both at the same time.
+
+With R1 (R2? R3?) came changes to the (default) UI. That made it harder to support Slipstream GUI, because it wasn't updated (I think Newtype started working on another skin that was never finished and released). I went through some hassles to keep supporting it. The Slipstream GUI users among you might know the "[Hangar screen modification unavailable with CortUI *and* Slipstream GUI!]" text from the installer.
+
+At the same time people started asking for (and getting) other HUD modifications, and all this in combination led to a [b]huge[/b] amount of test cases I had to go through prior to every release.
+
+Now with R4 and the mods by FlingPu (which are much easier to support, because they are an *alternative*, not a combination), the situation is getting unbearable. R4 broke so many things about Slipstream GUI. I'm very short on time due to RL right now, and spent the last two days trying to figure out a way to keep the support for it in. I already don't sleep well anymore (no pitying please! ;)).
+
+So here you have the option, together with some numbers what I estimate it might take *me* to do:
+a) Drop Slipstream support: 3-5h. All the special cases have to be removed from the installer, but it would probably reduce the time to be spent on future releases by 3x-5x.
+b) Remove the broken parts: 10-15h. Slipstream has 480 images. You basically need to open every image in MDLfx (which is a challenge in itself), find it in-game and then find related images (because it would suck to have the upper half of a window in Slipstream, and the lower in the default skin).
+c) Actually fix Slipstream support: The same, plus some (that would be a good time to restore what I already removed due to problems in earlier FAZ releases), plus the time somebody (definitely not me) has to spend on making the replacement ones.
+Let me emphasize again that options b) and c) will keep the time I have to spend on testing with every release as high as it already is.
+
+I really don't know where to go from here.
+
+Btw., I heard so often "just release an interim release of CortUI without Slipstream GUI support for now and do that later". Let me state again that this is *not* an option. For one, because I don't want to do it later any more than I don't want to do it now. And also because when I remove the support now, I'm surely *not* going to add it back in. The installer is already a mess (the code is actually okay, but it's probably a more complex installer than most commercial software has) because of the Slipstream support.
+
+Make your choice. Make it fast, if you want a release soon. And do *not* vote option B or C if you aren't *seriously* planning to do it (and have the ~50h of free time required) or know somebody who has *assured* to do so. I'll completely ignore those votes if you don't post names.
+
+
+-- Cort

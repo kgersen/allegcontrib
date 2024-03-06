@@ -1,0 +1,664 @@
+CoCreateInstance - TCStrings
+CoCreateInstance - TCStrings
+
+CoGetMarshalSizeMax {000001A2-0000-0000-C000-000000000046}
+CoMarshalInterface  {000001A2-0000-0000-C000-000000000046}
+CoUnmarshalInterface
+StringFromGUID2{IAdminSessionClass}
+CoGetMalloc( 1,0x027AF478 )
+Function Summary
+StringFromGUID2 IAdminSessionClass
+StringFromGUID2 IAdminSessionClass
+StringFromGUID2 {00020430-0000-0000-C000-000000000046} StdOle
+
+CoGetClassObject( 0x00410488,4,0x00000000,0x00410498,0x027AFF08 )
+rclsid: {AdminSession}
+riid: {IAdminSessionClass}
+ppv: 0x027AFF08
+Parameters After Call
+ppv: 0x0014F4CC
+
+CoGetMarshalSizeMax( 0x027AFC5C,0x027AFC4C,0x027AFEFC,0,0x00000000,0 )
+riid: {IAdminSessionHost}
+pUnk: 0x027AFEFC
+pulSize: 311
+
+StringFromGUID2( 0x00146DC0,0x027AF894,39 )
+rguid: {IAdminSessionHost}
+lpsz: 0x027AF894
+lpsz: "{IAdminSessionHost}"
+
+CoMarshalInterface( 0x0014F728,0x027AFC3C,0x027AFEFC,0,0x00000000,0 )
+pStm: 0x0014F728
+riid: {IAdminSessionHost}
+pUnk: 0x027AFEFC
+
+Function Summary
+20	StringFromGUID2( 0x0014DF5C,0x026AF684,39 )
+16:40:29.313	Elapsed: < 1 ms	Process: AllSrvUI32 (0x698)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminSessionHost}
+lpsz: 0x026AF684
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminSessionHost}"
+
+Function Summary
+21	StringFromGUID2( 0x0014DF5C,0x026AF60C,39 )
+16:40:29.317	Elapsed: < 1 ms	Process: AllSrvUI32 (0x698)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminSessionHost}
+lpsz: 0x026AF60C
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminSessionHost}"
+
+Function Summary
+22	CoGetMalloc( 1,0x026AF634 )
+16:40:29.398	Elapsed: < 1 ms	Process: AllSrvUI32 (0x698)	Node: PTJFG
+Parameters Before Call
+dwMemContext: 1
+ppMalloc: 0x026AF634
+Returns
+S_OK
+Parameters After Call
+ppMalloc: 0x77B23860
+
+Function Summary
+23	StringFromGUID2( 0x029CE92C,0x026AF938,39 )
+16:40:29.485	Elapsed: < 1 ms	Process: AllSrvUI32 (0x698)	Node: PTJFG
+Parameters Before Call
+rguid: {00020430-0000-0000-C000-000000000046}
+lpsz: 0x026AF938
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{00020430-0000-0000-C000-000000000046}"
+
+Function Summary
+24	CoCreateInstance( 0x004104B8,0x00000000,23,0x00410330,0x026AF784 )
+16:40:29.648	Elapsed: 00.526	Process: AllSrvUI32 (0x698)	Node: PTJFG
+Parameters Before Call
+rclsid: {AGCVersionInfo}
+pUnkOuter: NULL
+dwClsContext: 23
+riid: {00000000-0000-0000-C000-000000000046}
+ppv: 0x026AF784
+Returns
+S_OK
+Parameters After Call
+ppv: 0x002FD7B8
+
+Function Summary
+25	OleRun( 0x002FD7B8 )
+16:40:30.176	Elapsed: < 1 ms	Process: AllSrvUI32 (0x698)	Node: PTJFG
+Parameters Before Call
+pUnknown: 0x002FD7B8
+Returns
+S_OK
+
+Function Summary
+26	CreateStreamOnHGlobal( 0x00000000,TRUE,0x026AF7A4 )
+16:40:30.826	Elapsed: < 1 ms	Process: AllSrvUI32 (0x698)	Node: PTJFG
+Parameters Before Call
+hGlobal: 0x00000000
+fDeleteOnRelease: TRUE
+ppstm: 0x026AF7A4
+Returns
+S_OK
+Parameters After Call
+ppstm: 0x00153E18
+
+Function Summary
+27	CreateStreamOnHGlobal( 0x00000000,TRUE,0x026AF780 )
+16:40:30.862	Elapsed: < 1 ms	Process: AllSrvUI32 (0x698)	Node: PTJFG
+Parameters Before Call
+hGlobal: 0x00000000
+fDeleteOnRelease: TRUE
+ppstm: 0x026AF780
+Returns
+S_OK
+Parameters After Call
+ppstm: 0x00151FB8
+
+Function Summary
+28	CoGetMarshalSizeMax( 0x026AF794,0x026AF784,0x00151FB8,0,0x00000000,0 )
+16:40:30.867	Elapsed: < 1 ms	Process: AllSrvUI32 (0x698)	Node: PTJFG
+Parameters Before Call
+*pulSize: 0x026AF794
+riid: {00000000-0000-0000-C000-000000000046}
+pUnk: 0x00151FB8
+dwDestContext: 0
+pvDestContext: NULL
+mshlflags: 0
+Returns
+S_OK
+Parameters After Call
+pulSize: 311
+
+Function Summary
+29	CoMarshalInterface( 0x0014E390,0x026AF770,0x00151FB8,0,0x00000000,0 )
+16:40:30.869	Elapsed: < 1 ms	Process: AllSrvUI32 (0x698)	Node: PTJFG
+Parameters Before Call
+pStm: 0x0014E390
+riid: {00000000-0000-0000-C000-000000000046}
+pUnk: 0x00151FB8
+dwDestContext: 0
+pvDestContext: NULL
+mshlflags: 0
+Returns
+S_OK
+
+Function Summary
+30	StringFromGUID2( 0x027AFB34,0x027AF8C8,39 )
+16:40:31.456	Elapsed: < 1 ms	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminSession}
+lpsz: 0x027AF8C8
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminSession}"
+
+Function Summary
+31	StringFromGUID2( 0x0014DF50,0x027AF5A8,39 )
+16:40:31.461	Elapsed: < 1 ms	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminSession}
+lpsz: 0x027AF5A8
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminSession}"
+
+Function Summary
+32	StringFromGUID2( 0x0014DF50,0x027AF530,39 )
+16:40:31.465	Elapsed: < 1 ms	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminSession}
+lpsz: 0x027AF530
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminSession}"
+
+Function Summary
+33	StringFromGUID2( 0x029CE92C,0x027AF7B8,39 )
+16:40:31.622	Elapsed: < 1 ms	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Parameters Before Call
+rguid: {00020430-0000-0000-C000-000000000046}
+lpsz: 0x027AF7B8
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{00020430-0000-0000-C000-000000000046}"
+
+Function Summary
+34	StringFromGUID2( 0x029CE974,0x027AF6B4,39 )
+16:40:31.746	Elapsed: < 1 ms	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Parameters Before Call
+rguid: {__AGCLib}
+lpsz: 0x027AF6B4
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{__AGCLib}"
+
+Function Summary
+35	CoGetClassObject( 0x027AF978,2147483649,0x00000000,0x77D42260,0x027AF988 )
+16:40:31.930	Elapsed: 00.036	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Parameters Before Call
+rclsid: {PSDispatch}
+dwClsContext: 2147483649
+pvReserved: NULL
+riid: {D5F569D0-593B-101A-B569-08002B2DBF7A} IPSFactoryBuffer
+ppv: 0x027AF988
+Returns
+S_OK
+Parameters After Call
+ppv: 0x77A2F840
+
+Function Summary
+36	CoUnmarshalInterface( 0x00153EC8,0x77D34E18,0x027AFF04 )
+16:40:31.454	Elapsed: 00.537	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Parameters Before Call
+pStm: 0x00153EC8
+riid: {00000000-0000-0000-0000-000000000000}
+ppv: 0x027AFF04
+Returns
+S_OK
+Parameters After Call
+ppv: 0x0014F2EC
+
+Function Summary
+37	CoDisconnectObject( 0x027AFEFC,0 )
+16:40:31.994	Elapsed: < 1 ms	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Parameters Before Call
+pUnk: 0x027AFEFC
+dwReserved: 0
+Returns
+S_OK
+
+Function Summary
+38	CoCreateInstance( 0x0040DF90,0x00000000,23,0x00410330,0x027AFEE8 )
+16:40:31.997	Elapsed: < 1 ms	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Parameters Before Call
+rclsid: {00000323-0000-0000-C000-000000000046}CLSID_StdGlobalInterfaceTable
+pUnkOuter: NULL
+dwClsContext: 23
+riid: {00000000-0000-0000-C000-000000000046}
+ppv: 0x027AFEE8
+Returns
+S_OK
+Parameters After Call
+ppv: 0x77B231E0
+
+Function Summary
+39	OleRun( 0x77B231E0 )
+16:40:32.000	Elapsed: < 1 ms	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Parameters Before Call
+pUnknown: 0x77B231E0
+Returns
+S_OK
+
+Function Summary
+40	CoCreateInstance( 0x0040DF90,0x00000000,23,0x00410330,0x0012FC74 )
+16:40:32.036	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rclsid: {00000323-0000-0000-C000-000000000046}CLSID_StdGlobalInterfaceTable
+pUnkOuter: NULL
+dwClsContext: 23
+riid: {00000000-0000-0000-C000-000000000046}
+ppv: 0x0012FC74
+Returns
+S_OK
+Parameters After Call
+ppv: 0x77B231E0
+
+Function Summary
+41	OleRun( 0x77B231E0 )
+16:40:32.038	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+pUnknown: 0x77B231E0
+Returns
+S_OK
+
+Function Summary
+42	StringFromGUID2( 0x00155638,0x0012F9E0,39 )
+16:40:32.040	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminSession}
+lpsz: 0x0012F9E0
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminSession}"
+
+Function Summary
+43	CoGetMalloc( 1,0x0012FAD0 )
+16:40:32.044	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+dwMemContext: 1
+ppMalloc: 0x0012FAD0
+Returns
+S_OK
+Parameters After Call
+ppMalloc: 0x77B23860
+
+Function Summary
+44	StringFromGUID2( 0x00152258,0x0012F6C0,39 )
+16:40:32.046	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminSession}
+lpsz: 0x0012F6C0
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminSession}"
+
+Function Summary
+45	StringFromGUID2( 0x00152258,0x0012F648,39 )
+16:40:32.051	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminSession}
+lpsz: 0x0012F648
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminSession}"
+
+Function Summary
+46	CoGetClassObject( 0x0012FA90,2147483649,0x00000000,0x77D42260,0x0012FAA0 )
+16:40:32.168	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rclsid: {PSDispatch}
+dwClsContext: 2147483649
+pvReserved: NULL
+riid: {D5F569D0-593B-101A-B569-08002B2DBF7A} IPSFactoryBuffer
+ppv: 0x0012FAA0
+Returns
+S_OK
+Parameters After Call
+ppv: 0x77A2F840
+
+Function Summary
+47	StringFromGUID2( 0x0012F8C4,0x0012F658,39 )
+16:40:32.647	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminServer}
+lpsz: 0x0012F658
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminServer}"
+
+Function Summary
+48	StringFromGUID2( 0x0014DD68,0x0012F338,39 )
+16:40:32.653	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminServer}
+lpsz: 0x0012F338
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminServer}"
+
+Function Summary
+49	StringFromGUID2( 0x0014DD68,0x0012F2C0,39 )
+16:40:32.663	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminServer}
+lpsz: 0x0012F2C0
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminServer}"
+
+StringFromGUID2( 0x02ACE92C,0x0012F558,39 )
+Parameters Before Call
+rguid: {00020430-0000-0000-C000-000000000046}
+lpsz: "{00020430-0000-0000-C000-000000000046}"
+
+StringFromGUID2( 0x02ACE974,0x0012F470,39 )
+rguid: {__AGCLib}
+lpsz: "{__AGCLib}"
+
+CoGetClassObject( 0x0012F708,2147483649,0x00000000,0x77D42260,0x0012F718 )
+rclsid: {PSDispatch}
+dwClsContext: 2147483649
+pvReserved: NULL
+riid: {D5F569D0-593B-101A-B569-08002B2DBF7A} IPSFactoryBuffer
+ppv: 0x0012F718
+Returns
+ppv: 0x77A2F840
+
+Function Summary
+53	CoUnmarshalInterface( 0x0015BF78,0x77D34E18,0x002F4ED4 )
+16:40:32.644	Elapsed: 00.273	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+pStm: 0x0015BF78
+riid: {00000000-0000-0000-0000-000000000000}
+ppv: 0x002F4ED4
+Returns
+S_OK
+Parameters After Call
+ppv: 0x0015097C
+
+Function Summary
+54	StringFromGUID2( 0x0012F8C4,0x0012F658,39 )
+16:40:32.931	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminGames}
+lpsz: 0x0012F658
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminGames}"
+
+Function Summary
+55	StringFromGUID2( 0x00150B90,0x0012F338,39 )
+16:40:32.941	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminGames}
+lpsz: 0x0012F338
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminGames}"
+
+Function Summary
+56	StringFromGUID2( 0x00150B90,0x0012F2C0,39 )
+16:40:32.947	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminGames}
+lpsz: 0x0012F2C0
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminGames}"
+
+Function Summary
+57	StringFromGUID2( 0x02ACE974,0x0012F5B0,39 )
+16:40:33.028	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {__AGCLib}
+lpsz: 0x0012F5B0
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{__AGCLib}"
+
+Function Summary
+58	StringFromGUID2( 0x02AF1F5C,0x0012F558,39 )
+16:40:33.106	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {00020430-0000-0000-C000-000000000046}
+lpsz: 0x0012F558
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{00020430-0000-0000-C000-000000000046}"
+
+Function Summary
+59	CoGetClassObject( 0x0012F708,2147483649,0x00000000,0x77D42260,0x0012F718 )
+16:40:33.170	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rclsid: {PSDispatch}00020420-0000-0000-C000-000000000046
+dwClsContext: 2147483649
+pvReserved: NULL
+riid: {D5F569D0-593B-101A-B569-08002B2DBF7A} IPSFactoryBuffer
+ppv: 0x0012F718
+Returns
+S_OK
+Parameters After Call
+ppv: 0x77A2F840
+
+Function Summary
+60	CoUnmarshalInterface( 0x0015BF78,0x77D34E18,0x0012FCA0 )
+16:40:32.929	Elapsed: 00.253	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+pStm: 0x0015BF78
+riid: {00000000-0000-0000-0000-000000000000}
+ppv: 0x0012FCA0
+Returns
+S_OK
+Parameters After Call
+ppv: 0x00157A34
+
+Function Summary
+61	CoUnmarshalInterface( 0x0015BF78,0x77D34E18,0x002F4ED0 )
+16:40:33.469	Elapsed: 00.001	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+pStm: 0x0015BF78
+riid: {00000000-0000-0000-0000-000000000000}
+ppv: 0x002F4ED0
+Returns
+S_OK
+Parameters After Call
+ppv: 0x00160E14
+
+Function Summary
+62	CoGetMarshalSizeMax( 0x0012F9A8,0x0012F998,0x002FD7B8,0,0x00000000,0 )
+16:40:33.473	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+*pulSize: 0x0012F9A8
+riid: {00000000-0000-0000-C000-000000000046}
+pUnk: 0x002FD7B8
+dwDestContext: 0
+pvDestContext: NULL
+mshlflags: 0
+Returns
+S_OK
+Parameters After Call
+pulSize: 311
+
+Function Summary
+63	CoMarshalInterface( 0x00157FD0,0x0012F988,0x002FD7B8,0,0x00000000,0 )
+16:40:33.477	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+pStm: 0x00157FD0
+riid: {00000000-0000-0000-C000-000000000046}
+pUnk: 0x002FD7B8
+dwDestContext: 0
+pvDestContext: NULL
+mshlflags: 0
+Returns
+S_OK
+
+Function Summary
+64	StringFromGUID2( 0x00147040,0x0012EDA8,39 )
+16:40:33.484	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rguid: {IAdminSessionEvents}
+lpsz: 0x0012EDA8
+cbMax: 39
+Returns
+39
+Parameters After Call
+lpsz: "{IAdminSessionEvents}"
+
+Function Summary
+65	CoCreateInstance( 0x0040E5E8,0x00000000,23,0x00410330,0x0012EFD0 )
+16:40:33.521	Elapsed: 00.016	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+rclsid: {AGCGameParameters}
+pUnkOuter: NULL
+dwClsContext: 23
+riid: {00000000-0000-0000-C000-000000000046}
+ppv: 0x0012EFD0
+Returns
+S_OK
+Parameters After Call
+ppv: 0x002FD9D0
+
+Function Summary
+66	OleRun( 0x002FD9D0 )
+16:40:33.540	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+pUnknown: 0x002FD9D0
+Returns
+S_OK
+
+Function Summary
+67	CreateStreamOnHGlobal( 0x007A001C,TRUE,0x0012F2F0 )
+16:40:33.639	Elapsed: < 1 ms	Process: AllSrvUI32 (0x7C0)	Node: PTJFG
+Parameters Before Call
+hGlobal: 0x007A001C
+fDeleteOnRelease: TRUE
+ppstm: 0x0012F2F0
+Returns
+S_OK
+Parameters After Call
+ppstm: 0x00161558
+
+Function Summary
+68	CoInitialize( 0x00000000 )
+16:40:33.807	Elapsed: < 1 ms	Process: AllSrvUI32 (0x69C)	Node: PTJFG
+Parameters Before Call
+pvReserved: NULL
+Returns
+S_OK
+Parameters After Call
+pvReserved:  NULL
+
+Function Summary
+69	CoCreateInstance( 0x004108F0,0x00000000,23,0x00410330,0x02BBFE84 )
+16:40:33.809	Elapsed: 00.019	Process: AllSrvUI32 (0x69C)	Node: PTJFG
+Parameters Before Call
+rclsid: {AGCEvent}
+pUnkOuter: NULL
+dwClsContext: 23
+riid: {00000000-0000-0000-C000-000000000046}
+ppv: 0x02BBFE84
+Returns
+S_OK
+Parameters After Call
+ppv: 0x002FE4C8
+
+Function Summary
+70	OleRun( 0x002FE4C8 )
+16:40:33.831	Elapsed: < 1 ms	Process: AllSrvUI32 (0x69C)	Node: PTJFG
+Parameters Before Call
+pUnknown: 0x002FE4C8
+Returns
+S_OK
+
+Function Summary
+71	CoInitialize( 0x00000000 )
+16:40:33.843	Elapsed: < 1 ms	Process: AllSrvUI32 (0x830)	Node: PTJFG
+Parameters Before Call
+pvReserved: NULL
+Returns
+S_OK
+Parameters After Call
+pvReserved:  NULL
+
+Function Summary
+72	CoCreateInstance( 0x004108F0,0x00000000,23,0x00410330,0x02CBFE84 )
+16:40:33.845	Elapsed: < 1 ms	Process: AllSrvUI32 (0x830)	Node: PTJFG
+Parameters Before Call
+rclsid: {AGCEvent}
+pUnkOuter: NULL
+dwClsContext: 23
+riid: {00000000-0000-0000-C000-000000000046}
+ppv: 0x02CBFE84
+Returns
+S_OK
+Parameters After Call
+ppv: 0x002FE748
+
+Function Summary
+73	OleRun( 0x002FE748 )
+16:40:33.847	Elapsed: < 1 ms	Process: AllSrvUI32 (0x830)	Node: PTJFG
+Parameters Before Call
+pUnknown: 0x002FE748
+Returns
+S_OK
+
+Function Summary
+74	CoUninitialize()
+16:40:34.404	Elapsed: 00.001	Process: AllSrvUI32 (0x834)	Node: PTJFG
+Returns
+(no return value)
+

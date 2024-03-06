@@ -1,0 +1,56 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: AGMLib, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "s:\alleg\src\agmlib\Release\RSP000029.rsp" with contents
+[
+/O2 /D "WIN32" /D "_WINDOWS" /D "NDEBUG" /D "_USRDLL" /D "_WINDLL" /D "_MBCS" /FD /EHsc /MT /GS /Zc:wchar_t /Yu"stdafx.h" /Fp"Release/AGMLib.pch" /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+\alleg\src\Agm\ServerCtrl.cpp
+.\AGMLib.cpp
+]
+Creating command line "cl.exe @s:\alleg\src\agmlib\Release\RSP000029.rsp /nologo"
+Creating temporary file "s:\alleg\src\agmlib\Release\RSP00002A.rsp" with contents
+[
+/O2 /D "WIN32" /D "_WINDOWS" /D "NDEBUG" /D "_USRDLL" /D "_WINDLL" /D "_MBCS" /FD /EHsc /MT /GS /Zc:wchar_t /Yc"stdafx.h" /Fp"Release/AGMLib.pch" /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+.\stdafx.cpp
+]
+Creating command line "cl.exe @s:\alleg\src\agmlib\Release\RSP00002A.rsp /nologo"
+Creating command line "rc.exe /d "NDEBUG" /l 0x40c /I "Release" /fo"Release/AGMLib.res" .\AGMLib.rc"
+Creating temporary file "s:\alleg\src\agmlib\Release\RSP00002B.rsp" with contents
+[
+/OUT:"Release/AGMLib.dll" /INCREMENTAL:NO /NOLOGO /DLL /DEF:".\AGMLib.def" /DELAYLOAD:"OleAcc.dll" /DEBUG /PDB:"Release/AGMLib.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /IMPLIB:"Release/AGMLib.lib" /MACHINE:X86  DelayImp.lib DelayImp.lib
+.\release\AGMLib.obj
+.\release\stdafx.obj
+.\release\AGMLib.res
+.\release\ServerCtrl.obj
+]
+Creating command line "link.exe @s:\alleg\src\agmlib\Release\RSP00002B.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+stdafx.cpp
+s:\alleg\src\AGMLib\stdafx.h(53) : warning C4278: 'GetObject': identifier in type library 'C:\\Program Files\\Microsoft Games\\Allegiance\\Server\\agc.dll' is already a macro; use the 'rename' qualifier
+Compiling...
+ServerCtrl.cpp
+AGMLib.cpp
+Generating Code...
+Compiling resources...
+Linking...
+   Creating library Release/AGMLib.lib and object Release/AGMLib.exp
+LINK : warning LNK4089: all references to 'SHELL32.dll' discarded by /OPT:REF
+LINK : warning LNK4089: all references to 'comdlg32.dll' discarded by /OPT:REF
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://s:\alleg\src\agmlib\Release\BuildLog.htm"
+AGMLib - 0 error(s), 3 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

@@ -1,0 +1,10 @@
+// agmlib.idl : type library source for agmlib.dll
+// This file will be processed by the MIDL compiler to produce the
+// type library (agmlib.tlb).
+
+[ uuid(C358F127-75C3-415D-94A3-EC6946B3EDE3), version(1.0) ]
+library agmlib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};

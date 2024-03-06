@@ -1,0 +1,10 @@
+; msAllegTool.def : Declares the module parameters for the DLL.
+DESCRIPTION 'MilkShape 3D Allegiance Tool'
+
+VERSION     1.0
+
+LIBRARY      "msAllegTool"
+EXPORTS
+    ; Explicit exports can go here
+    CreatePlugIn
+

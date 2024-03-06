@@ -1,0 +1,25 @@
+0002 0004 0002 0000 - model - utl10bmp - (0)ModifiableNumber - (1)[utl10bmp]TextureGeo -  - MeshGeo - -
+
+0
+1
+1L
+9
+0
+6
+0
+1
+9
+2
+9
+3 
+7
+8 -> 8*8 = 64 floats   8 floats = x,y,z,nx,ny,nz,tx,ty
+36  -> 36 shorts
+64 floats = 64/3 = ERR 
+36 shorts (=3x12) = aretes ? (0-7, soit 8 points)
+9
+1
+6
+0
+
+

@@ -1,0 +1,129 @@
+//
+// Default shell configuration
+//
+
+//
+// core objects
+//
+[core/DataStoreManager]
+srvid = SZ, {D60D46DA-C22A-11d2-8B1C-00C04F8EF2FF}
+clsid = SZ, {66B1FD12-BA5D-11d2-8B14-00C04F8EF2FF}
+dll = SZ, ZoneCore.dll
+
+[core/EventQueue]
+srvid = SZ, {EFB5B567-C22A-11d2-8B1C-00C04F8EF2FF}
+clsid = SZ, {A494872D-B039-11d2-8B0F-00C04F8EF2FF}
+dll = SZ, ZoneCore.dll
+
+[core/ResourceManager]
+srvid = SZ, {EFB5B56A-C22A-11d2-8B1C-00C04F8EF2FF}
+clsid = SZ, {3C663535-9F6C-11D2-89AA-00C04F8EC0A2}
+dll = SZ, ZoneClient.dll
+
+[core/LobbyDataStore]
+srvid = SZ, {D60D46D8-C22A-11d2-8B1C-00C04F8EF2FF}
+clsid = SZ, {F23B5BBE-B56C-11d2-8B13-00C04F8EF2FF}
+dll = SZ, ZoneClient.dll
+
+[core/LobbyCore]
+srvid = SZ, {67EBB783-C25E-11d2-8B1C-00C04F8EF2FF}
+clsid = SZ, {67EBB784-C25E-11d2-8B1C-00C04F8EF2FF}
+dll = SZ, ZoneClient.dll
+
+[core/Launcher]
+srvid = SZ, {9C770675-CFF0-11d2-8B30-00C04F8EF2FF}
+clsid = SZ, {DCCF5D69-CFF0-11d2-8B30-00C04F8EF2FF}
+dll = SZ, ZoneClient.dll
+
+[core/Latency]
+srvid = SZ, {B72DFFC2-E1C0-11d2-8B53-00C04F8EF2FF}
+clsid = SZ, {F5FCF2B5-E1C0-11d2-8B53-00C04F8EF2FF}
+dll = SZ, ZoneClient.dll
+
+[core/LobbyWindow]
+srvid = SZ, {229A68F1-F98F-11d2-89BA-00C04F8EC0A2}
+clsid = SZ, {229A68F2-F98F-11d2-89BA-00C04F8EC0A2}
+dll = SZ, ZoneClient.dll
+
+[core/TimerManager]
+srvid = SZ, {B5A84EA5-D541-11d2-8B3B-00C04F8EF2FF}
+clsid = SZ, {0D4AF0DD-D529-11d2-8B3B-00C04F8EF2FF}
+dll = SZ, ZoneClient.dll
+
+[core/MenuManager]
+srvid = SZ, {EC5B9F85-1871-11d3-8B75-00C04F8EF2FF}
+clsid = SZ, {1C99F392-197F-11d3-8B75-00C04F8EF2FF}
+dll = SZ, ZoneClient.dll
+
+[core/NetworkManager]
+srvid = SZ, {AD0E6017-3C85-11d3-8B95-00C04F8EF2FF}
+clsid = SZ, {EDA8B22D-3C8D-11d3-8B95-00C04F8EF2FF}
+dll = SZ, ZoneClient.dll
+
+
+
+//
+// Lobby objects
+//
+[Lobby/WindowManager]
+srvid = SZ, {9A1FF2D9-C6C6-11d2-8B23-00C04F8EF2FF}
+clsid = SZ, {3C663531-9F6C-11D2-89AA-00C04F8EC0A2}
+dll = SZ, ZoneClient.dll
+
+[Lobby/TableViewCtl]
+srvid = SZ, {25FF89A6-C79D-11d2-8B23-00C04F8EF2FF}
+clsid = SZ, {6EA76938-AFEB-11D2-9628-00C04F8EF946}
+dll = SZ, ZoneClient.dll
+
+[Lobby/TableInfoCtl]
+srvid = SZ, {EF63EEF8-28EF-11d3-89D5-00C04F8EC0A2}
+clsid = SZ, {AC2C268E-DC05-11d2-963B-00C04F8EF946}
+dll = SZ, ZoneClient.dll
+
+[Lobby/UserListCtl]
+srvid = SZ, {25FF89A7-C79D-11d2-8B23-00C04F8EF2FF}
+clsid = SZ, {37A84169-CAAC-11D2-9B2B-00C04F8EF466}
+dll = SZ, ZoneClient.dll
+
+[Lobby/ChatCtl]
+srvid = SZ, {25FF89A8-C79D-11d2-8B23-00C04F8EF2FF}
+clsid = SZ, {B15A454F-A5B5-11D2-9B1E-00C04F8EF466}
+dll = SZ, ZoneClient.dll
+
+[Lobby/LogoCtl]
+srvid = SZ, {12E6224F-FD06-11d2-89BB-00C04F8EC0A2}
+clsid = SZ, {3C663533-9F6C-11D2-89AA-00C04F8EC0A2}
+dll = SZ, ZoneClient.dll
+Bitmap = SZ, ZONELOGO
+
+[Lobby/AdCtl]
+srvid = SZ, {25FF89A5-C79D-11d2-8B23-00C04F8EF2FF}
+clsid = SZ, {12E6224E-FD06-11d2-89BB-00C04F8EC0A2}
+dll = SZ, ZoneClient.dll
+AdLinkURL = SZ, adlink2.asp?ID=
+DefaultAdMedia = SZ, BANNERAD
+
+//
+// LaunchPad objects
+//
+[LaunchPad/LaunchPad]
+srvid = SZ, {536AB365-1A63-11d3-8B75-00C04F8EF2FF}
+clsid = SZ, {99097670-CB4E-11d2-89B2-00C04F8EC0A2}
+dll = SZ, ZoneClient.dll
+
+[LaunchPad/UserListCtl]
+srvid = SZ, {EBB64B00-1A61-11d3-8B75-00C04F8EF2FF}
+clsid = SZ, {3AEFA514-E6FE-11d2-9B3A-00C04F8EF466}
+dll = SZ, ZoneClient.dll
+
+[LaunchPad/ChatCtl]
+srvid = SZ, {5731EDBA-1DD9-11d3-89CA-00C04F8EC0A2}
+clsid = SZ, {B15A454F-A5B5-11D2-9B1E-00C04F8EF466}
+dll = SZ, ZoneClient.dll
+
+[LaunchPad/AdCtl]
+srvid = SZ, {5731EDB9-1DD9-11d3-89CA-00C04F8EC0A2}
+clsid = SZ, {12E6224E-FD06-11d2-89BB-00C04F8EC0A2}
+dll = SZ, ZoneClient.dll
+AdLinkURL = SZ, adlink3.asp?ID=
+DefaultAdMedia = SZ, DEF125X125AD

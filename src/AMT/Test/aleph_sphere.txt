@@ -1,0 +1,14 @@
+header of aleph_sphere.mdl:
+tags=0001 l2=0002 l3=0002 l4=0000
+tags(0)=model
+L2(0)=[0]ModifiableNumber
+L2(1)=[0]MeshGeo
+L3(0)=frame
+L3(1)=object
+end of header for file aleph_sphere.mdl
+
+0 1 1.000000 9 0 6
+0
+1
+9 1 -> L2(1)=[0]MeshGeo 7 58 336 <58*8 float> <336 short>
+0

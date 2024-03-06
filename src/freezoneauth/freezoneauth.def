@@ -1,0 +1,6 @@
+; freezoneauth.def : Declares the module parameters for the DLL.
+
+LIBRARY      "freezoneauth"
+
+EXPORTS
+    ; Explicit exports can go here

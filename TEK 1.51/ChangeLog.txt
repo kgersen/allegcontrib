@@ -1,0 +1,300 @@
+Change Log
+===========
+v1.51
+-Fixed crash bug when firing turrets on a ship without primary weapons (Thanks Psylence)
+-Fixed the accuracy slider. When the heck did this stop working? (Thanks Psylence)
+-Fixed calculation bug where ships wouldn't "reload ammo", yielding incorrect TTKs
+-Clicking in most places of the Comparison form now closes any open AngleChoosers. (Thanks Ksero)
+-Aleph Resonators now work as in game: They don't inflict any damage, or contribute to 'Time To Kill" calculations. (Thanks Psylence, GreyVulpine)
+-Added grey bars to help visually separate the 3 areas on the Comparison form
+-DM/AC form now shows which DM or AC it's listing. (Thanks Noir)
+-Fixed calculation bug when using a ship that had 0 energy by default (non-belters interceptors). (Thanks GreyVulpine)
+
+v1.50 Release!
+-Added "°" character to Bearing to make it that much more intuitive
+-Fixed bug where Missile Ranges only showed up when comparing 2 targets. The range now shows up regardless of the existance of a target
+
+v1.48 Release Candidate 5
+-Fixed crash bug that occured because closing the MyComparison form didn't properly clean up its resources. Thanks GreyVulpine
+-Fixed crash bug while using the FireTurret checkboxes on the Ship Info form. Mental note: Stop cut'n'pasting code and assuming it works! Thanks GreyVulpine
+-Changed the Ship Info screen's "Board" ability to "Captures" since it appears ICE has it mislabelled. (Thanks whoever told me this :s Sorry I forget who it was)
+-Added an upper limit of 1 hour to kill simulations. If it ever gets that high, the loop will abort and return time "NaN".
+
+v1.47 Release Candidate 4
+-Fixed bug where changing faction crashed only *sometimes*... it had to do with wiping "me" and "target". Thanks Psylence.
+-Fixed bug where changing "Me" didn't update the comparison window. I broke this by fixing something else.
+	Stupid typos. I need to stop coding at 2-3am... (Thanks Psylence)
+-Fixed bug where clicking the "x" to close the MyComprison window didn't fully close it, causing a future crash
+	when trying to change "Me" or "Target". Thanks GreyVulpine
+-Added "Show Overridden Items" option to control whether or not TEK will show "Gatt 1" if "Gatt 2" is researched, etc.
+-Total Cost no longer includes the starting Garrison in its calculation (Thanks KSero)
+-Fixed bug where you couldn't drag Me or Target onto a blank ComparisonForm. Now you can!
+	This allows you to do what I originally intended... you update "me" on any form, and
+	any other comparison that was done with "me" updates automatically
+-Fixed crash bug that occured because closing the MyComparison form didn't properly clean up its resources. Thanks GreyVulpine
+
+v1.46 Release Candidate 3
+-Added "Launch Speed" box next to Missiles on the Comparison form. It sets the speed of your ship when firing the missile (to calculate Range)
+-Fixed bug where changing objects sometimes made Comparisons close when trying to update
+-Fixed crash bug when attempting to view the info of a probe that doesn't shoot like EWS Probes. (Thanks JimmyNighthawk)
+-Decreased the width of the windows by 2 pixels so they fit better beside Allegiance @ 800x600 (Thanks JimmyNighthawk)
+-Fixed hang bug when calculating TTK against TF Flagships. (Thanks GreyVulpine)
+-Fixed miscalculation with nanites. Now they repair hull as ingame (Thanks GreyVulpine)
+-Fixed bug with ammo capacity calculations with ships that have large ammo clips like Gunships. (Thanks GreyVulpine)
+-Fixed crash bug when changing factions with "My Comparison" open. Oops - I broke this by fixing something else :s. (Thanks GreyVulpine)
+
+v1.45 Release Candidate 2
+-Damage calculations now use only the ammo/missiles loaded in the ship's cargo, so you don't get calculations with 68 missiles anymore ;) (Thanks GreyVulpine)
+-Aleph Resonators don't calculate damage on ships anymore (Thanks GreyVulpine)
+-Fixed crash bug when setting me or target with the My Comparison window open (Thanks Spunkmeyer, GreyVulpine)
+-Parts right-click menus now only list the most overridden parts. If Gatt 3 is available, Gatts 1 and 2 will not be shown.
+-Fixed bug where setting Target, then switching ships would accidentally close the My Comparision window
+
+v1.44 Release Candidate 1
+-Fixed bug where you could not set a probe or a station to "Target" (This somehow broke when i fixed other bugs) (Thanks *everyone* cuz you all noticed it :P)
+-Fixed tooltips on GlobalConstants screen (Thanks Spunkmeyer)
+-When ships have only 1 weapon, the "FireWeapon" checkbox works like a standard checkbox instead of a 3-click checkbox as is needed with 2+ weapons.
+-I *THINK* I fixed a bug where it wouldn't select your manually-chosen CoreLocation in the same session as setting your DefaultCoreLocation in the options dialog.
+	You'd only run into this problem if you didn't have an Allegiance\Artwork registry key. (Thanks Spunkmeyer)
+-Removed overridden ships/stations/probes from the Objects list to reduce clutter. If you have Enh Fighter, Fighter will no longer be listed.
+-Sorted Object list alphabetically to make things easier to find. (Thanks Spunkmeyer)
+-Added KillBonus on probe info form so its damage can be calculated correctly taking into account the pilot's KB
+-Added weapon damage and range calculations to the probe info
+-Made the "features" of the station show up centered on the Station Info form
+-Updated the About form
+
+v1.43 BETA 2
+-Missile mass is now correctly added per missile instead of per pack (Thanks Schnobs, Spunkmeyer)
+-Split the "UsedBy" textbox at the bottom of the DM/AC window into two so you can see both side-by-side (Thanks Ksero)
+-Added tooltip to teams (UKDude)
+-CHANGED: The Rightclick menu on the NewGame's "Core" textbox now lists all cores in your default Core directory.
+	You can get it to list RecentCores instead using the "Remember Recent Cores" option in the Options window.
+-Made the TechIcons to the left of the Research list change to the selected team colour. Much better than ugly offwhite, and you can see it. Thanks (Spunkmeyer)
+-Doubleclicking an item in the ObjectsList now opens its info window
+-You can no longer drag things onto the "My Comparison" window
+-The Comparison Window now updates properly as objects change, whether the cargo section is shown or not.
+-Ship and Probe info screens now show the signature properly (Thanks Ksero)
+-The "Compare Me" » button now disables after changing factions. (Thanks Ksero)
+-Updating "Me" or "Target" with the "My Comparison" window open now updates the My Comparison automatically
+-Added many more HelpBalloons to help new users get used to the program (Thanks UKDude)
+-Added a "Clear" button on the Options window that allows users to re-enable HelpBalloons they've already seen this session
+
+v1.42 BETA
+-Fixed bug where TTK and #Missiles were incorrect when using Dual/multi missiles (Thanks GreyVulpine)
+-Fixed bug where multiple bullet-per-shot were calculating incorrectly (Thanks GreyVulpine)
+-Fixed "hang" bug where using negligible effect weapons against a target whose regen was higher than the damage
+-Added HelpBalloon for MK1/2/All buttons
+-Prevented the user from choosing a team that isn't in game (3 or higher in a 2team game) (Thanks GreyVulpine)
+-Team 5 is now shown. :doh:. I forgot to show it when a new game is created :oops: (Thanks Ksero, GreyVulpine)
+-Changed the program icon. Thanks Pook!
+-Changed icon colours on the main form to offwhite instead of Maroon to make them easier to see. Not sure if I like that colour though...
+-Hopefully fixed the problem where the user required additional MS .dlls to run the program (Ksero, Noble, Idanmel)
+-Rearranged the RightClick menu so most common items are on top
+-Fixed refresh bug where KillBonus was updated when loaded, but not NumKills (Thanks GreyVulpine)
+
+v1.41.2 BETA 1
+-Fixed bug where creating a new game over an existing one didn't set the Research pane back to Construction.
+-You can now add multiple bases by Shift+Clicking it in the ResearchListbox to get a more true TotalCost
+-Duplicated Textbox ToolTips on the Constants form to their labels. Both now have the same tooltip.
+-Comparisons are now arranged underneath eachother when they open up. "My" is always the first, and it will wrap around if it runs out of screenspace (UKDude)
+-You can now doubleclick the object's name on the ComparisonForm to open it's info
+-When Minimizing or Restoring the MainForm, all open comparisons are minimized/restored with it.
+-Updated the "TabIndexes" for all controls on all forms (ugh). Now using the TAB key to navigate the controls goes in order.
+-Added a ToolTip to everything, duplicating them for labels + textboxes. (ugh again. You better be happy now, UKDude :P)
+-HelpBalloons now only show once per session, unless turned off altogether in the Options (UKDude)
+-Added HelpBalloon to OptionsForm to explain "DefaultCorePath"
+-Added HelpBalloon to DamageIndicesForm to explain how to look up Armor/Damages
+-Made ShipForm's weapons checkboxes work like the ComparisonForm's checkboxes (no more 'grey' for FireAll)
+-Fixed bug where Missiles couldn't fire on ShipForm
+-Updated the DamagePerSecond value in the ShipForm
+-Fixed bug when dragging an item into a Comparison window, it didn't add it to the "OpenObjects" list
+-Fixed bug on Comparison window where closing an object left Bearing, KillBonus, "Expand Cargo" and Hitpoints controls visible
+-Updated the AboutForm with new "About" info :). It's sooooo ugly though :s
+-Added About... button on the Options form that shows the About window
+-Fixed bug where un-researching a GA1 left the GA2 researched. Unchecking a research now removes any dependant research as well (Ksero)
+
+v1.41.1
+-Fixed Rightclick crash bug when trying to look at parts on ComparisonForm (UKDude)
+-"Added" the #Kills to the Comparison and Ship Info forms
+-Fixed checkbox refresh bug on ComparisonForm when switching ships (UKDude, Noble, GreyVulpine)
+-Fixed bug when choosing a rightclick menu on an object in the ObjectBrowser would crash. [I HOPE!] (GreyVulpine, UKDude)
+-Fixed bug where using Rightclick menues on ObjectBrowser would do nothing(GreyVulpine)
+-Fixed bug where using Objectbrowser rightclick menues to set Me and Target didn't enable the "CompareMe" button (GreyVulpine, Noble)
+-Changed HelpBalloon text on the ResearchCost. (I had them flipped. Thanks UKDude)
+-Made FireWeapon checkboxes dualstate again, but rewrote the none/all/single check code to match
+-Fixed TimeToKill calculations (I was adding the time intervals an extra time per gun!. 2 guns = 3x the time. UKDude, you were right. TTK was 3x too long)
+-Fixing Ammo and Energy calculations too.
+-Missile TTK is still off. Verify/confirm calculations
+
+v1.41.0
+-ComparisonForm now calculates damage, energy, missiles, and clips used to kill target
+-Fixed bug where changing factions with a "Me" or "Target" set for that faction didn't clear Me and Target.
+-Started implementing HelpBalloons to explain the program
+
+v1.40.7 Alpha 3
+-Surrounded teams with a white border (UKDude)
+-New Game form only shows filename now, and not the path. (UKDude)
+-Construction tab is loaded by default on the Research pane (UKDude)
+-Centered Teamnames on the MainForm (UKDude)
+-Objects on the ComparisonForm are shown against a background of their team's colour (UKDude)
+-Fixed part refreshing bug when switching ships in ComparisonForm (UKDude)
+-Fixed bug where 2nd gun was enabled when 1 gun and 1 turret should have been (UKDude)
+-Fixed bug with default loadout of turrets (UKDude)
+-I *think* I fixed the crash bug when choosing an option from the ObjectBrowser list's rightclick menu (UKDude)
+-Fixed bug where you had to click the Bearing textbox twice to get it to open
+-Made MainForm resizable (height only) when Research pane or ObjectBrowser pane is selected (UKDude)
+-Researching now updates all open comparisons and objects (UKDude)
+-Added ShipForm, and it now properly updates, and allows changing of cargo.
+-When creating a new game, all open objects are now closed first
+-Added a warning box when user tries to create a New Game and one is already in place
+-When hovering mouse over an item on the DM/AC form, the mouse cursor becomes a hand, and the item changes colour to yellow (UKDude)
+-Started the Damage code. Ugh, gonna be harder than I thought to get it accurate.
+
+v1.40.5
+-Surrounded teams with a white border (UKDude)
+-New Game form only shows filename now, and not the path. (UKDude)
+-Construction tab is loaded by default on the Research pane (UKDude)
+-Centered Teamnames on the MainForm (UKDude)
+-Objects on the ComparisonForm are shown against a background of their team's colour (UKDude)
+-Fixed part refreshing bug when switching ships in ComparisonForm (UKDude)
+-Fixed bug where 2nd gun was enabled when 1 gun and 1 turret should have been (UKDude)
+-Fixed bug with default loadout of turrets (UKDude)
+-I *think* I fixed the crash bug when choosing an option from the ObjectBrowser list's rightclick menu (UKDude)
+-Fixed bug where you had to click the Bearing textbox twice to get it to open
+
+v1.40.4
+-The total cost of research/stations is now shown on the ResearchPanel below the cost of the individual item
+-Fixed bug when creating new game: Me and Target are now cleared.
+-Added TeamColor to the Team class to aid in UI cues
+-Added ChangeLog.txt
+
+v1.40.3
+-Added ProbeForm, StationForm, and ShipForm. They still need tweaking and ShipForm needs to show the info!
+-NewGameForm now automatically enters the last loaded core into the textbox (Thanks UKDude)
+-When an overridden base is built (Adv Sup) its predecessor (Sup) is hidden from the station list (Thanks UKDude)
+
+v1.40.2 Alpha 2
+-Updated the program's icon. I still want a UNIQUE icon though!
+-Modified Ship class to store which gun the user is firing in addition to whether a weapon is being fired
+-Implemented "TriState" checkboxes for firing a weapon. Removed the old "Fire Weapon" checkbox since the new 4 operate in its place (Thanks UKDude)
+-Disabled BalloonHelp until i see if I can get another .dll that's much better...
+-Made the "My Comparison" form have the name "My Comparison" to differentiate it from other comparisons
+-The "My ComparisonForms now detects when "Me" or "Target" are changed, and update accordingly
+-Updated the object labels to default to "<Drag an object here!>" so users know to drag items there
+-Implemented Drag/Drop from ObjectBrowser to ComparisonForm
+-ComparisonForm now hides Bearing and KillBonus boxes for non-ships. Wow, lots of wasted space now...
+-Fixed the KillBonus formula! (Thanks Anguirel)
+
+v1.40.1
+-Changed the team selection controls to RadioButtons (Button style) so they show selected team when depressed (Thanks UKDude)
+-Changed style so your team's font is black/bold, enemies are regular gray, and all are flush left 
+-Made all other buttons on MainForm 3D instead of Flat to make the MainForm look more uniform (Thanks UKDude)
+-Added BalloonHelp module for future help feature
+-Moved Me and Target on top of eachother in the ObjectBrowser. Both are now always shown (Thanks UKDude)
+-Fixed bug in AngleChooser: it now closes when clicking the bearing textbox again (Thanks UKDude)
+-Widened the ComparisonForm to match MainForm's width
+-Moved all parts checkboxes to the right of their textboxes on the ComparisonForm (Thanks UKDude)
+-Added checkboxes for each weapon to the right of the weapon textboxes. Still need to make them work like ingame.(UPDATE: Fixed in 1.40.2) (Thanks UKDude)
+-Modified the Ship class to store NumKills and calculate KillBonus. Tested it - it's not the right formula. It's somewhat close though. (Thanks UKDude, but I still need the right formula!)
+-Modified the KillBonus chooser to change the NumKills instead... but the KillBonus is displayed
+
+v1.40 TEK Alpha 1
+-Redesigned User Interface. Stripped down
+-Improved the IGCCore parsing library to expose the objects in a different way
+-Improved the handling of allegiance objects to take advantage of new library. MUCH more efficient with parts!!
+-Added a Comparison form that manages all of the comparison variables for both objects
+
+v0.90 First public release
+-Fixed bug with calculating damage with multiple guns firing at once
+-Changed "Thrust" to "Accel" and showed true acceleration values instead of thrust (Thanks Ksero + Spunkmeyer)
+-Accel and Max Speed now show the boosted max speed/accel applied by a booster when in use (Thanks Weedman for the calculation!!)
+
+v0.87
+-Fixed crash bug when clicking a DamageIndex's textbox (Thanks Ksero)
+-Fixed spelling error on "Damage Indices" form (Thanks Ksero)
+-Closing the "Game Form" now also closes any open Constants or Damage forms (Thanks Ksero)
+-Fixed crash bug when minimizing/restoring the Game Form before selecting a team (Thanks Ksero)
+-Fixed bug where nanite guns repaired shields in calculations (Thanks Ksero)
+-Changed taskbar icon of "About" form (Thanks Ksero)
+-Fixed crash bug while changing turrets on some ships (Thanks Ksero)
+-Fixed bug where the new "ER" core and Pook's zoom_coreB could not be loaded (Thanks Ksero)
+-Constants form and DamageIndices form no longer have a taskbar icon
+-Fixed ToolTips on the Constants form (Thanks Spunkmeyer)
+-Removed AreaEffectBonus checkboxes, and added a ParticleAccuracy slider instead. This *reduces* the particle damage instead of increasing the area damage.
+-Added "Kill Bonus" box which allows you to set the kill bonus of the ship's pilot
+-Added a line to show the selected angle on the SensorEnvelope (Thanks Ksero)
+-Added a line to show the selected thrust angle on the Thrust diagram (Thanks Ksero)
+-Added Ksero to the About screen :) (Thanks Ksero!!!)
+
+v0.86
+-Added WeaponRange calculation for all weapons being fired (turrets included, but not missiles)
+-Added TotalDamage calculation, which calculates the sum of all damage by the weapons.
+-Added RealDamage calculations for hull and shields
+-Fixed crash bug when closing an object that was being compared to, then trying to update the compared object
+-Added rudamentary TimeToKill calculations. They don't take ammo capacity, missiles, reload time, energy, or energ recharge into account.
+-Removed "Warn Base Capture" flag on ships since it's not implemented in game anyways
+-Allowed the GameForm to be resized, and enlarged the ResearchList as the form is resized
+-Embedded IGCCore.dll as a resource inside CoreTool.exe so that the program can be distributed as a single file
+-Added the AreaEffectBonus checkboxes to probe and ship forms to include a bonus modifier for area effect weapons (Thanks SRM_Petit_Mort)
+
+v0.85
+-Added Core Constants dialog
+-Added DamageIndex dialog
+-Fixed bug where "Change Faction" prevented all factions from being changed instead of only the one with open objects
+-Now you can drop anywhere on an object instead of only the target graphic. The drag must still start from the graphic though. (Thanks Ksero)
+-Made the Sensor Envelope automatically update all comparisons as the mouse is dragged
+-Added the ship's default cargo
+-Made the object forms smaller to take up less space on desktop
+
+v0.84
+-Added "Clear, MK1, MK2, All" buttons to GameForm to allow quick research of tech. (Thanks: Everyone including me!)
+-Added a background ship graphic to the "Thrust display" (Thanks Ksero!)
+-Allowed the "GameForm" to be minimized! Click the "Close" button, and the form will minimize.
+-Added "Game Over" button to GameForm since the "X" at topright now minimizes the form.
+-Added "Constants", and "Dmg Indexes" buttons to GameForm which will allow browsing of these values. Not implemented yet.
+-Added "Show ToolTips" option that allows you to turn off tooltips if they bug you
+-Changed Comparison calculations to use Angular Sensor Range instead of the standard sensor range
+-Now updating one form will update all forms that compare to it (avoiding circular comparison chains ;))
+-Fixed bug where changing faction after objects were opened caused unexpected results
+-Fixed bug with focus returning to the GameForm after an ObjectForm was selected. (Thanks Ksero)
+-Finished adding ToolTips to everything (ugh!)
+
+v0.83
+-Fixed bug where clicking the Research list without choosing a team/tech caused a crash (Thanks Ksero)
+-Fixed bug where you could not scroll through the research with arrow keys (Thanks Ksero)
+-Fixed bug where attempting to un-research the Garrison caused a crash (Thanks Ksero)
+-Fixed bug where probe's sig% was 0!! Oops. (Thanks Ksero)
+-Fixed bug where probe's mass was 0.
+-Fixed bug with reading some cores; ICE doesn't set the "Pad" bytes the way it should, so my asserts failed! (Thanks Ksero)
+-Fixed bug where activating a cloak didn't update the comparison values. (Thanks Ksero)
+-Removed the "Always On Top" property from ObjectForms. They now come to the front when the game is selected (Thanks Ksero)
+-Fixed bug where error log wasn't written to program's folder. Now it is.
+-Changed Ship Thrust units in labels. Now it reads in "KiloNewtons" (Thanks _Fox_Four)
+-Changed "Drift" label to "Torq" (couldn't fit "Torque") (Thanks _Fox_Four)
+-Changed object label colour to match team colour. Don't know if this is the best way to visually separate objects...
+-Added "Sensor Envelope" to Ship screen to allow sensor range calculation behind a ship
+-Added/Changed "Thrust Display" on Ship screen to visually show how the ship can move
+
+v0.82
+-Fixed "bug" where you had to build the upgraded station after you researched the upgrade development.
+-Fixed the "doubleclick research item" annoyance so now you can just single-click to research anything (Thanks Larask)
+-Added the Target's name when comparing one to another
+-Fixed bug in Options Form where it did not correctly display your Startup choice when choosing "Load Previous"
+-Fixed bug where program would halt on startup when user did not have an Allegiance registry key
+-Fixed the title of the object form so it reads "Dregkhlar: Lt Interceptor" instead of "Faction: Shipname" (oops!) (Thanks UKDude)
+-Fixed Signature calculations when factoring in cargo (firing guns, boosters, etc) (Thanks InsanityBoy, UKDude)
+-Fixed DetectionRange calculations
+-Fixed bug where setting any weapon to "<None>" disabled the "UseWeapon" checkbox (Thanks UKDude)
+-Added an option to specify a default core location to use should the user not want to use the Allegiance Artwork folder
+-Removed taskbar entry for each object (Thanks UKDude)
+-Changed program icon to red probe on black background
+-Changed "Target" icon to a red target on black background
+-Research list now updates itself automatically as things are researched. No need to "refresh" the list (Thanks UKDude)
+-Added ToolTips to "New Game" and "Options" forms
+
+v0.81
+-Cleaned up a lot of the partlist code; Reduced it by something ridiculous like 50%. Much more efficient/quick
+-Added "About" form
+
+v0.80
+-Initial beta. I think everything works?

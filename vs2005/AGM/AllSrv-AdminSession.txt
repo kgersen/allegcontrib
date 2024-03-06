@@ -1,0 +1,290 @@
+// AdminSession coding samples for Allegiance Server
+// (c) Kirth Gersen 2002
+
+
+// import the AGC typelib and the AllSrv typelib
+// adjust the full path to your installation
+#import "C:\\Program Files\\Microsoft Games\\Allegiance\\Server\\agc.dll" no_namespace
+#import "C:\\Program Files\\Microsoft Games\\Allegiance\\Server\\AllSrv32.exe" no_namespace
+
+// CServerCtrl: sample class that implement the the IAdminSessionHost
+// The only method is "GetIdentity" and the usual IUnknown stuff
+class CServerCtrl : public IAdminSessionHost
+{
+public:
+    STDMETHODIMP QueryInterface
+                    (REFIID                     riid,
+                     LPVOID *                   ppvObj);
+    inline STDMETHODIMP_(ULONG) AddRef
+                    () { return InterlockedIncrement(&m_cRef);};
+    inline STDMETHODIMP_(ULONG) Release
+                    () { ULONG ulCount = InterlockedDecrement(&m_cRef);
+                         //if (!ulCount)  delete this; 
+                         return ulCount;};
+	HRESULT STDMETHODCALLTYPE raw_GetIdentity(long nCookie, IUnknown * * ppIdentity);
+public :
+    CServerCtrl ();
+    ~CServerCtrl ();
+private :
+    volatile LONG			m_cRef; 
+};
+// CServerCtrl: QueryInterface implementation
+STDMETHODIMP CServerCtrl::QueryInterface
+                    (REFIID                     riid,
+                     LPVOID *                   ppvObj)
+{
+	if (riid == IID_IUnknown)
+	{
+		*ppvObj = this;
+		AddRef();
+		return S_OK;
+	}
+	if (riid == __uuidof(IAdminSessionHostPtr))
+	{
+		*ppvObj = this;
+		AddRef();
+		return S_OK;
+	}
+	return  E_NOINTERFACE ; 
+}
+CServerCtrl::CServerCtrl()
+{
+	m_cRef = 0;
+	AddRef();
+}
+CServerCtrl::~CServerCtrl()
+{
+	//Release();
+}
+
+
+// CServerCtrl: implementation of GetIdentity
+// Steps:
+//   1. obtain a IAGCVersionInfo interface to a AGCVersionInfo object (agc.dll)
+//   2. store the "version info" resource in it
+//   3. obtain the IPersistStream interface of AGCVersionInfo object
+//   4. store the AGCVersionInfo object into a Stream object (created using CreateStreamOnHGlobal)
+//   5. copy this Stream object to another Stream object, during the copy 'XOR' the values with the key (CSKey)
+//   6. return the 2nd Stream in the ppIdentity parameter
+//   7. return the nCookie parameter as the function result (clear the high bit 1st)
+// NB:
+//    for this to work the "version info" must have the following entries/values in it:
+//		LegalCopyright = Copyright © 1995-2000. All rights reserved.
+//		CompanyName    = Microsoft® Corporation
+//		all other entries are free
+
+// key used by GetIdentity to "crypt" the version info block
+const ULONG CSKey[4] = {
+  0x8a1e3f7f,
+  0x4fbf7a21,
+  0x2cd0399b,
+  0x02540ddb};
+
+// nb: this is sample code, 'real world' code will need more errors control
+HRESULT STDMETHODCALLTYPE CServerCtrl::raw_GetIdentity(long nCookie, IUnknown * * ppIdentity)
+{
+	HRESULT hr;
+	IUnknown * puk = NULL;
+	// step 1
+	hr = CoCreateInstance(
+		__uuidof(AGCVersionInfo),
+		NULL,
+		(CLSCTX_INPROC_SERVER|CLSCTX_INPROC_HANDLER |CLSCTX_LOCAL_SERVER | CLSCTX_REMOTE_SERVER), // = 0x17
+		IID_IUnknown,
+		(LPVOID *)&puk);
+	hr = OleRun(puk);
+	IAGCVersionInfoPtr piagcver = NULL;
+	hr = puk->QueryInterface(__uuidof(IAGCVersionInfo),(LPVOID *)&piagcver);
+	puk->Release();
+		
+	// step 2
+	hr = piagcver->put_FileName(NULL);
+
+	// step 3
+	IPersistStream *pipstm = NULL;
+	hr = piagcver->QueryInterface(IID_IPersistStream,(LPVOID *)&pipstm);
+	
+	// step 4
+	LPSTREAM ppstm;
+	hr = CreateStreamOnHGlobal(NULL,TRUE,&ppstm);
+	hr = pipstm->Save(ppstm,FALSE);
+	LARGE_INTEGER lpos;
+	lpos.HighPart = 0;
+	lpos.LowPart = 0;
+	hr = ppstm->Seek(lpos,0,NULL); // rewind the stream 
+
+	// step 5
+	ULONG buff[4]; // at least 4
+	ULONG cbRead = 0;
+	LPSTREAM ppstm2;
+	hr = CreateStreamOnHGlobal(NULL,TRUE,&ppstm2);
+	hr = ppstm2->Seek(lpos,0,NULL); // rewind the stream - not really needed since just created
+	do {
+		hr = ppstm->Read(buff,0x10/* =4*sizeof(ULONG) */,&cbRead);
+		if (cbRead == 0) break;
+		buff[0] = buff[0] ^ CSKey[0];
+		buff[1] = buff[1] ^ CSKey[1];
+		buff[2] = buff[2] ^ CSKey[2];
+		buff[3] = buff[3] ^ CSKey[3];
+		hr = ppstm2->Write(buff,cbRead,NULL);
+	} while (1);
+
+	// release unneeded objects
+	if (ppstm) ppstm->Release();
+	if (piagcver) piagcver->Release();
+	
+	// step 6
+	*ppIdentity = ppstm2; // return the "destination" stream
+	// step 7
+	return nCookie & 0x7FFFFFFF; // some 'magic' stuff again
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////:
+// Using the IAdminSessionHost implementation (CServerCtrl)
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////:
+.....(error control removed)
+
+	// invoke the Allegiance server (CLSID=AdminSession) thru the IAdminSessionClass interface
+	IAdminSessionClassPtr	iasc = NULL;
+	HRESULT hr;
+	hr = CoGetClassObject(
+		__uuidof(AdminSession),
+		CLSCTX_LOCAL_SERVER,
+		NULL,//COSERVERINFO * pServerInfo,
+		__uuidof(IAdminSessionClassPtr),
+		(LPVOID *)&iasc
+	);
+	
+	// create an AdminSession
+	IAdminSessionPtr iadms = NULL;
+	CServerCtrl csctrl; // our IAdminSessionHost implementation
+	iadms = iasc->CreateSession(&csctrl); // Allsrv will call the GetIdentity during this
+	iasc = NULL; // we can release the AdminSessionClass interface
+	
+	// from here, we have a valid IAdminSession interface (iadms) that allow full control of the server
+....
+	// to get the AdminServer interface
+	IAdminServerPtr	iserver = NULL;	
+	hr = iadms->get_Server(&iserver);
+....
+	// to get the AdminGames of the server
+	IAdminGamesPtr igames = NULL;
+	hr = iserver->get_Games(&igames);
+....
+	// to get the game (or create one)
+	long ngames = 0;
+	hr = igames->get_Count(&ngames);
+	IAdminGamePtr igame = NULL;
+	if (ngames > 0) // at least 1 game exists
+	{
+		VARIANT pvi;
+		pvi.vt = VT_I4;
+		pvi.lVal = 0;
+		hr = igames->get_Item(&pvi,&igame); // get the game with index=0
+	}
+	else // no game, create one with default params 
+	{
+		IAGCGameParametersPtr iparams = IAGCGameParametersPtr(__uuidof(AGCGameParameters));
+		hr = igames->raw_Add(iparams);
+	}
+.....
+	// get the game owner name (assumes igame is valid)
+	IAdminUserPtr iowner;
+	hr = igame->get_GameOwnerUser(&iowner);
+	BSTR username = new WCHAR[200];
+	hr = iowner->get_Name(&username);
+.....
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Adding a Event handler
+//
+//	to receive events from the server, we need to implement an AdminSessionEvents interface
+//	then use the "ConnectionPoint" system to hook it to the AdminSession
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class CServerEvents : public IAdminSessionEvents
+{
+public:
+    STDMETHODIMP QueryInterface
+                    (REFIID                     riid,
+                     LPVOID *                   ppvObj);
+    inline STDMETHODIMP_(ULONG) AddRef
+                    () { return InterlockedIncrement(&m_cRef);};
+    inline STDMETHODIMP_(ULONG) Release
+                    () { ULONG ulCount = InterlockedDecrement(&m_cRef);
+                         //if (!ulCount)  delete this; 
+                         return ulCount;};
+    HRESULT _stdcall raw_OnEvent(IAGCEvent* pEvent);
+
+public :
+    CServerEvents ();
+    ~CServerEvents ();
+private :
+    volatile LONG               m_cRef; 
+};
+// CServerEvents implementation
+STDMETHODIMP CServerEvents::QueryInterface
+                    (REFIID                     riid,
+                     LPVOID *                   ppvObj)
+{
+	if (riid == IID_IUnknown)
+	{
+		*ppvObj = this;
+		AddRef();
+		return S_OK;
+	}
+	if (riid == __uuidof(IAdminSessionEvents))
+	{
+		*ppvObj = this;
+		AddRef();
+		return S_OK;
+	}
+	return  E_NOINTERFACE ; 
+}
+CServerEvents::CServerEvents()
+{
+	m_cRef = 0;
+	AddRef();
+}
+CServerEvents::~CServerEvents()
+{
+	//Release();
+}
+// the OnEvent method, called everytime a subscribed event arrise
+HRESULT _stdcall CServerEvents::raw_OnEvent(IAGCEvent* pEvent)
+{
+	... process the pEvent (display, log, whatever)
+	... requires analyse of the pEvent type to properly 
+	return S_OK;
+}
+
+// connecting the AdminSessionEvents object to the AdminSession
+....
+	// assumes iadms (IAdminSessionPtr) is valid
+	HRESULT hr;
+	IConnectionPointContainer *icpc = NULL;
+	IConnectionPoint *icp = NULL;
+	hr = iadms->QueryInterface(IID_IConnectionPointContainer ,(LPVOID *)&icpc);
+	hr = icpc->FindConnectionPoint(__uuidof(IAdminSessionEvents),&icp);
+	DWORD CPcookie; // used to Unadvise the connection point
+	CServerEvents csevents; // our AdminSessionEvents implementation
+	hr = icp->Advise((IUnknown *)&csevents,&CPcookie);
+	
+....	// subcribe to events - you can filter here the events you wanna receive
+	hr = iadms->ActivateAllEvents(); // this subscribes to all event types
+
+....   // main loop (usually UI interface) - csevents.raw_OnEvent() will be called by the alleg server on any event
+
+
+....	// cleaning/closing code
+	hr = iadms->DeactivateAllEvents(); // unsubscribe to all event types
+	if (icp)
+	{
+		hr = icp->Unadvise(CPcookie);
+		icp->Release();
+		icp = NULL;
+	}
+	if (icpc)
+	{
+		icpc->Release();
+		icpc = NULL;
+	}
+....

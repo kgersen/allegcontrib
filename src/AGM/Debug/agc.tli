@@ -1,0 +1,3506 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (e0c042eb).
+//
+// s:\alleg\src\agm\debug\agc.tli
+//
+// Wrapper implementations for Win32 type library C:\\Program Files\\Microsoft Games\\Allegiance\\Server\\agc.dll
+// compiler-generated file created 08/16/04 at 18:49:43 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IAGCVector wrapper method implementations
+//
+
+inline void IAGCVector::PutX ( float pxArg ) {
+    HRESULT _hr = put_X(pxArg);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCVector::GetX ( ) {
+    float _result = 0;
+    HRESULT _hr = get_X(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCVector::PutY ( float pyArg ) {
+    HRESULT _hr = put_Y(pyArg);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCVector::GetY ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Y(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCVector::PutZ ( float pzArg ) {
+    HRESULT _hr = put_Z(pzArg);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCVector::GetZ ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Z(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCVector::PutDisplayString ( _bstr_t pbstrDisplayString ) {
+    HRESULT _hr = put_DisplayString(pbstrDisplayString);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCVector::GetDisplayString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAGCVector::InitXYZ ( float xArg, float yArg, float zArg ) {
+    HRESULT _hr = raw_InitXYZ(xArg, yArg, zArg);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCVector::InitCopy ( struct IAGCVector * pVector ) {
+    HRESULT _hr = raw_InitCopy(pVector);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCVector::InitRandomDirection ( ) {
+    HRESULT _hr = raw_InitRandomDirection();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCVector::InitRandomPosition ( float fRadius ) {
+    HRESULT _hr = raw_InitRandomPosition(fRadius);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IAGCVector::GetIsZero ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsZero(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVector::GetIsEqual ( struct IAGCVector * pVector ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsEqual(pVector, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCVector::GetLength ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCVector::GetLengthSquared ( ) {
+    float _result = 0;
+    HRESULT _hr = get_LengthSquared(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCVectorPtr IAGCVector::GetOrthogonalVector ( ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = get_OrthogonalVector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCVector::Add ( struct IAGCVector * pVector ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = raw_Add(pVector, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCVector::Subtract ( struct IAGCVector * pVector ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = raw_Subtract(pVector, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCVector::Multiply ( float f ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = raw_Multiply(f, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCVector::Divide ( float f ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = raw_Divide(f, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCVector::Normalize ( ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = raw_Normalize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCVector::CrossProduct ( struct IAGCVector * pVector ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = raw_CrossProduct(pVector, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCVector::Interpolate ( struct IAGCVector * pVector, float fValue ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = raw_Interpolate(pVector, fValue, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline HRESULT IAGCVector::AddInPlace ( struct IAGCVector * pVector ) {
+    HRESULT _hr = raw_AddInPlace(pVector);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCVector::SubtractInPlace ( struct IAGCVector * pVector ) {
+    HRESULT _hr = raw_SubtractInPlace(pVector);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCVector::MultiplyInPlace ( float f ) {
+    HRESULT _hr = raw_MultiplyInPlace(f);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCVector::DivideInPlace ( float f ) {
+    HRESULT _hr = raw_DivideInPlace(f);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCVector::NormalizeInPlace ( ) {
+    HRESULT _hr = raw_NormalizeInPlace();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCVector::CrossProductInPlace ( struct IAGCVector * pVector ) {
+    HRESULT _hr = raw_CrossProductInPlace(pVector);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCVector::InterpolateInPlace ( struct IAGCVector * pVector, float fValue ) {
+    HRESULT _hr = raw_InterpolateInPlace(pVector, fValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAGCOrientation wrapper method implementations
+//
+
+inline HRESULT IAGCOrientation::InitCopy ( struct IAGCOrientation * pOrientation ) {
+    HRESULT _hr = raw_InitCopy(pOrientation);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IAGCVectorPtr IAGCOrientation::GetForward ( ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = get_Forward(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCOrientation::GetBackward ( ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = get_Backward(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCOrientation::GetUp ( ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = get_Up(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCOrientation::GetRight ( ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = get_Right(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline VARIANT_BOOL IAGCOrientation::GetIsEqual ( struct IAGCOrientation * pOrientation ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsEqual(pOrientation, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCOrientation::GetIsRoughlyEqual ( struct IAGCOrientation * pOrientation ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsRoughlyEqual(pOrientation, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCEvent wrapper method implementations
+//
+
+inline enum AGCEventID IAGCEvent::GetID ( ) {
+    enum AGCEventID _result;
+    HRESULT _hr = get_ID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline DATE IAGCEvent::GetTime ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_Time(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IAGCEvent::GetDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Description(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long IAGCEvent::GetPropertyCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PropertyCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCEvent::GetPropertyExists ( _bstr_t bstrKey ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PropertyExists(bstrKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t IAGCEvent::GetProperty ( VARIANT * pvKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Property(pvKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t IAGCEvent::GetComputerName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ComputerName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long IAGCEvent::GetSubjectID ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SubjectID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IAGCEvent::GetSubjectName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SubjectName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCEvent::SaveToString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_SaveToString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAGCEvent::LoadFromString ( _bstr_t bstr ) {
+    HRESULT _hr = raw_LoadFromString(bstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IAGCEvent::GetContext ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Context(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IAGCEventCreate wrapper method implementations
+//
+
+inline HRESULT IAGCEventCreate::Init ( ) {
+    HRESULT _hr = raw_Init();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void IAGCEventCreate::PutID ( enum AGCEventID _arg1 ) {
+    HRESULT _hr = put_ID(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IAGCEventCreate::PutTime ( DATE _arg1 ) {
+    HRESULT _hr = put_Time(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IAGCEventCreate::SetTimeNow ( ) {
+    HRESULT _hr = raw_SetTimeNow();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCEventCreate::AddProperty ( _bstr_t pbstrKey, VARIANT * pvValue ) {
+    HRESULT _hr = raw_AddProperty(pbstrKey, pvValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCEventCreate::RemoveProperty ( _bstr_t pbstrKey, VARIANT * pvValue ) {
+    HRESULT _hr = raw_RemoveProperty(pbstrKey, pvValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void IAGCEventCreate::PutSubjectID ( long _arg1 ) {
+    HRESULT _hr = put_SubjectID(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IAGCEventCreate::PutSubjectName ( _bstr_t _arg1 ) {
+    HRESULT _hr = put_SubjectName(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IAGCEventCreate::PutContext ( _bstr_t _arg1 ) {
+    HRESULT _hr = put_Context(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IAGCGameParameters wrapper method implementations
+//
+
+inline HRESULT IAGCGameParameters::Validate ( ) {
+    HRESULT _hr = raw_Validate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void IAGCGameParameters::PutMinPlayers ( unsigned char pVal ) {
+    HRESULT _hr = put_MinPlayers(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline unsigned char IAGCGameParameters::GetMinPlayers ( ) {
+    unsigned char _result = 0;
+    HRESULT _hr = get_MinPlayers(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutMaxPlayers ( unsigned char pVal ) {
+    HRESULT _hr = put_MaxPlayers(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline unsigned char IAGCGameParameters::GetMaxPlayers ( ) {
+    unsigned char _result = 0;
+    HRESULT _hr = get_MaxPlayers(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IAGCGameParameters::GetGameName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_GameName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAGCGameParameters::PutGameName ( _bstr_t pVal ) {
+    HRESULT _hr = put_GameName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetEjectPods ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_EjectPods(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutEjectPods ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_EjectPods(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowPrivateTeams ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowPrivateTeams(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowPrivateTeams ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowPrivateTeams(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetPowerUps ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PowerUps(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutPowerUps ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_PowerUps(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowJoiners ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowJoiners(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowJoiners ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowJoiners(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetStations ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Stations(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutStations ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Stations(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetScoresCount ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ScoresCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutScoresCount ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ScoresCount(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetDrones ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Drones(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutDrones ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Drones(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetIsGoalConquest ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsGoalConquest(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutIsGoalConquest ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_IsGoalConquest(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetIsGoalArtifacts ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsGoalArtifacts(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutIsGoalArtifacts ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_IsGoalArtifacts(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetIsGoalTeamMoney ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsGoalTeamMoney(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutIsGoalTeamMoney ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_IsGoalTeamMoney(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetIsGoalTeamKills ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsGoalTeamKills(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutIsGoalTeamKills ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_IsGoalTeamKills(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetResources ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Resources(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutResources ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Resources(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetResourceAmountsVisible ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ResourceAmountsVisible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutResourceAmountsVisible ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ResourceAmountsVisible(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetRandomWormholes ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_RandomWormholes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutRandomWormholes ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_RandomWormholes(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetNoTeams ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_NoTeams(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutNoTeams ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_NoTeams(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetShowHomeSector ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ShowHomeSector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutShowHomeSector ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ShowHomeSector(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetCivIDs ( short element ) {
+    short _result = 0;
+    HRESULT _hr = get_CivIDs(element, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutCivIDs ( short element, short pVal ) {
+    HRESULT _hr = put_CivIDs(element, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline AGCMoney IAGCGameParameters::GetGoalTeamMoney ( ) {
+    AGCMoney _result;
+    HRESULT _hr = get_GoalTeamMoney(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutGoalTeamMoney ( AGCMoney pVal ) {
+    HRESULT _hr = put_GoalTeamMoney(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetTsiPlayerStart ( ) {
+    short _result = 0;
+    HRESULT _hr = get_TsiPlayerStart(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutTsiPlayerStart ( short pVal ) {
+    HRESULT _hr = put_TsiPlayerStart(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetTsiNeutralStart ( ) {
+    short _result = 0;
+    HRESULT _hr = get_TsiNeutralStart(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutTsiNeutralStart ( short pVal ) {
+    HRESULT _hr = put_TsiNeutralStart(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetTsiPlayerRegenerate ( ) {
+    short _result = 0;
+    HRESULT _hr = get_TsiPlayerRegenerate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutTsiPlayerRegenerate ( short pVal ) {
+    HRESULT _hr = put_TsiPlayerRegenerate(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetTsiNeutralRegenerate ( ) {
+    short _result = 0;
+    HRESULT _hr = get_TsiNeutralRegenerate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutTsiNeutralRegenerate ( short pVal ) {
+    HRESULT _hr = put_TsiNeutralRegenerate(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCGameParameters::GetStartingMoney ( ) {
+    float _result = 0;
+    HRESULT _hr = get_StartingMoney(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutStartingMoney ( float pVal ) {
+    HRESULT _hr = put_StartingMoney(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetLives ( ) {
+    short _result = 0;
+    HRESULT _hr = get_Lives(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutLives ( short pVal ) {
+    HRESULT _hr = put_Lives(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetGoalTeamKills ( ) {
+    short _result = 0;
+    HRESULT _hr = get_GoalTeamKills(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutGoalTeamKills ( short pVal ) {
+    HRESULT _hr = put_GoalTeamKills(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetMapType ( ) {
+    short _result = 0;
+    HRESULT _hr = get_MapType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutMapType ( short pVal ) {
+    HRESULT _hr = put_MapType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetMapSize ( ) {
+    short _result = 0;
+    HRESULT _hr = get_MapSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutMapSize ( short pVal ) {
+    HRESULT _hr = put_MapSize(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetRandomEncounters ( ) {
+    short _result = 0;
+    HRESULT _hr = get_RandomEncounters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutRandomEncounters ( short pVal ) {
+    HRESULT _hr = put_RandomEncounters(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetNeutralSectors ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_NeutralSectors(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutNeutralSectors ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_NeutralSectors(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetAlephPositioning ( ) {
+    short _result = 0;
+    HRESULT _hr = get_AlephPositioning(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAlephPositioning ( short pVal ) {
+    HRESULT _hr = put_AlephPositioning(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetAlephsPerSector ( ) {
+    short _result = 0;
+    HRESULT _hr = get_AlephsPerSector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAlephsPerSector ( short pVal ) {
+    HRESULT _hr = put_AlephsPerSector(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetTeams ( ) {
+    short _result = 0;
+    HRESULT _hr = get_Teams(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutTeams ( short pVal ) {
+    HRESULT _hr = put_Teams(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetMinRank ( ) {
+    short _result = 0;
+    HRESULT _hr = get_MinRank(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutMinRank ( short pVal ) {
+    HRESULT _hr = put_MinRank(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetMaxRank ( ) {
+    short _result = 0;
+    HRESULT _hr = get_MaxRank(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutMaxRank ( short pVal ) {
+    HRESULT _hr = put_MaxRank(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetPlayerSectorAsteroids ( ) {
+    short _result = 0;
+    HRESULT _hr = get_PlayerSectorAsteroids(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutPlayerSectorAsteroids ( short pVal ) {
+    HRESULT _hr = put_PlayerSectorAsteroids(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetNeutralSectorAsteroids ( ) {
+    short _result = 0;
+    HRESULT _hr = get_NeutralSectorAsteroids(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutNeutralSectorAsteroids ( short pVal ) {
+    HRESULT _hr = put_NeutralSectorAsteroids(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetPlayerSectorTreasures ( ) {
+    short _result = 0;
+    HRESULT _hr = get_PlayerSectorTreasures(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutPlayerSectorTreasures ( short pVal ) {
+    HRESULT _hr = put_PlayerSectorTreasures(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetNeutralSectorTreasures ( ) {
+    short _result = 0;
+    HRESULT _hr = get_NeutralSectorTreasures(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutNeutralSectorTreasures ( short pVal ) {
+    HRESULT _hr = put_NeutralSectorTreasures(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCGameParameters::GetPlayerSectorTreasureRate ( ) {
+    float _result = 0;
+    HRESULT _hr = get_PlayerSectorTreasureRate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutPlayerSectorTreasureRate ( float pVal ) {
+    HRESULT _hr = put_PlayerSectorTreasureRate(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCGameParameters::GetNeutralSectorTreasureRate ( ) {
+    float _result = 0;
+    HRESULT _hr = get_NeutralSectorTreasureRate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutNeutralSectorTreasureRate ( float pVal ) {
+    HRESULT _hr = put_NeutralSectorTreasureRate(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetPlayerSectorMineableAsteroids ( ) {
+    short _result = 0;
+    HRESULT _hr = get_PlayerSectorMineableAsteroids(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutPlayerSectorMineableAsteroids ( short pVal ) {
+    HRESULT _hr = put_PlayerSectorMineableAsteroids(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetNeutralSectorMineableAsteroids ( ) {
+    short _result = 0;
+    HRESULT _hr = get_NeutralSectorMineableAsteroids(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutNeutralSectorMineableAsteroids ( short pVal ) {
+    HRESULT _hr = put_NeutralSectorMineableAsteroids(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetPlayerSectorSpecialAsteroids ( ) {
+    short _result = 0;
+    HRESULT _hr = get_PlayerSectorSpecialAsteroids(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutPlayerSectorSpecialAsteroids ( short pVal ) {
+    HRESULT _hr = put_PlayerSectorSpecialAsteroids(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetNeutralSectorSpecialAsteroids ( ) {
+    short _result = 0;
+    HRESULT _hr = get_NeutralSectorSpecialAsteroids(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutNeutralSectorSpecialAsteroids ( short pVal ) {
+    HRESULT _hr = put_NeutralSectorSpecialAsteroids(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCGameParameters::GetIGCStaticFile ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_IGCStaticFile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAGCGameParameters::PutIGCStaticFile ( _bstr_t pVal ) {
+    HRESULT _hr = put_IGCStaticFile(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCGameParameters::GetGamePassword ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_GamePassword(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAGCGameParameters::PutGamePassword ( _bstr_t pVal ) {
+    HRESULT _hr = put_GamePassword(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetInvulnerableStations ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_InvulnerableStations(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutInvulnerableStations ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_InvulnerableStations(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetShowMap ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ShowMap(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutShowMap ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ShowMap(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowDevelopments ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowDevelopments(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowDevelopments ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowDevelopments(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowDefections ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowDefections(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowDefections ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowDefections(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetSquadGame ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SquadGame(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutSquadGame ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_SquadGame(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowFriendlyFire ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowFriendlyFire(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowFriendlyFire ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowFriendlyFire(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IAGCGameParameters::GetIGCcoreVersion ( ) {
+    long _result = 0;
+    HRESULT _hr = get_IGCcoreVersion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCGameParameters::GetGameLength ( ) {
+    float _result = 0;
+    HRESULT _hr = get_GameLength(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutGameLength ( float pVal ) {
+    HRESULT _hr = put_GameLength(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCGameParameters::GetHe3Density ( ) {
+    float _result = 0;
+    HRESULT _hr = get_He3Density(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutHe3Density ( float pVal ) {
+    HRESULT _hr = put_He3Density(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline AGCMoney IAGCGameParameters::GetKillPenalty ( ) {
+    AGCMoney _result;
+    HRESULT _hr = get_KillPenalty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutKillPenalty ( AGCMoney pVal ) {
+    HRESULT _hr = put_KillPenalty(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline AGCMoney IAGCGameParameters::GetKillReward ( ) {
+    AGCMoney _result;
+    HRESULT _hr = get_KillReward(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutKillReward ( AGCMoney pVal ) {
+    HRESULT _hr = put_KillReward(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline AGCMoney IAGCGameParameters::GetEjectPenalty ( ) {
+    AGCMoney _result;
+    HRESULT _hr = get_EjectPenalty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutEjectPenalty ( AGCMoney pVal ) {
+    HRESULT _hr = put_EjectPenalty(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline AGCMoney IAGCGameParameters::GetEjectReward ( ) {
+    AGCMoney _result;
+    HRESULT _hr = get_EjectReward(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutEjectReward ( AGCMoney pVal ) {
+    HRESULT _hr = put_EjectReward(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IAGCGameParameters::GetTimeStart ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TimeStart(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IAGCGameParameters::GetTimeStartClock ( ) {
+    long _result = 0;
+    HRESULT _hr = get_TimeStartClock(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline short IAGCGameParameters::GetGoalArtifactsCount ( ) {
+    short _result = 0;
+    HRESULT _hr = get_GoalArtifactsCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutGoalArtifactsCount ( short pVal ) {
+    HRESULT _hr = put_GoalArtifactsCount(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAutoRestart ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AutoRestart(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAutoRestart ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AutoRestart(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCGameParameters::GetDefaultCountdown ( ) {
+    float _result = 0;
+    HRESULT _hr = get_DefaultCountdown(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutDefaultCountdown ( float pVal ) {
+    HRESULT _hr = put_DefaultCountdown(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline unsigned char IAGCGameParameters::GetInitialMinersPerTeam ( ) {
+    unsigned char _result = 0;
+    HRESULT _hr = get_InitialMinersPerTeam(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutInitialMinersPerTeam ( unsigned char pVal ) {
+    HRESULT _hr = put_InitialMinersPerTeam(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline unsigned char IAGCGameParameters::GetMaxMinersPerTeam ( ) {
+    unsigned char _result = 0;
+    HRESULT _hr = get_MaxMinersPerTeam(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutMaxMinersPerTeam ( unsigned char pVal ) {
+    HRESULT _hr = put_MaxMinersPerTeam(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCGameParameters::GetCustomMap ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CustomMap(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAGCGameParameters::PutCustomMap ( _bstr_t pVal ) {
+    HRESULT _hr = put_CustomMap(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCGameParameters::GetRestartCountdown ( ) {
+    float _result = 0;
+    HRESULT _hr = get_RestartCountdown(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutRestartCountdown ( float pVal ) {
+    HRESULT _hr = put_RestartCountdown(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetTotalMaxPlayers ( ) {
+    short _result = 0;
+    HRESULT _hr = get_TotalMaxPlayers(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutTotalMaxPlayers ( short pVal ) {
+    HRESULT _hr = put_TotalMaxPlayers(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetLockTeamSettings ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_LockTeamSettings(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutLockTeamSettings ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_LockTeamSettings(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int IAGCGameParameters::GetInvitationListID ( ) {
+    int _result = 0;
+    HRESULT _hr = get_InvitationListID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutInvitationListID ( int pVal ) {
+    HRESULT _hr = put_InvitationListID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetIsSquadGame ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsSquadGame(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutIsSquadGame ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_IsSquadGame(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetLockGameOpen ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_LockGameOpen(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutLockGameOpen ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_LockGameOpen(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCGameParameters::GetTeamName ( short iTeam ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TeamName(iTeam, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAGCGameParameters::PutTeamName ( short iTeam, _bstr_t pVal ) {
+    HRESULT _hr = put_TeamName(iTeam, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetIsTechBitOverridden ( short iTeam, short iBitID ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTechBitOverridden(iTeam, iBitID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetOverriddenTechBit ( short iTeam, short iBitID ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_OverriddenTechBit(iTeam, iBitID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutOverriddenTechBit ( short iTeam, short iBitID, VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_OverriddenTechBit(iTeam, iBitID, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IAGCGameParameters::PutSetOverriddenTechBitRange ( short iTeam, short iBitID_First, short iBitID_Last, VARIANT_BOOL _arg4 ) {
+    HRESULT _hr = put_SetOverriddenTechBitRange(iTeam, iBitID_First, iBitID_Last, _arg4);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetIsGoalFlags ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsGoalFlags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutIsGoalFlags ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_IsGoalFlags(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetGoalFlagsCount ( ) {
+    short _result = 0;
+    HRESULT _hr = get_GoalFlagsCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutGoalFlagsCount ( short pVal ) {
+    HRESULT _hr = put_GoalFlagsCount(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCGameParameters::GetStoryText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StoryText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAGCGameParameters::PutStoryText ( _bstr_t pbstrStory ) {
+    HRESULT _hr = put_StoryText(pbstrStory);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowEmptyTeams ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowEmptyTeams(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowEmptyTeams ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowEmptyTeams(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAutoStart ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AutoStart(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAutoStart ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AutoStart(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowRestart ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowRestart(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowRestart ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowRestart(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowShipyardPath ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowShipyardPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowShipyardPath ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowShipyardPath(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowSupremacyPath ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowSupremacyPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowSupremacyPath ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowSupremacyPath(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowTacticalPath ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowTacticalPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowTacticalPath ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowTacticalPath(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAGCGameParameters::GetAllowExpansionPath ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AllowExpansionPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutAllowExpansionPath ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowExpansionPath(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCGameParameters::GetMaxImbalance ( ) {
+    short _result = 0;
+    HRESULT _hr = get_MaxImbalance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCGameParameters::PutMaxImbalance ( short pVal ) {
+    HRESULT _hr = put_MaxImbalance(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IAGCCommand wrapper method implementations
+//
+
+inline _bstr_t IAGCCommand::GetTarget ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Target(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCCommand::GetVerb ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Verb(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCCommand::GetText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IAGCVersionInfo wrapper method implementations
+//
+
+inline void IAGCVersionInfo::PutFileName ( _bstr_t pbstrFileName ) {
+    HRESULT _hr = put_FileName(pbstrFileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCVersionInfo::GetFileName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FileName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetFileVersionString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FileVersionString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline unsigned short IAGCVersionInfo::GetFileVersionMSHigh ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_FileVersionMSHigh(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned short IAGCVersionInfo::GetFileVersionMSLow ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_FileVersionMSLow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned short IAGCVersionInfo::GetFileVersionLSHigh ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_FileVersionLSHigh(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned short IAGCVersionInfo::GetFileVersionLSLow ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_FileVersionLSLow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned short IAGCVersionInfo::GetFileBuildNumber ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_FileBuildNumber(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IAGCVersionInfo::GetProductVersionString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ProductVersionString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline unsigned short IAGCVersionInfo::GetProductVersionMSHigh ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_ProductVersionMSHigh(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned short IAGCVersionInfo::GetProductVersionMSLow ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_ProductVersionMSLow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned short IAGCVersionInfo::GetProductVersionLSHigh ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_ProductVersionLSHigh(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned short IAGCVersionInfo::GetProductVersionLSLow ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_ProductVersionLSLow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned short IAGCVersionInfo::GetProductBuildNumber ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_ProductBuildNumber(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDebug ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDebug(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsInfoInferred ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsInfoInferred(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsPatched ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsPatched(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsPreRelease ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsPreRelease(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsPrivateBuild ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsPrivateBuild(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsSpecialBuild ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsSpecialBuild(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetUnknown ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetUnknown(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetDOS ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetDOS(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetOS216 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetOS216(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetOS232 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetOS232(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetNT ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetNT(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetBase ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetBase(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetWin16 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetWin16(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetPM16 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetPM16(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetPM32 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetPM32(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetWin32 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetWin32(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetDOSWin16 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetDOSWin16(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetDOSWin32 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetDOSWin32(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetOS216PM16 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetOS216PM16(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetOS232PM32 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetOS232PM32(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsTargetNTWin32 ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsTargetNTWin32(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsApp ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsApp(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDll ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDll(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriver ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriver(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsFont ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsFont(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsVxd ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsVxd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsStaticLib ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsStaticLib(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverUnknown ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverUnknown(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverPrinter ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverPrinter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverKeyboard ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverKeyboard(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverLanguage ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverLanguage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverDisplay ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverDisplay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverMouse ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverMouse(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverNetwork ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverNetwork(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverSystem ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverSystem(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverInstallable ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverInstallable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverSound ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverSound(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverComm ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverComm(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsDriverInputMethod ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsDriverInputMethod(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsFontRaster ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsFontRaster(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsFontVector ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsFontVector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetIsFontTrueType ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsFontTrueType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCVersionInfo::PutLanguageID ( unsigned short pwLangID ) {
+    HRESULT _hr = put_LanguageID(pwLangID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline unsigned short IAGCVersionInfo::GetLanguageID ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_LanguageID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCVersionInfo::PutCodePage ( unsigned short pwCodePage ) {
+    HRESULT _hr = put_CodePage(pwCodePage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline unsigned short IAGCVersionInfo::GetCodePage ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_CodePage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCVersionInfo::GetExists ( _bstr_t bstrKey ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Exists(bstrKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IAGCVersionInfo::GetValue ( _bstr_t bstrKey ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Value(bstrKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetCompanyName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CompanyName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetFileDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FileDescription(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetFileVersion ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FileVersion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetInternalName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_InternalName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetLegalCopyright ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_LegalCopyright(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetOriginalFilename ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_OriginalFilename(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetProductName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ProductName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetProductVersion ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ProductVersion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetSpecialBuild ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SpecialBuild(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCVersionInfo::GetOLESelfRegister ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_OLESelfRegister(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IAGCDBParams wrapper method implementations
+//
+
+inline void IAGCDBParams::PutConnectionString ( _bstr_t pbstr ) {
+    HRESULT _hr = put_ConnectionString(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCDBParams::GetConnectionString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConnectionString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAGCDBParams::PutTableName ( _bstr_t pbstr ) {
+    HRESULT _hr = put_TableName(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCDBParams::GetTableName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TableName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IAGCEventIDRange wrapper method implementations
+//
+
+inline void IAGCEventIDRange::PutDisplayString ( _bstr_t pbstr ) {
+    HRESULT _hr = put_DisplayString(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCEventIDRange::GetDisplayString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAGCEventIDRange::Init ( enum AGCEventID lower, enum AGCEventID upper ) {
+    HRESULT _hr = raw_Init(lower, upper);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum AGCEventID IAGCEventIDRange::Getlower ( ) {
+    enum AGCEventID _result;
+    HRESULT _hr = get_lower(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum AGCEventID IAGCEventIDRange::Getupper ( ) {
+    enum AGCEventID _result;
+    HRESULT _hr = get_upper(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCEventIDRange::GetIsEmpty ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsEmpty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCEventIDRange::GetIntersectsWithValue ( enum AGCEventID Value ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IntersectsWithValue(Value, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCEventIDRange::GetIntersectsWithRangeValues ( enum AGCEventID value1, enum AGCEventID value2 ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IntersectsWithRangeValues(value1, value2, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCEventIDRange::GetIntersectsWithRange ( struct IAGCEventIDRange * pRange ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IntersectsWithRange(pRange, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCEventIDRanges wrapper method implementations
+//
+
+inline long IAGCEventIDRanges::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr IAGCEventIDRanges::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline IAGCEventIDRangePtr IAGCEventIDRanges::GetItem ( VARIANT * pvIndex ) {
+    struct IAGCEventIDRange * _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCEventIDRangePtr(_result, false);
+}
+
+inline void IAGCEventIDRanges::PutDisplayString ( _bstr_t pbstr ) {
+    HRESULT _hr = put_DisplayString(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCEventIDRanges::GetDisplayString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAGCEventIDRanges::AddByValues ( enum AGCEventID value1, enum AGCEventID value2 ) {
+    HRESULT _hr = raw_AddByValues(value1, value2);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCEventIDRanges::Add ( struct IAGCEventIDRange * pRange ) {
+    HRESULT _hr = raw_Add(pRange);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCEventIDRanges::RemoveByValues ( enum AGCEventID value1, enum AGCEventID value2 ) {
+    HRESULT _hr = raw_RemoveByValues(value1, value2);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCEventIDRanges::Remove ( struct IAGCEventIDRange * pRange ) {
+    HRESULT _hr = raw_Remove(pRange);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCEventIDRanges::RemoveAll ( ) {
+    HRESULT _hr = raw_RemoveAll();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IAGCEventIDRanges::GetIntersectsWithValue ( enum AGCEventID Value ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IntersectsWithValue(Value, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCEventIDRanges::GetIntersectsWithRangeValues ( enum AGCEventID value1, enum AGCEventID value2 ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IntersectsWithRangeValues(value1, value2, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCEventIDRanges::GetIntersectsWithRange ( struct IAGCEventIDRange * pRange ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IntersectsWithRange(pRange, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCEventLogger wrapper method implementations
+//
+
+inline _bstr_t IAGCEventLogger::GetEventList ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_EventList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAGCEventLogger::PutNTEventLog ( _bstr_t pbstrComputer ) {
+    HRESULT _hr = put_NTEventLog(pbstrComputer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAGCEventLogger::GetNTEventLog ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NTEventLog(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAGCEventLogger::PutDBEventLog ( struct IAGCDBParams * ppDBParams ) {
+    HRESULT _hr = put_DBEventLog(ppDBParams);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IAGCDBParamsPtr IAGCEventLogger::GetDBEventLog ( ) {
+    struct IAGCDBParams * _result = 0;
+    HRESULT _hr = get_DBEventLog(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCDBParamsPtr(_result, false);
+}
+
+inline void IAGCEventLogger::PutEnabledNTEvents ( struct IAGCEventIDRanges * ppEvents ) {
+    HRESULT _hr = put_EnabledNTEvents(ppEvents);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IAGCEventIDRangesPtr IAGCEventLogger::GetEnabledNTEvents ( ) {
+    struct IAGCEventIDRanges * _result = 0;
+    HRESULT _hr = get_EnabledNTEvents(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCEventIDRangesPtr(_result, false);
+}
+
+inline void IAGCEventLogger::PutEnabledDBEvents ( struct IAGCEventIDRanges * ppEvents ) {
+    HRESULT _hr = put_EnabledDBEvents(ppEvents);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IAGCEventIDRangesPtr IAGCEventLogger::GetEnabledDBEvents ( ) {
+    struct IAGCEventIDRanges * _result = 0;
+    HRESULT _hr = get_EnabledDBEvents(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCEventIDRangesPtr(_result, false);
+}
+
+inline IAGCEventIDRangesPtr IAGCEventLogger::GetDefaultEnabledNTEvents ( ) {
+    struct IAGCEventIDRanges * _result = 0;
+    HRESULT _hr = get_DefaultEnabledNTEvents(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCEventIDRangesPtr(_result, false);
+}
+
+inline IAGCEventIDRangesPtr IAGCEventLogger::GetDefaultEnabledDBEvents ( ) {
+    struct IAGCEventIDRanges * _result = 0;
+    HRESULT _hr = get_DefaultEnabledDBEvents(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCEventIDRangesPtr(_result, false);
+}
+
+//
+// interface ITCCollection wrapper method implementations
+//
+
+inline long ITCCollection::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr ITCCollection::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface ITCStrings wrapper method implementations
+//
+
+inline _bstr_t ITCStrings::GetItem ( VARIANT * pvIndex ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT ITCStrings::Add ( _bstr_t bstr ) {
+    HRESULT _hr = raw_Add(bstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITCStrings::Remove ( VARIANT * pvIndex ) {
+    HRESULT _hr = raw_Remove(pvIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITCStrings::RemoveAll ( ) {
+    HRESULT _hr = raw_RemoveAll();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITCStrings::AddDelimited ( _bstr_t bstrDelimiter, _bstr_t bstrStrings ) {
+    HRESULT _hr = raw_AddDelimited(bstrDelimiter, bstrStrings);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ITCStrings::GetDelimitedItems ( _bstr_t bstrDelimiter ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DelimitedItems(bstrDelimiter, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT ITCStrings::AddStrings ( struct ITCStrings * pStrings ) {
+    HRESULT _hr = raw_AddStrings(pStrings);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ITCPropBagOnRegKey wrapper method implementations
+//
+
+inline HRESULT ITCPropBagOnRegKey::CreateKey ( _bstr_t bstrRegKey, VARIANT_BOOL bReadOnly ) {
+    HRESULT _hr = raw_CreateKey(bstrRegKey, bReadOnly);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITCPropBagOnRegKey::OpenKey ( _bstr_t bstrRegKey, VARIANT_BOOL bReadOnly ) {
+    HRESULT _hr = raw_OpenKey(bstrRegKey, bReadOnly);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IUnknownPtr ITCPropBagOnRegKey::CreateObject ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = raw_CreateObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline IUnknownPtr ITCPropBagOnRegKey::CreateLocalObject ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = raw_CreateLocalObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline IUnknownPtr ITCPropBagOnRegKey::CreateRemoteObject ( _bstr_t bstrServer ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = raw_CreateRemoteObject(bstrServer, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline HRESULT ITCPropBagOnRegKey::LoadObject ( IUnknown * punkObj ) {
+    HRESULT _hr = raw_LoadObject(punkObj);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITCPropBagOnRegKey::SaveObject ( IUnknown * punkObj, VARIANT_BOOL bClearDirty, VARIANT_BOOL bSaveAllProperties, VARIANT_BOOL bSaveCreationInfo ) {
+    HRESULT _hr = raw_SaveObject(punkObj, bClearDirty, bSaveAllProperties, bSaveCreationInfo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void ITCPropBagOnRegKey::PutServer ( _bstr_t pbstrServer ) {
+    HRESULT _hr = put_Server(pbstrServer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ITCPropBagOnRegKey::GetServer ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Server(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ITCPropBagOnRegKey::GetObjectCLSID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ObjectCLSID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ITCSessionInfo wrapper method implementations
+//
+
+inline _bstr_t ITCSessionInfo::GetUserName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UserName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ITCSessionInfo::GetComputerName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ComputerName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITCSessionInfo::PutApplicationName ( _bstr_t pbstrAppName ) {
+    HRESULT _hr = put_ApplicationName(pbstrAppName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ITCSessionInfo::GetApplicationName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ApplicationName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline DATE ITCSessionInfo::GetTimeCreated ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_TimeCreated(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline DATE ITCSessionInfo::GetDuration ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_Duration(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ITCSessionInfo::GetCookie ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Cookie(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ITCSessionInfos wrapper method implementations
+//
+
+inline ITCSessionInfoPtr ITCSessionInfos::GetItem ( const _variant_t & index ) {
+    struct ITCSessionInfo * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITCSessionInfoPtr(_result, false);
+}
+
+//
+// interface ITCCollectionPersistHelper wrapper method implementations
+//
+
+inline void ITCCollectionPersistHelper::PutCollection1 ( VARIANT * pvarSafeArray ) {
+    HRESULT _hr = put_Collection1(pvarSafeArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ITCCollectionPersistHelper::GetCollection1 ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Collection1(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface ITCUtility wrapper method implementations
+//
+
+inline IUnknownPtr ITCUtility::CreateObject ( _bstr_t bstrProgID, _bstr_t bstrComputer ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = raw_CreateObject(bstrProgID, bstrComputer, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline _bstr_t ITCUtility::ObjectReference ( IUnknown * pUnk ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_ObjectReference(pUnk, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT ITCUtility::Sleep ( long nDurationMS ) {
+    HRESULT _hr = raw_Sleep(nDurationMS);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IUnknownPtr ITCUtility::GetObject ( _bstr_t bstrMoniker, VARIANT_BOOL bAllowUI, long nTimeoutMS ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = raw_GetObject(bstrMoniker, bAllowUI, nTimeoutMS, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IAdminSessionHelper wrapper method implementations
+//
+
+inline VARIANT_BOOL IAdminSessionHelper::GetIsAllSrvRunning ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsAllSrvRunning(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCCommon wrapper method implementations
+//
+
+inline _bstr_t IAGCCommon::GetType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IAGCCollection wrapper method implementations
+//
+
+inline long IAGCCollection::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr IAGCCollection::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IAGCEventSink wrapper method implementations
+//
+
+inline HRESULT IAGCEventSink::OnEventTriggered ( struct IAGCEvent * pEvent ) {
+    HRESULT _hr = raw_OnEventTriggered(pEvent);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAGCGlobal wrapper method implementations
+//
+
+inline HRESULT IAGCGlobal::__MIDL_0014 ( void * __MIDL_0011, GUID * __MIDL_0012, void * * __MIDL_0013 ) {
+    HRESULT _hr = raw___MIDL_0014(__MIDL_0011, __MIDL_0012, __MIDL_0013);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCGlobal::GetAGCObject ( void * pvIgc, GUID * riid, void * * ppUnk ) {
+    HRESULT _hr = raw_GetAGCObject(pvIgc, riid, ppUnk);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IAGCEventPtr IAGCGlobal::MakeAGCEvent ( enum AGCEventID idEvent, LPSTR pszContext, LPWSTR pszSubject, AGCUniqueID idSubject, long cArgTriplets, void * pvArgs ) {
+    struct IAGCEvent * _result = 0;
+    HRESULT _hr = raw_MakeAGCEvent(idEvent, pszContext, pszSubject, idSubject, cArgTriplets, pvArgs, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCEventPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCGlobal::MakeAGCVector ( void * pVectorRaw ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = raw_MakeAGCVector(pVectorRaw, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCOrientationPtr IAGCGlobal::MakeAGCOrientation ( void * pOrientationRaw ) {
+    struct IAGCOrientation * _result = 0;
+    HRESULT _hr = raw_MakeAGCOrientation(pOrientationRaw, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCOrientationPtr(_result, false);
+}
+
+inline IAGCEventIDRangePtr IAGCGlobal::MakeAGCEventIDRange ( enum AGCEventID lower, enum AGCEventID upper ) {
+    struct IAGCEventIDRange * _result = 0;
+    HRESULT _hr = raw_MakeAGCEventIDRange(lower, upper, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCEventIDRangePtr(_result, false);
+}
+
+inline HRESULT IAGCGlobal::RegisterInterfaceInGlobal ( IUnknown * pUnk, GUID * riid, unsigned long * pdwCookie ) {
+    HRESULT _hr = raw_RegisterInterfaceInGlobal(pUnk, riid, pdwCookie);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCGlobal::RevokeInterfaceFromGlobal ( unsigned long dwCookie ) {
+    HRESULT _hr = raw_RevokeInterfaceFromGlobal(dwCookie);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCGlobal::GetInterfaceFromGlobal ( unsigned long dwCookie, GUID * riid, void * * ppv ) {
+    HRESULT _hr = raw_GetInterfaceFromGlobal(dwCookie, riid, ppv);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAGCBase wrapper method implementations
+//
+
+inline enum AGCObjectType IAGCBase::GetObjectType ( ) {
+    enum AGCObjectType _result;
+    HRESULT _hr = get_ObjectType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline AGCObjectID IAGCBase::GetObjectID ( ) {
+    AGCObjectID _result;
+    HRESULT _hr = get_ObjectID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCGamePtr IAGCBase::GetGame ( ) {
+    struct IAGCGame * _result = 0;
+    HRESULT _hr = get_Game(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCGamePtr(_result, false);
+}
+
+inline AGCUniqueID IAGCBase::GetUniqueID ( ) {
+    AGCUniqueID _result;
+    HRESULT _hr = get_UniqueID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCBuyable wrapper method implementations
+//
+
+inline _bstr_t IAGCBuyable::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCBuyable::GetDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Description(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAGCBuyable::GetModelName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ModelName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline AGCMoney IAGCBuyable::GetPrice ( ) {
+    AGCMoney _result;
+    HRESULT _hr = get_Price(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IAGCBuyable::GetTimeToBuild ( ) {
+    long _result = 0;
+    HRESULT _hr = get_TimeToBuild(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCHullType wrapper method implementations
+//
+
+inline float IAGCHullType::GetLength ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetMaxSpeed ( ) {
+    float _result = 0;
+    HRESULT _hr = get_MaxSpeed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetMaxTurnRate ( enum AGCAxis eAxis ) {
+    float _result = 0;
+    HRESULT _hr = get_MaxTurnRate(eAxis, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetTurnTorque ( enum AGCAxis eAxis ) {
+    float _result = 0;
+    HRESULT _hr = get_TurnTorque(eAxis, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetThrust ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Thrust(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetSideMultiplier ( ) {
+    float _result = 0;
+    HRESULT _hr = get_SideMultiplier(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetBackMultiplier ( ) {
+    float _result = 0;
+    HRESULT _hr = get_BackMultiplier(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetScannerRange ( ) {
+    float _result = 0;
+    HRESULT _hr = get_ScannerRange(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetMaxEnergy ( ) {
+    float _result = 0;
+    HRESULT _hr = get_MaxEnergy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetRechargeRate ( ) {
+    float _result = 0;
+    HRESULT _hr = get_RechargeRate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline AGCHitPoints IAGCHullType::GetHitPoints ( ) {
+    AGCHitPoints _result;
+    HRESULT _hr = get_HitPoints(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline AGCPartMask IAGCHullType::GetPartMask ( enum AGCEquipmentType et, AGCMount mountID ) {
+    AGCPartMask _result;
+    HRESULT _hr = get_PartMask(et, mountID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline AGCMount IAGCHullType::GetMaxWeapons ( ) {
+    AGCMount _result;
+    HRESULT _hr = get_MaxWeapons(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline AGCMount IAGCHullType::GetMaxFixedWeapons ( ) {
+    AGCMount _result;
+    HRESULT _hr = get_MaxFixedWeapons(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetMass ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Mass(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetSignature ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Signature(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline AGCHullAbilityBitMask IAGCHullType::GetCapabilities ( ) {
+    AGCHullAbilityBitMask _result;
+    HRESULT _hr = get_Capabilities(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCHullType::GetHasCapability ( AGCHullAbilityBitMask habm ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_HasCapability(habm, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline short IAGCHullType::GetMaxAmmo ( ) {
+    short _result = 0;
+    HRESULT _hr = get_MaxAmmo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCHullType::GetMaxFuel ( ) {
+    float _result = 0;
+    HRESULT _hr = get_MaxFuel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCGame wrapper method implementations
+//
+
+inline _bstr_t IAGCGame::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IAGCSectorsPtr IAGCGame::GetSectors ( ) {
+    struct IAGCSectors * _result = 0;
+    HRESULT _hr = get_Sectors(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCSectorsPtr(_result, false);
+}
+
+inline IAGCTeamsPtr IAGCGame::GetTeams ( ) {
+    struct IAGCTeams * _result = 0;
+    HRESULT _hr = get_Teams(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCTeamsPtr(_result, false);
+}
+
+inline IAGCShipPtr IAGCGame::GetLookupShip ( AGCUniqueID idAGC ) {
+    struct IAGCShip * _result = 0;
+    HRESULT _hr = get_LookupShip(idAGC, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCShipPtr(_result, false);
+}
+
+inline IAGCShipsPtr IAGCGame::GetShips ( ) {
+    struct IAGCShips * _result = 0;
+    HRESULT _hr = get_Ships(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCShipsPtr(_result, false);
+}
+
+inline IAGCAlephsPtr IAGCGame::GetAlephs ( ) {
+    struct IAGCAlephs * _result = 0;
+    HRESULT _hr = get_Alephs(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCAlephsPtr(_result, false);
+}
+
+inline IAGCAsteroidsPtr IAGCGame::GetAsteroids ( ) {
+    struct IAGCAsteroids * _result = 0;
+    HRESULT _hr = get_Asteroids(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCAsteroidsPtr(_result, false);
+}
+
+inline IAGCGameParametersPtr IAGCGame::GetGameParameters ( ) {
+    struct IAGCGameParameters * _result = 0;
+    HRESULT _hr = get_GameParameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCGameParametersPtr(_result, false);
+}
+
+inline AGCGameID IAGCGame::GetGameID ( ) {
+    AGCGameID _result;
+    HRESULT _hr = get_GameID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCTeamPtr IAGCGame::GetLookupTeam ( AGCObjectID idAGC ) {
+    struct IAGCTeam * _result = 0;
+    HRESULT _hr = get_LookupTeam(idAGC, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCTeamPtr(_result, false);
+}
+
+inline HRESULT IAGCGame::SendChat ( _bstr_t bstrText, AGCSoundID idSound ) {
+    HRESULT _hr = raw_SendChat(bstrText, idSound);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCGame::SendCommand ( _bstr_t bstrCommand, struct IAGCModel * pModelTarget, AGCSoundID idSound ) {
+    HRESULT _hr = raw_SendCommand(bstrCommand, pModelTarget, idSound);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum AGCGameStage IAGCGame::GetGameStage ( ) {
+    enum AGCGameStage _result;
+    HRESULT _hr = get_GameStage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCProbesPtr IAGCGame::GetProbes ( ) {
+    struct IAGCProbes * _result = 0;
+    HRESULT _hr = get_Probes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCProbesPtr(_result, false);
+}
+
+inline IAGCModelsPtr IAGCGame::GetBuoys ( ) {
+    struct IAGCModels * _result = 0;
+    HRESULT _hr = get_Buoys(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCModelsPtr(_result, false);
+}
+
+inline IAGCModelsPtr IAGCGame::GetTreasures ( ) {
+    struct IAGCModels * _result = 0;
+    HRESULT _hr = get_Treasures(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCModelsPtr(_result, false);
+}
+
+inline IAGCModelsPtr IAGCGame::GetMines ( ) {
+    struct IAGCModels * _result = 0;
+    HRESULT _hr = get_Mines(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCModelsPtr(_result, false);
+}
+
+inline short IAGCGame::GetReplayCount ( ) {
+    short _result = 0;
+    HRESULT _hr = get_ReplayCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IAGCGame::GetContextName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ContextName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IAGCSectors wrapper method implementations
+//
+
+inline IAGCSectorPtr IAGCSectors::GetItem ( VARIANT * pvIndex ) {
+    struct IAGCSector * _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCSectorPtr(_result, false);
+}
+
+//
+// interface IAGCSector wrapper method implementations
+//
+
+inline _bstr_t IAGCSector::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IAGCStationsPtr IAGCSector::GetStations ( ) {
+    struct IAGCStations * _result = 0;
+    HRESULT _hr = get_Stations(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCStationsPtr(_result, false);
+}
+
+inline IAGCShipsPtr IAGCSector::GetShips ( ) {
+    struct IAGCShips * _result = 0;
+    HRESULT _hr = get_Ships(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCShipsPtr(_result, false);
+}
+
+inline IAGCAlephsPtr IAGCSector::GetAlephs ( ) {
+    struct IAGCAlephs * _result = 0;
+    HRESULT _hr = get_Alephs(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCAlephsPtr(_result, false);
+}
+
+inline IAGCAsteroidsPtr IAGCSector::GetAsteroids ( ) {
+    struct IAGCAsteroids * _result = 0;
+    HRESULT _hr = get_Asteroids(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCAsteroidsPtr(_result, false);
+}
+
+inline HRESULT IAGCSector::SendChat ( _bstr_t bstrText, VARIANT_BOOL bIncludeEnemies, AGCSoundID idSound ) {
+    HRESULT _hr = raw_SendChat(bstrText, bIncludeEnemies, idSound);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCSector::SendCommand ( _bstr_t bstrCommand, struct IAGCModel * pModelTarget, VARIANT_BOOL bIncludeEnemies, AGCSoundID idSound ) {
+    HRESULT _hr = raw_SendCommand(bstrCommand, pModelTarget, bIncludeEnemies, idSound);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline float IAGCSector::GetScreenX ( ) {
+    float _result = 0;
+    HRESULT _hr = get_ScreenX(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCSector::GetScreenY ( ) {
+    float _result = 0;
+    HRESULT _hr = get_ScreenY(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCModelsPtr IAGCSector::GetMines ( ) {
+    struct IAGCModels * _result = 0;
+    HRESULT _hr = get_Mines(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCModelsPtr(_result, false);
+}
+
+inline IAGCModelsPtr IAGCSector::GetMissiles ( ) {
+    struct IAGCModels * _result = 0;
+    HRESULT _hr = get_Missiles(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCModelsPtr(_result, false);
+}
+
+inline IAGCProbesPtr IAGCSector::GetProbes ( ) {
+    struct IAGCProbes * _result = 0;
+    HRESULT _hr = get_Probes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCProbesPtr(_result, false);
+}
+
+inline IAGCModelsPtr IAGCSector::GetModels ( ) {
+    struct IAGCModels * _result = 0;
+    HRESULT _hr = get_Models(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCModelsPtr(_result, false);
+}
+
+inline IAGCModelsPtr IAGCSector::GetSelectableModels ( ) {
+    struct IAGCModels * _result = 0;
+    HRESULT _hr = get_SelectableModels(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCModelsPtr(_result, false);
+}
+
+inline IAGCModelsPtr IAGCSector::GetTreasures ( ) {
+    struct IAGCModels * _result = 0;
+    HRESULT _hr = get_Treasures(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCModelsPtr(_result, false);
+}
+
+//
+// interface IAGCStations wrapper method implementations
+//
+
+inline IAGCStationPtr IAGCStations::GetItem ( VARIANT * pvIndex ) {
+    struct IAGCStation * _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCStationPtr(_result, false);
+}
+
+//
+// interface IAGCModel wrapper method implementations
+//
+
+inline VARIANT_BOOL IAGCModel::GetIsVisible ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsVisible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCModel::GetIsSeenBySide ( struct IAGCTeam * pTeam ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsSeenBySide(pTeam, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCVectorPtr IAGCModel::GetPosition ( ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = get_Position(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCVectorPtr IAGCModel::GetVelocity ( ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = get_Velocity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline IAGCOrientationPtr IAGCModel::GetOrientation ( ) {
+    struct IAGCOrientation * _result = 0;
+    HRESULT _hr = get_Orientation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCOrientationPtr(_result, false);
+}
+
+inline float IAGCModel::GetRadius ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Radius(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCTeamPtr IAGCModel::GetTeam ( ) {
+    struct IAGCTeam * _result = 0;
+    HRESULT _hr = get_Team(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCTeamPtr(_result, false);
+}
+
+inline float IAGCModel::GetMass ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Mass(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCSectorPtr IAGCModel::GetSector ( ) {
+    struct IAGCSector * _result = 0;
+    HRESULT _hr = get_Sector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCSectorPtr(_result, false);
+}
+
+inline float IAGCModel::GetSignature ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Signature(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IAGCModel::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IAGCDamage wrapper method implementations
+//
+
+inline float IAGCDamage::GetFraction ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Fraction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCScanner wrapper method implementations
+//
+
+inline VARIANT_BOOL IAGCScanner::GetInScannerRange ( struct IAGCModel * pModel ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_InScannerRange(pModel, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCScanner::GetCanSee ( struct IAGCModel * pModel ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_CanSee(pModel, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCStation wrapper method implementations
+//
+
+inline void IAGCStation::PutShieldFraction ( float pVal ) {
+    HRESULT _hr = put_ShieldFraction(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCStation::GetShieldFraction ( ) {
+    float _result = 0;
+    HRESULT _hr = get_ShieldFraction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCShip wrapper method implementations
+//
+
+inline void IAGCShip::PutAmmo ( short pVal ) {
+    HRESULT _hr = put_Ammo(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCShip::GetAmmo ( ) {
+    short _result = 0;
+    HRESULT _hr = get_Ammo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCShip::PutFuel ( float pVal ) {
+    HRESULT _hr = put_Fuel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCShip::GetFuel ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Fuel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCShip::PutEnergy ( float pVal ) {
+    HRESULT _hr = put_Energy(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCShip::GetEnergy ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Energy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAGCShip::PutWingID ( short pVal ) {
+    HRESULT _hr = put_WingID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IAGCShip::GetWingID ( ) {
+    short _result = 0;
+    HRESULT _hr = get_WingID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAGCShip::SendChat ( _bstr_t bstrText, AGCSoundID idSound ) {
+    HRESULT _hr = raw_SendChat(bstrText, idSound);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCShip::SendCommand ( _bstr_t bstrCommand, struct IAGCModel * pModelTarget, AGCSoundID idSound ) {
+    HRESULT _hr = raw_SendCommand(bstrCommand, pModelTarget, idSound);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void IAGCShip::PutAutoDonate ( struct IAGCShip * ppShip ) {
+    HRESULT _hr = put_AutoDonate(ppShip);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IAGCShipPtr IAGCShip::GetAutoDonate ( ) {
+    struct IAGCShip * _result = 0;
+    HRESULT _hr = get_AutoDonate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCShipPtr(_result, false);
+}
+
+inline void IAGCShip::PutShieldFraction ( float pVal ) {
+    HRESULT _hr = put_ShieldFraction(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAGCShip::GetShieldFraction ( ) {
+    float _result = 0;
+    HRESULT _hr = get_ShieldFraction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCHullTypePtr IAGCShip::GetHullType ( ) {
+    struct IAGCHullType * _result = 0;
+    HRESULT _hr = get_HullType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCHullTypePtr(_result, false);
+}
+
+inline IAGCHullTypePtr IAGCShip::GetBaseHullType ( ) {
+    struct IAGCHullType * _result = 0;
+    HRESULT _hr = get_BaseHullType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCHullTypePtr(_result, false);
+}
+
+//
+// interface IAGCShips wrapper method implementations
+//
+
+inline IAGCShipPtr IAGCShips::GetItem ( VARIANT * pvIndex ) {
+    struct IAGCShip * _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCShipPtr(_result, false);
+}
+
+//
+// interface IAGCTeam wrapper method implementations
+//
+
+inline _bstr_t IAGCTeam::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IAGCStationsPtr IAGCTeam::GetStations ( ) {
+    struct IAGCStations * _result = 0;
+    HRESULT _hr = get_Stations(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCStationsPtr(_result, false);
+}
+
+inline IAGCShipsPtr IAGCTeam::GetShips ( ) {
+    struct IAGCShips * _result = 0;
+    HRESULT _hr = get_Ships(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCShipsPtr(_result, false);
+}
+
+inline _bstr_t IAGCTeam::GetCiv ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Civ(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAGCTeam::SendChat ( _bstr_t bstrText, short idWing, AGCSoundID idSound ) {
+    HRESULT _hr = raw_SendChat(bstrText, idWing, idSound);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAGCTeam::SendCommand ( _bstr_t bstrCommand, struct IAGCModel * pModelTarget, short idWing, AGCSoundID idSound ) {
+    HRESULT _hr = raw_SendCommand(bstrCommand, pModelTarget, idWing, idSound);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAGCAleph wrapper method implementations
+//
+
+inline IAGCAlephPtr IAGCAleph::GetDestination ( ) {
+    struct IAGCAleph * _result = 0;
+    HRESULT _hr = get_Destination(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCAlephPtr(_result, false);
+}
+
+//
+// interface IAGCAlephs wrapper method implementations
+//
+
+inline IAGCAlephPtr IAGCAlephs::GetItem ( VARIANT * pvIndex ) {
+    struct IAGCAleph * _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCAlephPtr(_result, false);
+}
+
+//
+// interface IAGCAsteroid wrapper method implementations
+//
+
+inline float IAGCAsteroid::GetOre ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Ore(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline AGCAsteroidAbilityBitMask IAGCAsteroid::GetCapabilities ( ) {
+    AGCAsteroidAbilityBitMask _result;
+    HRESULT _hr = get_Capabilities(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCAsteroid::GetHasCapability ( AGCAsteroidAbilityBitMask aabm ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_HasCapability(aabm, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCAsteroids wrapper method implementations
+//
+
+inline IAGCAsteroidPtr IAGCAsteroids::GetItem ( VARIANT * pvIndex ) {
+    struct IAGCAsteroid * _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCAsteroidPtr(_result, false);
+}
+
+//
+// interface IAGCModels wrapper method implementations
+//
+
+inline IAGCModelPtr IAGCModels::GetItem ( VARIANT * pvIndex ) {
+    struct IAGCModel * _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCModelPtr(_result, false);
+}
+
+//
+// interface IAGCProbe wrapper method implementations
+//
+
+inline IAGCVectorPtr IAGCProbe::GetEmissionPoint ( ) {
+    struct IAGCVector * _result = 0;
+    HRESULT _hr = get_EmissionPoint(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVectorPtr(_result, false);
+}
+
+inline float IAGCProbe::GetLifespan ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Lifespan(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCProbe::GetDtBurst ( ) {
+    float _result = 0;
+    HRESULT _hr = get_DtBurst(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float IAGCProbe::GetAccuracy ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Accuracy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAGCProbe::GetIsRipcord ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsRipcord(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAGCProbes wrapper method implementations
+//
+
+inline IAGCProbePtr IAGCProbes::GetItem ( VARIANT * pvIndex ) {
+    struct IAGCProbe * _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCProbePtr(_result, false);
+}
+
+//
+// interface IAGCTeams wrapper method implementations
+//
+
+inline IAGCTeamPtr IAGCTeams::GetItem ( VARIANT * pvIndex ) {
+    struct IAGCTeam * _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCTeamPtr(_result, false);
+}

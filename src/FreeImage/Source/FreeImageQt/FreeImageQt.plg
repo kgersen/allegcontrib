@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FreeImageQt - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Floris\LOCALS~1\Temp\RSPED.tmp" with contents
+[
+/nologo /ML /W3 /GX /O1 /I "../../Dist" /I "..\zlib" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/FreeImageQt.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Projects\FreeImage\Source\FreeImageQt\FreeImageQt.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Floris\LOCALS~1\Temp\RSPED.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\FreeImageQt.lib"  .\Release\FreeImageQt.obj "
+<h3>Output Window</h3>
+Compiling...
+FreeImageQt.cpp
+C:\Projects\FreeImage\Source\FreeImageQt\FreeImageQt.cpp(28) : fatal error C1083: Cannot open include file: 'qcolor.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+FreeImageQt.lib - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

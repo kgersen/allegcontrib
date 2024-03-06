@@ -1,0 +1,346 @@
+﻿/*****************************************************************************\
+| CortUI v1.75 - Release Notes                                                |
+\*****************************************************************************/
+
+
+This is a modification of the user interface of Allegiance
+(http://www.freeallegiance.org/). It is based on and inspired by Ksero's
+modification (forum thread lost).
+
+
+Changes in CortUI (compared to default UI):
+-------------------------------------------
+All HUDs:
+- CortUI comes with an installer that allows you to install or uninstall CortUI
+  and allows you to customize certain settings.
+- Ten lines of chat are shown in the lobby. [optionally, configurable]
+- Chat has up to ten lines instead of five. [configurable]
+- It also has a scrollbar. [optionally]
+- Chat at the loadout screen has an independent number of chat lines from the
+  at other screens. [configurable]
+- Map-mode shows all necessary ship status info in upper left area of the
+  screen. (Autopilot and vector-lock status, name of current target, KB of the
+  current target, distance to current target, speed of the current target,
+  your ship type (and whether you are in the turret of this ship), shield
+  status, hull status, energy status, ammo status, fuel status, O2 level,
+  current thrust, current speed, current signature, kill bonus.)
+- When in base, map-mode shows your ship type and your KB.
+- All screens display your pilot when in the turret of another ship.
+- No more overlapping text lines.
+- Smaller and moved mission briefing screen to be able to read the chat and see
+  the team sizes during countdown. [optionally]
+- Inventory and minimap have been moved to the side for map-mode, thereby
+  making more room for the actual map.
+- F3 command-pane has been shrunk so that it won't overlap the inventory
+  screen. (This is now probably obsolete, but I haven't removed it yet anyway.)
+- Ripcord time is now displayed in map-mode as well, not only in flight-mode.
+- Some HUD-controls are shown during launch animation (chat, minimap,
+  inventory, etc.).
+- The positioning of the windows in hangar and map when in base have been
+  moved, so that ten lines of chat can be displayed at all times.
+- Base status display in hangar-mode has been modified, to not overlap with the
+  chat. It is also shown at the map when in base now.
+- The 'last orders list' is displayed in the cockpit, in the hangar and on the
+  map when in base. [optionally]
+- Parts of the hangar graphics have been removed to not overlap with the
+  chat. [optionally]
+- The drawing order of the windows has been rearranged (e.g. critical info over
+  investments, investments over inventory).
+- Help button in hangar-mode has been removed (use the ESC menu instead).
+- The back-button at the map has been removed (use F3 instead).
+- The back-button in the hangar has been removed (use ESC-q instead).
+- The 'default loadout' button at the loadout screen has been moved to the
+  lower right to lower the chance of clicking it by accident.
+- Some fixed typos in the 'tips of the game'.
+- The version number of the modification is shown in the lower right corner of
+  the map.
+- The 'dialogs='-part of dialog.mdl has been extensively commented and
+  refactored. (no effect on gameplay)
+
+Classic CortUI:
+- Autopilot and vector-lock status in flight-mode have been moved and the
+  graphics have been made smaller to not overlap with the chat.
+  
+Software HUD with displayed targeting view:
+- Just the default software HUD with the addition of the targeting view, nothing
+  else.
+  
+'Raveen-style':
+- A completely revamped software HUD.
+
+'Parci-style':
+- An even more radical modification.
+
+lessHUD (by FlingPu):
+- A remodeled HUD that is slimmer and less obscuring
+
+JelloShot (by FlingPu):
+- A complete replacement HUD for higher resolutions featuring a centralized
+  target view.
+
+
+Installation:
+-------------
+1. Shut down Allegiance.
+2. Run the installer.
+3. Launch Allegiance.
+
+
+Uninstallation:
+-------------
+1. Shut down Allegiance.
+2. Run the uninstaller (Control Panel -> Add or Remove Programs -> Free
+   Allegiance CortUI).
+3. Launch Allegiance.
+
+
+Additional remarks:
+-------------------
+- Designed for the being installed over a default, non-modded UI. Slipstream
+  GUI is no longer supported, sorry.
+- Designed for 800x600 and 1024x768. 640x480 is *not* supported! Higher
+  resolutions haven't been tested but are reported to work fine. The modified
+  software HUDs ('Raveen-style' and 'Parci-style') require 1024x768 or above!
+- lessHUD was designed for 800x600 or higher.
+- JelloShot was designed for 1280x1024.  The minimum resolution is 1024x768.
+  Lower resolutions will result in the HUD being covered by chat, inventory,
+  and map panes.
+- To change the settings you made during installation, you have two options:
+  Either edit cortui_settings.mdl yourself or just run the installation again.
+  This will not harm the uninstallation process at all.
+- If you don't like the position of the 'default loadout' button on the loadout
+  screen: open loadoutpane.mdl, search for a line that defines
+  'defaultBtnPosition' and change the second value from 318 back to 158
+
+
+Known problems:
+---------------
+- The transparency of some of the HUD elements of JelloShot has been lost.
+  This is due to the switch to PNGs and the responsible import command of the
+  Allegiance client not yet supporting PNGs.
+- The chat in the loadout screen can't be scrolled with PageUp/PageDown.
+  Pressing these buttons anyway will only scroll the chat display of the
+  other screens.
+- Don't press F4 at the map, the inventory is shown anyway at all times.
+- After pressing F3, the 'last hovered over' information of the minimap is
+  lost.
+- After you died, in the one or two seconds until you return to the station,
+  you still see some UI elements that shouldn't be there. :(
+- Sometimes, you see the autopilot indicator without having a target. This
+  is mainly an Allegiance bug, not a CortUI bug.
+- The minimap can no longer be hidden (it can't be toggled at all). (Don't
+  press F7. If you accidently do, press it again.)
+- The uninstaller doesn't delete the /artwork/mods/CortUI directory, even if
+  it's empty. I consider this an NSIS bug until I hear otherwise, because
+  RMDir *is* called on the directory and should succeed when it's empty.
+
+
+Package contents:
+-----------------
+- dialog.mdl (replaces existing file): Contains changes of in-game GUI.
+- loadoutpane.mdl (replaces existing file): Contains changes to the
+  loadout screen.
+- partinfo.mdl (replaces existing file): Contains additional change to the
+  loadout screen.
+- teamscreen.mdl (replaces existing file, only if the game lobby mod is
+  activated): Contains changes to the game lobby.
+- missionbrief.mdl (replaces existing file, only if the game lobby mod is
+  activated): Contains changes to the mission briefing.
+- hangar.mdl (replaces existing file, only if the hangar mod is activated):
+  Contains changes of hangar GUI.
+- cortui_settings.mdl: Contains all settings that can be modified during
+  installation.
+- mods/CortUI/media/cortui_core_*.png: Various images for base mods, Classic
+  CortUI and the software HUD with targeting view.
+- mods/CortUI/media/cortui_parci_*.mdl: Various images for the Parci-style
+  software HUD.
+- mods/CortUI/media/cortui_fp1_*: Various images for lessHUD.
+- mods/CortUI/media/cortui_fp2_*: Various images for JelloShot.
+- [Various original files from Freeallegiance.org-installer 1.8.5 to allow
+  uninstallation of CortUI.]
+
+
+Version history:
+----------------
+1.75:
+  + added all R3->R4 changes
+  * various minor changes to accomodate for the new R4 features (primarily:
+    no more overlapping lines anywhere)
+  + added display of the player's pilot when in a turreted ship at various
+    screens
+  + the new (R4) mission briefing screen is now smaller, and has been moved
+    so all ten lines of chat can be read and the team (H)ELO sums can be seen
+    during game launch
+  + various modifications to the loadout screen: the player is now told when
+    in a turret, equipment description can now have three lines without running
+    out of the box, removed info text that overlapped with other controls
+  - removed Slipstream GUI from the installer and removed Slipstream GUI
+    support
+  * fixed some typos in the "tips of the game"
+  * replaced all bmp.mdls with PNGs (yay!)
+  * moved all CortUI files that don't integrate directly into the displaying
+    process into the subdirectory mods/CortUI/media/ (double-yay!)
+  + it is now possible to 'uninstall' the game lobby and the hangar
+    modification using the installer (the installer will overwrite the
+    respective files with the default MDLs if the modifications are not
+    selected)
+  * fixed an issue with the comboboxes on the installer configuration screen
+    not dropping down on some systems
+  * cleaned up installer
+  * the uninstaller is now shown as "Free Allegiance CortUI" in 'Control Panel'
+    -> 'Add or Remove Programs' to match the new name of the Allegiance
+    client's uninstaller
+
+1.71 RC1:
+  + added lessHUD by FlingPu
+  + added JelloShot by FlingPu
+
+1.70 SE:
+  + the (H)ELO values no longer run out of the team selection line (at least
+    for reasonable team sizes) in the game lobby
+
+1.70:
+  * fixed a bug that triggered an assertion (not noticeable in release-builds
+    of the Allegiance client)
+  * the map-mode readout displays very long names correctly now
+  + introduced three new software HUD modes: the default HUD with targeting view
+    and two completely modified software HUDs, one by Raveen and one by
+    Parcival
+  * the minimap has been moved a bit to be symmetrical with the loadout window
+  * the main chat is now correctly positioned if set to less than 10 lines and
+    deactivated scrollbar
+  + current ship and current KB are now displayed on the map when in base
+  * the 'default loadout' button on the loadout screen has been moved to the
+    lower right to lower the chance of clicking it by accident
+
+1.65:
+  * scrollbar for main chat display can now optionally be turned off
+  - removed speed display for non-moving targets
+  + added experience display for players
+  * moved map info to the left to make room for long callsigns with exp
+    display
+  + base status is now shown on map in base as well
+  + orders are now shown in the hangar and on map in base
+
+1.61:
+  + added speed gauge for current target
+
+1.60 final:
+  * installer greatly improved
+  * updated Slipstream GUI to v0.2
+  + reintroduced last orders indicator [optional]
+  * improved software HUD support
+
+1.60 beta:
+  + added installer for easier installation and customizing values
+  + settings are now in external file
+  + reintroduced station status bar for loadout screen and repositioned it in
+    hangar
+  + energy, ammo, and fuel gauges are now replaced with endurance gauge when
+    podded
+
+1.51:
+  * Bugfix: the cloak indicator is now shown at the map again
+
+1.5:
+  + the number of chat lines at the loadout screen is now configurable,
+    independent of the number of chat lines at other screens (but I don't see
+    a reason to change it, six is really the optimum)
+  + some HUD-controls are shown during launch animation (chat, minimap,
+    inventory, etc.)
+  + ten lines of chat are now shown in the lobby as well
+  * inventory and minimap have been moved to the side for map-mode, thereby
+    making more room for the actual map
+  * the Z-order of the windows has been rearranged (e.g. critical info over
+    investments, investments over inventory)
+  * the positioning of the windows in hangar and map when in base have been
+    moved, so that ten lines of chat are displayed at all times
+  - the display of the last orders in the cockpit view has been removed (easy
+    to get back, but does anybody need it?)
+  - the back-button at the map has been removed (use F3 instead)
+  - the back-button in the hangar has been removed (use ESC-q instead)
+  * the 'dialogs='-part of dialog.mdl has been extensively commented and
+    refactored (no effect on gameplay)
+  + the 'ship type' at the map now shows whether you're the pilot of a ship or
+    in a turret
+  + the version number of the modification is shown in the lower right corner of the map
+
+1.4:
+  * added full Slipstream GUI support (special package!)
+  * renamed some of the modified graphics so that they obey the common naming
+    style
+
+1.3:
+  * shrunk command-pane to improve support for low-resolution modes
+  + added a parameter to (more) easily change the number of chat lines.
+
+1.2:
+  + added support for software HUD
+
+1.1:
+  + added current ship name and KB to map-mode
+  * moved base status display down and to the right
+  * moved the chat four pixels down
+
+1.0:
+  + 10 chat-lines
+  * hangar-view modified
+  * AP- and VL-icons modified and moved
+  + ship status and ripcord time added to map-mode 
+
+
+To Do:
+------
+- Fix JelloShot transparency issue by using ImportImageFromFile3D().
+  [Requires code change.]
+- Redesign dialog.mdl. It has grown way too much and is a real mess, stuff
+  being spread out because it has to be initialised in a particular order.
+  Split it up into multiple files.
+- Investigate whether R4's "minimap shown by default" should be taken into
+  account by CortUI / can somehow be used.
+- Investigate minimap refreshing issue.
+- Investigate installer bug mentioned in the 'Known problems' section.
+- Implement detection of all selected HUDs at startup and allow the user to
+  choose between all of them. Get rid of the difference between "normal HUDs"
+  and "software HUDs". [Requires code change.]
+
+
+Contact:
+--------
+Ksero:
+  PM at freeallegiance.org-boards: Ksero
+
+Cortex:
+  e-mail: henrik@heimbuerger.de
+  ICQ: 14011335
+  PM at freeallegiance.org-boards: Cortex
+
+Parcival:
+  PM at freeallegiance.org-boards: Parcival
+
+Raveen:
+  PM at freeallegiance.org-boards: Raveen
+
+FlingPu:
+  PM at freeallegiance.org-boards: FlingPu
+
+Constructive criticism and feature requests are appreciated. This modification
+is free for use. :D The files may be modified without further notification of
+the authors. Would be nice if you mention us in the release notes of
+modifications that are based on this one. :)
+
+
+Acknowledgements:
+-----------------
+This modification would not have been possible without Ksero's modification,
+his excellent documentation of the .mdl-files, and his support!
+Thanks to jgbaxter for his help on fixing an installer bug under Win98.
+Many thanks to apathos for his numerous bug reports that helped to finally
+track down the chat alignment bug.
+Thanks to Ksero and Tigereye for reporting a triggered assertion that led to
+fixing the command bar column bug.
+Thanks to a neverending list of people helping with testing, or sometimes
+just holding a server open so I can run experiments more rapidly.
+
+
+-- Cort, 2007-11-23

@@ -1,0 +1,109 @@
+//
+// Default UI configuration
+//
+
+[PremiumView]
+MarqueeScrollTicks = LONG, 2000
+
+//
+// Lobby Icon
+//
+[Icons]
+LobbyIcon = SZ, "IDI_PURPLE"
+LaunchpadIcon = SZ, "IDI_RED"
+
+
+//
+// user list info
+//
+[UserListCtl]
+FontPreferred = FONT, {"Tahoma", 8, 400}
+FontBackup = FONT, {"Arial", 8, 400}
+[UserListCtl/colors]
+HeadingFore = RGB,{255,255,255}
+HeadingBack = RGB,{0,0,0}
+NameFore = RGB,{255,255,255}
+NameBack = RGB,{0,0,0}
+
+
+//
+// Window Manager
+//
+[WindowManager]
+// the minimum size the window manger requires
+MinSize = PT, {594,378}
+AdSize = PT, {60, 468}
+// The min and max sizes for the vertical panes. The
+// right pane (userlist) are the only values we 
+// clip too.
+VerticalSplitterMinMax = RECT, {1,75,10000,180}
+// The ideal size for the user list.
+VerticalSplitterSizeIdeal = LONG, 128
+HorizontalSplitterMinMax = RECT, {135,48,10000,10000}
+// the % in thousands to allocate to the top (table) pane
+HorizontalSplitterProportionIdeal = LONG, 800
+
+//
+// launchpad 
+//
+[LaunchPad]
+// the default size of the launchpad
+DefaultSize = PT, {482,344}
+// the minimum size of the launchpad
+MinSize = PT, {432,300}
+// the size of the vertical splitter (0 - not visible)
+SplitterWidth = LONG, 0
+// the size of the user list
+VerticalSplitterSizeIdeal = LONG, 102
+// the colors for the information tab
+ForgroundColor = RGB, {255,255,204}
+BackgroundColor = RGB, {51,102,102}
+[LaunchPad/InfoTab]
+FontPreferred = FONT, {"Tahoma", 8, 400}
+FontBackup = FONT, {"Arial", 8, 400}
+[LaunchPad/Description]
+FontPreferred = FONT, {"Tahoma", 10, 700}
+FontBackup = FONT, {"Arial", 10, 700}
+
+// 
+// TableViewCtl
+//
+[TableViewCtl]
+// GDI defines 
+Transparent_Color = RGB, {255,0,255}
+Table_Item_Color = RGB, {255,255,255}
+List_Item_Color = RGB, {0,0,0}
+List_Item_Nums_Color = RGB, {150,150,150}
+List_Item_Fill_Color = RGB, {255,255,204}
+List_Item_Line_Color = RGB, {255,204,102}
+Ring_Empty_Color = RGB, {150,150,150}
+Ring_Full_Color = RGB, {255,255,204}
+Ring_Line_Color = RGB,{51,102,102}
+
+Image_List_Cell_Num = LONG, 4  
+Image_List_Latency_Cell_Num = LONG, 5
+Image_List_Dot_Cell_Num = LONG, 2
+Image_List_Desc_Cell_Num = LONG, 2
+
+Max_Player_Dots = LONG, 16
+
+Table_Width	= LONG,	150
+Table_Height = LONG, 150
+Table_Border = LONG, 43
+
+Table_Desc_Rect = RECT,{ 0, 0, 140, 32}
+Table_Info_Rect = RECT, { 3, 34, 19, 50} 
+Table_Host_Join_Rect = RECT, { 39, 79, 93, 133}
+Table_Game_Num_Rect = RECT, { 3, 0,150, 32}
+Table_Game_Name_Rect = RECT, { 3, 15, 100, 32}
+Table_Player_Num_Rect = RECT, { 100, 15, 150, 32}
+Table_Latency_Rect = RECT, { 100, 4, 119, 32}
+Table_Lock_Rect = RECT, { 120, 3, 150, 32}
+Table_Status_Rect = RECT, { 5, 54, 145, 74}
+
+[TableInfoCtl]
+Game_Desc_Fill_Color = RGB, { 0,102,153 }
+Default_Heading_Height = LONG, 20
+Default_Width = LONG, 150
+Max_Players = LONG, 16
+Num_Headings = LONG, 2

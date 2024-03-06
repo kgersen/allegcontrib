@@ -1,0 +1,70 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: AMR, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "s:\alleg\src\Amr\Release\RSP00001E.rsp" with contents
+[
+/O2 /I "../ICE" /I "../AME" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FD /EHsc /MT /GS /Yu"stdafx.h" /Fp"Release/AMR.pch" /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+\alleg\src\Agm\RockTpl.cpp
+\alleg\src\Agm\IGCMap.cpp
+.\BitmapGlue.cpp
+.\AMR.cpp
+]
+Creating command line "cl.exe @s:\alleg\src\Amr\Release\RSP00001E.rsp /nologo"
+Creating temporary file "s:\alleg\src\Amr\Release\RSP00001F.rsp" with contents
+[
+/O2 /I "../ICE" /I "../AME" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FD /EHsc /MT /GS /Yc"stdafx.h" /Fp"Release/AMR.pch" /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+.\stdafx.cpp
+]
+Creating command line "cl.exe @s:\alleg\src\Amr\Release\RSP00001F.rsp /nologo"
+Creating command line "rc.exe /fo"Release/AMR.res" .\AMR.rc"
+Creating temporary file "s:\alleg\src\Amr\Release\RSP000020.rsp" with contents
+[
+/OUT:"Release/AMR.exe" /INCREMENTAL:NO /NOLOGO /DELAYLOAD:"OleAcc.dll" /DEBUG /PDB:"Release/AMR.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /MACHINE:X86  DelayImp.lib DelayImp.lib
+.\Release\AMR.obj
+.\Release\BitmapGlue.obj
+.\Release\IGCMap.obj
+.\Release\RockTpl.obj
+.\Release\stdafx.obj
+.\Release\AMR.res
+]
+Creating command line "link.exe @s:\alleg\src\Amr\Release\RSP000020.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+stdafx.cpp
+ WINVER not defined. Defaulting to 0x0501 (Windows XP and Windows .NET Server)
+s:\alleg\src\AMR\stdafx.h(28) : warning C4278: 'GetObject': identifier in type library 'C:\\Program Files\\Microsoft Games\\Allegiance\\Server\\agc.dll' is already a macro; use the 'rename' qualifier
+Compiling...
+RockTpl.cpp
+IGCMap.cpp
+\alleg\src\AGM\IGCMap.cpp(91) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+\alleg\src\AGM\IGCMap.cpp(522) : warning C4244: '=' : conversion from 'ULONGLONG' to 'int', possible loss of data
+\alleg\src\AGM\IGCMap.cpp(840) : warning C4244: '=' : conversion from 'INT_PTR' to 'int', possible loss of data
+\alleg\src\AGM\IGCMap.cpp(904) : warning C4244: 'initializing' : conversion from '__w64 int' to 'int', possible loss of data
+\alleg\src\AGM\IGCMap.cpp(960) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+BitmapGlue.cpp
+AMR.cpp
+AMR.cpp(21) : warning C4305: 'initializing' : truncation from 'double' to 'float'
+AMR.cpp(136) : warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+AMR.cpp(137) : warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+Generating Code...
+Compiling resources...
+Linking...
+LINK : warning LNK4089: all references to 'SHELL32.dll' discarded by /OPT:REF
+LINK : warning LNK4089: all references to 'ole32.dll' discarded by /OPT:REF
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://s:\alleg\src\Amr\Release\BuildLog.htm"
+AMR - 0 error(s), 11 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

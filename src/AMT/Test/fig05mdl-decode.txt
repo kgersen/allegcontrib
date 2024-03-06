@@ -1,0 +1,178 @@
+0003 0009 0004 0000
+tags(0)=model
+tags(1)=effect
+tags(2)=fig05bmp
+L2(0)=[0]ModifiableNumber
+L2(1)=[1]LightsGeo
+L2(2)=[0]time
+L2(3)=[1]FrameData
+L2(4)=[0]LODGeo
+L2(5)=[0]TextureGeo
+L2(6)=[2]fig05bmp
+L2(7)=[0]MeshGeo
+L2(8)=[0]GroupGeo
+L3(0)=frame
+L3(1)=lights
+L3(2)=frames
+L3(3)=object
+0 -> L3(0)=frame
+1
+61.000000 (00 00 74 42)
+9 0 -> L2(0)=[0]ModifiableNumber
+6 -> type 6
+0 / end of L3
+1 -> L3(1)=lights
+9 1 -> L2(1) = LightsGeo : 7 4 = nb = LightsGeo = L2(1) <48>float (4*12)
+0 / end of L3
+2 -> L3(2) = frames 
+9 3 -> L2(3) = FrameData : 7 12 = # of named point = FrameData = L2(3) <12> struct namedpoint
+0 / end of L3
+3 -> L3(3) = object
+5 3
+			9 6 -> L2(6)= fig05bmp 
+			9 7 -> L2(7)= MeshGeo : 7 45 57 <45*8>float <57>short
+		9 5 -> L2(5)=[0]TextureGeo 6 
+	1 00000041 10 0
+		9 7 -> L2(7)= MeshGeo : 7 265 624 <265*8>float <624>short
+	1 00000042 10 0
+			9 6 -> L2(6)= fig05bmp   
+			9 7 -> L2(7)= MeshGeo 7 388 1095 <388*8>float <1095>short
+		9 5 -> L2(5)=[0]TextureGeo 6
+	1 64.000000 10 0
+	5 2
+		9 7 -> L2(7)= MeshGeo 7 16 72 <16*8> float <72>short
+	0 
+			9 6 -> L2(6)= fig05bmp
+			9 7 -> L2(7)= MeshGeo 7 510 1287 <510*8> float <1287> short
+		9 5 -> L2(5)=[0]TextureGeo 6
+	0 
+	9 8 -> L2(8)=[0]GroupGeo 6
+9 4 -> L2(4)=[0]LODGeo	6
+0
+
+------------------------
+
+0-rwepatt2
+00000000 - 0.000000 - 0
+<9>floats
+1-rwepatt1
+00000000 - 0.000000 - 0
+<8>floats
+00000000 - 0.000000 - 0
+2-lwepatt1
+00000000 - 0.000000 - 0
+<8>floats
+00000000 - 0.000000 - 0
+3-lwepatt2
+3-00000000 - 0.000000 - 0
+<8>floats
+00000000 - 0.000000 - 0
+4-wepemt
+0000
+<8>floats
+00000000 - 0.000000 - 0
+5-trail
+000000
+<8>floats
+00000000 - 0.000000 - 0
+6-rthrust
+00
+<8>floats
+00000000 - 0.000000 - 0
+7-tthrust
+00
+<8>floats
+00000000 - 0.000000 - 0
+8-lthrust
+00
+<8>floats
+00000000 - 0.000000 - 0
+9-rsmoke
+0000
+<8>floats
+00000000 - 0.000000 - 0
+10-lsmoke
+0000
+<8>floats
+00000000 - 0.000000 - 0
+11-trthrust
+00000000 - 0.000000 - 0
+<8>floats
+00000000 - 0.000000 - 0
+
+
+use "model";
+object = 
+    TransformGeo(
+        TransformGeo(
+            ImportXFile("pointer", 0),
+            Rotate(Vector(1, 0, 0), Multiply(-0.5, pi))
+        ),
+        Scale(3)
+    );
+    
+use "model";
+object =
+    MaterialGeo(
+        ImportXFile("cube", 0),
+        Material(
+            Color(1, 0, 0),
+            Color(0, 0, 0),
+            Color(0, 0, 0),
+            0
+        )
+    );
+
+48 floats: 4*12 = 4 lights 2 white, 1 red, 1 green
+                           white        white
+ 0.000002    1.000000    1.000000     1.000000 r
+ 1.000000    0.000000    1.000000     1.000000 g
+ 0.000000    0.000000    1.000000     1.000000 b
+ 0.500000    0.500000    1.000000     1.000000 blink speed
+ -1.775881   1.776081    -0.000020    0.004558  posx
+ -0.206455   -0.222277   -0.607004    1.352869  posy
+ -0.717625   -0.717625   1.118383     -1.446277 posz
+ 1.250000    1.250000    1.250000     1.250000  todo
+ 0.000000    0.000000    0.000000     0.000000  todo
+ 0.100000    0.100000    0.100000     0.100000  todo
+ 0.000000    0.000000    0.000000     0.000000  todo
+ 0.050000    0.050000    0.050000     0.050000  todo
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+0x00475980 = 80 59 47 00
+0x040d1d0
+
+FF 15 48 63 46 00 3B C6
+
+ticket branch = 0x40d0b7
+
+0040D0B7 0F 84 F5 00 00 00 je          0040D1B2 
+
+0040D0A9 74 08            je          0040D0B3 - should NOT branch ! (if branch = no zoneticket)
+0040D0AB 0F B7 43 08      movzx       eax,word ptr [ebx+8] 
+0040D0AF 03 C3            add         eax,ebx 
+0040D0B1 EB 02            jmp         0040D0B5 
+0040D0B3 33 C0            xor         eax,eax 
+0040D0B5 3B C7            cmp         eax,edi 
+0040D0B7 0F 84 F5 00 00 00 je          0040D1B2 
+
+meth2(p1,p2)
+  p1 = 0x016D080C
+  P2 = 0x004816D9 (network packet)
+
+0x016D0848 = P1+48-C must match Pointweb01...
+
+UK1 = 016D0820 = P1+20-C
+016D0890 = UK1 + 70 = somestring
+_lstrcpyA(016D0890,somewhere(0x016DB678))
+
+0x016D08B0 = UK1+ 90 = somepointer that is stored in 0x016DB694
+
+
+0040D11F = strcmpi (with this & p1+48-C)
+		0x00322E38  6e696f50  Poin
+		0x00322E3C  62657774  tweb
+		0x00322E40  ab003130  01.л
+		0x00322E44  abababab  лллл
+		0x00322E48  feababab  ллл■
+		0x00322E4C  feeefeee  ю■ю■
+		0x00322E50  00000000  ....
+
+0040D14A = call sub that check subscription expiration, resume at 0040D15D is ok
+0040D1F3 = strcmp()
+0040D1FD = get *auth1
+...
+
+0040D26F = strcmp(meth2/p2,smoewhere)

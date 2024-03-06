@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="core" targetNamespace="http://tempuri.org/core.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/core.xsd" xmlns:mstns="http://tempuri.org/core.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="core" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Civs">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CivID" type="xs:short" />
+							<xs:element name="Name" type="string24" />
+							<xs:element name="Description" type="string200" />
+							<xs:element name="EscapePodShipTypeID" type="xs:short" />
+							<xs:element name="TechBitsCiv" type="xs:string" />
+							<xs:element name="StartingGlobalAttributeID" type="xs:short" minOccurs="0" />
+							<xs:element name="InitialStationTypeID" type="xs:short" />
+							<xs:element name="IconName" type="xs:string" />
+							<xs:element name="StationHUD" type="xs:string" default="dialog" />
+							<xs:element name="PreferredPartID15" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID14" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID13" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID12" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID11" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID10" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID9" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID8" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID7" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID6" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID5" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID4" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID3" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID2" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID1" type="xs:short" minOccurs="0" />
+							<xs:element name="TechBitsCivNoDev" type="xs:string" />
+							<xs:element name="BonusMoney" type="xs:float" default="0" />
+							<xs:element name="IncomeMoney" type="xs:float" default="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ShipTypes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Name" type="string20" />
+							<xs:element name="ShipTypeID" type="xs:short" />
+							<xs:element name="Model" type="xs:string" />
+							<xs:element name="Length" type="xs:float" />
+							<xs:element name="Weight" type="xs:float" />
+							<xs:element name="Price" type="xs:int" default="0" />
+							<xs:element name="BaseMaxSpeed" type="xs:int" />
+							<xs:element name="BaseHitPoints" type="xs:short" />
+							<xs:element name="BaseScannerRange" type="xs:int" />
+							<xs:element name="Description" type="string200" />
+							<xs:element name="MaxRollRate" type="xs:float" />
+							<xs:element name="MaxPitchRate" type="xs:float" />
+							<xs:element name="MaxYawRate" type="xs:float" />
+							<xs:element name="DriftRoll" type="xs:float" />
+							<xs:element name="DriftPitch" type="xs:float" />
+							<xs:element name="DriftYaw" type="xs:float" />
+							<xs:element name="Acceleration" type="xs:float" />
+							<xs:element name="AccelSideMultiplier" type="xs:float" />
+							<xs:element name="AccelBackMultiplier" type="xs:float" />
+							<xs:element name="BaseSignature" type="xs:short" />
+							<xs:element name="EnergyMax" type="xs:float" />
+							<xs:element name="RateRechargeEnergy" type="xs:float" />
+							<xs:element name="TechBitsRequired" type="xs:string" />
+							<xs:element name="TechBitsEffect" type="xs:string" />
+							<xs:element name="Capabilities" type="xs:short" />
+							<xs:element name="MaxAmmo" type="xs:short" />
+							<xs:element name="MaxFuel" type="xs:short" />
+							<xs:element name="PRIcon" type="xs:string" />
+							<xs:element name="ShieldPartMask" type="xs:short" />
+							<xs:element name="AfterburnerPartMask" type="xs:short" />
+							<xs:element name="CloakPartMask" type="xs:short" />
+							<xs:element name="MagazinePartMask" type="xs:short" />
+							<xs:element name="DispenserPartMask" type="xs:short" />
+							<xs:element name="ChaffPartMask" type="xs:short" />
+							<xs:element name="MagazineCapacity" type="xs:short" />
+							<xs:element name="DispenserCapacity" type="xs:short" />
+							<xs:element name="ChaffCapacity" type="xs:short" />
+							<xs:element name="SuccessorHullID" type="xs:short" minOccurs="0" />
+							<xs:element name="PilotHUD" type="xs:string" default="dialog" />
+							<xs:element name="ObserverHUD" type="xs:string" default="dialog" />
+							<xs:element name="InteriorSound" type="xs:short" />
+							<xs:element name="ExteriorSound" type="xs:short" />
+							<xs:element name="ThrustInteriorSound" type="xs:short" />
+							<xs:element name="ThrustExteriorSound" type="xs:short" />
+							<xs:element name="TurnInteriorSound" type="xs:short" />
+							<xs:element name="TurnExteriorSound" type="xs:short" />
+							<xs:element name="SortOrder" type="xs:int" minOccurs="0" />
+							<xs:element name="PreferredPartID14" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID13" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID12" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID11" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID10" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID9" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID8" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID7" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID6" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID5" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID4" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID3" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID2" type="xs:short" minOccurs="0" />
+							<xs:element name="PreferredPartID1" type="xs:short" minOccurs="0" />
+							<xs:element name="DefenseType" type="xs:unsignedByte" />
+							<xs:element name="SecondsToBuild" type="xs:short" default="0" />
+							<xs:element name="GroupID" type="xs:unsignedByte" minOccurs="0" default="0" />
+							<xs:element name="RipcordSpeed" type="xs:float" default="1" />
+							<xs:element name="ECM" type="xs:float" />
+							<xs:element name="RipcordCost" type="xs:float" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="coreKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Civs" />
+			<xs:field xpath="mstns:CivID" />
+		</xs:unique>
+		<xs:keyref name="ShipTypesCivs" refer="KeyShipTypeID">
+			<xs:selector xpath=".//mstns:Civs" />
+			<xs:field xpath="mstns:EscapePodShipTypeID" />
+		</xs:keyref>
+		<xs:key name="KeyShipTypeID" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ShipTypes" />
+			<xs:field xpath="mstns:ShipTypeID" />
+		</xs:key>
+		<xs:keyref name="ShipTypesCivs1" refer="KeyShipTypeID">
+			<xs:selector xpath=".//mstns:Civs" />
+			<xs:field xpath="mstns:InitialStationTypeID" />
+		</xs:keyref>
+	</xs:element>
+	<xs:simpleType name="string24">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="24" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string200">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string20">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

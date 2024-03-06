@@ -1,0 +1,27 @@
+HKCR
+{
+	freezoneauth.FZAuth.1 = s 'FZAuth Class'
+	{
+		CLSID = s '{616CEC65-3F9A-4BEB-A782-0C5EB55DFBED}'
+	}
+	freezoneauth.FZAuth = s 'FZAuth Class'
+	{
+		CLSID = s '{616CEC65-3F9A-4BEB-A782-0C5EB55DFBED}'
+		CurVer = s 'freezoneauth.FZAuth.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {616CEC65-3F9A-4BEB-A782-0C5EB55DFBED} = s 'FZAuth Class'
+		{
+			ProgID = s 'freezoneauth.FZAuth.1'
+			VersionIndependentProgID = s 'freezoneauth.FZAuth'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{C3CE6652-FCE4-4E76-9E24-B22485EF0E30}'
+		}
+	}
+}

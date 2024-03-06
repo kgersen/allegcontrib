@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'zzauth'
+				'zzauth.DLL'
+				{
+			val AppID = s '%APPID%'
+		}
+	}
+}

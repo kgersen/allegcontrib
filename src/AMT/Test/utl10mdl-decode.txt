@@ -1,0 +1,22 @@
+header of utl10.mdl:
+tags=0002 l2=0004 l3=0002 l4=0000
+tags(0)=model
+tags(1)=utl10bmp
+L2(0)=[0]ModifiableNumber
+L2(1)=[0]TextureGeo
+L2(2)=[1]utl10bmp
+L2(3)=[0]MeshGeo
+L3(0)=frame
+L3(1)=object
+end of header for file utl10.mdl -
+0
+	1 1.000000
+	9 0 6
+	0
+1
+		9 2 
+		9 3 7 8 36
+	9 1 6
+	0
+
+

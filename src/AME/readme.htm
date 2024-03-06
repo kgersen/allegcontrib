@@ -1,0 +1,534 @@
+<html>
+	<head>
+		<title>Welcome Beta testers to AGM 1</title>
+		<meta http-equiv="Content-Language" content="fr">
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+		<meta name="ProgId" content="FrontPage.Editor.Document">
+	</head>
+	<body>
+		<p>Welcome to <b>AME 1.95 (release)</b></p>
+		<p><b> New in 1.95:&nbsp;some bug fix.</b></p>
+		<P><b> <font color="#008080">(</font><font color="#0000ff">see history below for changes</font><font color="#008080">)</font></b></P>
+		<div align="left">
+			<table border="1" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="874"><p><font size="1"><b> SOFTWARE LICENSE AGREEMENT</b><br>
+								<br>
+								LICENSE:<br>
+								<br>
+								* Allegiance Game Manager is freeware.&nbsp;<br>
+								<br>
+								* You may distribute your map made with Allegiance Game Manager as you want.<br>
+								<br>
+								* You may not alter this software in any way, including changing help and text 
+								files.&nbsp;<br>
+								<br>
+								* ALLEGIANCE GAME MANAGER IS DISTRIBUTED "AS IS". NO WARRANTY OF ANY KIND IS 
+								EXPRESSED OR IMPLIED. YOU USE IT AT YOUR OWN RISK. THE AUTHOR WILL NOT BE 
+								LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE 
+								USING OR MISUSING THIS SOFTWARE.<br>
+								<br>
+								* You are hereby licensed to make any number of backup copies of this free 
+								software and documentation. You can give the copy of the software to anyone or 
+								distribute the freeware version of the software providing that no additional 
+								fee is charged and the package files are not modified in any way.<br>
+								<br>
+								* All copyrights to Allegiance Game Manager are exclusively&nbsp; owned by 
+								Kirth Gersen&nbsp;<br>
+								<br>
+								* Installing and using Allegiance Game Manager the acceptance of these terms 
+								and conditions of the license. If you do not agree with the terms of this 
+								license you must remove Allegiance Game Manager files from your storage devices 
+								and cease to use the product.<br>
+								<br>
+								Copyright 2000-2002 Kirth Gersen, All rights reserved.<br>
+								<a href="http://www.alleg.net">http://www.alleg.net</a>&nbsp;<br>
+							</font>
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<p>
+			This is the 2 <STRONG>th</STRONG> release of AME<br>
+			This is the <STRONG>2</STRONG>th public release of AME.</p>
+		<p>Thx to Nick Thoman&nbsp; (NoodleNT) for his cool icon , gj man :)<br>
+			Thx to Maurice Spee for the SLA.</p>
+		<p>And to the many beta-testers of the closed betas.</p>
+		<p><b>A. Installation</b></p>
+		<P><STRONG>You need to run AME on a computer where Allegiance is installed</STRONG></P>
+		<p>
+		<p>
+			<font size="3"></font>
+		</p>
+		Nothing else to install. Just launch "AME.EXE"
+		<P></P>
+		<p><b>B. Using AME (<font color="#0000ff">new in this release = blue</font>)</b></p>
+		<p>The button 'MAP EDITOR' launch the map editor (AME)</p>
+		<p>Use the <b>New</b> button to create a new map from scratch&nbsp;<br>
+			Use the <b>Load</b> button to load an existing one.<br>
+			"Save" and "Save as" are obvious.
+		</p>
+		<p>Map name is displayed on top right line.
+		</p>
+		<p><img border="0" src="readme1.gif" width="747" height="556"></p>
+		<p>AME basics:</p>
+		<ul>
+			<li>
+				<b>Sectors creation/deletion/moving/properties editing</b><br>
+				<b><font color="#ff0000">right double-click on mini-map to create a sector</font></b><br>
+				left click a sector in the sectors list or in the mini-map to view its content 
+				(big right frame called 'sector view' here after)<br>
+				double-left clic on a sector in the sectors list or in the mini-map to edit its 
+				properties (u can <b>delete it</b> from there then)<br>
+				use the mini-map (lower left) to move sector (left mouse button drag, right 
+				button to cancel while dragging)<br>
+				moving mouse over a sector display its name<br>
+				the mini-map auto-scale so that it doesnt need scrolling. The red frame shows 
+				the 'in-game' mini-map scrolling zone. Drag sector off the mini-map (right or 
+				top) to up the scale.<br>
+			When grid snap is on, sectors can only be created and dragged to the grid.
+			<li>
+				<b>Alephs creation/deletion/properties editing</b><br>
+				right click on a sector in the mini-map and drag the mouse to another sector 
+				then release the button to create an aleph (when yellow the line turn green)<br>
+				(aleph are created at random coords (<b>updated</b>) )<br>
+				double-clic or right clicking on it and select "properties"&nbsp; to edit its 
+				props (<b>updated ("no spin" option)</b>) &nbsp;<br>
+				U can delete an aleph by right clicking on it and selecting "delete" (the 
+				connection aleph in the other sector is also deleted).<br>
+				Renaming a sector rename all matching alephs<br>
+				Added: 'randomize alephs' in the right-click sector menu<br>
+				The mini-map now use a 'grid snap' of 0.1 and a grid view. (use the 2 toggles 
+				to turn on/off these)<br>
+			The sector are now colored by the "team" they belong to (see bases colors 
+			below).
+			<li>
+				<b>Bases creation/deletion/properties editing</b><br>
+				<b>right click an empty space</b> in the sector view to bring the menu and 
+				select 'add base' (default: garrison of team1).<br>
+				base color <b>match</b> the team color (as the game: Team1 = yellow, Team2 = 
+				blue, Team3=purple and so on)<br>
+				bring the right click menu to delete a base or all bases in the sector<br>
+				<b>double-clic</b> a base to edit its properties<br>
+				Use the 'type' button to display a cascading menu of all base types and select 
+				the one (base name will change too but u can edit it after).<br>
+				Also note that the server <b>doesnt</b>
+			compute the leader board at start so if a team has more bases (gar or tech) 
+			then another , game will display 50%/50% at start until a new base is created 
+			(or one is destroyed) while playing.&nbsp;&nbsp;
+			<li>
+				<b>Rocks</b> <b>creation/deletion/properties editing<br>
+					NB: </b>Once a sector has AT LEAST 1 rock then then server doesnt generate 
+				anything in it. If the sector has no rock at all in the map then the server 
+				generates asteriods,he3 and resources according to the game settings or the 
+				team setting of the sector (neutral or home sector). <b>
+					<br>
+					right click an empty space </b>in the sector view to bring the menu and go 
+				in 'Add rock' submenu to choose a standard rock type.<br>
+				Use 'Add asteriods Layout' to add many asteriods&nbsp; at a time. The layout 
+				uses the following parameters:<br>
+				&nbsp;&nbsp; Center (CX,CY,CZ), Radius ,Z Variance (ZVar) ,&nbsp; Number of 
+				rocks (nbrocks).<br>
+				Generate nbrocks (using rock templates for size,hp and sig) on a given disc 
+				(Center and radius).<br>
+				The rocks are randomly placed within the disc boundaries. If ZVar is 0, all 
+				rocks are on the same Z plan (CZ), otherwise they're randomly set above and 
+				under the Z plan (CZ) (ie between CZ+ZVaz and CZ-Zvar).<br>
+				All rock are <b>red dots</b> <b>surrounded</b> by a&nbsp; color matching their 
+				'abilities' ('features' in rock properties) as in the game (grey for asteriod, 
+				white for helium, green for silicon, ...). If a rock has <b>no abilities</b> or <b>more 
+					then one</b> (yes, can be :)) then the surrounding color is <b>pink</b>.<br>
+				bring the right click menu to delete a rock or all rocks in the sector<br>
+				<b>double-clic</b> a base to edit its properties:<br>
+				the name of the rock is auto upon creation but u can edit it. Check 'hidden' to 
+				not see it in the F3 view of the game<br>
+				the icon is the little rock icon showing near the rock and on "right column of 
+				the extended mini-map in the game" (icon doesnt not need to match the feature 
+				of the rock but its better to do so cause players might went crazy :)) (u can 
+				set here 2 new icons that will also show in the game mini-map :))<br>
+				the render is the rendering model of the rock (need help here to set the good 
+				'template' render). <b>Custom</b> render are implemented now (partial object 
+				lists (bases,ships,missiles,counters only for now))<br>
+				sig and radius are same as for alephs (default is sig = radius / 10)<br>
+				HP = hitpoints (default = radius *5)<br>
+				HP gauge = display or not the HP gauge of the rock (standard in the game for 
+				he3 and tech rocks)<br>
+				Phantom = HP to zero and HP gauge on = the rock (bug in alleg ? :) cant be <b>destroyed</b>
+				and can be fly thru (player ships only). But it still cut the line of sight 
+				(good place to hide in :))<br>
+				Random spin &amp; orientation for rocks. AGM will fix maps with invalid spin 
+				values upon load.<br>
+				Added: 'randomize rocks' in the right-click sector menu<br>
+			the template list set most of the&nbsp; properties back to one of the standard 
+			types of rock (except name &amp; render)
+			<li>
+				<b>Alephs, Bases and Rocks moving</b>:<br>
+				Use left mouse button to drag object.<br>
+				<b>Use <font size="4" color="#ff0000">CTRL + Left mouse button to set Z coord of object</font></b>.
+			<li>
+				Added: <font color="#000000">global buttons to randomize alephs and rocks positions 
+					and to delete objects.</font>
+			<li>
+				Added: cut &amp; paste rocks &amp; bases, shortcuts (LMB = left mouse button, 
+				RMB = right mouse button):<font SIZE="2"><br>
+				</font>&nbsp; Paste = shift + LMB click<br>
+				&nbsp; Copy = shift + RMB click<br>
+			&nbsp; Delete = ctrl + RMB click
+			<li>
+			Added: sector templates with 'apply to' feature
+			<li>
+			Added: aleph templates with 'apply to' feature
+			<li>
+				Added: rocks templates with 'apply to' feature</li>
+		</ul>
+		<hr>
+		<p><b>E. History / Changes</b></p>
+		<p>4/6/2001: BETA 0 release</p>
+		<p>4/8/2001: BETA 0 FIX 1 release</p>
+		<ul>
+			<li>
+			fix file dialog on old systems (Win98, NT4)
+			<li>
+				retrieve the server path from registry instead</li>
+		</ul>
+		<p>4/9/2001: BETA 1 INTERIM 1 release:</p>
+		<p>AGM: (game manager)</p>
+		<ul>
+			<li>
+			minimize window
+			<li>
+				<b>check server status</b>
+			<li>
+				autoload server parameters at start</li>
+		</ul>
+		<p>AME: (map editor)</p>
+		<ul>
+			<li>
+				bases creation/deletion/properties (<font color="#ff0000"><b>partial</b></font>)
+			<li>
+			bases displayed with matching 'in game' team color
+			<li>
+			bases name displayed
+			<li>
+				<b>click sector on mini-map</b>
+			to bring sector view
+			<li>
+				<b>auto aleph renaming</b>
+			(when u rename a sector)
+			<li>
+				<b>cleaned up</b>
+			aleph properties (spin &amp; orientation)
+			<li>
+				<b>double-clic sector on mini-map</b>
+			to display sector properties
+			<li>
+				go to sector from sector view (<b>right click on aleph</b>)
+			<li>
+				sectors list <b>sorted</b>
+			by name
+			<li>
+				<b>right click on mini-map</b> to create <b>new sector</b> instead of 'new 
+				sector' button</li>
+		</ul>
+		<p>4/10/2001: BETA 1 INTERIM 2 release:</p>
+		<p>AGM:</p>
+		<p>no changes</p>
+		<p>AME:</p>
+		<ul>
+			<li>
+			new map from scratch and save as feature ("new","load","save" and "save as" 
+			buttons)
+			<li>
+			1st part of grid in sector view (single cross only)
+			<li>
+			"simple" map validity test upon saving
+			<li>
+			minimap scale keeps aspect ratio
+			<li>
+			minimap have a min scale now (so can create sector on empty map)
+			<li>
+			aleph creation turn 'green' when it's valid to release mouse button
+			<li>
+			better mini map mouse handling
+			<li>
+			still more stuffs figured out, default aleph spin is 0
+			<li>
+				default aleph (in game) color is blue now</li>
+		</ul>
+		and lots of bug fixes.
+		<p>4/11/2001: BETA 1 INTERIM 3 release:</p>
+		<p>AGM:</p>
+		<p>no changes</p>
+		<p>AME:</p>
+		<ul>
+			<li>
+				<font color="#000000">fixed: "Save as" overwrite confirm &amp; server files 
+					protection</font>
+			<li>
+				<font color="#000000">cleanup: aleph properties, added: directed toward center 
+					feature</font>
+			<li>
+				<font color="#000000">fixed: minimap mouse click bugs on empty map</font>
+			<li>
+				<font color="#000000">fixed: invalid uids generated (tech base building crash)</font>
+			<li>
+				<font color="#000000">add: fix invalid uids in map upon load (repair maps)</font>
+			<li>
+				<font color="#000000">better precision with mouse (remove little drag on simple 
+					click/double click)</font>
+			<li>
+				<font color="#000000">bigger stations rendering</font></li>
+		</ul>
+		<p>4/13/2001: BETA 1 INTERIM 4 release:</p>
+		<p><font color="#000000">AGM: (game manager)</font></p>
+		<ul>
+			<li>
+				<font color="#000000">check server's core (standard or belts/rix)</font>
+			<li>
+				<font color="#000000">added = allow empty teams (prevent game ending if a all 
+					players of a team drops, might prevent resiging (need to check))</font>
+			<li>
+				<font color="#000000">noodle's icon (gj man)</font></li>
+		</ul>
+		<p><font color="#000000">AME: (map editor)</font></p>
+		<ul>
+			<li>
+				<font color="#000000">&nbsp;<b>sector view: right click "popup" menus</b></font>
+			<li>
+				<font color="#000000">&nbsp;<b>rocks creation/deletion/properties</b></font>
+			<li>
+				<font color="#000000">&nbsp;added confirmation request of deletions</font>
+			<li>
+				<font color="#000000">&nbsp;added '<b>no spin</b>' feature to alephs</font>
+			<li>
+				<font color="#000000">&nbsp;CTRL key + left hold + mouse up/down for setting the Z 
+					coord</font>
+			<li>
+				<font color="#000000">&nbsp;grid on sector view</font>
+			<li>
+				<font color="#000000">&nbsp;reverse 'abort dialog'</font></li>
+		</ul>
+		<p>4/15/2001: BETA 1 INTERIM 5 release:</p>
+		<p>AGM: (game manager)</p>
+		<ul>
+			<li>
+			&nbsp;total max player values &amp; teams entries controlled by # of teams
+			<li>
+				min/max players per teams hidden (need more work)</li>
+		</ul>
+		<p>AME: (map editor)</p>
+		<ul>
+			<li>
+			better randomizer (alephs)&nbsp;
+			<li>
+			rock templates in rock properties dialog work fine now
+			<li>
+				matched render/icons/name for standard rocks<font color="#0000ff"><br>
+				</font>
+			</li>
+		</ul>
+		<p><b>4/17/2001: BETA 1 INTERIM 6 release:</b></p>
+		<p>AGM: (game manager)</p>
+		<ul>
+			<li>
+			"save to file" ,"load to file" and "new" buttons implemented. Need to set 
+			default directory.
+			<li>
+			check map name length
+			<li>
+				limit game name length</li>
+		</ul>
+		<p>AME: (map editor)</p>
+		<ul>
+			<li>
+			mini-map grid snap of 0.1
+			<li>
+			random rock spin &amp; orientation (fix maps upon load too)
+			<li>
+				"randomize rocks" and "randomize alephs" menu entries (right click menu on 
+				sector view)</li>
+		</ul>
+		<p><b><font color="#000000">4/22/2001: OPEN BETA 1</font></b></p>
+		<p><font color="#000000">AGM</font></p>
+		<ul>
+			<li>
+				<font color="#000000">bug fixes</font></li>
+		</ul>
+		<p><font color="#000000">AME</font></p>
+		<ul>
+			<li>
+				<font color="#000000">bug fixes</font>
+			<li>
+				<font color="#000000">* trap 'escape' &amp; 'return' key</font>
+			<li>
+				<font color="#000000">* 'delete all ...' buttons</font>
+			<li>
+				<font color="#000000">* 'randomize all ...' buttons</font>
+			<li>
+				<font color="#000000">* grid &amp; "grid snap" in mini-map</font></li>
+		</ul>
+		<p><b>5/1/2001: RC</b></p>
+		<p>Setup</p>
+		<ul>
+			<li>
+				1st try, need Microsoft Installer (WinME/W2K or download it or Office2000 
+				installed)</li>
+		</ul>
+		<p>AGM</p>
+		<ul>
+			<li>
+				bug fixes</li>
+		</ul>
+		<p>AME</p>
+		<ul>
+			<li>
+			bug fixes
+			<li>
+			copy/paste for bases &amp; rocks (sector view right click menu)
+			<li>
+			reduced font size for sector view
+			<li>
+			sector template with 'apply to' feature
+			<li>
+			rock templates with 'apply to' feature
+			<li>
+			aleph template with 'apply to' feature
+			<li>
+			display 'sector infos' (# he3 rocks (total he3/max he3), # of diff rocks)
+			<li>
+			snap and grid switches
+			<li>
+			in-game "scrolling zone" on mini-map grid (red frame)
+			<li>
+				display 'sector name' on mouse over in mini-map</li>
+		</ul>
+		<p><b>7/3/2001: 1.0 release</b></p>
+		<p>Setup</p>
+		<ul>
+			<li>
+				removed</li>
+		</ul>
+		<p>AGM</p>
+		<ul>
+			<li>
+			added DeathMatch option with # goal kills
+			<li>
+			added: "N/A" imbalance choice
+			<li>
+			added: allow eject pods toggle, Friendly fire and Lives
+			<li>
+				added: core selection of the server</li>
+		</ul>
+		<p>AME</p>
+		<ul>
+			<li>
+			bug fix: Z coords now shown when been set (ctrl+LBM on object)
+			<li>
+			Paste = shift + LMB click
+			<li>
+			Copy = shift + RMB click
+			<li>
+			Delete = ctrl + RMB click
+			<li>
+				A rocks layout&nbsp; option</li>
+		</ul>
+		<p><b>7/3/2001: 1.1 release</b></p>
+		<p>General fix: Works with new cores from Allegiance Final update</p>
+		<P><B>2/19/2002: 1.2 release</B></P>
+		<ul>
+			<li>
+				<FONT>. New game option: prosperity. Set the total of investissement required to 
+					win: The values depends of the 'prosperity step' (default is 72000) that is 
+					defined in the core (global #12). You cannot set low or med prosperity game 
+					from AGM, only the client side settings allow this.</FONT>
+			<li>
+				<FONT>. build with VS.Net release version (1.1 &amp; below were build with VS.Net 
+					beta 2).</FONT></li>
+		</ul>
+		<P><B>2/24/2002: 1.3 release</B></P>
+		<ul>
+			<li>
+				<font color="#000000">"Starting money" &amp; "Total money" are now input box 
+					instead of drop-down list. Valid values range from 0&nbsp;to 9 including 
+					fractionnal values.</font>
+			<li>
+				<font color="#000000">"Game length"&nbsp;settings: limited time game, set the value 
+					in minutes, 0 for unlimited game.</font></li>
+		</ul>
+		<P><B>3/30/2002: 1.4 release</B></P>
+		<UL>
+			<LI>
+			New Alephs randomize algorithm with parameters
+			<LI>
+			View Z coords option for alephs &amp; bases.
+			<LI>
+				Rename sectors option: load new names from a text file and randomly rename the 
+				sectors (samples provided).</LI></UL>
+		<P><B>4/30/2002: 1.5 release</B></P>
+		<UL>
+			<LI>
+			Handle new server version 1.0.0.4
+			<LI>
+			Compatibility with previous version (1.0.0.3004) is kept
+			<LI>
+				Preserve Allsrv32.exe file date/time when setting core so that next server 
+				autoupdate doesnt refresh it (and so doesnt&nbsp;reset the core to 
+				'static_core').</LI></UL>
+		<P><B>5/27/2002: 1.6 release</B></P>
+		<UL>
+			<LI>
+				<FONT>Full sector properties exposed. Planet bmp displayed (requires 16bits color 
+					display &amp; client artwork, otherwise a red 'no bitmap' image will be 
+					displayed).</FONT>
+			<LI>
+				<FONT>Distance to center exposed when moving an&nbsp;object (aleph, base, rock).</FONT>
+			<LI>
+				<FONT>Z coord displayed near object (when using ctrl-click drag)</FONT></LI></UL>
+		<P>
+		<P><B>7/16/2002: 1.7 release</B></P>
+		<UL>
+			<LI>
+				<FONT>Thorium rock type added</FONT></LI></UL>
+		<P><STRONG><FONT color="black">3/11/2003: 1.8 release</FONT></STRONG></P>
+		<UL>
+			<LI>
+				<FONT color="black">AME is now a standalone tool </FONT>
+			<LI>
+				<FONT color="black">fixed base list choices (from core) </FONT>
+			<LI>
+				<FONT color="black">enhanced custom rock model choice (select custom and choose any 
+					.mdl file)</FONT></LI></UL>
+		<FONT color="#3300ff">
+			<P><STRONG><FONT color="#3300ff">3/12/2003: 1.9 release</FONT></STRONG></P>
+			<UL>
+				<LI>
+					<FONT color="#3300ff">randomize rocks crash bug fixed</FONT>
+				<LI>
+				"inner alephs" (aleph to same sector)&nbsp;creation: left click and drag within 
+				empty space in sector wiew
+				<LI>
+			enhanced custom nebula globe&nbsp;sector&nbsp;model choice (select custom and 
+			choose any .mdl file) </FONT></LI></UL></FONT>
+		<P><STRONG><FONT color="#3300ff">//2003: 1.95 release</FONT></STRONG></P>
+		<UL>
+			<LI>
+				<FONT color="#3300ff">some fixes regarding bases/core</FONT>
+			<LI>
+			</LI>
+		</UL>
+		<P>
+			<hr>
+		</P>
+		<P></P>
+		<P></P>
+		<p><b>E. Upcoming version</b></p>
+		<P><STRONG>Nothing planned yet.</STRONG></P>
+		<hr>
+		<p>Please all bugs report to <a href="http://www.alleg.net">www.alleg.net</a> in 
+			the corresponding board.</p>
+		<p>Kirth/KGJV <a href="mailto:(kgersen@hotmail.com">(kgersen@hotmail.com</a>)</p>
+		<p>&nbsp;</p>
+	</body>
+</html>

@@ -1,0 +1,241 @@
+struct AdminSessionHostStruct:ALLEGIANCESERVERLib::IAdminSessionHost
+{
+  HRESULT STDMETHODCALLTYPE QueryInterface(REFIID iid, void * * ppvObject);
+  ULONG STDMETHODCALLTYPE AddRef(void);
+  ULONG STDMETHODCALLTYPE Release(void);
+  HRESULT STDMETHODCALLTYPE raw_GetIdentity(long nCookie, IUnknown * * 
+ppIdentity);
+};
+
+-	riid	{4C1E39E1-E3E3-4296-AA86-EC938D896E92}	const _GUID &
+
+QueryInterface called with:
+ 
+IID_IMarshal {00000003-0000-0000-C000-000000000046} NI
+IID_IMarshal {00000003-0000-0000-C000-000000000046} NI
+IID_IIdentityUnmarshal {0000001B-0000-0000-C000-000000000046} NI
+IID_IUnknown - SELF
+IID_IStdMarshallnfo - NI
+IID_IExternalConnection - NI
+
+IAdminSessionHost
+{1C733A30-2A1C-11CE-ADE5-00AA0044773D}
+IAdminSessionHost
+GetIdentity called with: Cookie = 
+CreateProxyFromTypeInfo
+
+IID_IMarshal
+IID_IMarshal
+{0000001B-0000-0000-C000-000000000046} = IID_IStdIdentity - NI
+IID_IUnknown
+IID_IStdMarshallnfo - NI
+IID_IExternalConnection - NI
+
+{0000000C-0000-0000-C000-000000000046} == IID_IStream
+-	pCid	0x0012f514 {77B1A600-93A0-0016-8CD3-1600D497A477}	_GUID *
+
+Create functions for each of the members then, prior to calling 
+CreateSession create an instance of the struct, such as:
+
+AdminSessionHostStruct AdminSessionHost;
+
+In CreateSession simply reference per its address, in this case 
+&AdminSessionHost.  You'll next observe your AdminSessionHost members 
+getting invoked.
+
+void CAGMApp::ServerTests(void)
+{
+	//---------------------------------------------------------------------------------------
+	// in allsrv32: AdminSession,IAdminSessionClass,IAdminSessionHost,AGCVersion
+	// 
+	// ias = IAdminSessionPtr(__uuidof(AdminSession));
+	struct __declspec(uuid("AAA8270F-DDA4-11D2-8B46-00C04F681633")) allsrv;
+	// ITCUtilityPtr iutil=  ITCUtilityPtr(__uuidof(TCUtility));
+	IUnknownPtr iuk;
+	HRESULT hr;
+	IGlobalInterfaceTablePtr  igit;
+	hr = CoGetClassObject(
+		__uuidof(allsrv),// REFCLSID rclsid, //CLSID associated with the class object
+		CLSCTX_LOCAL_SERVER,//DWORD dwClsContext,
+		//Context for running executable code
+		NULL,//COSERVERINFO * pServerInfo,
+		//Pointer to machine on which the object is to 
+		// be instantiated
+		IID_IUnknown,//REFIID riid, //Reference to the identifier of the interface
+		(LPVOID *)&iuk//LPVOID * ppv //Address of output variable that receives the 
+	// interface pointer requested in riid
+); 
+	DWORD TheCookie = 0xDEAD;
+	hr = CoCreateInstance(CLSID_StdGlobalInterfaceTable,
+                            NULL,
+                            CLSCTX_INPROC_SERVER,
+                            IID_IGlobalInterfaceTable,
+                            (void **)&igit);
+	/*hr = igit->RegisterInterfaceInGlobal(
+		igit,  //Pointer to interface of type riid of object 
+						//containing global interface
+		__uuidof(IAdminSessionHost),    //IID of the interface to be registered
+		&TheCookie //Supplies a pointer to the cookie that provides 
+                   //a caller in another apartment access to the 
+                   //interface pointer
+	);*/
+	hr = OleRun(iuk);
+	//IAdminSessionHostPtr  this_host= IAdminSessionHostPtr (__uuidof(IAdminSessionHost));
+	IAdminSessionClassPtr iasc;
+	IAdminSessionPtr	i1;
+	hr = iuk->QueryInterface(__uuidof(IAdminSessionClassPtr),(LPVOID *)&iasc);
+	hr = iuk->QueryInterface(__uuidof(IAdminSessionPtr),(LPVOID *)&i1);
+	//i1 = iasc->CreateSession((IAdminSessionHostPtr)igit);
+
+	IAdminServerPtr		i2;
+	IAdminGamePtr		i3;
+	IAdminGamesPtr		i4;
+	IAdminUserPtr		i5;
+	IAdminUsersPtr		i6;
+	IAdminSessionEventsPtr i7;
+	IAdminSessionHostPtr i8 ;
+	IDispatchPtr idisp;
+	hr = iuk->QueryInterface(IID_IDispatch,(LPVOID *)&idisp);
+/*
+	hr = pCF->CreateInstance(NULL,__uuidof(IAdminSessionPtr),(LPVOID *)&iasc);
+	pCF->Release(); 
+*/
+	hr = iuk->QueryInterface(__uuidof(IAdminSessionPtr),(LPVOID *)&i1);
+	hr = iuk->QueryInterface(__uuidof(IAdminServerPtr),(LPVOID *)&i2);
+	hr = iuk->QueryInterface(__uuidof(IAdminGamePtr),(LPVOID *)&i3);
+	hr = iuk->QueryInterface(__uuidof(IAdminGamesPtr),(LPVOID *)&i4);
+	hr = iuk->QueryInterface(__uuidof(IAdminUserPtr),(LPVOID *)&i5);
+	hr = iuk->QueryInterface(__uuidof(IAdminUsersPtr),(LPVOID *)&i6);
+	hr = iuk->QueryInterface(__uuidof(IAdminSessionEventsPtr),(LPVOID *)&i7);
+	hr = iuk->QueryInterface(__uuidof(IAdminSessionHostPtr),(LPVOID *)&i8);
+
+//	
+
+	//iashp = NULL;
+//---------------------------------------------------------------------------------------
+
+}
+TESTED IID FOR GetInterfaceFromGlobal
+IID_IUnknown
+IID_IDispatch
+__uuidof(IAdminSession)
+__uuidof(IAdminSessionEvents)
+__uuidof(IAdminServer)
+__uuidof(IAdminSessionClass)
+__uuidof(IAdminGame)
+IID_IConnectionPointContainer
+
+Values in allsrvui32.exe
+
+grouped:
+AGCVersionInfo - 9942f23d-b460-4bf0-8b2c-7b003a43f37c
+IAdminSessionHost - cd7d4875-3d61-4cc4-83c1-48f698ed45f5
+IAdminSessionClass - b3339c1b-d267-420b-b3d7-59f127cdd9cf
+AdminSession - aaa8270f-dda4-11d2-8b46-00c04f681633
+IAdminGame - 8fc514f8-e6ce-11d2-8b4b-00c04f681633
+IConnectionPointContainer - B196B284-BAB4-101A-B69C-00AA00341D07
+IUnknown - 00000000-0000-0000-C000-000000000046
+IGlobalInterfaceTable - 00000146-0000-0000-C000-000000000046
+IAdminSession - 8d9be088-dda4-11d2-8b46-00c04f681633
+IAdminSessionEvents - de3ed156-76a0-4a8e-8cfe-9ed26c3b0a5e
+IID_IStream - 0000000C-0000-0000-C000-000000000046
+TCMarshalByValue - 8962E244-CD81-11D2-9646-00C04F68DEB0
+elsewhere:
+CLSID_StdGlobalInterfaceTable = 00000323-0000-0000-C000000000000046
+IPersistStream - 000000109-0000-0000-C000000000000046
+								00021401-0000-0000-C000000000000046
+
+00020430-0000-0000-C000-000000000046 = oleautomation
+
+exe order:
+
+{12249214-13B5-11d3-8B5E-00C04F681633} = AGCVector
+
+
+getidentity
+
+	00403A52 -> CoCreateInstance(AGCVersionInfo,0,17,&res); get the IAGCVersionInfo interface
+	00403813 -> return with the IAGCVersionInfo interface
+		    call iagcv->0x1Ch = FileName (put). with value = NULL
+		   00403838 TODO
+		   	00406BF9 (sub) -> get the IPersistSteam int.
+		   	00408F68 (sub) -> test if not null
+		   	004028A1 (sub) -> ? if something not null call something (didnt happened)
+		   		
+  	0x00C2F5B0 = CreateStreamOnHGlobal(1);
+  	write->CMemStr().
+  	seek(0)
+  		00403AD0(sub(stream,?) -> some seek in the steam
+  
+			  CMoniker something
+			  
+			  _CreateStreamOnHGlobal again
+			  stream->read(0x10)
+			start of copy loop : 00403B26
+			
+			A1 =0x004104F8  8a1e3f7f  ?.?
+			A2 0x004104FC  4fbf7a21  !z¿O
+			A3 0x00410500  2cd0399b  ?9Ð,
+			A4 0x00410504  02540ddb  Û.T.
+			
+			Ax xor result from stream->read
+			result=
+			0x00C2F56C  8a1e3983  ?9.?   this is generated by a call to 0X00403AD0
+			0x00C2F570  4f8b795d  ]y?O
+			0x00C2F574  2c86399b  ?9?,
+			0x00C2F578  020b0d88  ?...
+			stream->write (this) to the stream = len 0x10
+			
+			stream->read(10) -> "VERSION_" (unicode)
+			
+			idem Xor with Ax
+			->
+			0x00C2F56C  8a5b3f29  )?[?
+			0x00C2F570  4fec7a73  szìO
+			0x00C2F574  2c9f39d2  Ò9?,
+			0x00C2F578  020b0d95  ?...
+			write it to steam(10)
+			---> big loop read from stream -> write to stream by 0x10 long step and XOR with Ax
+			
+			
+			exit of loop = 00403B6B
+  exit parent = 004038D1
+  
+  
+  once IAdminSession obtained.
+  
+ 00402823(sub)	CoCreate GIT
+ 		GIT->GetInterface(00000146-0000-0000-C000000000000046 = IID_IGlobalInterfaceTable);
+ 		
+ 
+ 00403736 = RegisterInterfaceInGlobal - IAdminSession
+ 
+ 00403752 = _CreateEvent(null,null,null) -> 688
+ 
+_PostMessageA
+	0x00B2FEDC  000402c4  Ä...
+	0x00B2FEE0  00008000  .?..
+	0x00B2FEE4  0000f100  .ñ..
+	0x00B2FEE8  00000688  ?...
+
+_WaitForSingleObject(
+0x00B2FEE4  00000688  ?...
+0x00B2FEE8  ffffffff  ÿÿÿÿ
+
+_NtUserSetTimer(
+0x0012FC20  000302cc  Ì...
+0x0012FC24  00000002  ....
+0x0012FC28  000007d0  Ð...
+0x0012FC2C  00000000  ....
+
+0040377A = _CloseHandle
+
+
+
+004021C4 -> IAdminSessionEvents
+00409DB6(sub) : 
+
+0x0012FC24  00169f94  ??..
+0x0012FC28  00000fc9  É...
+0x0012FC2C  ffffffff  ÿÿÿÿ
+0x0012FC30  00324124  $A2.

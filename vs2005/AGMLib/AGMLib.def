@@ -1,0 +1,7 @@
+; AGMLib.def : Declares the module parameters for the DLL.
+
+LIBRARY      "AGMLib"
+
+EXPORTS
+    ; Explicit exports can go here
+    GetAdminSession

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AMR", "AMR.vcproj", "{7EF25E11-8A32-4BF5-9693-0254C9946634}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AGM2 release|Win32 = AGM2 release|Win32
+		AGM2|Win32 = AGM2|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.AGM2 release|Win32.ActiveCfg = AGM2 release|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.AGM2 release|Win32.Build.0 = AGM2 release|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.AGM2|Win32.ActiveCfg = AGM2|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.AGM2|Win32.Build.0 = AGM2|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.Debug|Win32.Build.0 = Debug|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.Release|Win32.ActiveCfg = Release|Win32
+		{7EF25E11-8A32-4BF5-9693-0254C9946634}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

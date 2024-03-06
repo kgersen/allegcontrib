@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freezoneauth", "freezoneauth.vcproj", "{1E01E23E-CE76-4336-AB55-5B5244D36D4A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zatest", "..\zatest\zatest.vcproj", "{D94DCA61-DEBE-4B4F-9073-D9268DC3EFAF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1E01E23E-CE76-4336-AB55-5B5244D36D4A}.Debug.ActiveCfg = Debug|Win32
+		{1E01E23E-CE76-4336-AB55-5B5244D36D4A}.Debug.Build.0 = Debug|Win32
+		{1E01E23E-CE76-4336-AB55-5B5244D36D4A}.Release.ActiveCfg = Release|Win32
+		{1E01E23E-CE76-4336-AB55-5B5244D36D4A}.Release.Build.0 = Release|Win32
+		{D94DCA61-DEBE-4B4F-9073-D9268DC3EFAF}.Debug.ActiveCfg = Debug|Win32
+		{D94DCA61-DEBE-4B4F-9073-D9268DC3EFAF}.Debug.Build.0 = Debug|Win32
+		{D94DCA61-DEBE-4B4F-9073-D9268DC3EFAF}.Release.ActiveCfg = Release|Win32
+		{D94DCA61-DEBE-4B4F-9073-D9268DC3EFAF}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

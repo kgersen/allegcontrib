@@ -1,0 +1,160 @@
+8
+
+dir
+62
+svn://svn.rtsquad.org/cortui/trunk
+svn://svn.rtsquad.org/cortui
+
+
+
+2008-01-05T21:03:40.775766Z
+62
+parcival
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+62e2e5fd-8d0c-0410-9387-de366f4a3f2d
+
+Media
+dir
+
+# Release
+dir
+
+InstallationCode.nsi
+file
+
+
+
+
+2008-01-09T16:16:19.903931Z
+573b6fb27b1b9e8bd434dfbd22778165
+2007-11-23T20:26:42.999598Z
+57
+cortex
+
+ConfigurationScreen.ini
+file
+
+
+
+
+2008-01-09T16:16:19.903931Z
+2be1b0be69735bbc9151ab0f7611b80c
+2007-11-23T21:31:27.733298Z
+58
+cortex
+
+Pages.nsi
+file
+
+
+
+
+2008-01-09T16:16:19.919556Z
+55abdd654eb3b7ced8b795be9a4e4b83
+2007-11-19T15:48:58.133574Z
+46
+cortex
+
+UninstallationCode.nsi
+file
+
+
+
+
+2008-01-09T16:16:19.903931Z
+e78859269ec3e2f552767e8ebe1550b5
+2007-11-19T18:41:46.659928Z
+47
+cortex
+
+CortUI.nsi
+file
+
+
+
+
+2008-01-09T16:16:19.919556Z
+f72350f5be4e5a48777367a703963095
+2007-11-23T21:31:27.733298Z
+58
+cortex
+
+HelperFunctions.nsi
+file
+
+
+
+
+2008-01-09T16:16:19.919556Z
+450f1f99fc55f717401ccf8dfba9723e
+2007-11-19T18:41:46.659928Z
+47
+cortex
+
+Screenshots
+dir
+
+Tools
+dir
+
+GetLocalTime.nsi
+file
+
+
+
+
+2008-01-09T16:16:19.919556Z
+d41a0e36b1c679e5c814c6dcd6326e46
+2007-11-19T18:41:46.659928Z
+47
+cortex
+
+# Additional work files
+dir
+
+# Installer Remarks.txt
+file
+
+
+
+
+2008-01-09T16:16:19.966431Z
+37c993e4d200f3be41e3f00db8ce5321
+2007-11-11T18:46:20.243844Z
+30
+cortex
+
+FindProc
+dir
+
+Code
+dir
+
+# Release Notes.txt
+file
+
+
+
+
+2008-01-09T16:16:19.966431Z
+42717976679f81d8aa15b0034b395a97
+2007-11-23T21:31:27.733298Z
+58
+cortex
+
+unCode
+dir
+

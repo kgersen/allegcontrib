@@ -1,0 +1,454 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (f714fe2b).
+//
+// s:\alleg\src\agm\debug\allsrv32.tli
+//
+// Wrapper implementations for Win32 type library C:\\Program Files\\Microsoft Games\\Allegiance\\Server\\AllSrv32.exe
+// compiler-generated file created 08/16/04 at 18:49:43 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IAdminSessionEvents wrapper method implementations
+//
+
+inline HRESULT IAdminSessionEvents::OnEvent ( struct IAGCEvent * pEvent ) {
+    HRESULT _hr = raw_OnEvent(pEvent);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface _IAdminSessionEvents wrapper method implementations
+//
+
+inline HRESULT _IAdminSessionEvents::OnEvent ( struct IAGCEvent * pEvent ) {
+    return _com_dispatch_method(this, 0x107a, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", pEvent);
+}
+
+//
+// interface IAdminSessionHost wrapper method implementations
+//
+
+inline IUnknownPtr IAdminSessionHost::GetIdentity ( long nCookie ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = raw_GetIdentity(nCookie, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IAdminSession wrapper method implementations
+//
+
+inline void IAdminSession::PutSessionInfo ( struct ITCSessionInfo * ppSessionInfo ) {
+    HRESULT _hr = put_SessionInfo(ppSessionInfo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ITCSessionInfoPtr IAdminSession::GetSessionInfo ( ) {
+    struct ITCSessionInfo * _result = 0;
+    HRESULT _hr = get_SessionInfo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITCSessionInfoPtr(_result, false);
+}
+
+inline ITCSessionInfosPtr IAdminSession::GetSessionInfos ( ) {
+    struct ITCSessionInfos * _result = 0;
+    HRESULT _hr = get_SessionInfos(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITCSessionInfosPtr(_result, false);
+}
+
+inline IAdminServerPtr IAdminSession::GetServer ( ) {
+    struct IAdminServer * _result = 0;
+    HRESULT _hr = get_Server(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminServerPtr(_result, false);
+}
+
+inline HRESULT IAdminSession::ActivateEvents ( enum AGCEventID AGCEvent, AGCUniqueID UniqueID ) {
+    HRESULT _hr = raw_ActivateEvents(AGCEvent, UniqueID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAdminSession::DeactivateEvents ( enum AGCEventID AGCEvent, AGCUniqueID uniqueObjectID ) {
+    HRESULT _hr = raw_DeactivateEvents(AGCEvent, uniqueObjectID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IAdminSession::GetIsEventActivated ( enum AGCEventID AGCEvent, AGCUniqueID UniqueID ) {
+    long _result = 0;
+    HRESULT _hr = get_IsEventActivated(AGCEvent, UniqueID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAdminSession::ActivateAllEvents ( ) {
+    HRESULT _hr = raw_ActivateAllEvents();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAdminSession::DeactivateAllEvents ( ) {
+    HRESULT _hr = raw_DeactivateAllEvents();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IAdminSession::GetProcessID ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ProcessID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCVersionInfoPtr IAdminSession::GetVersion ( ) {
+    struct IAGCVersionInfo * _result = 0;
+    HRESULT _hr = get_Version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCVersionInfoPtr(_result, false);
+}
+
+inline HRESULT IAdminSession::Stop ( ) {
+    HRESULT _hr = raw_Stop();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAdminSession::Pause ( ) {
+    HRESULT _hr = raw_Pause();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IAdminSessionPtr IAdminSession::GetWhoStartedServer ( ) {
+    struct IAdminSession * _result = 0;
+    HRESULT _hr = get_WhoStartedServer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminSessionPtr(_result, false);
+}
+
+inline IAGCEventLoggerPtr IAdminSession::GetEventLog ( ) {
+    struct IAGCEventLogger * _result = 0;
+    HRESULT _hr = get_EventLog(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCEventLoggerPtr(_result, false);
+}
+
+inline IAGCEventPtr IAdminSession::GetPerfCounters ( ) {
+    struct IAGCEvent * _result = 0;
+    HRESULT _hr = get_PerfCounters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCEventPtr(_result, false);
+}
+
+inline HRESULT IAdminSession::SendAdminChat ( _bstr_t bstrText, long nUserID, DATE dateOriginal ) {
+    HRESULT _hr = raw_SendAdminChat(bstrText, nUserID, dateOriginal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAdminSession::Continue ( ) {
+    HRESULT _hr = raw_Continue();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAdminSessionClass wrapper method implementations
+//
+
+inline IAdminSessionPtr IAdminSessionClass::CreateSession ( struct IAdminSessionHost * pHost ) {
+    struct IAdminSession * _result = 0;
+    HRESULT _hr = raw_CreateSession(pHost, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminSessionPtr(_result, false);
+}
+
+//
+// interface IAdminServer wrapper method implementations
+//
+
+inline IAdminGamesPtr IAdminServer::GetGames ( ) {
+    struct IAdminGames * _result = 0;
+    HRESULT _hr = get_Games(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminGamesPtr(_result, false);
+}
+
+inline long IAdminServer::GetPlayerCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PlayerCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IAdminServer::GetMissionCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MissionCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAdminServer::SendMsg ( _bstr_t bstrMessage ) {
+    HRESULT _hr = raw_SendMsg(bstrMessage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IAdminUsersPtr IAdminServer::GetUsers ( ) {
+    struct IAdminUsers * _result = 0;
+    HRESULT _hr = get_Users(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminUsersPtr(_result, false);
+}
+
+inline IAdminUserPtr IAdminServer::GetLookupUser ( AGCUniqueID id ) {
+    struct IAdminUser * _result = 0;
+    HRESULT _hr = get_LookupUser(id, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminUserPtr(_result, false);
+}
+
+inline IAdminUserPtr IAdminServer::GetFindUser ( _bstr_t bstrName ) {
+    struct IAdminUser * _result = 0;
+    HRESULT _hr = get_FindUser(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminUserPtr(_result, false);
+}
+
+inline _bstr_t IAdminServer::GetMachineName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_MachineName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long IAdminServer::GetPacketsIn ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PacketsIn(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IAdminServer::GetPlayersOnline ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PlayersOnline(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IAdminServer::GetTimeInnerLoop ( ) {
+    long _result = 0;
+    HRESULT _hr = get_TimeInnerLoop(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAdminServer::PutLobbyServer ( _bstr_t pbstrLobbyServer ) {
+    HRESULT _hr = put_LobbyServer(pbstrLobbyServer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAdminServer::GetLobbyServer ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_LobbyServer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAdminServer::PutPublicLobby ( VARIANT_BOOL pbPublic ) {
+    HRESULT _hr = put_PublicLobby(pbPublic);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAdminServer::GetPublicLobby ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PublicLobby(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAdminServer::CreateDefaultGames ( ) {
+    HRESULT _hr = raw_CreateDefaultGames();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAdminGames wrapper method implementations
+//
+
+inline IAdminGamePtr IAdminGames::GetItem ( VARIANT * pvIndex ) {
+    struct IAdminGame * _result = 0;
+    HRESULT _hr = get_Item(pvIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminGamePtr(_result, false);
+}
+
+inline HRESULT IAdminGames::Add ( struct IAGCGameParameters * pGameParameters ) {
+    HRESULT _hr = raw_Add(pGameParameters);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAdminGame wrapper method implementations
+//
+
+inline HRESULT IAdminGame::SendMsg ( _bstr_t bstrMessage ) {
+    HRESULT _hr = raw_SendMsg(bstrMessage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAdminGame::Kill ( ) {
+    HRESULT _hr = raw_Kill();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IAdminUsersPtr IAdminGame::GetUsers ( ) {
+    struct IAdminUsers * _result = 0;
+    HRESULT _hr = get_Users(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminUsersPtr(_result, false);
+}
+
+inline IAdminUserPtr IAdminGame::GetGameOwnerUser ( ) {
+    struct IAdminUser * _result = 0;
+    HRESULT _hr = get_GameOwnerUser(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminUserPtr(_result, false);
+}
+
+inline HRESULT IAdminGame::StartGame ( ) {
+    HRESULT _hr = raw_StartGame();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IAdminGame::GetDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Description(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAdminGame::StartCountdown ( ) {
+    HRESULT _hr = raw_StartCountdown();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAdminGame::SetTeamName ( int iSideID, _bstr_t bstrName ) {
+    HRESULT _hr = raw_SetTeamName(iSideID, bstrName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAdminGame::OverrideTechBit ( int iSideID, int nTechBitID, long bNewSetting ) {
+    HRESULT _hr = raw_OverrideTechBit(iSideID, nTechBitID, bNewSetting);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAdminGame::SetDetailsFiles ( _bstr_t bstrName ) {
+    HRESULT _hr = raw_SetDetailsFiles(bstrName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAdminGame::RandomizeTeams ( ) {
+    HRESULT _hr = raw_RandomizeTeams();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAdminUsers wrapper method implementations
+//
+
+inline IAdminUserPtr IAdminUsers::GetItem ( const _variant_t & index ) {
+    struct IAdminUser * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminUserPtr(_result, false);
+}
+
+//
+// interface IAdminUser wrapper method implementations
+//
+
+inline _bstr_t IAdminUser::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAdminUser::SendMsg ( _bstr_t bstrMessage ) {
+    HRESULT _hr = raw_SendMsg(bstrMessage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IAdminUser::GetisReady ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_isReady(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAdminUser::PutisReady ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_isReady(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IAdminShipPtr IAdminUser::GetShip ( ) {
+    struct IAdminShip * _result = 0;
+    HRESULT _hr = get_Ship(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminShipPtr(_result, false);
+}
+
+inline HRESULT IAdminUser::Boot ( ) {
+    HRESULT _hr = raw_Boot();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline AdminUserID IAdminUser::GetUserID ( ) {
+    AdminUserID _result;
+    HRESULT _hr = get_UserID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline AGCUniqueID IAdminUser::GetUniqueID ( ) {
+    AGCUniqueID _result;
+    HRESULT _hr = get_UniqueID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAGCEventPtr IAdminUser::GetPlayerStats ( ) {
+    struct IAGCEvent * _result = 0;
+    HRESULT _hr = get_PlayerStats(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAGCEventPtr(_result, false);
+}
+
+//
+// interface IAdminShip wrapper method implementations
+//
+
+inline IAdminUserPtr IAdminShip::GetUser ( ) {
+    struct IAdminUser * _result = 0;
+    HRESULT _hr = get_User(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAdminUserPtr(_result, false);
+}

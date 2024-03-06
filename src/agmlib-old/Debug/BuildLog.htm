@@ -1,0 +1,90 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: AGMLib, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "s:\alleg\src\agmlib\Debug\RSP00000D.rsp" with contents
+[
+/D "_DEBUG" /env win32  /tlb "Debug/AGMLib.tlb" /h "agmlib_h.h"
+.\agmlib.idl
+]
+Creating command line "midl.exe @s:\alleg\src\agmlib\Debug\RSP00000D.rsp /nologo"
+Creating temporary file "s:\alleg\src\agmlib\Debug\RSP00000E.rsp" with contents
+[
+/Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_USRDLL" /D "_WINDLL" /D "_MBCS" /Gm /EHsc /RTC1 /MTd /Zc:wchar_t /Yu"stdafx.h" /Fp"Debug/agmlib.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+\alleg\src\Agm\ServerCtrl.cpp
+.\agmlib.cpp
+]
+Creating command line "cl.exe @s:\alleg\src\agmlib\Debug\RSP00000E.rsp /nologo"
+Creating temporary file "s:\alleg\src\agmlib\Debug\RSP00000F.rsp" with contents
+[
+/Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_USRDLL" /D "_WINDLL" /D "_MBCS" /Gm /EHsc /RTC1 /MTd /Zc:wchar_t /Yc"stdafx.h" /Fp"Debug/agmlib.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+.\stdafx.cpp
+]
+Creating command line "cl.exe @s:\alleg\src\agmlib\Debug\RSP00000F.rsp /nologo"
+Creating command line "rc.exe /d "_DEBUG" /l 0x40c /I "Debug" /fo"Debug/agmlib.res" .\agmlib.rc"
+Creating temporary file "s:\alleg\src\agmlib\Debug\RSP000010.rsp" with contents
+[
+/OUT:"Debug/agmlib.dll" /INCREMENTAL /NOLOGO /DLL /DEF:".\agmlib.def" /DELAYLOAD:"OleAcc.dll" /DEBUG /PDB:"Debug/AGMLib.pdb" /SUBSYSTEM:WINDOWS /IMPLIB:"Debug/agmlib.lib" /MACHINE:X86  DelayImp.lib DelayImp.lib
+.\debug\agmlib.obj
+.\debug\stdafx.obj
+.\debug\agmlib.res
+.\debug\ServerCtrl.obj
+]
+Creating command line "link.exe @s:\alleg\src\agmlib\Debug\RSP000010.rsp"
+Creating temporary file "s:\alleg\src\agmlib\Debug\BAT000011.bat" with contents
+[
+@echo off
+regsvr32 /s /c "s:\alleg\src\agmlib\debug\agmlib.dll"
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing registration"
+exit 1
+:VCEnd
+]
+Creating command line "s:\alleg\src\agmlib\Debug\BAT000011.bat"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating Type Library...
+Processing .\agmlib.idl
+agmlib.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oaidl.idl
+oaidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objidl.idl
+objidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\unknwn.idl
+unknwn.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\wtypes.idl
+wtypes.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\basetsd.h
+basetsd.h
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\guiddef.h
+guiddef.h
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oaidl.acf
+oaidl.acf
+Compiling...
+stdafx.cpp
+s:\alleg\src\agmlib\stdafx.h(53) : warning C4278: 'GetObject': identifier in type library 'C:\\Program Files\\Microsoft Games\\Allegiance\\Server\\agc.dll' is already a macro; use the 'rename' qualifier
+Compiling...
+ServerCtrl.cpp
+agmlib.cpp
+Generating Code...
+Compiling resources...
+Linking...
+   Creating library Debug/agmlib.lib and object Debug/agmlib.exp
+Performing registration
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://s:\alleg\src\agmlib\Debug\BuildLog.htm"
+AGMLib - 0 error(s), 1 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>
